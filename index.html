@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Posiciones — Asociación Bahiense de Hockey</title>
+  <link rel="stylesheet" href="assets/tailwind.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --abh-blue:   #4e6d9e;
+      --abh-gold:   #e8a020;
+      --abh-red:    #c0392b;
+      --abh-dark:   #1a2333;
+      --abh-light:  #f4f6fa;
+      --abh-border: #dce3ef;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Barlow', sans-serif;
+      background: var(--abh-light);
+      color: var(--abh-dark);
+      min-height: 100vh;
+    }
+
+    /* ── Header ──────────────────────────────────────── */
+    header {
+      background: linear-gradient(135deg, var(--abh-dark) 0%, #243352 100%);
+      border-bottom: 3px solid var(--abh-gold);
+      padding: 0 1.5rem;
+    }
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.75rem 0;
+    }
+    .header-logo {
+      width: 52px;
+      height: auto;
+      flex-shrink: 0;
+    }
+    .header-title h1 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: 0.03em;
+      line-height: 1.1;
+      text-transform: uppercase;
+    }
+    .header-title p {
+      font-size: 0.72rem;
+      color: var(--abh-gold);
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-top: 1px;
+    }
+
+    /* ── Main ────────────────────────────────────────── */
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+    }
+
+    /* ── Filters bar ─────────────────────────────────── */
+    .filters {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+    .filter-group label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #64748b;
+    }
+    select {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 0 0 0 1rem !important;
+      height: 38px;
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--abh-dark);
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2364748b' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.75rem center;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+      transition: border-color 0.15s, box-shadow 0.15s;
+      min-width: 200px;
+    }
+    select:hover {
+      border-color: #cbd5e1;
+    }
+    select:focus {
+      outline: none;
+      border-color: var(--abh-blue);
+      box-shadow: 0 0 0 3px rgba(78,109,158,0.12);
+    }
+
+    /* ── Meta info ───────────────────────────────────── */
+    .meta-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .meta-bar .championship-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--abh-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .meta-bar .updated {
+      font-size: 0.72rem;
+      color: #94a3b8;
+    }
+
+    /* ── Zone header ─────────────────────────────────── */
+    .zone-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin: 1.75rem 0 0.75rem;
+    }
+    .zone-header h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--abh-blue);
+    }
+    .zone-header::after {
+      content: '';
+      flex: 1;
+      height: 1.5px;
+      background: var(--abh-border);
+    }
+
+    /* ── Category tabs ───────────────────────────────── */
+    .tabs {
+      display: flex;
+      gap: 0;
+      border-bottom: 2px solid var(--abh-border);
+      margin-bottom: 1rem;
+    }
+    .tab-btn {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      padding: 0.55rem 1.1rem;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      color: #64748b;
+      border-bottom: 2.5px solid transparent;
+      margin-bottom: -2px;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .tab-btn:hover { color: var(--abh-blue); }
+    .tab-btn.active {
+      color: var(--abh-blue);
+      border-bottom-color: var(--abh-gold);
+    }
+
+    /* ── Table ───────────────────────────────────────── */
+    .table-wrapper {
+      background: #fff;
+      border: 1.5px solid var(--abh-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.845rem;
+    }
+    thead tr {
+      background: var(--abh-dark);
+      color: #fff;
+    }
+    thead th {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.65rem 0.6rem;
+      text-align: center;
+      white-space: nowrap;
+    }
+    thead th.th-team { text-align: left; padding-left: 0.75rem; }
+    tbody tr {
+      border-bottom: 1px solid var(--abh-border);
+      transition: background 0.1s;
+    }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:hover { background: #f8fafc; }
+    tbody td {
+      padding: 0.6rem 0.6rem;
+      text-align: center;
+      color: var(--abh-dark);
+    }
+    tbody td.td-pos {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #94a3b8;
+      width: 36px;
+    }
+    tbody td.td-team {
+      text-align: left;
+      padding-left: 0.75rem;
+    }
+    .team-cell {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+    }
+    .team-logo {
+      width: 26px;
+      height: 26px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+    .team-logo-placeholder {
+      width: 26px;
+      height: 26px;
+      background: var(--abh-border);
+      border-radius: 50%;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.6rem;
+      font-weight: 700;
+      color: #94a3b8;
+    }
+    .team-name {
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .team-short {
+      font-size: 0.75rem;
+      color: #94a3b8;
+      display: none;
+    }
+    td.td-pts {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 1rem;
+      color: var(--abh-dark);
+    }
+    td.td-gd { color: #64748b; font-size: 0.8rem; }
+
+    /* ── Form badges ─────────────────────────────────── */
+    .form-badges {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      justify-content: center;
+    }
+    .form-badge {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      border-radius: 4px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      color: #fff;
+      cursor: pointer;
+      transition: transform 0.12s;
+      user-select: none;
+      border: none;
+      background: none;
+    }
+    .form-badge:hover { transform: scale(1.18); }
+    .form-badge.W { background: #22c55e; }
+    .form-badge.D { background: #f59e0b; }
+    .form-badge.L { background: #ef4444; }
+    .bonus-dot {
+      position: absolute;
+      top: -3px;
+      right: -3px;
+      width: 9px;
+      height: 9px;
+      background: #fde047;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      font-size: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #713f12;
+      font-weight: 800;
+    }
+
+    /* ── Hover card ──────────────────────────────────── */
+    .hc-anchor { position: relative; display: inline-block; }
+    .hover-card {
+      position: fixed;
+      width: 230px;
+      background: #fff;
+      border: 1.5px solid var(--abh-border);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.16);
+      z-index: 9999;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.1s;
+    }
+    .hover-card.visible { opacity: 1; }
+    .hc-header {
+      padding: 0.75rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+    .hc-header.W { background: linear-gradient(135deg, #16a34a, #22c55e); }
+    .hc-header.D { background: linear-gradient(135deg, #d97706, #f59e0b); }
+    .hc-header.L { background: linear-gradient(135deg, #b91c1c, #ef4444); }
+    .hc-opponent {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+    .hc-opp-logo {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
+      background: rgba(255,255,255,0.2);
+      border-radius: 4px;
+      padding: 2px;
+    }
+    .hc-opp-name { font-weight: 600; font-size: 0.85rem; line-height: 1.2; }
+    .hc-opp-venue { font-size: 0.7rem; opacity: 0.8; }
+    .hc-score { text-align: right; }
+    .hc-score-main {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+    .hc-score-pen {
+      font-size: 0.7rem;
+      opacity: 0.85;
+    }
+    .hc-body {
+      padding: 0.65rem 0.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+    .hc-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.78rem;
+    }
+    .hc-row .label { color: #94a3b8; }
+    .hc-row .value { font-weight: 600; }
+    .hc-result-badge {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 4px;
+      padding: 1px 7px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .hc-result-badge.W { background: #22c55e; }
+    .hc-result-badge.D { background: #f59e0b; }
+    .hc-result-badge.L { background: #ef4444; }
+    .hc-bonus {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      background: #fef9c3;
+      border: 1px solid #fde047;
+      color: #713f12;
+      border-radius: 4px;
+      padding: 2px 7px;
+      font-size: 0.72rem;
+      font-weight: 600;
+    }
+
+    /* ── Empty / loading states ──────────────────────── */
+    .state-msg {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      color: #94a3b8;
+      font-size: 0.875rem;
+    }
+
+    /* ── Responsive ──────────────────────────────────── */
+    @media (max-width: 640px) {
+      .col-hide-sm { display: none; }
+      .team-name { display: none; }
+      .team-short { display: block; }
+      select { font-size: 0.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════ HEADER ═══════════════ -->
+<header>
+  <div class="header-inner">
+    <img class="header-logo"
+         src="Escudo_ABH.png"
+         alt="Escudo ABH"
+         onerror="this.style.display='none'" />
+    <div class="header-title">
+      <h1>Asociación Bahiense de Hockey</h1>
+      <p>Tabla de posiciones</p>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════ HOVER CARD SINGLETON ═══════════════ -->
+<div class="hover-card" id="hover-card"></div>
+
+<!-- ═══════════════ MAIN ═══════════════ -->
+<main>
+
+  <!-- Filters -->
+  <div class="filters">
+    <div class="filter-group">
+      <label for="sel-championship">Campeonato</label>
+      <select id="sel-championship">
+        <option value="">Cargando…</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="sel-zone">Zona</label>
+      <select id="sel-zone">
+        <option value="">— Zona —</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Meta bar -->
+  <div class="meta-bar" id="meta-bar" style="display:none">
+    <span class="championship-name" id="meta-title"></span>
+    <span class="updated" id="meta-updated"></span>
+  </div>
+
+  <!-- Content -->
+  <div id="content">
+    <div class="state-msg">Seleccioná un campeonato para ver las posiciones.</div>
+  </div>
+
+</main>
+
+<script>
+/* ═══════════════════════════════════════════════════════
+   CONFIG — ajustá DATA_FOLDER y FILE_LIST según tu repo
+   ═══════════════════════════════════════════════════════ */
+const DATA_FOLDER = 'data';          // carpeta donde viven los JSON
+// Lista de archivos disponibles. El primero de la lista se carga por defecto.
+// Podés generar este array dinámicamente con un script en el repo,
+// o mantenerlo manualmente al publicar.
+const DATA_FILES = [
+  // Ejemplo: 'apertura-2026.json', 'clausura-2026.json'
+  // Por ahora lo dejamos vacío; se completará desde el selector.
+];
+
+/* ═══════════════════════════════════════════════════════
+   STATE
+   ═══════════════════════════════════════════════════════ */
+let currentData    = null;   // JSON del campeonato cargado
+let currentZoneId  = null;
+let currentTabId   = {};     // { zoneId: categoryId }
+
+/* ═══════════════════════════════════════════════════════
+   BOOTSTRAP — detecta archivos disponibles
+   ═══════════════════════════════════════════════════════ */
+async function init() {
+  // Intentamos cargar un índice de campeonatos (index.json) que el
+  // comando Artisan puede generar opcionalmente. Si no existe,
+  // el select permanecerá vacío con el mensaje de ayuda.
+  try {
+    const resp = await fetch(`${DATA_FOLDER}/index.json`);
+    if (resp.ok) {
+      const index = await resp.json(); // [{ file: 'apertura-2026.json', label: 'Apertura 2026' }, …]
+      populateChampionshipSelect(index);
+    } else {
+      showNoDataMessage();
+    }
+  } catch {
+    showNoDataMessage();
+  }
+}
+
+function showNoDataMessage() {
+  const sel = document.getElementById('sel-championship');
+  sel.innerHTML = '<option value="">Sin datos publicados</option>';
+  document.getElementById('content').innerHTML =
+    '<div class="state-msg">No se encontraron datos. Publicá el primer JSON con <code>php artisan export:standings</code>.</div>';
+}
+
+function populateChampionshipSelect(index) {
+  const sel = document.getElementById('sel-championship');
+  sel.innerHTML = '';
+  index.forEach((item, i) => {
+    const opt = document.createElement('option');
+    opt.value = item.file;
+    opt.textContent = item.label;
+    if (i === 0) opt.selected = true;
+    sel.appendChild(opt);
+  });
+  if (index.length > 0) loadChampionship(index[0].file);
+}
+
+/* ═══════════════════════════════════════════════════════
+   LOAD
+   ═══════════════════════════════════════════════════════ */
+async function loadChampionship(file) {
+  document.getElementById('content').innerHTML =
+    '<div class="state-msg">Cargando…</div>';
+  try {
+    const resp = await fetch(`${DATA_FOLDER}/${file}`);
+    if (!resp.ok) throw new Error('not found');
+    currentData = await resp.json();
+    currentZoneId = null;
+    currentTabId  = {};
+    renderMetaBar();
+    renderZoneSelect();
+    // pre-select primera zona
+    const firstZone = currentData.zones?.[0];
+    if (firstZone) {
+      document.getElementById('sel-zone').value = firstZone.id;
+      currentZoneId = String(firstZone.id);
+      renderContent();
+    }
+  } catch {
+    document.getElementById('content').innerHTML =
+      '<div class="state-msg">No se pudo cargar el archivo de datos.</div>';
+  }
+}
+
+/* ═══════════════════════════════════════════════════════
+   META BAR
+   ═══════════════════════════════════════════════════════ */
+function renderMetaBar() {
+  const bar = document.getElementById('meta-bar');
+  const d   = currentData;
+  bar.style.display = 'flex';
+  document.getElementById('meta-title').textContent =
+    `${d.championship.name} ${d.championship.year}`;
+  if (d.generated_at) {
+    const dt = new Date(d.generated_at);
+    document.getElementById('meta-updated').textContent =
+      `Actualizado: ${dt.toLocaleDateString('es-AR', { day:'2-digit', month:'2-digit', year:'numeric' })} ${dt.toLocaleTimeString('es-AR', { hour:'2-digit', minute:'2-digit' })}`;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════
+   ZONE SELECT
+   ═══════════════════════════════════════════════════════ */
+function renderZoneSelect() {
+  const sel = document.getElementById('sel-zone');
+  sel.innerHTML = '';
+  (currentData.zones || []).forEach(z => {
+    const opt = document.createElement('option');
+    opt.value = z.id;
+    opt.textContent = z.name;
+    sel.appendChild(opt);
+  });
+}
+
+/* ═══════════════════════════════════════════════════════
+   MAIN CONTENT
+   ═══════════════════════════════════════════════════════ */
+function renderContent() {
+  if (!currentData || !currentZoneId) {
+    document.getElementById('content').innerHTML =
+      '<div class="state-msg">Seleccioná una zona.</div>';
+    return;
+  }
+
+  const zone = currentData.zones.find(z => String(z.id) === currentZoneId);
+  if (!zone) {
+    document.getElementById('content').innerHTML =
+      '<div class="state-msg">Zona no encontrada.</div>';
+    return;
+  }
+
+  let html = '';
+  html += `<div class="zone-header"><h2>${zone.name}</h2></div>`;
+
+  (zone.categories || []).forEach(cat => {
+    const activeTabId = currentTabId[zone.id] ?? String(zone.categories[0]?.id);
+    const isActive    = String(cat.id) === String(activeTabId);
+    html += buildCategorySection(zone, cat, isActive);
+  });
+
+  document.getElementById('content').innerHTML = html;
+
+  // Attach tab click handlers
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const zoneId = btn.dataset.zone;
+      const catId  = btn.dataset.cat;
+      currentTabId[zoneId] = catId;
+      // Toggle visibility
+      document.querySelectorAll(`.tab-panel[data-zone="${zoneId}"]`).forEach(p => {
+        p.style.display = p.dataset.cat === catId ? 'block' : 'none';
+      });
+      document.querySelectorAll(`.tab-btn[data-zone="${zoneId}"]`).forEach(b => {
+        b.classList.toggle('active', b.dataset.cat === catId);
+      });
+    });
+  });
+}
+
+function buildCategorySection(zone, cat, isActive) {
+  const tabActive = isActive ? 'active' : '';
+  let html = '';
+
+  // Only render tabs once (first category triggers the tab bar)
+  if (zone.categories.indexOf(cat) === 0) {
+    html += `<div class="tabs">`;
+    zone.categories.forEach(c => {
+      const active = String(c.id) === String(currentTabId[zone.id] ?? zone.categories[0]?.id);
+      html += `<button class="tab-btn ${active ? 'active' : ''}" data-zone="${zone.id}" data-cat="${c.id}">${escHtml(c.name)}</button>`;
+    });
+    html += `</div>`;
+  }
+
+  html += `<div class="tab-panel" data-zone="${zone.id}" data-cat="${cat.id}" style="display:${isActive ? 'block' : 'none'}">`;
+  html += buildTable(cat.standings || []);
+  html += `</div>`;
+  return html;
+}
+
+/* ═══════════════════════════════════════════════════════
+   TABLE
+   ═══════════════════════════════════════════════════════ */
+function buildTable(standings) {
+  if (!standings.length)
+    return '<div class="state-msg">Sin datos de posiciones.</div>';
+
+  let html = `
+    <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th class="th-team">Equipo</th>
+          <th title="Partidos jugados">PJ</th>
+          <th title="Ganados" class="col-hide-sm">G</th>
+          <th title="Empatados" class="col-hide-sm">E</th>
+          <th title="Perdidos" class="col-hide-sm">P</th>
+          <th title="Goles a favor" class="col-hide-sm">GF</th>
+          <th title="Goles en contra" class="col-hide-sm">GC</th>
+          <th title="Diferencia de goles">DG</th>
+          <th>Pts</th>
+          <th>Forma</th>
+        </tr>
+      </thead>
+      <tbody>`;
+
+  standings.forEach((row, idx) => {
+    const t = row.team;
+    const logoHtml = t.logo
+      ? `<img class="team-logo" src="${escHtml(t.logo)}" alt="${escHtml(t.short_name || t.name)}" onerror="this.style.display='none'">`
+      : `<span class="team-logo-placeholder">${escHtml((t.short_name || t.name).substring(0,2).toUpperCase())}</span>`;
+
+    html += `
+      <tr>
+        <td class="td-pos">${row.position}</td>
+        <td class="td-team">
+          <div class="team-cell">
+            ${logoHtml}
+            <span class="team-name">${escHtml(t.name)}</span>
+            <span class="team-short">${escHtml(t.short_name || t.name)}</span>
+          </div>
+        </td>
+        <td>${row.played}</td>
+        <td class="col-hide-sm">${row.won}</td>
+        <td class="col-hide-sm">${row.drawn}</td>
+        <td class="col-hide-sm">${row.lost}</td>
+        <td class="col-hide-sm">${row.goals_for}</td>
+        <td class="col-hide-sm">${row.goals_against}</td>
+        <td class="td-gd">${row.goal_difference > 0 ? '+' : ''}${row.goal_difference}</td>
+        <td class="td-pts">${row.points}</td>
+        <td>${buildFormBadges(row.recent_form || [])}</td>
+      </tr>`;
+  });
+
+  html += `</tbody></table></div>`;
+  return html;
+}
+
+/* ═══════════════════════════════════════════════════════
+   FORM BADGES + HOVER CARD
+   ═══════════════════════════════════════════════════════ */
+const RESULT_LABEL = { W: 'G', D: 'E', L: 'P' };
+const RESULT_TEXT  = { W: 'Victoria', D: 'Empate', L: 'Derrota' };
+
+function buildFormBadges(form) {
+  if (!form.length) return '<span style="color:#cbd5e1;font-size:0.75rem">—</span>';
+  return `<div class="form-badges">${form.map(buildOneBadge).join('')}</div>`;
+}
+
+function buildOneBadge(f) {
+  const r = f.result; // W / D / L
+  const bonusDot = f.bonus_point
+    ? `<span class="bonus-dot">+</span>` : '';
+
+  // Codificamos los datos del partido en data attributes
+  const data = {
+    result:       r,
+    score:        f.score,
+    opponent:     f.opponent,
+    opponentLogo: f.opponent_logo || '',
+    wasHome:      f.was_home ? '1' : '0',
+    date:         f.date,
+    penScore:     f.shootouts ? f.shootouts.score : '',
+    bonus:        f.bonus_point ? '1' : '0',
+  };
+  const dataAttrs = Object.entries(data)
+    .map(([k, v]) => `data-${k}="${escHtml(String(v))}"`)
+    .join(' ');
+
+  return `
+    <span class="hc-anchor">
+      <button class="form-badge ${r}" tabindex="0" ${dataAttrs}
+              onmouseenter="showCard(this,event)"
+              onmouseleave="hideCard()"
+              onfocus="showCard(this,event)"
+              onblur="hideCard()">
+        ${RESULT_LABEL[r] ?? r}${bonusDot}
+      </button>
+    </span>`;
+}
+
+/* ═══════════════════════════════════════════════════════
+   UTILS
+   ═══════════════════════════════════════════════════════ */
+function escHtml(str) {
+  return String(str ?? '')
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+/* ═══════════════════════════════════════════════════════
+   EVENT LISTENERS
+   ═══════════════════════════════════════════════════════ */
+document.getElementById('sel-championship').addEventListener('change', e => {
+  if (e.target.value) loadChampionship(e.target.value);
+});
+
+document.getElementById('sel-zone').addEventListener('change', e => {
+  currentZoneId = e.target.value;
+  renderContent();
+});
+
+/* ═══════════════════════════════════════════════════════
+   HOVER CARD — singleton posicionado con fixed
+   ═══════════════════════════════════════════════════════ */
+const hoverCardEl = document.getElementById('hover-card');
+let hideTimeout = null;
+
+function showCard(btn, event) {
+  clearTimeout(hideTimeout);
+  const r        = btn.dataset.result;
+  const score    = btn.dataset.score;
+  const opponent = btn.dataset.opponent;
+  const logo     = btn.dataset.opponentlogo;
+  const wasHome  = btn.dataset.washome === '1';
+  const date     = btn.dataset.date;
+  const penScore = btn.dataset.penscore;
+  const bonus    = btn.dataset.bonus === '1';
+
+  const logoHtml = logo
+    ? `<img class="hc-opp-logo" src="${escHtml(logo)}" alt="${escHtml(opponent)}" onerror="this.style.display='none'">`
+    : '';
+  const penLine   = penScore ? `<div class="hc-score-pen">Pen: ${escHtml(penScore)}</div>` : '';
+  const bonusLine = bonus
+    ? `<div class="hc-row"><span></span><span class="hc-bonus">★ Punto bonus</span></div>` : '';
+
+  hoverCardEl.innerHTML = `
+    <div class="hc-header ${r}">
+      <div class="hc-opponent">
+        ${logoHtml}
+        <div>
+          <div class="hc-opp-name">${escHtml(opponent)}</div>
+          <div class="hc-opp-venue">${wasHome ? 'Local' : 'Visitante'}</div>
+        </div>
+      </div>
+      <div class="hc-score">
+        <div class="hc-score-main">${escHtml(score)}</div>
+        ${penLine}
+      </div>
+    </div>
+    <div class="hc-body">
+      <div class="hc-row">
+        <span class="label">Fecha</span>
+        <span class="value">${escHtml(date)}</span>
+      </div>
+      <div class="hc-row">
+        <span class="label">Resultado</span>
+        <span class="hc-result-badge ${r}">${RESULT_TEXT[r] ?? r}</span>
+      </div>
+      ${bonusLine}
+    </div>`;
+
+  // Posicionamiento: arriba del badge, centrado
+  const rect   = btn.getBoundingClientRect();
+  const cardW  = 230;
+  const cardH  = hoverCardEl.offsetHeight || 160; // estimado antes de render
+  const margin = 8;
+
+  let left = rect.left + rect.width / 2 - cardW / 2;
+  let top  = rect.top - cardH - margin;
+
+  // Si se sale por la izquierda o derecha
+  left = Math.max(8, Math.min(left, window.innerWidth - cardW - 8));
+  // Si se sale por arriba, mostrar abajo
+  if (top < 8) top = rect.bottom + margin;
+
+  hoverCardEl.style.left = `${left}px`;
+  hoverCardEl.style.top  = `${top}px`;
+  hoverCardEl.classList.add('visible');
+}
+
+function hideCard() {
+  hideTimeout = setTimeout(() => {
+    hoverCardEl.classList.remove('visible');
+  }, 80);
+}
+
+/* ═══════════════════════════════════════════════════════
+   START
+   ═══════════════════════════════════════════════════════ */
+init();
+</script>
+</body>
+</html>
+```
