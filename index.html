@@ -1110,7 +1110,7 @@
       <div class="page" id="page-designations">
         <div class="filters">
           <div class="filter-group">
-            <label>Árbitro</label>
+            <label for="search">Árbitro</label>
             <div class="combobox-wrap">
               <input
                 name="search"
@@ -1123,13 +1123,13 @@
                 autocapitalize="off"
                 spellcheck="false"
               />
-              <button
+              <!-- <button
                 class="combobox-clear"
                 id="combobox-clear"
                 title="Limpiar"
               >
                 &times;
-              </button>
+              </button> -->
               <div class="combobox-dropdown" id="combobox-dropdown"></div>
             </div>
           </div>
@@ -1620,7 +1620,7 @@
                 name: opt.dataset.name,
               };
               input.value = selectedUmpire.name;
-              clearBtn.classList.add("visible");
+              clearBtn?.classList.add("visible");
               dropdown.classList.remove("open");
               renderDesignations();
             });
@@ -1633,7 +1633,7 @@
         });
         input.addEventListener("input", () => {
           selectedUmpire = null;
-          clearBtn.classList.toggle("visible", input.value.length > 0);
+          clearBtn?.classList.toggle("visible", input.value.length > 0);
           renderOptions(input.value);
           dropdown.classList.add("open");
           renderDesignations();
@@ -1641,12 +1641,14 @@
         input.addEventListener("blur", () => {
           setTimeout(() => dropdown.classList.remove("open"), 150);
         });
-        clearBtn.addEventListener("click", () => {
-          selectedUmpire = null;
-          input.value = "";
-          clearBtn.classList.remove("visible");
-          renderDesignations();
-        });
+        if (clearBtn) {
+          clearBtn.addEventListener("click", () => {
+            selectedUmpire = null;
+            input.value = "";
+            clearBtn.classList.remove("visible");
+            renderDesignations();
+          });
+        }
       }
 
       /* ── Utils ──────────────────────────────────────────── */
