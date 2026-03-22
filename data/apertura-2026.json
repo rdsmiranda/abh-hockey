@@ -6,7 +6,7 @@
         "start_date": "2026-03-07T03:00:00.000000Z",
         "end_date": null
     },
-    "generated_at": "2026-03-21T21:33:06-03:00",
+    "generated_at": "2026-03-22T10:39:00-03:00",
     "zones": [
         {
             "id": 1,
@@ -1370,6 +1370,24 @@
                         {
                             "position": 3,
                             "team": {
+                                "id": 11,
+                                "name": "Pacífico B",
+                                "short_name": "PAC B",
+                                "logo": "assets\/logos\/cap.png"
+                            },
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": []
+                        },
+                        {
+                            "position": 4,
+                            "team": {
                                 "id": 16,
                                 "name": "Puerto Belgrano A",
                                 "short_name": "PTO A",
@@ -1386,30 +1404,12 @@
                             "recent_form": []
                         },
                         {
-                            "position": 4,
+                            "position": 5,
                             "team": {
                                 "id": 23,
                                 "name": "Tiro Federal",
                                 "short_name": "TIRO",
                                 "logo": "assets\/logos\/tiro.png"
-                            },
-                            "played": 0,
-                            "won": 0,
-                            "drawn": 0,
-                            "lost": 0,
-                            "goals_for": 0,
-                            "goals_against": 0,
-                            "goal_difference": 0,
-                            "points": 0,
-                            "recent_form": []
-                        },
-                        {
-                            "position": 5,
-                            "team": {
-                                "id": 11,
-                                "name": "Pacífico B",
-                                "short_name": "PAC B",
-                                "logo": "assets\/logos\/cap.png"
                             },
                             "played": 0,
                             "won": 0,
@@ -2692,6 +2692,36 @@
                         {
                             "position": 5,
                             "team": {
+                                "id": 5,
+                                "name": "El Nacional C",
+                                "short_name": "CEN C",
+                                "logo": "assets\/logos\/cen.png"
+                            },
+                            "played": 1,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 1,
+                            "goals_for": 0,
+                            "goals_against": 6,
+                            "goal_difference": -6,
+                            "points": 0,
+                            "recent_form": [
+                                {
+                                    "result": "L",
+                                    "score": "0 - 6",
+                                    "opponent": "PAL",
+                                    "opponent_logo": "assets\/logos\/pal.png",
+                                    "was_home": true,
+                                    "date": "21\/03\/2026",
+                                    "match_id": 196,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                }
+                            ]
+                        },
+                        {
+                            "position": 6,
+                            "team": {
                                 "id": 30,
                                 "name": "Porteño",
                                 "short_name": "POR",
@@ -2736,36 +2766,6 @@
                                     "was_home": false,
                                     "date": "07\/03\/2026",
                                     "match_id": 174,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                }
-                            ]
-                        },
-                        {
-                            "position": 6,
-                            "team": {
-                                "id": 5,
-                                "name": "El Nacional C",
-                                "short_name": "CEN C",
-                                "logo": "assets\/logos\/cen.png"
-                            },
-                            "played": 1,
-                            "won": 0,
-                            "drawn": 0,
-                            "lost": 1,
-                            "goals_for": 0,
-                            "goals_against": 6,
-                            "goal_difference": -6,
-                            "points": 0,
-                            "recent_form": [
-                                {
-                                    "result": "L",
-                                    "score": "0 - 6",
-                                    "opponent": "PAL",
-                                    "opponent_logo": "assets\/logos\/pal.png",
-                                    "was_home": true,
-                                    "date": "21\/03\/2026",
-                                    "match_id": 196,
                                     "shootouts": null,
                                     "bonus_point": false
                                 }
@@ -3092,47 +3092,11 @@
             "name": "Caballeros",
             "categories": [
                 {
-                    "id": 4,
-                    "name": "Primera",
+                    "id": 1,
+                    "name": "Sub14",
                     "standings": [
                         {
                             "position": 1,
-                            "team": {
-                                "id": 18,
-                                "name": "Puerto Belgrano",
-                                "short_name": "PTO",
-                                "logo": "assets\/logos\/pto.png"
-                            },
-                            "played": 0,
-                            "won": 0,
-                            "drawn": 0,
-                            "lost": 0,
-                            "goals_for": 0,
-                            "goals_against": 0,
-                            "goal_difference": 0,
-                            "points": 0,
-                            "recent_form": []
-                        },
-                        {
-                            "position": 2,
-                            "team": {
-                                "id": 15,
-                                "name": "Palihue",
-                                "short_name": "PAL",
-                                "logo": "assets\/logos\/pal.png"
-                            },
-                            "played": 0,
-                            "won": 0,
-                            "drawn": 0,
-                            "lost": 0,
-                            "goals_for": 0,
-                            "goals_against": 0,
-                            "goal_difference": 0,
-                            "points": 0,
-                            "recent_form": []
-                        },
-                        {
-                            "position": 3,
                             "team": {
                                 "id": 28,
                                 "name": "Universitario",
@@ -3150,7 +3114,7 @@
                             "recent_form": []
                         },
                         {
-                            "position": 4,
+                            "position": 2,
                             "team": {
                                 "id": 12,
                                 "name": "Pacífico",
@@ -3168,7 +3132,7 @@
                             "recent_form": []
                         },
                         {
-                            "position": 5,
+                            "position": 3,
                             "team": {
                                 "id": 9,
                                 "name": "Monte Hermoso",
@@ -3186,12 +3150,144 @@
                             "recent_form": []
                         },
                         {
-                            "position": 6,
+                            "position": 4,
                             "team": {
                                 "id": 6,
                                 "name": "El Nacional",
                                 "short_name": "CEN",
                                 "logo": "assets\/logos\/cen.png"
+                            },
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": []
+                        },
+                        {
+                            "position": 5,
+                            "team": {
+                                "id": 18,
+                                "name": "Puerto Belgrano",
+                                "short_name": "PTO",
+                                "logo": "assets\/logos\/pto.png"
+                            },
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": []
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "name": "Primera",
+                    "standings": [
+                        {
+                            "position": 1,
+                            "team": {
+                                "id": 12,
+                                "name": "Pacífico",
+                                "short_name": "PAC",
+                                "logo": "assets\/logos\/cap.png"
+                            },
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": []
+                        },
+                        {
+                            "position": 2,
+                            "team": {
+                                "id": 9,
+                                "name": "Monte Hermoso",
+                                "short_name": "CAMH",
+                                "logo": "assets\/logos\/camh.png"
+                            },
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": []
+                        },
+                        {
+                            "position": 3,
+                            "team": {
+                                "id": 6,
+                                "name": "El Nacional",
+                                "short_name": "CEN",
+                                "logo": "assets\/logos\/cen.png"
+                            },
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": []
+                        },
+                        {
+                            "position": 4,
+                            "team": {
+                                "id": 15,
+                                "name": "Palihue",
+                                "short_name": "PAL",
+                                "logo": "assets\/logos\/pal.png"
+                            },
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": []
+                        },
+                        {
+                            "position": 5,
+                            "team": {
+                                "id": 28,
+                                "name": "Universitario",
+                                "short_name": "UNI",
+                                "logo": "assets\/logos\/uni.png"
+                            },
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": []
+                        },
+                        {
+                            "position": 6,
+                            "team": {
+                                "id": 18,
+                                "name": "Puerto Belgrano",
+                                "short_name": "PTO",
+                                "logo": "assets\/logos\/pto.png"
                             },
                             "played": 0,
                             "won": 0,
