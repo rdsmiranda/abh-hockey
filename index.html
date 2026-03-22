@@ -191,7 +191,7 @@
         background: #fff;
         border: 1px solid #e2e8f0;
         border-radius: 6px;
-        padding: 0 2rem 0 1rem;
+        padding: 0 1rem 0 1rem;
         height: 38px;
         font-family: "Barlow", sans-serif;
         font-size: 0.875rem;
@@ -821,7 +821,6 @@
       }
       .umpire-cell {
         color: #475569;
-        text-align: left;
       }
       .umpire-cell.unassigned {
         color: #94a3b8;
@@ -834,7 +833,6 @@
       .pitch-cell {
         color: #64748b;
         font-size: 0.78rem;
-        text-align: left;
       }
       .col-fee {
         width: 80px;
@@ -855,6 +853,292 @@
         justify-content: center;
         gap: 4px;
         margin-top: 1px;
+      }
+
+      /* ── Playoffs ────────────────────────────────────── */
+      .stage-header {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin: 1.5rem 0 0.65rem;
+      }
+      .stage-header h3 {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--abh-blue);
+        white-space: nowrap;
+      }
+      .stage-header::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: var(--abh-border);
+      }
+
+      .bracket-card {
+        background: #fff;
+        border: 1.5px solid var(--abh-border);
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 0.75rem;
+      }
+      .bracket-header {
+        background: var(--abh-light);
+        border-bottom: 1px solid var(--abh-border);
+        padding: 0.5rem 0.85rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .bracket-num {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: #94a3b8;
+      }
+      .bracket-badge {
+        margin-left: auto;
+        font-size: 0.68rem;
+        font-weight: 700;
+        padding: 1px 8px;
+        border-radius: 10px;
+      }
+      .bracket-badge.done {
+        background: #dcfce7;
+        color: #166534;
+      }
+      .bracket-badge.pending {
+        background: #fef9c3;
+        color: #713f12;
+      }
+
+      .matchup {
+        display: flex;
+        align-items: center;
+        padding: 0.85rem;
+        gap: 0.6rem;
+      }
+      .mu-team {
+        display: flex;
+        align-items: center;
+        gap: 0.45rem;
+        flex: 1;
+      }
+      .mu-team.right {
+        justify-content: flex-end;
+      }
+      .mu-logo {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+        flex-shrink: 0;
+      }
+      .mu-logo-ph {
+        width: 30px;
+        height: 30px;
+        background: var(--abh-border);
+        border-radius: 50%;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.6rem;
+        font-weight: 700;
+        color: #94a3b8;
+      }
+      .mu-team-info {
+        display: flex;
+        flex-direction: column;
+      }
+      .mu-team-info.right {
+        align-items: flex-end;
+      }
+      .mu-name {
+        font-size: 0.82rem;
+        font-weight: 600;
+        color: var(--abh-dark);
+        line-height: 1.2;
+      }
+      .mu-seed {
+        font-size: 0.68rem;
+        color: #94a3b8;
+      }
+      .mu-winner .mu-name {
+        color: var(--abh-blue);
+      }
+      .mu-score {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-shrink: 0;
+        min-width: 52px;
+      }
+      .mu-score-main {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 800;
+        color: var(--abh-dark);
+        line-height: 1;
+      }
+      .mu-score-pen {
+        font-size: 0.68rem;
+        color: #94a3b8;
+      }
+      .mu-score-vs {
+        font-size: 0.82rem;
+        color: #94a3b8;
+        font-style: italic;
+      }
+
+      .bracket-matches {
+        border-top: 1px solid var(--abh-border);
+      }
+      .bracket-match-row {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        padding: 0.45rem 0.85rem;
+        border-bottom: 1px solid #f1f5f9;
+        font-size: 0.77rem;
+      }
+      .bracket-match-row:last-child {
+        border-bottom: none;
+      }
+      .bm-game {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 0.7rem;
+        font-weight: 700;
+        color: #94a3b8;
+        width: 18px;
+        flex-shrink: 0;
+      }
+      .bm-date {
+        color: #64748b;
+        flex-shrink: 0;
+        white-space: nowrap;
+      }
+      .bm-teams {
+        flex: 1;
+        color: #475569;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .bm-result {
+        font-weight: 700;
+        color: var(--abh-dark);
+        flex-shrink: 0;
+      }
+      .bm-pen {
+        font-size: 0.68rem;
+        color: #94a3b8;
+        flex-shrink: 0;
+      }
+      .bm-pending {
+        color: #94a3b8;
+        font-style: italic;
+        flex-shrink: 0;
+      }
+
+      /* Group standings */
+      .group-table-wrap {
+        overflow: hidden;
+      }
+      .group-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.8rem;
+      }
+      .group-table thead tr {
+        background: var(--abh-dark);
+        color: #fff;
+      }
+      .group-table thead th {
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 700;
+        font-size: 0.68rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        padding: 0.5rem 0.6rem;
+        text-align: center;
+        white-space: nowrap;
+      }
+      .group-table thead th.th-left {
+        text-align: left;
+      }
+      .group-table tbody tr {
+        border-bottom: 1px solid var(--abh-border);
+      }
+      .group-table tbody tr:last-child {
+        border-bottom: none;
+      }
+      .group-table tbody td {
+        padding: 0.5rem 0.6rem;
+        text-align: center;
+      }
+      .group-table tbody td.td-left {
+        text-align: left;
+      }
+      .group-team-cell {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+      }
+      .group-logo {
+        width: 18px;
+        height: 18px;
+        object-fit: contain;
+        flex-shrink: 0;
+      }
+      .group-logo-ph {
+        width: 18px;
+        height: 18px;
+        background: var(--abh-border);
+        border-radius: 50%;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.55rem;
+        font-weight: 700;
+        color: #94a3b8;
+      }
+      .pos-badge {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.65rem;
+        font-weight: 700;
+        flex-shrink: 0;
+      }
+      .pos-1 {
+        background: #fef9c3;
+        color: #713f12;
+      }
+      .pos-2 {
+        background: #f1f5f9;
+        color: #475569;
+      }
+      .pos-3 {
+        background: #fef2f2;
+        color: #991b1b;
+      }
+      .pos-4 {
+        background: #f0fdf4;
+        color: #166534;
+      }
+      .group-pts {
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 800;
+        font-size: 0.95rem;
       }
 
       /* ── Empty / loading ─────────────────────────────── */
@@ -896,7 +1180,7 @@
           padding: 10px 12px;
           display: flex;
           flex-direction: column;
-          gap: 8px;
+          gap: 6px;
         }
         .sr-top {
           display: flex;
@@ -939,8 +1223,8 @@
           justify-content: flex-end;
         }
         .sr-logo-sm {
-          width: 50px;
-          height: 50px;
+          width: 22px;
+          height: 22px;
           object-fit: contain;
           flex-shrink: 0;
         }
@@ -958,7 +1242,7 @@
           color: #94a3b8;
         }
         .sr-tname {
-          font-size: 1rem;
+          font-size: 0.75rem;
           font-weight: 600;
           color: var(--abh-dark);
         }
@@ -1109,7 +1393,7 @@
       <div class="page" id="page-designations">
         <div class="filters">
           <div class="filter-group">
-            <label for="search">Árbitro</label>
+            <label>Árbitro</label>
             <div class="combobox-wrap">
               <input
                 name="search"
@@ -1122,13 +1406,6 @@
                 autocapitalize="off"
                 spellcheck="false"
               />
-              <!-- <button
-                class="combobox-clear"
-                id="combobox-clear"
-                title="Limpiar"
-              >
-                &times;
-              </button> -->
               <div class="combobox-dropdown" id="combobox-dropdown"></div>
             </div>
           </div>
@@ -1293,6 +1570,18 @@
       }
 
       function buildCategorySection(zone, cat, isActive) {
+        // Buscar playoffs de esta categoría en esta zona
+        const catPlayoff = (zone.playoffs || []).find(
+          (p) => p.category === cat.name,
+        );
+        const hasPlayoffs =
+          catPlayoff && catPlayoff.stages && catPlayoff.stages.length > 0;
+
+        // Tab activa: puede ser 'standings' o 'playoffs'
+        const tabKey = zone.id + "_" + cat.id;
+        if (!currentTabId[tabKey]) currentTabId[tabKey] = "standings";
+        const activeTab = currentTabId[tabKey];
+
         let html = "";
         if (zone.categories.indexOf(cat) === 0) {
           html += `<div class="tabs">`;
@@ -1304,10 +1593,44 @@
           });
           html += `</div>`;
         }
+
         html += `<div class="tab-panel" data-zone="${zone.id}" data-cat="${cat.id}" style="display:${isActive ? "block" : "none"}">`;
+
+        // Sub-tabs Posiciones / Playoffs (solo si hay playoffs)
+        if (hasPlayoffs) {
+          html += `<div class="tabs" style="margin-bottom:0.75rem">
+      <button class="tab-btn ${activeTab === "standings" ? "active" : ""}"
+              onclick="switchCatTab('${tabKey}','standings')"
+              data-catkey="${tabKey}" data-subtab="standings">Posiciones</button>
+      <button class="tab-btn ${activeTab === "playoffs" ? "active" : ""}"
+              onclick="switchCatTab('${tabKey}','playoffs')"
+              data-catkey="${tabKey}" data-subtab="playoffs">Playoffs</button>
+    </div>`;
+        }
+
+        html += `<div id="subtab-standings-${tabKey}" style="display:${!hasPlayoffs || activeTab === "standings" ? "block" : "none"}">`;
         html += buildTable(cat.standings || []);
         html += `</div>`;
+
+        if (hasPlayoffs) {
+          html += `<div id="subtab-playoffs-${tabKey}" style="display:${activeTab === "playoffs" ? "block" : "none"}">`;
+          html += buildPlayoffs(catPlayoff, zone);
+          html += `</div>`;
+        }
+
+        html += `</div>`;
         return html;
+      }
+
+      function switchCatTab(tabKey, subtab) {
+        currentTabId[tabKey] = subtab;
+        document.getElementById(`subtab-standings-${tabKey}`).style.display =
+          subtab === "standings" ? "block" : "none";
+        document.getElementById(`subtab-playoffs-${tabKey}`).style.display =
+          subtab === "playoffs" ? "block" : "none";
+        document.querySelectorAll(`[data-catkey="${tabKey}"]`).forEach((b) => {
+          b.classList.toggle("active", b.dataset.subtab === subtab);
+        });
       }
 
       function buildTable(standings) {
@@ -1513,7 +1836,7 @@
 
         const umpIcon = (hi) =>
           `<svg width="11" height="11" viewBox="0 0 16 16" fill="none" stroke="${hi ? "#4e6d9e" : "#94a3b8"}" stroke-width="1.5"><circle cx="8" cy="5" r="3"/><path d="M2 14c0-3 2.7-5 6-5s6 2 6 5"/></svg>`;
-        const pitchIcon = `<svg width="11" height="11" viewBox="0 0 16 16" fill="none" stroke="#94a3b8" stroke-width="1.5"><path d="M8 1.5C5.5 1.5 3.5 3.5 3.5 6c0 3.5 4.5 8.5 4.5 8.5s4.5-5 4.5-8.5c0-2.5-2-4.5-4.5-4.5z"/><circle cx="8" cy="6" r="1.5"/></svg>`;
+        const pitchIcon = `<svg width="11" height="11" viewBox="0 0 16 16" fill="none" stroke="#94a3b8" stroke-width="1.5"><rect x="1" y="3" width="14" height="10" rx="1"/><path d="M8 3v10M1 8h14"/></svg>`;
         const supIcon = `<svg width="11" height="11" viewBox="0 0 16 16" fill="none" stroke="#94a3b8" stroke-width="1.5"><path d="M2 13h12M8 3v7M5 7l3-4 3 4"/></svg>`;
 
         const supervisorLine = m.supervisor
@@ -1536,7 +1859,6 @@
       <span class="sr-sep"></span>
       <span class="sr-ump ${u2na ? "muted" : ""} ${isU2 ? "hi" : ""}">${umpIcon(isU2)}${escHtml(m.umpire_2 ?? "A designar")}</span>
     </div>
-    <div class="sr-fee">${formatFee(m.fee)}</div>
     ${supervisorLine}
   </div>`;
       }
@@ -1679,6 +2001,212 @@
         const [y, mo, d] = dateStr.split("-").map(Number);
         const dt = new Date(y, mo - 1, d);
         return `${DAYS_ES[dt.getDay()]} ${d} de ${MONTHS_ES[mo - 1]}`;
+      }
+
+      /* ════════════════════════════════════════════════════
+   PLAYOFFS
+   ════════════════════════════════════════════════════ */
+      function buildPlayoffs(catPlayoff, zone) {
+        if (!catPlayoff?.stages?.length)
+          return '<div class="state-msg">Sin datos de playoffs.</div>';
+        let html = "";
+        catPlayoff.stages.forEach((stage) => {
+          html += `<div class="stage-header"><h3>${escHtml(stage.label)}</h3></div>`;
+          (stage.brackets || []).forEach((b) => {
+            html += buildBracket(b, zone);
+          });
+        });
+        return html;
+      }
+
+      function buildBracket(b, zone) {
+        const isGroup =
+          b.format === "triangular" || b.format === "round_robin_4";
+        return isGroup ? buildGroupBracket(b, zone) : buildKOBracket(b, zone);
+      }
+
+      function bracketTeamLogo(team) {
+        if (!team) return `<span class="mu-logo-ph">?</span>`;
+        return team.logo
+          ? `<img class="mu-logo" src="${escHtml(team.logo)}" alt="" onerror="this.style.display='none'">`
+          : `<span class="mu-logo-ph">${escHtml((team.short_name || team.name || "?").substring(0, 2).toUpperCase())}</span>`;
+      }
+
+      function buildKOBracket(b, zone) {
+        const t1 = b.team_1,
+          t2 = b.team_2;
+        const label = b.matchup_number
+          ? `Llave ${b.matchup_number}`
+          : "Enfrentamiento";
+        const isWinner1 =
+          b.is_completed && b.winner_id && t1 && b.winner_id === t1.id;
+        const isWinner2 =
+          b.is_completed && b.winner_id && t2 && b.winner_id === t2.id;
+
+        // Marcador del bracket (suma de partidos jugados)
+        let scoreHtml = `<div class="mu-score-vs">vs</div>`;
+        if (b.is_completed || b.matches.some((m) => m.played)) {
+          const played = b.matches.filter((m) => m.played);
+          if (played.length > 0) {
+            const last = played[played.length - 1];
+            const isHome1 = last.home_team_id === t1?.id;
+            const g1 = isHome1 ? last.goals_home : last.goals_away;
+            const g2 = isHome1 ? last.goals_away : last.goals_home;
+            scoreHtml = `<div class="mu-score">
+        <div class="mu-score-main">${g1} – ${g2}</div>
+        ${last.has_shootouts ? `<div class="mu-score-pen">Pen ${isHome1 ? last.shootouts_home : last.shootouts_away} – ${isHome1 ? last.shootouts_away : last.shootouts_home}</div>` : ""}
+      </div>`;
+          }
+        }
+
+        const badge = b.is_completed
+          ? `<span class="bracket-badge done">Finalizado</span>`
+          : `<span class="bracket-badge pending">Pendiente</span>`;
+
+        let matchRows = "";
+        b.matches.forEach((m, i) => {
+          const ht = zone ? findTeamInZone(zone, m.home_team_id) : null;
+          const at = zone ? findTeamInZone(zone, m.away_team_id) : null;
+          const htName = ht?.short_name || ht?.name || "?";
+          const atName = at?.short_name || at?.name || "?";
+          if (m.played) {
+            const pen = m.has_shootouts
+              ? `<span class="bm-pen">(${m.shootouts_home}–${m.shootouts_away} pen)</span>`
+              : "";
+            matchRows += `<div class="bracket-match-row">
+        <span class="bm-game">J${m.game || i + 1}</span>
+        <span class="bm-date">${m.date || "—"}</span>
+        <span class="bm-teams">${escHtml(htName)} vs ${escHtml(atName)}</span>
+        <span class="bm-result">${m.goals_home} – ${m.goals_away}</span>
+        ${pen}
+      </div>`;
+          } else {
+            matchRows += `<div class="bracket-match-row">
+        <span class="bm-game">J${m.game || i + 1}</span>
+        <span class="bm-date">${m.date || "—"}</span>
+        <span class="bm-teams">${escHtml(htName)} vs ${escHtml(atName)}</span>
+        <span class="bm-pending">A jugarse</span>
+      </div>`;
+          }
+        });
+
+        return `<div class="bracket-card">
+    <div class="bracket-header">
+      <span class="bracket-num">${escHtml(label)}</span>${badge}
+    </div>
+    <div class="matchup">
+      <div class="mu-team ${isWinner1 ? "mu-winner" : ""}">
+        ${bracketTeamLogo(t1)}
+        <div class="mu-team-info">
+          <span class="mu-name">${escHtml(t1?.name || "Por definir")}</span>
+          ${t1?.seed ? `<span class="mu-seed">${t1.seed}° fase regular</span>` : ""}
+        </div>
+      </div>
+      ${scoreHtml}
+      <div class="mu-team right ${isWinner2 ? "mu-winner" : ""}">
+        <div class="mu-team-info right">
+          <span class="mu-name">${escHtml(t2?.name || "Por definir")}</span>
+          ${t2?.seed ? `<span class="mu-seed">${t2.seed}° fase regular</span>` : ""}
+        </div>
+        ${bracketTeamLogo(t2)}
+      </div>
+    </div>
+    ${matchRows ? `<div class="bracket-matches">${matchRows}</div>` : ""}
+  </div>`;
+      }
+
+      function buildGroupBracket(b, zone) {
+        const formatLabel =
+          b.format === "triangular" ? "Triangular" : "Round Robin";
+
+        // Tabla de posiciones del grupo
+        let tableRows = "";
+        (b.group_standings || []).forEach((s, i) => {
+          const posCls = ["pos-1", "pos-2", "pos-3", "pos-4"][i] || "";
+          const logo = s.team?.logo
+            ? `<img class="group-logo" src="${escHtml(s.team.logo)}" alt="" onerror="this.style.display='none'">`
+            : `<span class="group-logo-ph">${escHtml((s.team?.short_name || "?").substring(0, 2).toUpperCase())}</span>`;
+          tableRows += `<tr>
+      <td><span class="pos-badge ${posCls}">${i + 1}</span></td>
+      <td class="td-left"><div class="group-team-cell">${logo}${escHtml(s.team?.name || "?")}</div></td>
+      <td>${s.played}</td>
+      <td class="col-hide-sm">${s.won}</td>
+      <td class="col-hide-sm">${s.drawn}</td>
+      <td class="col-hide-sm">${s.lost}</td>
+      <td class="col-hide-sm">${s.goal_difference > 0 ? "+" : ""}${s.goal_difference}</td>
+      <td class="group-pts">${s.points}</td>
+    </tr>`;
+        });
+
+        // Partidos del grupo
+        let matchRows = "";
+        b.matches.forEach((m, i) => {
+          const ht = zone ? findTeamInZone(zone, m.home_team_id) : null;
+          const at = zone ? findTeamInZone(zone, m.away_team_id) : null;
+          const htName = ht?.short_name || ht?.name || "?";
+          const atName = at?.short_name || at?.name || "?";
+          if (m.played) {
+            const pen = m.has_shootouts
+              ? `<span class="bm-pen">(${m.shootouts_home}–${m.shootouts_away} pen)</span>`
+              : "";
+            matchRows += `<div class="bracket-match-row">
+        <span class="bm-game">J${m.game || i + 1}</span>
+        <span class="bm-date">${m.date || "—"}</span>
+        <span class="bm-teams">${escHtml(htName)} vs ${escHtml(atName)}</span>
+        <span class="bm-result">${m.goals_home} – ${m.goals_away}</span>
+        ${pen}
+      </div>`;
+          } else {
+            matchRows += `<div class="bracket-match-row">
+        <span class="bm-game">J${m.game || i + 1}</span>
+        <span class="bm-date">${m.date || "—"}</span>
+        <span class="bm-teams">${escHtml(htName)} vs ${escHtml(atName)}</span>
+        <span class="bm-pending">A jugarse</span>
+      </div>`;
+          }
+        });
+
+        return `<div class="bracket-card">
+    <div class="bracket-header">
+      <span class="bracket-num">${escHtml(formatLabel)}</span>
+    </div>
+    <div class="group-table-wrap">
+      <table class="group-table">
+        <thead><tr>
+          <th style="width:28px">#</th>
+          <th class="th-left">Equipo</th>
+          <th title="Partidos jugados">PJ</th>
+          <th title="Ganados" class="col-hide-sm">G</th>
+          <th title="Empatados" class="col-hide-sm">E</th>
+          <th title="Perdidos" class="col-hide-sm">P</th>
+          <th title="Diferencia de goles" class="col-hide-sm">DG</th>
+          <th>Pts</th>
+        </tr></thead>
+        <tbody>${tableRows}</tbody>
+      </table>
+    </div>
+    ${matchRows ? `<div class="bracket-matches">${matchRows}</div>` : ""}
+  </div>`;
+      }
+
+      // Helper: busca un equipo en la zona por ID (standings o playoffs teams)
+      function findTeamInZone(zone, teamId) {
+        if (!teamId) return null;
+        for (const cat of zone.categories || []) {
+          for (const s of cat.standings || []) {
+            if (s.team?.id === teamId) return s.team;
+          }
+        }
+        for (const pl of zone.playoffs || []) {
+          for (const stage of pl.stages || []) {
+            for (const b of stage.brackets || []) {
+              for (const key of ["team_1", "team_2", "team_3", "team_4"]) {
+                if (b[key]?.id === teamId) return b[key];
+              }
+            }
+          }
+        }
+        return null;
       }
 
       function escHtml(str) {
