@@ -6,7 +6,7 @@
         "start_date": "2026-03-07T03:00:00.000000Z",
         "end_date": null
     },
-    "generated_at": "2026-03-21T11:15:57-03:00",
+    "generated_at": "2026-03-21T20:30:49-03:00",
     "zones": [
         {
             "id": 1,
@@ -306,36 +306,6 @@
                         {
                             "position": 3,
                             "team": {
-                                "id": 1,
-                                "name": "Argentino A",
-                                "short_name": "ARG A",
-                                "logo": "assets\/logos\/arg.png"
-                            },
-                            "played": 1,
-                            "won": 0,
-                            "drawn": 1,
-                            "lost": 0,
-                            "goals_for": 2,
-                            "goals_against": 2,
-                            "goal_difference": 0,
-                            "points": 1,
-                            "recent_form": [
-                                {
-                                    "result": "D",
-                                    "score": "2 - 2",
-                                    "opponent": "CEN A",
-                                    "opponent_logo": "assets\/logos\/cen.png",
-                                    "was_home": true,
-                                    "date": "07\/03\/2026",
-                                    "match_id": 9,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                }
-                            ]
-                        },
-                        {
-                            "position": 4,
-                            "team": {
                                 "id": 3,
                                 "name": "El Nacional A",
                                 "short_name": "CEN A",
@@ -356,6 +326,36 @@
                                     "opponent": "ARG A",
                                     "opponent_logo": "assets\/logos\/arg.png",
                                     "was_home": false,
+                                    "date": "07\/03\/2026",
+                                    "match_id": 9,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                }
+                            ]
+                        },
+                        {
+                            "position": 4,
+                            "team": {
+                                "id": 1,
+                                "name": "Argentino A",
+                                "short_name": "ARG A",
+                                "logo": "assets\/logos\/arg.png"
+                            },
+                            "played": 1,
+                            "won": 0,
+                            "drawn": 1,
+                            "lost": 0,
+                            "goals_for": 2,
+                            "goals_against": 2,
+                            "goal_difference": 0,
+                            "points": 1,
+                            "recent_form": [
+                                {
+                                    "result": "D",
+                                    "score": "2 - 2",
+                                    "opponent": "CEN A",
+                                    "opponent_logo": "assets\/logos\/cen.png",
+                                    "was_home": true,
                                     "date": "07\/03\/2026",
                                     "match_id": 9,
                                     "shootouts": null,
@@ -450,6 +450,47 @@
                         {
                             "position": 1,
                             "team": {
+                                "id": 24,
+                                "name": "Universitario A",
+                                "short_name": "UNI A",
+                                "logo": "assets\/logos\/uni.png"
+                            },
+                            "played": 2,
+                            "won": 2,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 7,
+                            "goals_against": 1,
+                            "goal_difference": 6,
+                            "points": 6,
+                            "recent_form": [
+                                {
+                                    "result": "W",
+                                    "score": "5 - 1",
+                                    "opponent": "CEN A",
+                                    "opponent_logo": "assets\/logos\/cen.png",
+                                    "was_home": true,
+                                    "date": "21\/03\/2026",
+                                    "match_id": 30,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
+                                {
+                                    "result": "W",
+                                    "score": "2 - 0",
+                                    "opponent": "SS A",
+                                    "opponent_logo": "assets\/logos\/ss.png",
+                                    "was_home": false,
+                                    "date": "07\/03\/2026",
+                                    "match_id": 4,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                }
+                            ]
+                        },
+                        {
+                            "position": 2,
+                            "team": {
                                 "id": 1,
                                 "name": "Argentino A",
                                 "short_name": "ARG A",
@@ -489,7 +530,64 @@
                             ]
                         },
                         {
-                            "position": 2,
+                            "position": 3,
+                            "team": {
+                                "id": 10,
+                                "name": "Pacífico A",
+                                "short_name": "PAC A",
+                                "logo": "assets\/logos\/cap.png"
+                            },
+                            "played": 3,
+                            "won": 1,
+                            "drawn": 1,
+                            "lost": 1,
+                            "goals_for": 5,
+                            "goals_against": 3,
+                            "goal_difference": 2,
+                            "points": 5,
+                            "recent_form": [
+                                {
+                                    "result": "D",
+                                    "score": "0 - 0",
+                                    "opponent": "SS A",
+                                    "opponent_logo": "assets\/logos\/ss.png",
+                                    "was_home": false,
+                                    "date": "21\/03\/2026",
+                                    "match_id": 29,
+                                    "shootouts": {
+                                        "for": 2,
+                                        "against": 0,
+                                        "won": true,
+                                        "score": "2 - 0"
+                                    },
+                                    "bonus_point": true
+                                },
+                                {
+                                    "result": "L",
+                                    "score": "1 - 2",
+                                    "opponent": "ARG A",
+                                    "opponent_logo": "assets\/logos\/arg.png",
+                                    "was_home": true,
+                                    "date": "14\/03\/2026",
+                                    "match_id": 17,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
+                                {
+                                    "result": "W",
+                                    "score": "4 - 1",
+                                    "opponent": "CAI",
+                                    "opponent_logo": "assets\/logos\/cai.png",
+                                    "was_home": false,
+                                    "date": "07\/03\/2026",
+                                    "match_id": 5,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                }
+                            ]
+                        },
+                        {
+                            "position": 4,
                             "team": {
                                 "id": 8,
                                 "name": "Monte Hermoso",
@@ -519,77 +617,6 @@
                             ]
                         },
                         {
-                            "position": 3,
-                            "team": {
-                                "id": 10,
-                                "name": "Pacífico A",
-                                "short_name": "PAC A",
-                                "logo": "assets\/logos\/cap.png"
-                            },
-                            "played": 2,
-                            "won": 1,
-                            "drawn": 0,
-                            "lost": 1,
-                            "goals_for": 5,
-                            "goals_against": 3,
-                            "goal_difference": 2,
-                            "points": 3,
-                            "recent_form": [
-                                {
-                                    "result": "L",
-                                    "score": "1 - 2",
-                                    "opponent": "ARG A",
-                                    "opponent_logo": "assets\/logos\/arg.png",
-                                    "was_home": true,
-                                    "date": "14\/03\/2026",
-                                    "match_id": 17,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                },
-                                {
-                                    "result": "W",
-                                    "score": "4 - 1",
-                                    "opponent": "CAI",
-                                    "opponent_logo": "assets\/logos\/cai.png",
-                                    "was_home": false,
-                                    "date": "07\/03\/2026",
-                                    "match_id": 5,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                }
-                            ]
-                        },
-                        {
-                            "position": 4,
-                            "team": {
-                                "id": 24,
-                                "name": "Universitario A",
-                                "short_name": "UNI A",
-                                "logo": "assets\/logos\/uni.png"
-                            },
-                            "played": 1,
-                            "won": 1,
-                            "drawn": 0,
-                            "lost": 0,
-                            "goals_for": 2,
-                            "goals_against": 0,
-                            "goal_difference": 2,
-                            "points": 3,
-                            "recent_form": [
-                                {
-                                    "result": "W",
-                                    "score": "2 - 0",
-                                    "opponent": "SS A",
-                                    "opponent_logo": "assets\/logos\/ss.png",
-                                    "was_home": false,
-                                    "date": "07\/03\/2026",
-                                    "match_id": 4,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                }
-                            ]
-                        },
-                        {
                             "position": 5,
                             "team": {
                                 "id": 3,
@@ -597,15 +624,26 @@
                                 "short_name": "CEN A",
                                 "logo": "assets\/logos\/cen.png"
                             },
-                            "played": 2,
+                            "played": 3,
                             "won": 1,
                             "drawn": 0,
-                            "lost": 1,
-                            "goals_for": 2,
-                            "goals_against": 3,
-                            "goal_difference": -1,
+                            "lost": 2,
+                            "goals_for": 3,
+                            "goals_against": 8,
+                            "goal_difference": -5,
                             "points": 3,
                             "recent_form": [
+                                {
+                                    "result": "L",
+                                    "score": "1 - 5",
+                                    "opponent": "UNI A",
+                                    "opponent_logo": "assets\/logos\/uni.png",
+                                    "was_home": false,
+                                    "date": "21\/03\/2026",
+                                    "match_id": 30,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
                                 {
                                     "result": "W",
                                     "score": "2 - 0",
@@ -638,15 +676,31 @@
                                 "short_name": "SS A",
                                 "logo": "assets\/logos\/ss.png"
                             },
-                            "played": 2,
+                            "played": 3,
                             "won": 0,
-                            "drawn": 0,
+                            "drawn": 1,
                             "lost": 2,
                             "goals_for": 0,
                             "goals_against": 4,
                             "goal_difference": -4,
-                            "points": 0,
+                            "points": 1,
                             "recent_form": [
+                                {
+                                    "result": "D",
+                                    "score": "0 - 0",
+                                    "opponent": "PAC A",
+                                    "opponent_logo": "assets\/logos\/cap.png",
+                                    "was_home": true,
+                                    "date": "21\/03\/2026",
+                                    "match_id": 29,
+                                    "shootouts": {
+                                        "for": 0,
+                                        "against": 2,
+                                        "won": false,
+                                        "score": "0 - 2"
+                                    },
+                                    "bonus_point": false
+                                },
                                 {
                                     "result": "L",
                                     "score": "0 - 2",
@@ -726,15 +780,31 @@
                                 "short_name": "PAC A",
                                 "logo": "assets\/logos\/cap.png"
                             },
-                            "played": 2,
+                            "played": 3,
                             "won": 2,
-                            "drawn": 0,
+                            "drawn": 1,
                             "lost": 0,
-                            "goals_for": 8,
-                            "goals_against": 3,
+                            "goals_for": 9,
+                            "goals_against": 4,
                             "goal_difference": 5,
-                            "points": 6,
+                            "points": 8,
                             "recent_form": [
+                                {
+                                    "result": "D",
+                                    "score": "1 - 1",
+                                    "opponent": "SS A",
+                                    "opponent_logo": "assets\/logos\/ss.png",
+                                    "was_home": false,
+                                    "date": "21\/03\/2026",
+                                    "match_id": 26,
+                                    "shootouts": {
+                                        "for": 4,
+                                        "against": 3,
+                                        "won": true,
+                                        "score": "4 - 3"
+                                    },
+                                    "bonus_point": true
+                                },
                                 {
                                     "result": "W",
                                     "score": "3 - 1",
@@ -761,6 +831,104 @@
                         },
                         {
                             "position": 2,
+                            "team": {
+                                "id": 24,
+                                "name": "Universitario A",
+                                "short_name": "UNI A",
+                                "logo": "assets\/logos\/uni.png"
+                            },
+                            "played": 2,
+                            "won": 2,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 7,
+                            "goals_against": 1,
+                            "goal_difference": 6,
+                            "points": 6,
+                            "recent_form": [
+                                {
+                                    "result": "W",
+                                    "score": "5 - 1",
+                                    "opponent": "CEN A",
+                                    "opponent_logo": "assets\/logos\/cen.png",
+                                    "was_home": true,
+                                    "date": "21\/03\/2026",
+                                    "match_id": 27,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
+                                {
+                                    "result": "W",
+                                    "score": "2 - 0",
+                                    "opponent": "SS A",
+                                    "opponent_logo": "assets\/logos\/ss.png",
+                                    "was_home": false,
+                                    "date": "07\/03\/2026",
+                                    "match_id": 1,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                }
+                            ]
+                        },
+                        {
+                            "position": 3,
+                            "team": {
+                                "id": 19,
+                                "name": "S. Sportiva A",
+                                "short_name": "SS A",
+                                "logo": "assets\/logos\/ss.png"
+                            },
+                            "played": 3,
+                            "won": 1,
+                            "drawn": 1,
+                            "lost": 1,
+                            "goals_for": 3,
+                            "goals_against": 4,
+                            "goal_difference": -1,
+                            "points": 4,
+                            "recent_form": [
+                                {
+                                    "result": "D",
+                                    "score": "1 - 1",
+                                    "opponent": "PAC A",
+                                    "opponent_logo": "assets\/logos\/cap.png",
+                                    "was_home": true,
+                                    "date": "21\/03\/2026",
+                                    "match_id": 26,
+                                    "shootouts": {
+                                        "for": 3,
+                                        "against": 4,
+                                        "won": false,
+                                        "score": "3 - 4"
+                                    },
+                                    "bonus_point": false
+                                },
+                                {
+                                    "result": "W",
+                                    "score": "2 - 1",
+                                    "opponent": "CEN A",
+                                    "opponent_logo": "assets\/logos\/cen.png",
+                                    "was_home": false,
+                                    "date": "14\/03\/2026",
+                                    "match_id": 13,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
+                                {
+                                    "result": "L",
+                                    "score": "0 - 2",
+                                    "opponent": "UNI A",
+                                    "opponent_logo": "assets\/logos\/uni.png",
+                                    "was_home": true,
+                                    "date": "07\/03\/2026",
+                                    "match_id": 1,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                }
+                            ]
+                        },
+                        {
+                            "position": 4,
                             "team": {
                                 "id": 8,
                                 "name": "Monte Hermoso",
@@ -790,37 +958,7 @@
                             ]
                         },
                         {
-                            "position": 3,
-                            "team": {
-                                "id": 24,
-                                "name": "Universitario A",
-                                "short_name": "UNI A",
-                                "logo": "assets\/logos\/uni.png"
-                            },
-                            "played": 1,
-                            "won": 1,
-                            "drawn": 0,
-                            "lost": 0,
-                            "goals_for": 2,
-                            "goals_against": 0,
-                            "goal_difference": 2,
-                            "points": 3,
-                            "recent_form": [
-                                {
-                                    "result": "W",
-                                    "score": "2 - 0",
-                                    "opponent": "SS A",
-                                    "opponent_logo": "assets\/logos\/ss.png",
-                                    "was_home": false,
-                                    "date": "07\/03\/2026",
-                                    "match_id": 1,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                }
-                            ]
-                        },
-                        {
-                            "position": 4,
+                            "position": 5,
                             "team": {
                                 "id": 1,
                                 "name": "Argentino A",
@@ -861,47 +999,6 @@
                             ]
                         },
                         {
-                            "position": 5,
-                            "team": {
-                                "id": 19,
-                                "name": "S. Sportiva A",
-                                "short_name": "SS A",
-                                "logo": "assets\/logos\/ss.png"
-                            },
-                            "played": 2,
-                            "won": 1,
-                            "drawn": 0,
-                            "lost": 1,
-                            "goals_for": 2,
-                            "goals_against": 3,
-                            "goal_difference": -1,
-                            "points": 3,
-                            "recent_form": [
-                                {
-                                    "result": "W",
-                                    "score": "2 - 1",
-                                    "opponent": "CEN A",
-                                    "opponent_logo": "assets\/logos\/cen.png",
-                                    "was_home": false,
-                                    "date": "14\/03\/2026",
-                                    "match_id": 13,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                },
-                                {
-                                    "result": "L",
-                                    "score": "0 - 2",
-                                    "opponent": "UNI A",
-                                    "opponent_logo": "assets\/logos\/uni.png",
-                                    "was_home": true,
-                                    "date": "07\/03\/2026",
-                                    "match_id": 1,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                }
-                            ]
-                        },
-                        {
                             "position": 6,
                             "team": {
                                 "id": 3,
@@ -909,15 +1006,26 @@
                                 "short_name": "CEN A",
                                 "logo": "assets\/logos\/cen.png"
                             },
-                            "played": 2,
+                            "played": 3,
                             "won": 0,
                             "drawn": 0,
-                            "lost": 2,
-                            "goals_for": 2,
-                            "goals_against": 4,
-                            "goal_difference": -2,
+                            "lost": 3,
+                            "goals_for": 3,
+                            "goals_against": 9,
+                            "goal_difference": -6,
                             "points": 0,
                             "recent_form": [
+                                {
+                                    "result": "L",
+                                    "score": "1 - 5",
+                                    "opponent": "UNI A",
+                                    "opponent_logo": "assets\/logos\/uni.png",
+                                    "was_home": false,
+                                    "date": "21\/03\/2026",
+                                    "match_id": 27,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
                                 {
                                     "result": "L",
                                     "score": "1 - 2",
@@ -1262,24 +1370,6 @@
                         {
                             "position": 3,
                             "team": {
-                                "id": 23,
-                                "name": "Tiro Federal",
-                                "short_name": "TIRO",
-                                "logo": "assets\/logos\/tiro.png"
-                            },
-                            "played": 0,
-                            "won": 0,
-                            "drawn": 0,
-                            "lost": 0,
-                            "goals_for": 0,
-                            "goals_against": 0,
-                            "goal_difference": 0,
-                            "points": 0,
-                            "recent_form": []
-                        },
-                        {
-                            "position": 4,
-                            "team": {
                                 "id": 16,
                                 "name": "Puerto Belgrano A",
                                 "short_name": "PTO A",
@@ -1296,12 +1386,30 @@
                             "recent_form": []
                         },
                         {
-                            "position": 5,
+                            "position": 4,
                             "team": {
                                 "id": 11,
                                 "name": "Pacífico B",
                                 "short_name": "PAC B",
                                 "logo": "assets\/logos\/cap.png"
+                            },
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": []
+                        },
+                        {
+                            "position": 5,
+                            "team": {
+                                "id": 23,
+                                "name": "Tiro Federal",
+                                "short_name": "TIRO",
+                                "logo": "assets\/logos\/tiro.png"
                             },
                             "played": 0,
                             "won": 0,
@@ -1382,6 +1490,52 @@
                         {
                             "position": 1,
                             "team": {
+                                "id": 23,
+                                "name": "Tiro Federal",
+                                "short_name": "TIRO",
+                                "logo": "assets\/logos\/tiro.png"
+                            },
+                            "played": 2,
+                            "won": 1,
+                            "drawn": 1,
+                            "lost": 0,
+                            "goals_for": 7,
+                            "goals_against": 2,
+                            "goal_difference": 5,
+                            "points": 5,
+                            "recent_form": [
+                                {
+                                    "result": "D",
+                                    "score": "2 - 2",
+                                    "opponent": "PTO A",
+                                    "opponent_logo": "assets\/logos\/pto.png",
+                                    "was_home": true,
+                                    "date": "21\/03\/2026",
+                                    "match_id": 112,
+                                    "shootouts": {
+                                        "for": 3,
+                                        "against": 2,
+                                        "won": true,
+                                        "score": "3 - 2"
+                                    },
+                                    "bonus_point": true
+                                },
+                                {
+                                    "result": "W",
+                                    "score": "5 - 0",
+                                    "opponent": "CEN B",
+                                    "opponent_logo": "assets\/logos\/cen.png",
+                                    "was_home": true,
+                                    "date": "14\/03\/2026",
+                                    "match_id": 101,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                }
+                            ]
+                        },
+                        {
+                            "position": 2,
+                            "team": {
                                 "id": 20,
                                 "name": "S. Sportiva B",
                                 "short_name": "SS B",
@@ -1426,7 +1580,53 @@
                             ]
                         },
                         {
-                            "position": 2,
+                            "position": 3,
+                            "team": {
+                                "id": 16,
+                                "name": "Puerto Belgrano A",
+                                "short_name": "PTO A",
+                                "logo": "assets\/logos\/pto.png"
+                            },
+                            "played": 2,
+                            "won": 1,
+                            "drawn": 1,
+                            "lost": 0,
+                            "goals_for": 11,
+                            "goals_against": 2,
+                            "goal_difference": 9,
+                            "points": 4,
+                            "recent_form": [
+                                {
+                                    "result": "D",
+                                    "score": "2 - 2",
+                                    "opponent": "TIRO",
+                                    "opponent_logo": "assets\/logos\/tiro.png",
+                                    "was_home": false,
+                                    "date": "21\/03\/2026",
+                                    "match_id": 112,
+                                    "shootouts": {
+                                        "for": 2,
+                                        "against": 3,
+                                        "won": false,
+                                        "score": "2 - 3"
+                                    },
+                                    "bonus_point": false
+                                },
+                                {
+                                    "result": "W",
+                                    "score": "9 - 0",
+                                    "opponent": "PAC B",
+                                    "opponent_logo": "assets\/logos\/cap.png",
+                                    "was_home": true,
+                                    "date": "14\/03\/2026",
+                                    "match_id": 100,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                }
+                            ]
+                        },
+                        {
+                            "position": 4,
                             "team": {
                                 "id": 25,
                                 "name": "Universitario B",
@@ -1466,66 +1666,6 @@
                                     "was_home": true,
                                     "date": "07\/03\/2026",
                                     "match_id": 88,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                }
-                            ]
-                        },
-                        {
-                            "position": 3,
-                            "team": {
-                                "id": 16,
-                                "name": "Puerto Belgrano A",
-                                "short_name": "PTO A",
-                                "logo": "assets\/logos\/pto.png"
-                            },
-                            "played": 1,
-                            "won": 1,
-                            "drawn": 0,
-                            "lost": 0,
-                            "goals_for": 9,
-                            "goals_against": 0,
-                            "goal_difference": 9,
-                            "points": 3,
-                            "recent_form": [
-                                {
-                                    "result": "W",
-                                    "score": "9 - 0",
-                                    "opponent": "PAC B",
-                                    "opponent_logo": "assets\/logos\/cap.png",
-                                    "was_home": true,
-                                    "date": "14\/03\/2026",
-                                    "match_id": 100,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                }
-                            ]
-                        },
-                        {
-                            "position": 4,
-                            "team": {
-                                "id": 23,
-                                "name": "Tiro Federal",
-                                "short_name": "TIRO",
-                                "logo": "assets\/logos\/tiro.png"
-                            },
-                            "played": 1,
-                            "won": 1,
-                            "drawn": 0,
-                            "lost": 0,
-                            "goals_for": 5,
-                            "goals_against": 0,
-                            "goal_difference": 5,
-                            "points": 3,
-                            "recent_form": [
-                                {
-                                    "result": "W",
-                                    "score": "5 - 0",
-                                    "opponent": "CEN B",
-                                    "opponent_logo": "assets\/logos\/cen.png",
-                                    "was_home": true,
-                                    "date": "14\/03\/2026",
-                                    "match_id": 101,
                                     "shootouts": null,
                                     "bonus_point": false
                                 }
@@ -1768,15 +1908,31 @@
                                 "short_name": "TIRO",
                                 "logo": "assets\/logos\/tiro.png"
                             },
-                            "played": 1,
+                            "played": 2,
                             "won": 0,
-                            "drawn": 1,
+                            "drawn": 2,
                             "lost": 0,
                             "goals_for": 1,
                             "goals_against": 1,
                             "goal_difference": 0,
-                            "points": 1,
+                            "points": 3,
                             "recent_form": [
+                                {
+                                    "result": "D",
+                                    "score": "0 - 0",
+                                    "opponent": "PTO A",
+                                    "opponent_logo": "assets\/logos\/pto.png",
+                                    "was_home": true,
+                                    "date": "21\/03\/2026",
+                                    "match_id": 109,
+                                    "shootouts": {
+                                        "for": 1,
+                                        "against": 0,
+                                        "won": true,
+                                        "score": "1 - 0"
+                                    },
+                                    "bonus_point": true
+                                },
                                 {
                                     "result": "D",
                                     "score": "1 - 1",
@@ -1798,20 +1954,82 @@
                         {
                             "position": 5,
                             "team": {
-                                "id": 20,
-                                "name": "S. Sportiva B",
-                                "short_name": "SS B",
-                                "logo": "assets\/logos\/ss.png"
+                                "id": 29,
+                                "name": "Villa Mitre",
+                                "short_name": "VM",
+                                "logo": "assets\/logos\/vm.png"
                             },
                             "played": 2,
                             "won": 0,
                             "drawn": 1,
                             "lost": 1,
-                            "goals_for": 1,
+                            "goals_for": 4,
                             "goals_against": 5,
-                            "goal_difference": -4,
-                            "points": 1,
+                            "goal_difference": -1,
+                            "points": 2,
                             "recent_form": [
+                                {
+                                    "result": "D",
+                                    "score": "2 - 2",
+                                    "opponent": "SS B",
+                                    "opponent_logo": "assets\/logos\/ss.png",
+                                    "was_home": true,
+                                    "date": "21\/03\/2026",
+                                    "match_id": 110,
+                                    "shootouts": {
+                                        "for": 3,
+                                        "against": 2,
+                                        "won": true,
+                                        "score": "3 - 2"
+                                    },
+                                    "bonus_point": true
+                                },
+                                {
+                                    "result": "L",
+                                    "score": "2 - 3",
+                                    "opponent": "UNI B",
+                                    "opponent_logo": "assets\/logos\/uni.png",
+                                    "was_home": false,
+                                    "date": "07\/03\/2026",
+                                    "match_id": 85,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                }
+                            ]
+                        },
+                        {
+                            "position": 6,
+                            "team": {
+                                "id": 20,
+                                "name": "S. Sportiva B",
+                                "short_name": "SS B",
+                                "logo": "assets\/logos\/ss.png"
+                            },
+                            "played": 3,
+                            "won": 0,
+                            "drawn": 2,
+                            "lost": 1,
+                            "goals_for": 3,
+                            "goals_against": 7,
+                            "goal_difference": -4,
+                            "points": 2,
+                            "recent_form": [
+                                {
+                                    "result": "D",
+                                    "score": "2 - 2",
+                                    "opponent": "VM",
+                                    "opponent_logo": "assets\/logos\/vm.png",
+                                    "was_home": false,
+                                    "date": "21\/03\/2026",
+                                    "match_id": 110,
+                                    "shootouts": {
+                                        "for": 2,
+                                        "against": 3,
+                                        "won": false,
+                                        "score": "2 - 3"
+                                    },
+                                    "bonus_point": false
+                                },
                                 {
                                     "result": "L",
                                     "score": "0 - 4",
@@ -1842,36 +2060,6 @@
                             ]
                         },
                         {
-                            "position": 6,
-                            "team": {
-                                "id": 29,
-                                "name": "Villa Mitre",
-                                "short_name": "VM",
-                                "logo": "assets\/logos\/vm.png"
-                            },
-                            "played": 1,
-                            "won": 0,
-                            "drawn": 0,
-                            "lost": 1,
-                            "goals_for": 2,
-                            "goals_against": 3,
-                            "goal_difference": -1,
-                            "points": 0,
-                            "recent_form": [
-                                {
-                                    "result": "L",
-                                    "score": "2 - 3",
-                                    "opponent": "UNI B",
-                                    "opponent_logo": "assets\/logos\/uni.png",
-                                    "was_home": false,
-                                    "date": "07\/03\/2026",
-                                    "match_id": 85,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                }
-                            ]
-                        },
-                        {
                             "position": 7,
                             "team": {
                                 "id": 16,
@@ -1879,15 +2067,31 @@
                                 "short_name": "PTO A",
                                 "logo": "assets\/logos\/pto.png"
                             },
-                            "played": 1,
+                            "played": 2,
                             "won": 0,
-                            "drawn": 0,
+                            "drawn": 1,
                             "lost": 1,
                             "goals_for": 0,
                             "goals_against": 2,
                             "goal_difference": -2,
-                            "points": 0,
+                            "points": 1,
                             "recent_form": [
+                                {
+                                    "result": "D",
+                                    "score": "0 - 0",
+                                    "opponent": "TIRO",
+                                    "opponent_logo": "assets\/logos\/tiro.png",
+                                    "was_home": false,
+                                    "date": "21\/03\/2026",
+                                    "match_id": 109,
+                                    "shootouts": {
+                                        "for": 0,
+                                        "against": 1,
+                                        "won": false,
+                                        "score": "0 - 1"
+                                    },
+                                    "bonus_point": false
+                                },
                                 {
                                     "result": "L",
                                     "score": "0 - 2",
@@ -2329,15 +2533,26 @@
                                 "short_name": "PAL",
                                 "logo": "assets\/logos\/pal.png"
                             },
-                            "played": 2,
-                            "won": 2,
+                            "played": 3,
+                            "won": 3,
                             "drawn": 0,
                             "lost": 0,
-                            "goals_for": 8,
+                            "goals_for": 14,
                             "goals_against": 1,
-                            "goal_difference": 7,
-                            "points": 6,
+                            "goal_difference": 13,
+                            "points": 9,
                             "recent_form": [
+                                {
+                                    "result": "W",
+                                    "score": "6 - 0",
+                                    "opponent": "CEN C",
+                                    "opponent_logo": "assets\/logos\/cen.png",
+                                    "was_home": false,
+                                    "date": "21\/03\/2026",
+                                    "match_id": 196,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
                                 {
                                     "result": "W",
                                     "score": "6 - 0",
@@ -2482,15 +2697,27 @@
                                 "short_name": "CEN C",
                                 "logo": "assets\/logos\/cen.png"
                             },
-                            "played": 0,
+                            "played": 1,
                             "won": 0,
                             "drawn": 0,
-                            "lost": 0,
+                            "lost": 1,
                             "goals_for": 0,
-                            "goals_against": 0,
-                            "goal_difference": 0,
+                            "goals_against": 6,
+                            "goal_difference": -6,
                             "points": 0,
-                            "recent_form": []
+                            "recent_form": [
+                                {
+                                    "result": "L",
+                                    "score": "0 - 6",
+                                    "opponent": "PAL",
+                                    "opponent_logo": "assets\/logos\/pal.png",
+                                    "was_home": true,
+                                    "date": "21\/03\/2026",
+                                    "match_id": 196,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                }
+                            ]
                         },
                         {
                             "position": 6,
@@ -2599,15 +2826,26 @@
                                 "short_name": "PAL",
                                 "logo": "assets\/logos\/pal.png"
                             },
-                            "played": 2,
-                            "won": 2,
+                            "played": 3,
+                            "won": 3,
                             "drawn": 0,
                             "lost": 0,
-                            "goals_for": 6,
-                            "goals_against": 2,
-                            "goal_difference": 4,
-                            "points": 6,
+                            "goals_for": 11,
+                            "goals_against": 3,
+                            "goal_difference": 8,
+                            "points": 9,
                             "recent_form": [
+                                {
+                                    "result": "W",
+                                    "score": "5 - 1",
+                                    "opponent": "CEN C",
+                                    "opponent_logo": "assets\/logos\/cen.png",
+                                    "was_home": false,
+                                    "date": "21\/03\/2026",
+                                    "match_id": 193,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
                                 {
                                     "result": "W",
                                     "score": "2 - 1",
@@ -2634,6 +2872,47 @@
                         },
                         {
                             "position": 2,
+                            "team": {
+                                "id": 17,
+                                "name": "Puerto Belgrano B",
+                                "short_name": "PTO B",
+                                "logo": "assets\/logos\/pto.png"
+                            },
+                            "played": 2,
+                            "won": 1,
+                            "drawn": 0,
+                            "lost": 1,
+                            "goals_for": 24,
+                            "goals_against": 4,
+                            "goal_difference": 20,
+                            "points": 3,
+                            "recent_form": [
+                                {
+                                    "result": "W",
+                                    "score": "24 - 0",
+                                    "opponent": "POR",
+                                    "opponent_logo": "assets\/logos\/por.png",
+                                    "was_home": true,
+                                    "date": "21\/03\/2026",
+                                    "match_id": 194,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
+                                {
+                                    "result": "L",
+                                    "score": "0 - 4",
+                                    "opponent": "UNI C",
+                                    "opponent_logo": "assets\/logos\/uni.png",
+                                    "was_home": true,
+                                    "date": "07\/03\/2026",
+                                    "match_id": 170,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                }
+                            ]
+                        },
+                        {
+                            "position": 3,
                             "team": {
                                 "id": 22,
                                 "name": "Sporting",
@@ -2663,7 +2942,7 @@
                             ]
                         },
                         {
-                            "position": 3,
+                            "position": 4,
                             "team": {
                                 "id": 26,
                                 "name": "Universitario C",
@@ -2704,24 +2983,6 @@
                             ]
                         },
                         {
-                            "position": 4,
-                            "team": {
-                                "id": 5,
-                                "name": "El Nacional C",
-                                "short_name": "CEN C",
-                                "logo": "assets\/logos\/cen.png"
-                            },
-                            "played": 0,
-                            "won": 0,
-                            "drawn": 0,
-                            "lost": 0,
-                            "goals_for": 0,
-                            "goals_against": 0,
-                            "goal_difference": 0,
-                            "points": 0,
-                            "recent_form": []
-                        },
-                        {
                             "position": 5,
                             "team": {
                                 "id": 2,
@@ -2754,28 +3015,28 @@
                         {
                             "position": 6,
                             "team": {
-                                "id": 17,
-                                "name": "Puerto Belgrano B",
-                                "short_name": "PTO B",
-                                "logo": "assets\/logos\/pto.png"
+                                "id": 5,
+                                "name": "El Nacional C",
+                                "short_name": "CEN C",
+                                "logo": "assets\/logos\/cen.png"
                             },
                             "played": 1,
                             "won": 0,
                             "drawn": 0,
                             "lost": 1,
-                            "goals_for": 0,
-                            "goals_against": 4,
+                            "goals_for": 1,
+                            "goals_against": 5,
                             "goal_difference": -4,
                             "points": 0,
                             "recent_form": [
                                 {
                                     "result": "L",
-                                    "score": "0 - 4",
-                                    "opponent": "UNI C",
-                                    "opponent_logo": "assets\/logos\/uni.png",
+                                    "score": "1 - 5",
+                                    "opponent": "PAL",
+                                    "opponent_logo": "assets\/logos\/pal.png",
                                     "was_home": true,
-                                    "date": "07\/03\/2026",
-                                    "match_id": 170,
+                                    "date": "21\/03\/2026",
+                                    "match_id": 193,
                                     "shootouts": null,
                                     "bonus_point": false
                                 }
@@ -2789,15 +3050,26 @@
                                 "short_name": "POR",
                                 "logo": "assets\/logos\/por.png"
                             },
-                            "played": 1,
+                            "played": 2,
                             "won": 0,
                             "drawn": 0,
-                            "lost": 1,
+                            "lost": 2,
                             "goals_for": 0,
-                            "goals_against": 17,
-                            "goal_difference": -17,
+                            "goals_against": 41,
+                            "goal_difference": -41,
                             "points": 0,
                             "recent_form": [
+                                {
+                                    "result": "L",
+                                    "score": "0 - 24",
+                                    "opponent": "PTO B",
+                                    "opponent_logo": "assets\/logos\/pto.png",
+                                    "was_home": false,
+                                    "date": "21\/03\/2026",
+                                    "match_id": 194,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
                                 {
                                     "result": "L",
                                     "score": "0 - 17",
@@ -2826,10 +3098,10 @@
                         {
                             "position": 1,
                             "team": {
-                                "id": 28,
-                                "name": "Universitario",
-                                "short_name": "UNI",
-                                "logo": "assets\/logos\/uni.png"
+                                "id": 9,
+                                "name": "Monte Hermoso",
+                                "short_name": "CAMH",
+                                "logo": "assets\/logos\/camh.png"
                             },
                             "played": 0,
                             "won": 0,
@@ -2843,24 +3115,6 @@
                         },
                         {
                             "position": 2,
-                            "team": {
-                                "id": 12,
-                                "name": "Pacífico",
-                                "short_name": "PAC",
-                                "logo": "assets\/logos\/cap.png"
-                            },
-                            "played": 0,
-                            "won": 0,
-                            "drawn": 0,
-                            "lost": 0,
-                            "goals_for": 0,
-                            "goals_against": 0,
-                            "goal_difference": 0,
-                            "points": 0,
-                            "recent_form": []
-                        },
-                        {
-                            "position": 3,
                             "team": {
                                 "id": 18,
                                 "name": "Puerto Belgrano",
@@ -2878,12 +3132,30 @@
                             "recent_form": []
                         },
                         {
+                            "position": 3,
+                            "team": {
+                                "id": 12,
+                                "name": "Pacífico",
+                                "short_name": "PAC",
+                                "logo": "assets\/logos\/cap.png"
+                            },
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": []
+                        },
+                        {
                             "position": 4,
                             "team": {
-                                "id": 9,
-                                "name": "Monte Hermoso",
-                                "short_name": "CAMH",
-                                "logo": "assets\/logos\/camh.png"
+                                "id": 28,
+                                "name": "Universitario",
+                                "short_name": "UNI",
+                                "logo": "assets\/logos\/uni.png"
                             },
                             "played": 0,
                             "won": 0,
@@ -2898,10 +3170,10 @@
                         {
                             "position": 5,
                             "team": {
-                                "id": 6,
-                                "name": "El Nacional",
-                                "short_name": "CEN",
-                                "logo": "assets\/logos\/cen.png"
+                                "id": 15,
+                                "name": "Palihue",
+                                "short_name": "PAL",
+                                "logo": "assets\/logos\/pal.png"
                             },
                             "played": 0,
                             "won": 0,
@@ -2916,10 +3188,10 @@
                         {
                             "position": 6,
                             "team": {
-                                "id": 15,
-                                "name": "Palihue",
-                                "short_name": "PAL",
-                                "logo": "assets\/logos\/pal.png"
+                                "id": 6,
+                                "name": "El Nacional",
+                                "short_name": "CEN",
+                                "logo": "assets\/logos\/cen.png"
                             },
                             "played": 0,
                             "won": 0,
