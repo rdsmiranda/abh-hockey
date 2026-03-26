@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-03-26T14:22:09-03:00",
+    "generated_at": "2026-03-26T19:17:55-03:00",
     "from": "2026-03-26",
     "to": "2026-03-29",
     "umpires": [
@@ -877,7 +877,7 @@
                         "logo": "assets\/logos\/tiro.png"
                     },
                     "pitch": "S. Sportiva",
-                    "umpire_1": "Melany Hernández",
+                    "umpire_1": "Delfina Morales",
                     "umpire_2": "Lucia Centurión",
                     "fee": 42000,
                     "supervisor": null
@@ -1094,8 +1094,8 @@
                     },
                     "pitch": "Sporting",
                     "umpire_1": "Magalí González",
-                    "umpire_2": "A designar",
-                    "fee": null,
+                    "umpire_2": "Sofía Ciambelli",
+                    "fee": 38000,
                     "supervisor": null
                 },
                 {
@@ -1166,8 +1166,8 @@
                     },
                     "pitch": "Sporting",
                     "umpire_1": "Julieta Baez",
-                    "umpire_2": "A designar",
-                    "fee": null,
+                    "umpire_2": "Julieta Soldini",
+                    "fee": 42000,
                     "supervisor": null
                 },
                 {
@@ -1650,9 +1650,9 @@
                         "logo": "assets\/logos\/ad6508f6-a924-49b7-a78d-c5397f2850a7.jpg"
                     },
                     "pitch": "ABH",
-                    "umpire_1": "A designar",
+                    "umpire_1": "Lucia Centurión",
                     "umpire_2": "Mora Kessler",
-                    "fee": null,
+                    "fee": 38000,
                     "supervisor": null
                 },
                 {
@@ -1698,9 +1698,9 @@
                         "logo": "assets\/logos\/ad6508f6-a924-49b7-a78d-c5397f2850a7.jpg"
                     },
                     "pitch": "ABH",
-                    "umpire_1": "A designar",
+                    "umpire_1": "Lucia Centurión",
                     "umpire_2": "Mora Kessler",
-                    "fee": null,
+                    "fee": 42000,
                     "supervisor": null
                 }
             ]
