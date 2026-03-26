@@ -6,7 +6,7 @@
         "start_date": "2026-03-07T03:00:00.000000Z",
         "end_date": null
     },
-    "generated_at": "2026-03-25T16:22:27-03:00",
+    "generated_at": "2026-03-26T13:27:31-03:00",
     "zones": [
         {
             "id": 1,
@@ -4186,6 +4186,151 @@
                                     "bonus_point": false
                                 }
                             ]
+                        }
+                    ]
+                }
+            ],
+            "playoffs": []
+        },
+        {
+            "id": 7,
+            "name": "Promocional",
+            "categories": [
+                {
+                    "id": 1,
+                    "name": "Sub14",
+                    "standings": [
+                        {
+                            "position": 1,
+                            "team": {
+                                "id": 34,
+                                "name": "Porteño",
+                                "short_name": "POR",
+                                "logo": "assets\/logos\/por.png"
+                            },
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": []
+                        },
+                        {
+                            "position": 2,
+                            "team": {
+                                "id": 33,
+                                "name": "Villa Mitre",
+                                "short_name": "VM",
+                                "logo": "assets\/logos\/vm.png"
+                            },
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": []
+                        },
+                        {
+                            "position": 3,
+                            "team": {
+                                "id": 36,
+                                "name": "Pacífico de Cabildo",
+                                "short_name": "PAC",
+                                "logo": "assets\/logos\/ad6508f6-a924-49b7-a78d-c5397f2850a7.jpg"
+                            },
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": []
+                        },
+                        {
+                            "position": 4,
+                            "team": {
+                                "id": 32,
+                                "name": "Tiro Federal",
+                                "short_name": "TIRO",
+                                "logo": "assets\/logos\/tiro.png"
+                            },
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": []
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "Sub16",
+                    "standings": [
+                        {
+                            "position": 1,
+                            "team": {
+                                "id": 36,
+                                "name": "Pacífico de Cabildo",
+                                "short_name": "PAC",
+                                "logo": "assets\/logos\/ad6508f6-a924-49b7-a78d-c5397f2850a7.jpg"
+                            },
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": []
+                        },
+                        {
+                            "position": 2,
+                            "team": {
+                                "id": 37,
+                                "name": "Universitario",
+                                "short_name": "UNI",
+                                "logo": "assets\/logos\/uni.png"
+                            },
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": []
+                        },
+                        {
+                            "position": 3,
+                            "team": {
+                                "id": 32,
+                                "name": "Tiro Federal",
+                                "short_name": "TIRO",
+                                "logo": "assets\/logos\/tiro.png"
+                            },
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": []
                         }
                     ]
                 }
