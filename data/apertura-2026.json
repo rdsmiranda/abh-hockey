@@ -6,7 +6,7 @@
         "start_date": "2026-03-07T03:00:00.000000Z",
         "end_date": null
     },
-    "generated_at": "2026-03-26T13:27:31-03:00",
+    "generated_at": "2026-03-26T22:40:28-03:00",
     "zones": [
         {
             "id": 1,
@@ -2461,6 +2461,47 @@
                         {
                             "position": 2,
                             "team": {
+                                "id": 14,
+                                "name": "Palihue",
+                                "short_name": "PAL",
+                                "logo": "assets\/logos\/pal.png"
+                            },
+                            "played": 2,
+                            "won": 2,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 14,
+                            "goals_against": 0,
+                            "goal_difference": 14,
+                            "points": 6,
+                            "recent_form": [
+                                {
+                                    "result": "W",
+                                    "score": "11 - 0",
+                                    "opponent": "UNI C",
+                                    "opponent_logo": "assets\/logos\/uni.png",
+                                    "was_home": false,
+                                    "date": "26\/03\/2026",
+                                    "match_id": 190,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
+                                {
+                                    "result": "W",
+                                    "score": "3 - 0",
+                                    "opponent": "ARG B",
+                                    "opponent_logo": "assets\/logos\/arg.png",
+                                    "was_home": true,
+                                    "date": "07\/03\/2026",
+                                    "match_id": 178,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                }
+                            ]
+                        },
+                        {
+                            "position": 3,
+                            "team": {
                                 "id": 2,
                                 "name": "Argentino B",
                                 "short_name": "ARG B",
@@ -2511,7 +2552,7 @@
                             ]
                         },
                         {
-                            "position": 3,
+                            "position": 4,
                             "team": {
                                 "id": 17,
                                 "name": "Puerto Belgrano B",
@@ -2535,36 +2576,6 @@
                                     "was_home": true,
                                     "date": "07\/03\/2026",
                                     "match_id": 179,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                }
-                            ]
-                        },
-                        {
-                            "position": 4,
-                            "team": {
-                                "id": 14,
-                                "name": "Palihue",
-                                "short_name": "PAL",
-                                "logo": "assets\/logos\/pal.png"
-                            },
-                            "played": 1,
-                            "won": 1,
-                            "drawn": 0,
-                            "lost": 0,
-                            "goals_for": 3,
-                            "goals_against": 0,
-                            "goal_difference": 3,
-                            "points": 3,
-                            "recent_form": [
-                                {
-                                    "result": "W",
-                                    "score": "3 - 0",
-                                    "opponent": "ARG B",
-                                    "opponent_logo": "assets\/logos\/arg.png",
-                                    "was_home": true,
-                                    "date": "07\/03\/2026",
-                                    "match_id": 178,
                                     "shootouts": null,
                                     "bonus_point": false
                                 }
@@ -2603,47 +2614,6 @@
                         {
                             "position": 6,
                             "team": {
-                                "id": 26,
-                                "name": "Universitario C",
-                                "short_name": "UNI C",
-                                "logo": "assets\/logos\/uni.png"
-                            },
-                            "played": 2,
-                            "won": 0,
-                            "drawn": 0,
-                            "lost": 2,
-                            "goals_for": 0,
-                            "goals_against": 14,
-                            "goal_difference": -14,
-                            "points": 0,
-                            "recent_form": [
-                                {
-                                    "result": "L",
-                                    "score": "0 - 5",
-                                    "opponent": "ARG B",
-                                    "opponent_logo": "assets\/logos\/arg.png",
-                                    "was_home": false,
-                                    "date": "22\/03\/2026",
-                                    "match_id": 204,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                },
-                                {
-                                    "result": "L",
-                                    "score": "0 - 9",
-                                    "opponent": "PTO B",
-                                    "opponent_logo": "assets\/logos\/pto.png",
-                                    "was_home": false,
-                                    "date": "07\/03\/2026",
-                                    "match_id": 179,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                }
-                            ]
-                        },
-                        {
-                            "position": 7,
-                            "team": {
                                 "id": 30,
                                 "name": "Porteño",
                                 "short_name": "POR",
@@ -2677,6 +2647,58 @@
                                     "was_home": false,
                                     "date": "07\/03\/2026",
                                     "match_id": 180,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                }
+                            ]
+                        },
+                        {
+                            "position": 7,
+                            "team": {
+                                "id": 26,
+                                "name": "Universitario C",
+                                "short_name": "UNI C",
+                                "logo": "assets\/logos\/uni.png"
+                            },
+                            "played": 3,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 3,
+                            "goals_for": 0,
+                            "goals_against": 25,
+                            "goal_difference": -25,
+                            "points": 0,
+                            "recent_form": [
+                                {
+                                    "result": "L",
+                                    "score": "0 - 11",
+                                    "opponent": "PAL",
+                                    "opponent_logo": "assets\/logos\/pal.png",
+                                    "was_home": true,
+                                    "date": "26\/03\/2026",
+                                    "match_id": 190,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
+                                {
+                                    "result": "L",
+                                    "score": "0 - 5",
+                                    "opponent": "ARG B",
+                                    "opponent_logo": "assets\/logos\/arg.png",
+                                    "was_home": false,
+                                    "date": "22\/03\/2026",
+                                    "match_id": 204,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
+                                {
+                                    "result": "L",
+                                    "score": "0 - 9",
+                                    "opponent": "PTO B",
+                                    "opponent_logo": "assets\/logos\/pto.png",
+                                    "was_home": false,
+                                    "date": "07\/03\/2026",
+                                    "match_id": 179,
                                     "shootouts": null,
                                     "bonus_point": false
                                 }
@@ -2784,6 +2806,47 @@
                         {
                             "position": 3,
                             "team": {
+                                "id": 14,
+                                "name": "Palihue",
+                                "short_name": "PAL",
+                                "logo": "assets\/logos\/pal.png"
+                            },
+                            "played": 2,
+                            "won": 2,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 24,
+                            "goals_against": 1,
+                            "goal_difference": 23,
+                            "points": 6,
+                            "recent_form": [
+                                {
+                                    "result": "W",
+                                    "score": "19 - 0",
+                                    "opponent": "UNI C",
+                                    "opponent_logo": "assets\/logos\/uni.png",
+                                    "was_home": false,
+                                    "date": "26\/03\/2026",
+                                    "match_id": 187,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
+                                {
+                                    "result": "W",
+                                    "score": "5 - 1",
+                                    "opponent": "ARG B",
+                                    "opponent_logo": "assets\/logos\/arg.png",
+                                    "was_home": true,
+                                    "date": "07\/03\/2026",
+                                    "match_id": 175,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                }
+                            ]
+                        },
+                        {
+                            "position": 4,
+                            "team": {
                                 "id": 17,
                                 "name": "Puerto Belgrano B",
                                 "short_name": "PTO B",
@@ -2806,36 +2869,6 @@
                                     "was_home": true,
                                     "date": "07\/03\/2026",
                                     "match_id": 176,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                }
-                            ]
-                        },
-                        {
-                            "position": 4,
-                            "team": {
-                                "id": 14,
-                                "name": "Palihue",
-                                "short_name": "PAL",
-                                "logo": "assets\/logos\/pal.png"
-                            },
-                            "played": 1,
-                            "won": 1,
-                            "drawn": 0,
-                            "lost": 0,
-                            "goals_for": 5,
-                            "goals_against": 1,
-                            "goal_difference": 4,
-                            "points": 3,
-                            "recent_form": [
-                                {
-                                    "result": "W",
-                                    "score": "5 - 1",
-                                    "opponent": "ARG B",
-                                    "opponent_logo": "assets\/logos\/arg.png",
-                                    "was_home": true,
-                                    "date": "07\/03\/2026",
-                                    "match_id": 175,
                                     "shootouts": null,
                                     "bonus_point": false
                                 }
@@ -2879,15 +2912,26 @@
                                 "short_name": "UNI C",
                                 "logo": "assets\/logos\/uni.png"
                             },
-                            "played": 2,
+                            "played": 3,
                             "won": 0,
                             "drawn": 0,
-                            "lost": 2,
+                            "lost": 3,
                             "goals_for": 0,
-                            "goals_against": 14,
-                            "goal_difference": -14,
+                            "goals_against": 33,
+                            "goal_difference": -33,
                             "points": 0,
                             "recent_form": [
+                                {
+                                    "result": "L",
+                                    "score": "0 - 19",
+                                    "opponent": "PAL",
+                                    "opponent_logo": "assets\/logos\/pal.png",
+                                    "was_home": true,
+                                    "date": "26\/03\/2026",
+                                    "match_id": 187,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
                                 {
                                     "result": "L",
                                     "score": "0 - 9",
@@ -4203,6 +4247,24 @@
                         {
                             "position": 1,
                             "team": {
+                                "id": 36,
+                                "name": "Pacífico de Cabildo",
+                                "short_name": "PAC",
+                                "logo": "assets\/logos\/ad6508f6-a924-49b7-a78d-c5397f2850a7.jpg"
+                            },
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": []
+                        },
+                        {
+                            "position": 2,
+                            "team": {
                                 "id": 34,
                                 "name": "Porteño",
                                 "short_name": "POR",
@@ -4219,30 +4281,12 @@
                             "recent_form": []
                         },
                         {
-                            "position": 2,
+                            "position": 3,
                             "team": {
                                 "id": 33,
                                 "name": "Villa Mitre",
                                 "short_name": "VM",
                                 "logo": "assets\/logos\/vm.png"
-                            },
-                            "played": 0,
-                            "won": 0,
-                            "drawn": 0,
-                            "lost": 0,
-                            "goals_for": 0,
-                            "goals_against": 0,
-                            "goal_difference": 0,
-                            "points": 0,
-                            "recent_form": []
-                        },
-                        {
-                            "position": 3,
-                            "team": {
-                                "id": 36,
-                                "name": "Pacífico de Cabildo",
-                                "short_name": "PAC",
-                                "logo": "assets\/logos\/ad6508f6-a924-49b7-a78d-c5397f2850a7.jpg"
                             },
                             "played": 0,
                             "won": 0,
@@ -4281,6 +4325,24 @@
                         {
                             "position": 1,
                             "team": {
+                                "id": 32,
+                                "name": "Tiro Federal",
+                                "short_name": "TIRO",
+                                "logo": "assets\/logos\/tiro.png"
+                            },
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": []
+                        },
+                        {
+                            "position": 2,
+                            "team": {
                                 "id": 36,
                                 "name": "Pacífico de Cabildo",
                                 "short_name": "PAC",
@@ -4297,30 +4359,12 @@
                             "recent_form": []
                         },
                         {
-                            "position": 2,
+                            "position": 3,
                             "team": {
                                 "id": 37,
                                 "name": "Universitario",
                                 "short_name": "UNI",
                                 "logo": "assets\/logos\/uni.png"
-                            },
-                            "played": 0,
-                            "won": 0,
-                            "drawn": 0,
-                            "lost": 0,
-                            "goals_for": 0,
-                            "goals_against": 0,
-                            "goal_difference": 0,
-                            "points": 0,
-                            "recent_form": []
-                        },
-                        {
-                            "position": 3,
-                            "team": {
-                                "id": 32,
-                                "name": "Tiro Federal",
-                                "short_name": "TIRO",
-                                "logo": "assets\/logos\/tiro.png"
                             },
                             "played": 0,
                             "won": 0,
