@@ -6,7 +6,7 @@
         "start_date": "2026-03-07T03:00:00.000000Z",
         "end_date": null
     },
-    "generated_at": "2026-03-31T11:18:38-03:00",
+    "generated_at": "2026-04-02T20:39:09-03:00",
     "zones": [
         {
             "id": 1,
@@ -1998,6 +1998,110 @@
                         {
                             "position": 3,
                             "team": {
+                                "id": 29,
+                                "name": "Villa Mitre",
+                                "short_name": "VM",
+                                "logo": "assets\/logos\/vm.png"
+                            },
+                            "played": 3,
+                            "won": 1,
+                            "drawn": 1,
+                            "lost": 1,
+                            "goals_for": 5,
+                            "goals_against": 5,
+                            "goal_difference": 0,
+                            "points": 4,
+                            "recent_form": [
+                                {
+                                    "result": "D",
+                                    "score": "0 - 0",
+                                    "opponent": "SS B",
+                                    "opponent_logo": "assets\/logos\/ss.png",
+                                    "was_home": true,
+                                    "date": "30\/03\/2026",
+                                    "match_id": 116,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
+                                {
+                                    "result": "L",
+                                    "score": "2 - 5",
+                                    "opponent": "PTO A",
+                                    "opponent_logo": "assets\/logos\/pto.png",
+                                    "was_home": false,
+                                    "date": "28\/03\/2026",
+                                    "match_id": 129,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
+                                {
+                                    "result": "W",
+                                    "score": "3 - 0",
+                                    "opponent": "UNI B",
+                                    "opponent_logo": "assets\/logos\/uni.png",
+                                    "was_home": false,
+                                    "date": "07\/03\/2026",
+                                    "match_id": 91,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                }
+                            ]
+                        },
+                        {
+                            "position": 4,
+                            "team": {
+                                "id": 20,
+                                "name": "S. Sportiva B",
+                                "short_name": "SS B",
+                                "logo": "assets\/logos\/ss.png"
+                            },
+                            "played": 3,
+                            "won": 1,
+                            "drawn": 1,
+                            "lost": 1,
+                            "goals_for": 1,
+                            "goals_against": 2,
+                            "goal_difference": -1,
+                            "points": 4,
+                            "recent_form": [
+                                {
+                                    "result": "D",
+                                    "score": "0 - 0",
+                                    "opponent": "VM",
+                                    "opponent_logo": "assets\/logos\/vm.png",
+                                    "was_home": false,
+                                    "date": "30\/03\/2026",
+                                    "match_id": 116,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
+                                {
+                                    "result": "L",
+                                    "score": "0 - 2",
+                                    "opponent": "TIRO",
+                                    "opponent_logo": "assets\/logos\/tiro.png",
+                                    "was_home": true,
+                                    "date": "28\/03\/2026",
+                                    "match_id": 128,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
+                                {
+                                    "result": "W",
+                                    "score": "1 - 0",
+                                    "opponent": "CEN B",
+                                    "opponent_logo": "assets\/logos\/cen.png",
+                                    "was_home": false,
+                                    "date": "07\/03\/2026",
+                                    "match_id": 92,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                }
+                            ]
+                        },
+                        {
+                            "position": 5,
+                            "team": {
                                 "id": 4,
                                 "name": "El Nacional B",
                                 "short_name": "CEN B",
@@ -2051,88 +2155,6 @@
                                     "opponent": "SS B",
                                     "opponent_logo": "assets\/logos\/ss.png",
                                     "was_home": true,
-                                    "date": "07\/03\/2026",
-                                    "match_id": 92,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                }
-                            ]
-                        },
-                        {
-                            "position": 4,
-                            "team": {
-                                "id": 29,
-                                "name": "Villa Mitre",
-                                "short_name": "VM",
-                                "logo": "assets\/logos\/vm.png"
-                            },
-                            "played": 2,
-                            "won": 1,
-                            "drawn": 0,
-                            "lost": 1,
-                            "goals_for": 5,
-                            "goals_against": 5,
-                            "goal_difference": 0,
-                            "points": 3,
-                            "recent_form": [
-                                {
-                                    "result": "L",
-                                    "score": "2 - 5",
-                                    "opponent": "PTO A",
-                                    "opponent_logo": "assets\/logos\/pto.png",
-                                    "was_home": false,
-                                    "date": "28\/03\/2026",
-                                    "match_id": 129,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                },
-                                {
-                                    "result": "W",
-                                    "score": "3 - 0",
-                                    "opponent": "UNI B",
-                                    "opponent_logo": "assets\/logos\/uni.png",
-                                    "was_home": false,
-                                    "date": "07\/03\/2026",
-                                    "match_id": 91,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                }
-                            ]
-                        },
-                        {
-                            "position": 5,
-                            "team": {
-                                "id": 20,
-                                "name": "S. Sportiva B",
-                                "short_name": "SS B",
-                                "logo": "assets\/logos\/ss.png"
-                            },
-                            "played": 2,
-                            "won": 1,
-                            "drawn": 0,
-                            "lost": 1,
-                            "goals_for": 1,
-                            "goals_against": 2,
-                            "goal_difference": -1,
-                            "points": 3,
-                            "recent_form": [
-                                {
-                                    "result": "L",
-                                    "score": "0 - 2",
-                                    "opponent": "TIRO",
-                                    "opponent_logo": "assets\/logos\/tiro.png",
-                                    "was_home": true,
-                                    "date": "28\/03\/2026",
-                                    "match_id": 128,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                },
-                                {
-                                    "result": "W",
-                                    "score": "1 - 0",
-                                    "opponent": "CEN B",
-                                    "opponent_logo": "assets\/logos\/cen.png",
-                                    "was_home": false,
                                     "date": "07\/03\/2026",
                                     "match_id": 92,
                                     "shootouts": null,
