@@ -49,13 +49,18 @@
     }
 
     h1 {
-      font-size: clamp(1.5rem, 10vw, 3.6rem);
+      font-size: clamp(1rem, 6.5vw, 3.6rem);
       font-weight: 800;
       color: #eef0f6;
       letter-spacing: -.02em;
       line-height: 1.1;
       margin: 0 0 1.25rem;
       animation: up .5s ease both;
+      word-break: break-word;
+      overflow-wrap: break-word;
+      max-width: 100%;
+      hyphens: auto;
+      -webkit-hyphens: auto;
     }
 
     p.lead {
@@ -103,7 +108,7 @@
   <div class="page">
     <div class="dot"></div>
 
-    <h1>Sitio en<br>mantenimiento</h1>
+    <h1>Sitio en mantenimiento</h1>
 
     <p class="lead">
       Estamos trabajando en mejoras.
