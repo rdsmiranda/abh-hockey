@@ -6,7 +6,7 @@
         "start_date": "2026-03-07T03:00:00.000000Z",
         "end_date": null
     },
-    "generated_at": "2026-04-12T20:04:37-03:00",
+    "generated_at": "2026-04-12T20:05:47-03:00",
     "zones": [
         {
             "id": 1,
@@ -6395,6 +6395,47 @@
                         {
                             "position": 4,
                             "team": {
+                                "id": 21,
+                                "name": "S. Sportiva",
+                                "short_name": "SS",
+                                "logo": "assets\/logos\/ss.png"
+                            },
+                            "played": 2,
+                            "won": 1,
+                            "drawn": 0,
+                            "lost": 1,
+                            "goals_for": 4,
+                            "goals_against": 1,
+                            "goal_difference": 3,
+                            "points": 3,
+                            "recent_form": [
+                                {
+                                    "result": "W",
+                                    "score": "4 - 0",
+                                    "opponent": "PAC",
+                                    "opponent_logo": "assets\/logos\/cap.png",
+                                    "was_home": false,
+                                    "date": "11\/04\/2026",
+                                    "match_id": 276,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
+                                {
+                                    "result": "L",
+                                    "score": "0 - 1",
+                                    "opponent": "UNI",
+                                    "opponent_logo": "assets\/logos\/uni.png",
+                                    "was_home": true,
+                                    "date": "07\/03\/2026",
+                                    "match_id": 268,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                }
+                            ]
+                        },
+                        {
+                            "position": 5,
+                            "team": {
                                 "id": 14,
                                 "name": "Palihue",
                                 "short_name": "PAL",
@@ -6445,36 +6486,6 @@
                             ]
                         },
                         {
-                            "position": 5,
-                            "team": {
-                                "id": 21,
-                                "name": "S. Sportiva",
-                                "short_name": "SS",
-                                "logo": "assets\/logos\/ss.png"
-                            },
-                            "played": 1,
-                            "won": 0,
-                            "drawn": 0,
-                            "lost": 1,
-                            "goals_for": 0,
-                            "goals_against": 1,
-                            "goal_difference": -1,
-                            "points": 0,
-                            "recent_form": [
-                                {
-                                    "result": "L",
-                                    "score": "0 - 1",
-                                    "opponent": "UNI",
-                                    "opponent_logo": "assets\/logos\/uni.png",
-                                    "was_home": true,
-                                    "date": "07\/03\/2026",
-                                    "match_id": 268,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                }
-                            ]
-                        },
-                        {
                             "position": 6,
                             "team": {
                                 "id": 13,
@@ -6482,15 +6493,26 @@
                                 "short_name": "PAC",
                                 "logo": "assets\/logos\/cap.png"
                             },
-                            "played": 2,
+                            "played": 3,
                             "won": 0,
                             "drawn": 0,
-                            "lost": 2,
+                            "lost": 3,
                             "goals_for": 0,
-                            "goals_against": 8,
-                            "goal_difference": -8,
+                            "goals_against": 12,
+                            "goal_difference": -12,
                             "points": 0,
                             "recent_form": [
+                                {
+                                    "result": "L",
+                                    "score": "0 - 4",
+                                    "opponent": "SS",
+                                    "opponent_logo": "assets\/logos\/ss.png",
+                                    "was_home": true,
+                                    "date": "11\/04\/2026",
+                                    "match_id": 276,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
                                 {
                                     "result": "L",
                                     "score": "0 - 6",
