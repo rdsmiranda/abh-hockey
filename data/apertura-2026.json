@@ -6,7 +6,7 @@
         "start_date": "2026-03-07T03:00:00.000000Z",
         "end_date": null
     },
-    "generated_at": "2026-04-12T20:05:47-03:00",
+    "generated_at": "2026-04-14T19:29:47-03:00",
     "zones": [
         {
             "id": 1,
@@ -6701,6 +6701,36 @@
                         {
                             "position": 1,
                             "team": {
+                                "id": 37,
+                                "name": "Universitario",
+                                "short_name": "UNI",
+                                "logo": "assets\/logos\/uni.png"
+                            },
+                            "played": 1,
+                            "won": 1,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 5,
+                            "goals_against": 0,
+                            "goal_difference": 5,
+                            "points": 3,
+                            "recent_form": [
+                                {
+                                    "result": "W",
+                                    "score": "5 - 0",
+                                    "opponent": "TIRO",
+                                    "opponent_logo": "assets\/logos\/tiro.png",
+                                    "was_home": true,
+                                    "date": "13\/04\/2026",
+                                    "match_id": 300,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                }
+                            ]
+                        },
+                        {
+                            "position": 2,
+                            "team": {
                                 "id": 36,
                                 "name": "Pacífico de Cabildo",
                                 "short_name": "PAC",
@@ -6729,24 +6759,6 @@
                             ]
                         },
                         {
-                            "position": 2,
-                            "team": {
-                                "id": 37,
-                                "name": "Universitario",
-                                "short_name": "UNI",
-                                "logo": "assets\/logos\/uni.png"
-                            },
-                            "played": 0,
-                            "won": 0,
-                            "drawn": 0,
-                            "lost": 0,
-                            "goals_for": 0,
-                            "goals_against": 0,
-                            "goal_difference": 0,
-                            "points": 0,
-                            "recent_form": []
-                        },
-                        {
                             "position": 3,
                             "team": {
                                 "id": 32,
@@ -6754,15 +6766,26 @@
                                 "short_name": "TIRO",
                                 "logo": "assets\/logos\/tiro.png"
                             },
-                            "played": 1,
+                            "played": 2,
                             "won": 0,
                             "drawn": 0,
-                            "lost": 1,
+                            "lost": 2,
                             "goals_for": 2,
-                            "goals_against": 3,
-                            "goal_difference": -1,
+                            "goals_against": 8,
+                            "goal_difference": -6,
                             "points": 0,
                             "recent_form": [
+                                {
+                                    "result": "L",
+                                    "score": "0 - 5",
+                                    "opponent": "UNI",
+                                    "opponent_logo": "assets\/logos\/uni.png",
+                                    "was_home": false,
+                                    "date": "13\/04\/2026",
+                                    "match_id": 300,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
                                 {
                                     "result": "L",
                                     "score": "2 - 3",
