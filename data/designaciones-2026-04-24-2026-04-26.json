@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-04-22T13:44:49-03:00",
+    "generated_at": "2026-04-22T14:10:29-03:00",
     "from": "2026-04-24",
     "to": "2026-04-26",
     "umpires": [
@@ -467,9 +467,9 @@
                         "logo": "assets\/logos\/pto.png"
                     },
                     "pitch": "ABH",
-                    "umpire_1": "Lucia Centurión",
-                    "umpire_2": "Dolores Rossello",
-                    "fee": 42000,
+                    "umpire_1": "Maite Baratcabal",
+                    "umpire_2": "A designar",
+                    "fee": null,
                     "supervisor": null
                 }
             ]
