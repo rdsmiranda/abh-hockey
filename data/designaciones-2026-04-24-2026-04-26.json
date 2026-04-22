@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-04-22T14:10:29-03:00",
+    "generated_at": "2026-04-22T14:13:25-03:00",
     "from": "2026-04-24",
     "to": "2026-04-26",
     "umpires": [
@@ -372,16 +372,16 @@
             "name": "Servidio Rodrigo"
         },
         {
-            "id": 85,
-            "name": "Sheila Sofia Currulef"
-        },
-        {
             "id": 77,
             "name": "Sofía Carrizo"
         },
         {
             "id": 123,
             "name": "Sofía Ciambelli"
+        },
+        {
+            "id": 85,
+            "name": "Sofía Currulef"
         },
         {
             "id": 72,
@@ -1192,7 +1192,7 @@
                         "logo": "assets\/logos\/uni.png"
                     },
                     "pitch": "Universitario (Arena)",
-                    "umpire_1": "Sheila Sofia Currulef",
+                    "umpire_1": "Sofía Currulef",
                     "umpire_2": "Victoria Pene",
                     "fee": 57000,
                     "supervisor": null
@@ -1241,7 +1241,7 @@
                     },
                     "pitch": "Universitario (Agua)",
                     "umpire_1": "Juan Cruz Díaz",
-                    "umpire_2": "Sheila Sofia Currulef",
+                    "umpire_2": "Sofía Currulef",
                     "fee": 40000,
                     "supervisor": null
                 },
