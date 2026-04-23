@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-04-22T17:04:11-03:00",
+    "generated_at": "2026-04-23T08:30:51-03:00",
     "from": "2026-04-24",
     "to": "2026-04-26",
     "umpires": [
@@ -424,30 +424,6 @@
         {
             "date": "2026-04-24",
             "matches": [
-                {
-                    "id": 21,
-                    "time": "19:30",
-                    "zone": "Oro",
-                    "category": "Sub16",
-                    "round": "Fecha 2",
-                    "home_team": {
-                        "id": 8,
-                        "name": "Monte Hermoso",
-                        "short_name": "CAMH",
-                        "logo": "assets\/logos\/camh.png"
-                    },
-                    "away_team": {
-                        "id": 7,
-                        "name": "Independiente",
-                        "short_name": "CAI",
-                        "logo": "assets\/logos\/cai.png"
-                    },
-                    "pitch": "Monte Hermoso",
-                    "umpire_1": "A designar",
-                    "umpire_2": "A designar",
-                    "fee": null,
-                    "supervisor": null
-                },
                 {
                     "id": 115,
                     "time": "17:00",
