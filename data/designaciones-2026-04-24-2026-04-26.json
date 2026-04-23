@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-04-23T08:30:51-03:00",
+    "generated_at": "2026-04-23T14:49:53-03:00",
     "from": "2026-04-24",
     "to": "2026-04-26",
     "umpires": [
@@ -444,8 +444,8 @@
                     },
                     "pitch": "ABH",
                     "umpire_1": "Maite Baratcabal",
-                    "umpire_2": "A designar",
-                    "fee": null,
+                    "umpire_2": "Francisco Cañizares",
+                    "fee": 42000,
                     "supervisor": null
                 }
             ]
@@ -1461,9 +1461,9 @@
                         "logo": "assets\/logos\/uni.png"
                     },
                     "pitch": "Puerto Belgrano",
-                    "umpire_1": "A designar",
+                    "umpire_1": "Sofía Ciambelli",
                     "umpire_2": "Milton Barrera",
-                    "fee": null,
+                    "fee": 38000,
                     "supervisor": null
                 },
                 {
