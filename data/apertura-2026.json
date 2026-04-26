@@ -6,7 +6,7 @@
         "start_date": "2026-03-07T03:00:00.000000Z",
         "end_date": null
     },
-    "generated_at": "2026-04-25T20:27:59-03:00",
+    "generated_at": "2026-04-25T21:09:54-03:00",
     "zones": [
         {
             "id": 1,
@@ -6911,6 +6911,74 @@
                         {
                             "position": 2,
                             "team": {
+                                "id": 29,
+                                "name": "Villa Mitre",
+                                "short_name": "VM",
+                                "logo": "assets\/logos\/vm.png"
+                            },
+                            "played": 4,
+                            "won": 2,
+                            "drawn": 1,
+                            "lost": 1,
+                            "goals_for": 13,
+                            "goals_against": 6,
+                            "goal_difference": 7,
+                            "points": 8,
+                            "recent_form": [
+                                {
+                                    "result": "D",
+                                    "score": "1 - 1",
+                                    "opponent": "SS",
+                                    "opponent_logo": "assets\/logos\/ss.png",
+                                    "was_home": false,
+                                    "date": "25\/04\/2026",
+                                    "match_id": 279,
+                                    "shootouts": {
+                                        "for": 2,
+                                        "against": 1,
+                                        "won": true,
+                                        "score": "2 - 1"
+                                    },
+                                    "bonus_point": true
+                                },
+                                {
+                                    "result": "W",
+                                    "score": "4 - 0",
+                                    "opponent": "PAL",
+                                    "opponent_logo": "assets\/logos\/pal.png",
+                                    "was_home": false,
+                                    "date": "11\/04\/2026",
+                                    "match_id": 275,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
+                                {
+                                    "result": "W",
+                                    "score": "6 - 0",
+                                    "opponent": "PAC",
+                                    "opponent_logo": "assets\/logos\/cap.png",
+                                    "was_home": true,
+                                    "date": "21\/03\/2026",
+                                    "match_id": 272,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
+                                {
+                                    "result": "L",
+                                    "score": "2 - 5",
+                                    "opponent": "CAMH",
+                                    "opponent_logo": "assets\/logos\/camh.png",
+                                    "was_home": false,
+                                    "date": "14\/03\/2026",
+                                    "match_id": 269,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                }
+                            ]
+                        },
+                        {
+                            "position": 3,
+                            "team": {
                                 "id": 8,
                                 "name": "Monte Hermoso",
                                 "short_name": "CAMH",
@@ -6950,58 +7018,6 @@
                             ]
                         },
                         {
-                            "position": 3,
-                            "team": {
-                                "id": 29,
-                                "name": "Villa Mitre",
-                                "short_name": "VM",
-                                "logo": "assets\/logos\/vm.png"
-                            },
-                            "played": 3,
-                            "won": 2,
-                            "drawn": 0,
-                            "lost": 1,
-                            "goals_for": 12,
-                            "goals_against": 5,
-                            "goal_difference": 7,
-                            "points": 6,
-                            "recent_form": [
-                                {
-                                    "result": "W",
-                                    "score": "4 - 0",
-                                    "opponent": "PAL",
-                                    "opponent_logo": "assets\/logos\/pal.png",
-                                    "was_home": false,
-                                    "date": "11\/04\/2026",
-                                    "match_id": 275,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                },
-                                {
-                                    "result": "W",
-                                    "score": "6 - 0",
-                                    "opponent": "PAC",
-                                    "opponent_logo": "assets\/logos\/cap.png",
-                                    "was_home": true,
-                                    "date": "21\/03\/2026",
-                                    "match_id": 272,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                },
-                                {
-                                    "result": "L",
-                                    "score": "2 - 5",
-                                    "opponent": "CAMH",
-                                    "opponent_logo": "assets\/logos\/camh.png",
-                                    "was_home": false,
-                                    "date": "14\/03\/2026",
-                                    "match_id": 269,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                }
-                            ]
-                        },
-                        {
                             "position": 4,
                             "team": {
                                 "id": 21,
@@ -7009,15 +7025,31 @@
                                 "short_name": "SS",
                                 "logo": "assets\/logos\/ss.png"
                             },
-                            "played": 2,
+                            "played": 3,
                             "won": 1,
-                            "drawn": 0,
+                            "drawn": 1,
                             "lost": 1,
-                            "goals_for": 4,
-                            "goals_against": 1,
+                            "goals_for": 5,
+                            "goals_against": 2,
                             "goal_difference": 3,
-                            "points": 3,
+                            "points": 4,
                             "recent_form": [
+                                {
+                                    "result": "D",
+                                    "score": "1 - 1",
+                                    "opponent": "VM",
+                                    "opponent_logo": "assets\/logos\/vm.png",
+                                    "was_home": true,
+                                    "date": "25\/04\/2026",
+                                    "match_id": 279,
+                                    "shootouts": {
+                                        "for": 1,
+                                        "against": 2,
+                                        "won": false,
+                                        "score": "1 - 2"
+                                    },
+                                    "bonus_point": false
+                                },
                                 {
                                     "result": "W",
                                     "score": "4 - 0",
