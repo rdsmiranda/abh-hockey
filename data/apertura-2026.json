@@ -6,7 +6,7 @@
         "start_date": "2026-03-07T03:00:00.000000Z",
         "end_date": null
     },
-    "generated_at": "2026-04-25T21:09:54-03:00",
+    "generated_at": "2026-04-27T21:38:18-03:00",
     "zones": [
         {
             "id": 1,
@@ -1728,15 +1728,26 @@
                                 "short_name": "CAMH",
                                 "logo": "assets\/logos\/camh.png"
                             },
-                            "played": 4,
-                            "won": 3,
+                            "played": 5,
+                            "won": 4,
                             "drawn": 0,
                             "lost": 1,
-                            "goals_for": 21,
-                            "goals_against": 2,
-                            "goal_difference": 19,
-                            "points": 9,
+                            "goals_for": 23,
+                            "goals_against": 3,
+                            "goal_difference": 20,
+                            "points": 12,
                             "recent_form": [
+                                {
+                                    "result": "W",
+                                    "score": "2 - 1",
+                                    "opponent": "ARG A",
+                                    "opponent_logo": "assets\/logos\/arg.png",
+                                    "was_home": false,
+                                    "date": "27\/04\/2026",
+                                    "match_id": 25,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
                                 {
                                     "result": "W",
                                     "score": "6 - 0",
@@ -1791,15 +1802,26 @@
                                 "short_name": "ARG A",
                                 "logo": "assets\/logos\/arg.png"
                             },
-                            "played": 4,
+                            "played": 5,
                             "won": 3,
                             "drawn": 0,
-                            "lost": 1,
-                            "goals_for": 9,
-                            "goals_against": 6,
-                            "goal_difference": 3,
+                            "lost": 2,
+                            "goals_for": 10,
+                            "goals_against": 8,
+                            "goal_difference": 2,
                             "points": 9,
                             "recent_form": [
+                                {
+                                    "result": "L",
+                                    "score": "1 - 2",
+                                    "opponent": "CAMH",
+                                    "opponent_logo": "assets\/logos\/camh.png",
+                                    "was_home": true,
+                                    "date": "27\/04\/2026",
+                                    "match_id": 25,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
                                 {
                                     "result": "W",
                                     "score": "3 - 0",
