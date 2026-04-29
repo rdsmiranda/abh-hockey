@@ -6,7 +6,7 @@
         "start_date": "2026-03-07T03:00:00.000000Z",
         "end_date": null
     },
-    "generated_at": "2026-04-27T21:38:18-03:00",
+    "generated_at": "2026-04-29T12:48:12-03:00",
     "zones": [
         {
             "id": 1,
@@ -246,15 +246,26 @@
                                 "short_name": "UNI A",
                                 "logo": "assets\/logos\/uni.png"
                             },
-                            "played": 4,
-                            "won": 2,
+                            "played": 5,
+                            "won": 3,
                             "drawn": 0,
                             "lost": 2,
-                            "goals_for": 5,
+                            "goals_for": 6,
                             "goals_against": 6,
-                            "goal_difference": -1,
-                            "points": 6,
+                            "goal_difference": 0,
+                            "points": 9,
                             "recent_form": [
+                                {
+                                    "result": "W",
+                                    "score": "1 - 0",
+                                    "opponent": "CEN A",
+                                    "opponent_logo": "assets\/logos\/cen.png",
+                                    "was_home": true,
+                                    "date": "28\/04\/2026",
+                                    "match_id": 36,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
                                 {
                                     "result": "L",
                                     "score": "0 - 2",
@@ -383,15 +394,26 @@
                                 "short_name": "CEN A",
                                 "logo": "assets\/logos\/cen.png"
                             },
-                            "played": 4,
+                            "played": 5,
                             "won": 1,
                             "drawn": 1,
-                            "lost": 2,
+                            "lost": 3,
                             "goals_for": 6,
-                            "goals_against": 6,
-                            "goal_difference": 0,
+                            "goals_against": 7,
+                            "goal_difference": -1,
                             "points": 4,
                             "recent_form": [
+                                {
+                                    "result": "L",
+                                    "score": "0 - 1",
+                                    "opponent": "UNI A",
+                                    "opponent_logo": "assets\/logos\/uni.png",
+                                    "was_home": false,
+                                    "date": "28\/04\/2026",
+                                    "match_id": 36,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
                                 {
                                     "result": "L",
                                     "score": "0 - 2",
@@ -5277,15 +5299,26 @@
                                 "short_name": "PAL",
                                 "logo": "assets\/logos\/pal.png"
                             },
-                            "played": 5,
-                            "won": 5,
+                            "played": 6,
+                            "won": 6,
                             "drawn": 0,
                             "lost": 0,
-                            "goals_for": 20,
+                            "goals_for": 22,
                             "goals_against": 1,
-                            "goal_difference": 19,
-                            "points": 15,
+                            "goal_difference": 21,
+                            "points": 18,
                             "recent_form": [
+                                {
+                                    "result": "W",
+                                    "score": "2 - 0",
+                                    "opponent": "POR",
+                                    "opponent_logo": "assets\/logos\/por.png",
+                                    "was_home": true,
+                                    "date": "02\/05\/2026",
+                                    "match_id": 245,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
                                 {
                                     "result": "W",
                                     "score": "2 - 0",
@@ -5327,17 +5360,6 @@
                                     "was_home": false,
                                     "date": "14\/03\/2026",
                                     "match_id": 184,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                },
-                                {
-                                    "result": "W",
-                                    "score": "2 - 1",
-                                    "opponent": "ARG B",
-                                    "opponent_logo": "assets\/logos\/arg.png",
-                                    "was_home": true,
-                                    "date": "07\/03\/2026",
-                                    "match_id": 172,
                                     "shootouts": null,
                                     "bonus_point": false
                                 }
@@ -5699,15 +5721,26 @@
                                 "short_name": "POR",
                                 "logo": "assets\/logos\/por.png"
                             },
-                            "played": 5,
+                            "played": 6,
                             "won": 0,
                             "drawn": 0,
-                            "lost": 5,
+                            "lost": 6,
                             "goals_for": 0,
-                            "goals_against": 10,
-                            "goal_difference": -10,
+                            "goals_against": 12,
+                            "goal_difference": -12,
                             "points": 0,
                             "recent_form": [
+                                {
+                                    "result": "L",
+                                    "score": "0 - 2",
+                                    "opponent": "PAL",
+                                    "opponent_logo": "assets\/logos\/pal.png",
+                                    "was_home": false,
+                                    "date": "02\/05\/2026",
+                                    "match_id": 245,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
                                 {
                                     "result": "L",
                                     "score": "0 - 2",
@@ -5749,17 +5782,6 @@
                                     "was_home": false,
                                     "date": "21\/03\/2026",
                                     "match_id": 197,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                },
-                                {
-                                    "result": "L",
-                                    "score": "0 - 2",
-                                    "opponent": "SPO",
-                                    "opponent_logo": "assets\/logos\/spo.png",
-                                    "was_home": false,
-                                    "date": "07\/03\/2026",
-                                    "match_id": 174,
                                     "shootouts": null,
                                     "bonus_point": false
                                 }
