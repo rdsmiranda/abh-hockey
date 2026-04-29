@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-04-29T13:00:57-03:00",
+    "generated_at": "2026-04-29T14:28:22-03:00",
     "from": "2026-04-29",
     "to": "2026-05-03",
     "umpires": [
@@ -1758,6 +1758,30 @@
                     "umpire_1": "Hernán Del Ruiz",
                     "umpire_2": "Julieta Soldini",
                     "fee": 64000,
+                    "supervisor": null
+                },
+                {
+                    "id": 277,
+                    "time": "12:00",
+                    "zone": "Intermedia",
+                    "category": "Intermedia",
+                    "round": "Fecha 4",
+                    "home_team": {
+                        "id": 8,
+                        "name": "Monte Hermoso",
+                        "short_name": "CAMH",
+                        "logo": "assets\/logos\/camh.png"
+                    },
+                    "away_team": {
+                        "id": 14,
+                        "name": "Palihue",
+                        "short_name": "PAL",
+                        "logo": "assets\/logos\/pal.png"
+                    },
+                    "pitch": "Monte Hermoso",
+                    "umpire_1": "Francisco Del Valle",
+                    "umpire_2": "Betsabé Lobato",
+                    "fee": 50000,
                     "supervisor": null
                 },
                 {
