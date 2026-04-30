@@ -6,7 +6,7 @@
         "start_date": "2026-03-07T03:00:00.000000Z",
         "end_date": null
     },
-    "generated_at": "2026-04-30T00:06:42-03:00",
+    "generated_at": "2026-04-30T00:10:39-03:00",
     "zones": [
         {
             "id": 1,
@@ -6584,15 +6584,26 @@
                                 "short_name": "UNI",
                                 "logo": "assets\/logos\/uni.png"
                             },
-                            "played": 3,
-                            "won": 3,
+                            "played": 4,
+                            "won": 4,
                             "drawn": 0,
                             "lost": 0,
-                            "goals_for": 16,
+                            "goals_for": 17,
                             "goals_against": 2,
-                            "goal_difference": 14,
-                            "points": 9,
+                            "goal_difference": 15,
+                            "points": 12,
                             "recent_form": [
+                                {
+                                    "result": "W",
+                                    "score": "1 - 0",
+                                    "opponent": "PTO",
+                                    "opponent_logo": "assets\/logos\/pto.png",
+                                    "was_home": false,
+                                    "date": "29\/04\/2026",
+                                    "match_id": 263,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
                                 {
                                     "result": "W",
                                     "score": "2 - 1",
@@ -6636,15 +6647,26 @@
                                 "short_name": "PTO",
                                 "logo": "assets\/logos\/pto.png"
                             },
-                            "played": 3,
+                            "played": 4,
                             "won": 2,
                             "drawn": 1,
-                            "lost": 0,
+                            "lost": 1,
                             "goals_for": 9,
-                            "goals_against": 0,
-                            "goal_difference": 9,
+                            "goals_against": 1,
+                            "goal_difference": 8,
                             "points": 7,
                             "recent_form": [
+                                {
+                                    "result": "L",
+                                    "score": "0 - 1",
+                                    "opponent": "UNI",
+                                    "opponent_logo": "assets\/logos\/uni.png",
+                                    "was_home": true,
+                                    "date": "29\/04\/2026",
+                                    "match_id": 263,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
                                 {
                                     "result": "D",
                                     "score": "0 - 0",
