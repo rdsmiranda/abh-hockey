@@ -6,7 +6,7 @@
         "start_date": "2026-03-07T03:00:00.000000Z",
         "end_date": null
     },
-    "generated_at": "2026-04-30T00:10:39-03:00",
+    "generated_at": "2026-04-30T19:01:23-03:00",
     "zones": [
         {
             "id": 1,
@@ -743,97 +743,23 @@
                         {
                             "position": 4,
                             "team": {
-                                "id": 24,
-                                "name": "Universitario A",
-                                "short_name": "UNI A",
-                                "logo": "assets\/logos\/uni.png"
-                            },
-                            "played": 5,
-                            "won": 2,
-                            "drawn": 0,
-                            "lost": 3,
-                            "goals_for": 5,
-                            "goals_against": 10,
-                            "goal_difference": -5,
-                            "points": 6,
-                            "recent_form": [
-                                {
-                                    "result": "W",
-                                    "score": "1 - 0",
-                                    "opponent": "CEN A",
-                                    "opponent_logo": "assets\/logos\/cen.png",
-                                    "was_home": true,
-                                    "date": "30\/04\/2026",
-                                    "match_id": 33,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                },
-                                {
-                                    "result": "L",
-                                    "score": "1 - 4",
-                                    "opponent": "CAI",
-                                    "opponent_logo": "assets\/logos\/cai.png",
-                                    "was_home": false,
-                                    "date": "25\/04\/2026",
-                                    "match_id": 67,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                },
-                                {
-                                    "result": "L",
-                                    "score": "1 - 2",
-                                    "opponent": "CAMH",
-                                    "opponent_logo": "assets\/logos\/camh.png",
-                                    "was_home": true,
-                                    "date": "11\/04\/2026",
-                                    "match_id": 55,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                },
-                                {
-                                    "result": "W",
-                                    "score": "2 - 0",
-                                    "opponent": "PAC A",
-                                    "opponent_logo": "assets\/logos\/cap.png",
-                                    "was_home": false,
-                                    "date": "28\/03\/2026",
-                                    "match_id": 43,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                },
-                                {
-                                    "result": "L",
-                                    "score": "0 - 4",
-                                    "opponent": "SS A",
-                                    "opponent_logo": "assets\/logos\/ss.png",
-                                    "was_home": false,
-                                    "date": "07\/03\/2026",
-                                    "match_id": 7,
-                                    "shootouts": null,
-                                    "bonus_point": false
-                                }
-                            ]
-                        },
-                        {
-                            "position": 5,
-                            "team": {
                                 "id": 3,
                                 "name": "El Nacional A",
                                 "short_name": "CEN A",
                                 "logo": "assets\/logos\/cen.png"
                             },
                             "played": 5,
-                            "won": 1,
+                            "won": 2,
                             "drawn": 1,
-                            "lost": 3,
-                            "goals_for": 4,
-                            "goals_against": 15,
-                            "goal_difference": -11,
-                            "points": 4,
+                            "lost": 2,
+                            "goals_for": 5,
+                            "goals_against": 14,
+                            "goal_difference": -9,
+                            "points": 7,
                             "recent_form": [
                                 {
-                                    "result": "L",
-                                    "score": "0 - 1",
+                                    "result": "W",
+                                    "score": "1 - 0",
                                     "opponent": "UNI A",
                                     "opponent_logo": "assets\/logos\/uni.png",
                                     "was_home": false,
@@ -883,6 +809,80 @@
                                     "was_home": false,
                                     "date": "07\/03\/2026",
                                     "match_id": 9,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                }
+                            ]
+                        },
+                        {
+                            "position": 5,
+                            "team": {
+                                "id": 24,
+                                "name": "Universitario A",
+                                "short_name": "UNI A",
+                                "logo": "assets\/logos\/uni.png"
+                            },
+                            "played": 5,
+                            "won": 1,
+                            "drawn": 0,
+                            "lost": 4,
+                            "goals_for": 4,
+                            "goals_against": 11,
+                            "goal_difference": -7,
+                            "points": 3,
+                            "recent_form": [
+                                {
+                                    "result": "L",
+                                    "score": "0 - 1",
+                                    "opponent": "CEN A",
+                                    "opponent_logo": "assets\/logos\/cen.png",
+                                    "was_home": true,
+                                    "date": "30\/04\/2026",
+                                    "match_id": 33,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
+                                {
+                                    "result": "L",
+                                    "score": "1 - 4",
+                                    "opponent": "CAI",
+                                    "opponent_logo": "assets\/logos\/cai.png",
+                                    "was_home": false,
+                                    "date": "25\/04\/2026",
+                                    "match_id": 67,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
+                                {
+                                    "result": "L",
+                                    "score": "1 - 2",
+                                    "opponent": "CAMH",
+                                    "opponent_logo": "assets\/logos\/camh.png",
+                                    "was_home": true,
+                                    "date": "11\/04\/2026",
+                                    "match_id": 55,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
+                                {
+                                    "result": "W",
+                                    "score": "2 - 0",
+                                    "opponent": "PAC A",
+                                    "opponent_logo": "assets\/logos\/cap.png",
+                                    "was_home": false,
+                                    "date": "28\/03\/2026",
+                                    "match_id": 43,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
+                                {
+                                    "result": "L",
+                                    "score": "0 - 4",
+                                    "opponent": "SS A",
+                                    "opponent_logo": "assets\/logos\/ss.png",
+                                    "was_home": false,
+                                    "date": "07\/03\/2026",
+                                    "match_id": 7,
                                     "shootouts": null,
                                     "bonus_point": false
                                 }
