@@ -6,7 +6,7 @@
         "start_date": "2026-03-07T03:00:00.000000Z",
         "end_date": null
     },
-    "generated_at": "2026-05-03T19:12:39-03:00",
+    "generated_at": "2026-05-03T22:50:13-03:00",
     "zones": [
         {
             "id": 1,
@@ -1321,7 +1321,7 @@
                             "goals_for": 10,
                             "goals_against": 8,
                             "goal_difference": 2,
-                            "points": 10,
+                            "points": 9,
                             "recent_form": [
                                 {
                                     "result": "D",
@@ -1349,11 +1349,11 @@
                                     "match_id": 53,
                                     "shootouts": {
                                         "for": 4,
-                                        "against": 2,
-                                        "won": true,
-                                        "score": "4 - 2"
+                                        "against": 5,
+                                        "won": false,
+                                        "score": "4 - 5"
                                     },
-                                    "bonus_point": true
+                                    "bonus_point": false
                                 },
                                 {
                                     "result": "D",
@@ -1415,7 +1415,7 @@
                             "goals_for": 9,
                             "goals_against": 12,
                             "goal_difference": -3,
-                            "points": 7,
+                            "points": 8,
                             "recent_form": [
                                 {
                                     "result": "W",
@@ -1448,12 +1448,12 @@
                                     "date": "11\/04\/2026",
                                     "match_id": 53,
                                     "shootouts": {
-                                        "for": 2,
+                                        "for": 5,
                                         "against": 4,
-                                        "won": false,
-                                        "score": "2 - 4"
+                                        "won": true,
+                                        "score": "5 - 4"
                                     },
-                                    "bonus_point": false
+                                    "bonus_point": true
                                 },
                                 {
                                     "result": "L",
@@ -2189,7 +2189,812 @@
                     ]
                 }
             ],
-            "playoffs": []
+            "playoffs": [
+                {
+                    "category": "Sub14",
+                    "category_order": 1,
+                    "stages": [
+                        {
+                            "stage": "semifinals",
+                            "label": "Semifinales",
+                            "order": 3,
+                            "brackets": [
+                                {
+                                    "id": 16,
+                                    "format": "single_elimination",
+                                    "matchup_number": 1,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 1,
+                                        "name": "Argentino A",
+                                        "short_name": "ARG A",
+                                        "seed": 1,
+                                        "logo": "assets\/logos\/arg.png"
+                                    },
+                                    "team_2": {
+                                        "id": 24,
+                                        "name": "Universitario A",
+                                        "short_name": "UNI A",
+                                        "seed": 4,
+                                        "logo": "assets\/logos\/uni.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": null,
+                                            "time": "",
+                                            "home_team_id": 1,
+                                            "away_team_id": 24,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 17,
+                                    "format": "single_elimination",
+                                    "matchup_number": 2,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 7,
+                                        "name": "Independiente",
+                                        "short_name": "CAI",
+                                        "seed": 2,
+                                        "logo": "assets\/logos\/cai.png"
+                                    },
+                                    "team_2": {
+                                        "id": 19,
+                                        "name": "S. Sportiva A",
+                                        "short_name": "SS A",
+                                        "seed": 3,
+                                        "logo": "assets\/logos\/ss.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": null,
+                                            "time": "",
+                                            "home_team_id": 7,
+                                            "away_team_id": 19,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "stage": "relegation",
+                            "label": "Descenso",
+                            "order": 9,
+                            "brackets": [
+                                {
+                                    "id": 18,
+                                    "format": "triangular",
+                                    "matchup_number": 1,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 8,
+                                        "name": "Monte Hermoso",
+                                        "short_name": "CAMH",
+                                        "seed": 1,
+                                        "logo": "assets\/logos\/camh.png"
+                                    },
+                                    "team_2": {
+                                        "id": 3,
+                                        "name": "El Nacional A",
+                                        "short_name": "CEN A",
+                                        "seed": 2,
+                                        "logo": "assets\/logos\/cen.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": null,
+                                            "time": "",
+                                            "home_team_id": 8,
+                                            "away_team_id": 3,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ],
+                                    "team_3": {
+                                        "id": 10,
+                                        "name": "Pacífico A",
+                                        "short_name": "PAC A",
+                                        "seed": 3,
+                                        "logo": "assets\/logos\/cap.png"
+                                    },
+                                    "team_4": null,
+                                    "group_standings": [
+                                        {
+                                            "position": 1,
+                                            "team": {
+                                                "id": 8,
+                                                "name": "Monte Hermoso",
+                                                "short_name": "CAMH",
+                                                "seed": 1,
+                                                "logo": "assets\/logos\/camh.png"
+                                            },
+                                            "played": 0,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 0,
+                                            "goals_for": 0,
+                                            "goals_against": 0,
+                                            "goal_difference": 0,
+                                            "points": 0
+                                        },
+                                        {
+                                            "position": 2,
+                                            "team": {
+                                                "id": 3,
+                                                "name": "El Nacional A",
+                                                "short_name": "CEN A",
+                                                "seed": 2,
+                                                "logo": "assets\/logos\/cen.png"
+                                            },
+                                            "played": 0,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 0,
+                                            "goals_for": 0,
+                                            "goals_against": 0,
+                                            "goal_difference": 0,
+                                            "points": 0
+                                        },
+                                        {
+                                            "position": 3,
+                                            "team": {
+                                                "id": 10,
+                                                "name": "Pacífico A",
+                                                "short_name": "PAC A",
+                                                "seed": 3,
+                                                "logo": "assets\/logos\/cap.png"
+                                            },
+                                            "played": 0,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 0,
+                                            "goals_for": 0,
+                                            "goals_against": 0,
+                                            "goal_difference": 0,
+                                            "points": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "category": "Sub16",
+                    "category_order": 2,
+                    "stages": [
+                        {
+                            "stage": "semifinals",
+                            "label": "Semifinales",
+                            "order": 3,
+                            "brackets": [
+                                {
+                                    "id": 13,
+                                    "format": "single_elimination",
+                                    "matchup_number": 1,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 8,
+                                        "name": "Monte Hermoso",
+                                        "short_name": "CAMH",
+                                        "seed": 1,
+                                        "logo": "assets\/logos\/camh.png"
+                                    },
+                                    "team_2": {
+                                        "id": 3,
+                                        "name": "El Nacional A",
+                                        "short_name": "CEN A",
+                                        "seed": 4,
+                                        "logo": "assets\/logos\/cen.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": null,
+                                            "time": "",
+                                            "home_team_id": 8,
+                                            "away_team_id": 3,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 14,
+                                    "format": "single_elimination",
+                                    "matchup_number": 2,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 19,
+                                        "name": "S. Sportiva A",
+                                        "short_name": "SS A",
+                                        "seed": 2,
+                                        "logo": "assets\/logos\/ss.png"
+                                    },
+                                    "team_2": {
+                                        "id": 7,
+                                        "name": "Independiente",
+                                        "short_name": "CAI",
+                                        "seed": 3,
+                                        "logo": "assets\/logos\/cai.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": null,
+                                            "time": "",
+                                            "home_team_id": 19,
+                                            "away_team_id": 7,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "stage": "relegation",
+                            "label": "Descenso",
+                            "order": 9,
+                            "brackets": [
+                                {
+                                    "id": 15,
+                                    "format": "triangular",
+                                    "matchup_number": 1,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 24,
+                                        "name": "Universitario A",
+                                        "short_name": "UNI A",
+                                        "seed": 1,
+                                        "logo": "assets\/logos\/uni.png"
+                                    },
+                                    "team_2": {
+                                        "id": 10,
+                                        "name": "Pacífico A",
+                                        "short_name": "PAC A",
+                                        "seed": 2,
+                                        "logo": "assets\/logos\/cap.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": null,
+                                            "time": "",
+                                            "home_team_id": 24,
+                                            "away_team_id": 10,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ],
+                                    "team_3": {
+                                        "id": 1,
+                                        "name": "Argentino A",
+                                        "short_name": "ARG A",
+                                        "seed": 3,
+                                        "logo": "assets\/logos\/arg.png"
+                                    },
+                                    "team_4": null,
+                                    "group_standings": [
+                                        {
+                                            "position": 1,
+                                            "team": {
+                                                "id": 24,
+                                                "name": "Universitario A",
+                                                "short_name": "UNI A",
+                                                "seed": 1,
+                                                "logo": "assets\/logos\/uni.png"
+                                            },
+                                            "played": 0,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 0,
+                                            "goals_for": 0,
+                                            "goals_against": 0,
+                                            "goal_difference": 0,
+                                            "points": 0
+                                        },
+                                        {
+                                            "position": 2,
+                                            "team": {
+                                                "id": 10,
+                                                "name": "Pacífico A",
+                                                "short_name": "PAC A",
+                                                "seed": 2,
+                                                "logo": "assets\/logos\/cap.png"
+                                            },
+                                            "played": 0,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 0,
+                                            "goals_for": 0,
+                                            "goals_against": 0,
+                                            "goal_difference": 0,
+                                            "points": 0
+                                        },
+                                        {
+                                            "position": 3,
+                                            "team": {
+                                                "id": 1,
+                                                "name": "Argentino A",
+                                                "short_name": "ARG A",
+                                                "seed": 3,
+                                                "logo": "assets\/logos\/arg.png"
+                                            },
+                                            "played": 0,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 0,
+                                            "goals_for": 0,
+                                            "goals_against": 0,
+                                            "goal_difference": 0,
+                                            "points": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "category": "Sub19",
+                    "category_order": 3,
+                    "stages": [
+                        {
+                            "stage": "semifinals",
+                            "label": "Semifinales",
+                            "order": 3,
+                            "brackets": [
+                                {
+                                    "id": 7,
+                                    "format": "single_elimination",
+                                    "matchup_number": 1,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 1,
+                                        "name": "Argentino A",
+                                        "short_name": "ARG A",
+                                        "seed": 1,
+                                        "logo": "assets\/logos\/arg.png"
+                                    },
+                                    "team_2": {
+                                        "id": 10,
+                                        "name": "Pacífico A",
+                                        "short_name": "PAC A",
+                                        "seed": 4,
+                                        "logo": "assets\/logos\/cap.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": null,
+                                            "time": "",
+                                            "home_team_id": 1,
+                                            "away_team_id": 10,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 8,
+                                    "format": "single_elimination",
+                                    "matchup_number": 2,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 8,
+                                        "name": "Monte Hermoso",
+                                        "short_name": "CAMH",
+                                        "seed": 2,
+                                        "logo": "assets\/logos\/camh.png"
+                                    },
+                                    "team_2": {
+                                        "id": 24,
+                                        "name": "Universitario A",
+                                        "short_name": "UNI A",
+                                        "seed": 3,
+                                        "logo": "assets\/logos\/uni.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": null,
+                                            "time": "",
+                                            "home_team_id": 8,
+                                            "away_team_id": 24,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "stage": "relegation",
+                            "label": "Descenso",
+                            "order": 9,
+                            "brackets": [
+                                {
+                                    "id": 9,
+                                    "format": "triangular",
+                                    "matchup_number": 1,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 3,
+                                        "name": "El Nacional A",
+                                        "short_name": "CEN A",
+                                        "seed": 5,
+                                        "logo": "assets\/logos\/cen.png"
+                                    },
+                                    "team_2": {
+                                        "id": 19,
+                                        "name": "S. Sportiva A",
+                                        "short_name": "SS A",
+                                        "seed": 6,
+                                        "logo": "assets\/logos\/ss.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": null,
+                                            "time": "",
+                                            "home_team_id": 3,
+                                            "away_team_id": 19,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ],
+                                    "team_3": {
+                                        "id": 7,
+                                        "name": "Independiente",
+                                        "short_name": "CAI",
+                                        "seed": 7,
+                                        "logo": "assets\/logos\/cai.png"
+                                    },
+                                    "team_4": null,
+                                    "group_standings": [
+                                        {
+                                            "position": 1,
+                                            "team": {
+                                                "id": 3,
+                                                "name": "El Nacional A",
+                                                "short_name": "CEN A",
+                                                "seed": 5,
+                                                "logo": "assets\/logos\/cen.png"
+                                            },
+                                            "played": 0,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 0,
+                                            "goals_for": 0,
+                                            "goals_against": 0,
+                                            "goal_difference": 0,
+                                            "points": 0
+                                        },
+                                        {
+                                            "position": 2,
+                                            "team": {
+                                                "id": 19,
+                                                "name": "S. Sportiva A",
+                                                "short_name": "SS A",
+                                                "seed": 6,
+                                                "logo": "assets\/logos\/ss.png"
+                                            },
+                                            "played": 0,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 0,
+                                            "goals_for": 0,
+                                            "goals_against": 0,
+                                            "goal_difference": 0,
+                                            "points": 0
+                                        },
+                                        {
+                                            "position": 3,
+                                            "team": {
+                                                "id": 7,
+                                                "name": "Independiente",
+                                                "short_name": "CAI",
+                                                "seed": 7,
+                                                "logo": "assets\/logos\/cai.png"
+                                            },
+                                            "played": 0,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 0,
+                                            "goals_for": 0,
+                                            "goals_against": 0,
+                                            "goal_difference": 0,
+                                            "points": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "category": "Primera",
+                    "category_order": 4,
+                    "stages": [
+                        {
+                            "stage": "semifinals",
+                            "label": "Semifinales",
+                            "order": 3,
+                            "brackets": [
+                                {
+                                    "id": 19,
+                                    "format": "single_elimination",
+                                    "matchup_number": 1,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 24,
+                                        "name": "Universitario A",
+                                        "short_name": "UNI A",
+                                        "seed": 1,
+                                        "logo": "assets\/logos\/uni.png"
+                                    },
+                                    "team_2": {
+                                        "id": 1,
+                                        "name": "Argentino A",
+                                        "short_name": "ARG A",
+                                        "seed": 4,
+                                        "logo": "assets\/logos\/arg.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": null,
+                                            "time": "",
+                                            "home_team_id": 24,
+                                            "away_team_id": 1,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 20,
+                                    "format": "single_elimination",
+                                    "matchup_number": 2,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 10,
+                                        "name": "Pacífico A",
+                                        "short_name": "PAC A",
+                                        "seed": 2,
+                                        "logo": "assets\/logos\/cap.png"
+                                    },
+                                    "team_2": {
+                                        "id": 8,
+                                        "name": "Monte Hermoso",
+                                        "short_name": "CAMH",
+                                        "seed": 3,
+                                        "logo": "assets\/logos\/camh.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": null,
+                                            "time": "",
+                                            "home_team_id": 10,
+                                            "away_team_id": 8,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "stage": "relegation",
+                            "label": "Descenso",
+                            "order": 9,
+                            "brackets": [
+                                {
+                                    "id": 21,
+                                    "format": "triangular",
+                                    "matchup_number": 1,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 19,
+                                        "name": "S. Sportiva A",
+                                        "short_name": "SS A",
+                                        "seed": 1,
+                                        "logo": "assets\/logos\/ss.png"
+                                    },
+                                    "team_2": {
+                                        "id": 3,
+                                        "name": "El Nacional A",
+                                        "short_name": "CEN A",
+                                        "seed": 2,
+                                        "logo": "assets\/logos\/cen.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": null,
+                                            "time": "",
+                                            "home_team_id": 19,
+                                            "away_team_id": 3,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ],
+                                    "team_3": {
+                                        "id": 7,
+                                        "name": "Independiente",
+                                        "short_name": "CAI",
+                                        "seed": 3,
+                                        "logo": "assets\/logos\/cai.png"
+                                    },
+                                    "team_4": null,
+                                    "group_standings": [
+                                        {
+                                            "position": 1,
+                                            "team": {
+                                                "id": 19,
+                                                "name": "S. Sportiva A",
+                                                "short_name": "SS A",
+                                                "seed": 1,
+                                                "logo": "assets\/logos\/ss.png"
+                                            },
+                                            "played": 0,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 0,
+                                            "goals_for": 0,
+                                            "goals_against": 0,
+                                            "goal_difference": 0,
+                                            "points": 0
+                                        },
+                                        {
+                                            "position": 2,
+                                            "team": {
+                                                "id": 3,
+                                                "name": "El Nacional A",
+                                                "short_name": "CEN A",
+                                                "seed": 2,
+                                                "logo": "assets\/logos\/cen.png"
+                                            },
+                                            "played": 0,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 0,
+                                            "goals_for": 0,
+                                            "goals_against": 0,
+                                            "goal_difference": 0,
+                                            "points": 0
+                                        },
+                                        {
+                                            "position": 3,
+                                            "team": {
+                                                "id": 7,
+                                                "name": "Independiente",
+                                                "short_name": "CAI",
+                                                "seed": 3,
+                                                "logo": "assets\/logos\/cai.png"
+                                            },
+                                            "played": 0,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 0,
+                                            "goals_for": 0,
+                                            "goals_against": 0,
+                                            "goal_difference": 0,
+                                            "points": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
         {
             "id": 2,
