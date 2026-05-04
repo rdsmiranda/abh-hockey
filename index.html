@@ -2076,7 +2076,6 @@
               ? `<span class="bm-pen">(${m.shootouts_home}–${m.shootouts_away} pen)</span>`
               : "";
             matchRows += `<div class="bracket-match-row">
-        <span class="bm-game">J${m.game || i + 1}</span>
         <span class="bm-date">${m.date || "—"}</span>
         <span class="bm-teams">${escHtml(htName)} vs ${escHtml(atName)}</span>
         <span class="bm-result">${m.goals_home} – ${m.goals_away}</span>
@@ -2084,7 +2083,6 @@
       </div>`;
           } else {
             matchRows += `<div class="bracket-match-row">
-        <span class="bm-game">J${m.game || i + 1}</span>
         <span class="bm-date">${m.date || "—"}</span>
         <span class="bm-teams">${escHtml(htName)} vs ${escHtml(atName)}</span>
         <span class="bm-pending">A jugarse</span>
@@ -2101,14 +2099,12 @@
         ${bracketTeamLogo(t1)}
         <div class="mu-team-info">
           <span class="mu-name">${escHtml(t1?.name || "Por definir")}</span>
-          ${t1?.seed ? `<span class="mu-seed">${t1.seed}° fase regular</span>` : ""}
         </div>
       </div>
       ${scoreHtml}
       <div class="mu-team right ${isWinner2 ? "mu-winner" : ""}">
         <div class="mu-team-info right">
           <span class="mu-name">${escHtml(t2?.name || "Por definir")}</span>
-          ${t2?.seed ? `<span class="mu-seed">${t2.seed}° fase regular</span>` : ""}
         </div>
         ${bracketTeamLogo(t2)}
       </div>
@@ -2135,6 +2131,8 @@
       <td class="col-hide-sm">${s.won}</td>
       <td class="col-hide-sm">${s.drawn}</td>
       <td class="col-hide-sm">${s.lost}</td>
+      <td class="col-hide-sm">${s.goals_for}</td>
+      <td class="col-hide-sm">${s.goals_against}</td>
       <td class="col-hide-sm">${s.goal_difference > 0 ? "+" : ""}${s.goal_difference}</td>
       <td class="group-pts">${s.points}</td>
     </tr>`;
@@ -2152,7 +2150,6 @@
               ? `<span class="bm-pen">(${m.shootouts_home}–${m.shootouts_away} pen)</span>`
               : "";
             matchRows += `<div class="bracket-match-row">
-        <span class="bm-game">J${m.game || i + 1}</span>
         <span class="bm-date">${m.date || "—"}</span>
         <span class="bm-teams">${escHtml(htName)} vs ${escHtml(atName)}</span>
         <span class="bm-result">${m.goals_home} – ${m.goals_away}</span>
@@ -2160,7 +2157,6 @@
       </div>`;
           } else {
             matchRows += `<div class="bracket-match-row">
-        <span class="bm-game">J${m.game || i + 1}</span>
         <span class="bm-date">${m.date || "—"}</span>
         <span class="bm-teams">${escHtml(htName)} vs ${escHtml(atName)}</span>
         <span class="bm-pending">A jugarse</span>
@@ -2181,6 +2177,8 @@
           <th title="Ganados" class="col-hide-sm">G</th>
           <th title="Empatados" class="col-hide-sm">E</th>
           <th title="Perdidos" class="col-hide-sm">P</th>
+          <th title="Goles a favor" class="col-hide-sm">GF</th>
+          <th title="Goles en contra" class="col-hide-sm">GC</th>
           <th title="Diferencia de goles" class="col-hide-sm">DG</th>
           <th>Pts</th>
         </tr></thead>
