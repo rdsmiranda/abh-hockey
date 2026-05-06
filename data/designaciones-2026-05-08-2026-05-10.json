@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-05-06T19:36:14-03:00",
+    "generated_at": "2026-05-06T20:59:05-03:00",
     "from": "2026-05-08",
     "to": "2026-05-10",
     "umpires": [
@@ -408,6 +408,10 @@
             "name": "Sofía Currulef"
         },
         {
+            "id": 171,
+            "name": "Sol Ayala"
+        },
+        {
             "id": 72,
             "name": "Sol Caspe"
         },
@@ -496,7 +500,7 @@
                         "logo": "assets\/logos\/cen.png"
                     },
                     "pitch": "Monte Hermoso",
-                    "umpire_1": "A designar",
+                    "umpire_1": "Sol Ayala",
                     "umpire_2": "A designar",
                     "fee": null,
                     "supervisor": null
@@ -1125,7 +1129,7 @@
                         "logo": "assets\/logos\/cen.png"
                     },
                     "pitch": "Monte Hermoso",
-                    "umpire_1": "A designar",
+                    "umpire_1": "Noelia Sueldo",
                     "umpire_2": "A designar",
                     "fee": null,
                     "supervisor": null
