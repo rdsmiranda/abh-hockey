@@ -6,7 +6,7 @@
         "start_date": "2026-03-07T03:00:00.000000Z",
         "end_date": null
     },
-    "generated_at": "2026-05-06T00:08:47-03:00",
+    "generated_at": "2026-05-06T19:06:24-03:00",
     "zones": [
         {
             "id": 1,
@@ -8140,7 +8140,812 @@
                     ]
                 }
             ],
-            "playoffs": []
+            "playoffs": [
+                {
+                    "category": "Sub14",
+                    "category_order": 1,
+                    "stages": [
+                        {
+                            "stage": "semifinals",
+                            "label": "Semifinales",
+                            "order": 3,
+                            "brackets": [
+                                {
+                                    "id": 51,
+                                    "format": "single_elimination",
+                                    "matchup_number": 1,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 22,
+                                        "name": "Sporting",
+                                        "short_name": "SPO",
+                                        "seed": 1,
+                                        "logo": "assets\/logos\/spo.png"
+                                    },
+                                    "team_2": {
+                                        "id": 17,
+                                        "name": "Puerto Belgrano B",
+                                        "short_name": "PTO B",
+                                        "seed": 4,
+                                        "logo": "assets\/logos\/pto.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": "10\/05\/2026",
+                                            "time": "10:00",
+                                            "home_team_id": 22,
+                                            "away_team_id": 17,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 52,
+                                    "format": "single_elimination",
+                                    "matchup_number": 2,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 14,
+                                        "name": "Palihue",
+                                        "short_name": "PAL",
+                                        "seed": 2,
+                                        "logo": "assets\/logos\/pal.png"
+                                    },
+                                    "team_2": {
+                                        "id": 2,
+                                        "name": "Argentino B",
+                                        "short_name": "ARG B",
+                                        "seed": 3,
+                                        "logo": "assets\/logos\/arg.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": "10\/05\/2026",
+                                            "time": "10:00",
+                                            "home_team_id": 14,
+                                            "away_team_id": 2,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "stage": "relegation",
+                            "label": "Series complementarias",
+                            "order": 9,
+                            "brackets": [
+                                {
+                                    "id": 53,
+                                    "format": "triangular",
+                                    "matchup_number": 1,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 5,
+                                        "name": "El Nacional C",
+                                        "short_name": "CEN C",
+                                        "seed": 1,
+                                        "logo": "assets\/logos\/cen.png"
+                                    },
+                                    "team_2": {
+                                        "id": 26,
+                                        "name": "Universitario C",
+                                        "short_name": "UNI C",
+                                        "seed": 2,
+                                        "logo": "assets\/logos\/uni.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": "10\/05\/2026",
+                                            "time": "12:00",
+                                            "home_team_id": 5,
+                                            "away_team_id": 26,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ],
+                                    "team_3": {
+                                        "id": 30,
+                                        "name": "Porteño",
+                                        "short_name": "POR",
+                                        "seed": 3,
+                                        "logo": "assets\/logos\/por.png"
+                                    },
+                                    "team_4": null,
+                                    "group_standings": [
+                                        {
+                                            "position": 1,
+                                            "team": {
+                                                "id": 5,
+                                                "name": "El Nacional C",
+                                                "short_name": "CEN C",
+                                                "seed": 1,
+                                                "logo": "assets\/logos\/cen.png"
+                                            },
+                                            "played": 0,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 0,
+                                            "goals_for": 0,
+                                            "goals_against": 0,
+                                            "goal_difference": 0,
+                                            "points": 0
+                                        },
+                                        {
+                                            "position": 2,
+                                            "team": {
+                                                "id": 26,
+                                                "name": "Universitario C",
+                                                "short_name": "UNI C",
+                                                "seed": 2,
+                                                "logo": "assets\/logos\/uni.png"
+                                            },
+                                            "played": 0,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 0,
+                                            "goals_for": 0,
+                                            "goals_against": 0,
+                                            "goal_difference": 0,
+                                            "points": 0
+                                        },
+                                        {
+                                            "position": 3,
+                                            "team": {
+                                                "id": 30,
+                                                "name": "Porteño",
+                                                "short_name": "POR",
+                                                "seed": 3,
+                                                "logo": "assets\/logos\/por.png"
+                                            },
+                                            "played": 0,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 0,
+                                            "goals_for": 0,
+                                            "goals_against": 0,
+                                            "goal_difference": 0,
+                                            "points": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "category": "Sub16",
+                    "category_order": 2,
+                    "stages": [
+                        {
+                            "stage": "semifinals",
+                            "label": "Semifinales",
+                            "order": 3,
+                            "brackets": [
+                                {
+                                    "id": 48,
+                                    "format": "single_elimination",
+                                    "matchup_number": 1,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 22,
+                                        "name": "Sporting",
+                                        "short_name": "SPO",
+                                        "seed": 1,
+                                        "logo": "assets\/logos\/spo.png"
+                                    },
+                                    "team_2": {
+                                        "id": 2,
+                                        "name": "Argentino B",
+                                        "short_name": "ARG B",
+                                        "seed": 4,
+                                        "logo": "assets\/logos\/arg.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": "09\/05\/2026",
+                                            "time": "10:00",
+                                            "home_team_id": 22,
+                                            "away_team_id": 2,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 49,
+                                    "format": "single_elimination",
+                                    "matchup_number": 2,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 14,
+                                        "name": "Palihue",
+                                        "short_name": "PAL",
+                                        "seed": 2,
+                                        "logo": "assets\/logos\/pal.png"
+                                    },
+                                    "team_2": {
+                                        "id": 17,
+                                        "name": "Puerto Belgrano B",
+                                        "short_name": "PTO B",
+                                        "seed": 3,
+                                        "logo": "assets\/logos\/pto.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": "09\/05\/2026",
+                                            "time": "10:00",
+                                            "home_team_id": 14,
+                                            "away_team_id": 17,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "stage": "relegation",
+                            "label": "Series complementarias",
+                            "order": 9,
+                            "brackets": [
+                                {
+                                    "id": 50,
+                                    "format": "triangular",
+                                    "matchup_number": 1,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 5,
+                                        "name": "El Nacional C",
+                                        "short_name": "CEN C",
+                                        "seed": 1,
+                                        "logo": "assets\/logos\/cen.png"
+                                    },
+                                    "team_2": {
+                                        "id": 26,
+                                        "name": "Universitario C",
+                                        "short_name": "UNI C",
+                                        "seed": 2,
+                                        "logo": "assets\/logos\/uni.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": "09\/05\/2026",
+                                            "time": "12:00",
+                                            "home_team_id": 5,
+                                            "away_team_id": 26,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ],
+                                    "team_3": {
+                                        "id": 30,
+                                        "name": "Porteño",
+                                        "short_name": "POR",
+                                        "seed": 3,
+                                        "logo": "assets\/logos\/por.png"
+                                    },
+                                    "team_4": null,
+                                    "group_standings": [
+                                        {
+                                            "position": 1,
+                                            "team": {
+                                                "id": 5,
+                                                "name": "El Nacional C",
+                                                "short_name": "CEN C",
+                                                "seed": 1,
+                                                "logo": "assets\/logos\/cen.png"
+                                            },
+                                            "played": 0,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 0,
+                                            "goals_for": 0,
+                                            "goals_against": 0,
+                                            "goal_difference": 0,
+                                            "points": 0
+                                        },
+                                        {
+                                            "position": 2,
+                                            "team": {
+                                                "id": 26,
+                                                "name": "Universitario C",
+                                                "short_name": "UNI C",
+                                                "seed": 2,
+                                                "logo": "assets\/logos\/uni.png"
+                                            },
+                                            "played": 0,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 0,
+                                            "goals_for": 0,
+                                            "goals_against": 0,
+                                            "goal_difference": 0,
+                                            "points": 0
+                                        },
+                                        {
+                                            "position": 3,
+                                            "team": {
+                                                "id": 30,
+                                                "name": "Porteño",
+                                                "short_name": "POR",
+                                                "seed": 3,
+                                                "logo": "assets\/logos\/por.png"
+                                            },
+                                            "played": 0,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 0,
+                                            "goals_for": 0,
+                                            "goals_against": 0,
+                                            "goal_difference": 0,
+                                            "points": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "category": "Sub19",
+                    "category_order": 3,
+                    "stages": [
+                        {
+                            "stage": "semifinals",
+                            "label": "Semifinales",
+                            "order": 3,
+                            "brackets": [
+                                {
+                                    "id": 54,
+                                    "format": "single_elimination",
+                                    "matchup_number": 1,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 14,
+                                        "name": "Palihue",
+                                        "short_name": "PAL",
+                                        "seed": 1,
+                                        "logo": "assets\/logos\/pal.png"
+                                    },
+                                    "team_2": {
+                                        "id": 17,
+                                        "name": "Puerto Belgrano B",
+                                        "short_name": "PTO B",
+                                        "seed": 4,
+                                        "logo": "assets\/logos\/pto.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": "10\/05\/2026",
+                                            "time": "14:00",
+                                            "home_team_id": 14,
+                                            "away_team_id": 17,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 55,
+                                    "format": "single_elimination",
+                                    "matchup_number": 2,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 2,
+                                        "name": "Argentino B",
+                                        "short_name": "ARG B",
+                                        "seed": 2,
+                                        "logo": "assets\/logos\/arg.png"
+                                    },
+                                    "team_2": {
+                                        "id": 22,
+                                        "name": "Sporting",
+                                        "short_name": "SPO",
+                                        "seed": 3,
+                                        "logo": "assets\/logos\/spo.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": "10\/05\/2026",
+                                            "time": "18:00",
+                                            "home_team_id": 2,
+                                            "away_team_id": 22,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "stage": "relegation",
+                            "label": "Series complementarias",
+                            "order": 9,
+                            "brackets": [
+                                {
+                                    "id": 56,
+                                    "format": "triangular",
+                                    "matchup_number": 1,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 26,
+                                        "name": "Universitario C",
+                                        "short_name": "UNI C",
+                                        "seed": 1,
+                                        "logo": "assets\/logos\/uni.png"
+                                    },
+                                    "team_2": {
+                                        "id": 5,
+                                        "name": "El Nacional C",
+                                        "short_name": "CEN C",
+                                        "seed": 2,
+                                        "logo": "assets\/logos\/cen.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": "10\/05\/2026",
+                                            "time": "16:00",
+                                            "home_team_id": 26,
+                                            "away_team_id": 5,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ],
+                                    "team_3": {
+                                        "id": 30,
+                                        "name": "Porteño",
+                                        "short_name": "POR",
+                                        "seed": 3,
+                                        "logo": "assets\/logos\/por.png"
+                                    },
+                                    "team_4": null,
+                                    "group_standings": [
+                                        {
+                                            "position": 1,
+                                            "team": {
+                                                "id": 26,
+                                                "name": "Universitario C",
+                                                "short_name": "UNI C",
+                                                "seed": 1,
+                                                "logo": "assets\/logos\/uni.png"
+                                            },
+                                            "played": 0,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 0,
+                                            "goals_for": 0,
+                                            "goals_against": 0,
+                                            "goal_difference": 0,
+                                            "points": 0
+                                        },
+                                        {
+                                            "position": 2,
+                                            "team": {
+                                                "id": 5,
+                                                "name": "El Nacional C",
+                                                "short_name": "CEN C",
+                                                "seed": 2,
+                                                "logo": "assets\/logos\/cen.png"
+                                            },
+                                            "played": 0,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 0,
+                                            "goals_for": 0,
+                                            "goals_against": 0,
+                                            "goal_difference": 0,
+                                            "points": 0
+                                        },
+                                        {
+                                            "position": 3,
+                                            "team": {
+                                                "id": 30,
+                                                "name": "Porteño",
+                                                "short_name": "POR",
+                                                "seed": 3,
+                                                "logo": "assets\/logos\/por.png"
+                                            },
+                                            "played": 0,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 0,
+                                            "goals_for": 0,
+                                            "goals_against": 0,
+                                            "goal_difference": 0,
+                                            "points": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "category": "Primera",
+                    "category_order": 4,
+                    "stages": [
+                        {
+                            "stage": "semifinals",
+                            "label": "Semifinales",
+                            "order": 3,
+                            "brackets": [
+                                {
+                                    "id": 45,
+                                    "format": "single_elimination",
+                                    "matchup_number": 1,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 14,
+                                        "name": "Palihue",
+                                        "short_name": "PAL",
+                                        "seed": 1,
+                                        "logo": "assets\/logos\/pal.png"
+                                    },
+                                    "team_2": {
+                                        "id": 22,
+                                        "name": "Sporting",
+                                        "short_name": "SPO",
+                                        "seed": 4,
+                                        "logo": "assets\/logos\/spo.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": "09\/05\/2026",
+                                            "time": "16:00",
+                                            "home_team_id": 14,
+                                            "away_team_id": 22,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 46,
+                                    "format": "single_elimination",
+                                    "matchup_number": 2,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 2,
+                                        "name": "Argentino B",
+                                        "short_name": "ARG B",
+                                        "seed": 2,
+                                        "logo": "assets\/logos\/arg.png"
+                                    },
+                                    "team_2": {
+                                        "id": 26,
+                                        "name": "Universitario C",
+                                        "short_name": "UNI C",
+                                        "seed": 3,
+                                        "logo": "assets\/logos\/uni.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": "09\/05\/2026",
+                                            "time": "16:00",
+                                            "home_team_id": 2,
+                                            "away_team_id": 26,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "stage": "relegation",
+                            "label": "Series complementarias",
+                            "order": 9,
+                            "brackets": [
+                                {
+                                    "id": 47,
+                                    "format": "triangular",
+                                    "matchup_number": 1,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 5,
+                                        "name": "El Nacional C",
+                                        "short_name": "CEN C",
+                                        "seed": 1,
+                                        "logo": "assets\/logos\/cen.png"
+                                    },
+                                    "team_2": {
+                                        "id": 17,
+                                        "name": "Puerto Belgrano B",
+                                        "short_name": "PTO B",
+                                        "seed": 2,
+                                        "logo": "assets\/logos\/pto.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": "09\/05\/2026",
+                                            "time": "18:00",
+                                            "home_team_id": 5,
+                                            "away_team_id": 17,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ],
+                                    "team_3": {
+                                        "id": 30,
+                                        "name": "Porteño",
+                                        "short_name": "POR",
+                                        "seed": 3,
+                                        "logo": "assets\/logos\/por.png"
+                                    },
+                                    "team_4": null,
+                                    "group_standings": [
+                                        {
+                                            "position": 1,
+                                            "team": {
+                                                "id": 5,
+                                                "name": "El Nacional C",
+                                                "short_name": "CEN C",
+                                                "seed": 1,
+                                                "logo": "assets\/logos\/cen.png"
+                                            },
+                                            "played": 0,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 0,
+                                            "goals_for": 0,
+                                            "goals_against": 0,
+                                            "goal_difference": 0,
+                                            "points": 0
+                                        },
+                                        {
+                                            "position": 2,
+                                            "team": {
+                                                "id": 17,
+                                                "name": "Puerto Belgrano B",
+                                                "short_name": "PTO B",
+                                                "seed": 2,
+                                                "logo": "assets\/logos\/pto.png"
+                                            },
+                                            "played": 0,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 0,
+                                            "goals_for": 0,
+                                            "goals_against": 0,
+                                            "goal_difference": 0,
+                                            "points": 0
+                                        },
+                                        {
+                                            "position": 3,
+                                            "team": {
+                                                "id": 30,
+                                                "name": "Porteño",
+                                                "short_name": "POR",
+                                                "seed": 3,
+                                                "logo": "assets\/logos\/por.png"
+                                            },
+                                            "played": 0,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 0,
+                                            "goals_for": 0,
+                                            "goals_against": 0,
+                                            "goal_difference": 0,
+                                            "points": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
         {
             "id": 4,
