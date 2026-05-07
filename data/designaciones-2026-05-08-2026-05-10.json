@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-05-06T20:59:05-03:00",
+    "generated_at": "2026-05-06T21:29:03-03:00",
     "from": "2026-05-08",
     "to": "2026-05-10",
     "umpires": [
@@ -1052,7 +1052,7 @@
                         "logo": "assets\/logos\/vm.png"
                     },
                     "pitch": "ABH",
-                    "umpire_1": "Julieta Soldini",
+                    "umpire_1": "Antonella Puntilla",
                     "umpire_2": "Agustina Loza",
                     "fee": 38000,
                     "supervisor": null
@@ -1561,7 +1561,7 @@
                         "logo": "assets\/logos\/uni.png"
                     },
                     "pitch": "ABH",
-                    "umpire_1": "Julieta Soldini",
+                    "umpire_1": "Mora Kessler",
                     "umpire_2": "Josefina Abadie",
                     "fee": 42000,
                     "supervisor": null
