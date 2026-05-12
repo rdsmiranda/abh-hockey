@@ -1045,6 +1045,45 @@
         font-style: italic;
         flex-shrink: 0;
       }
+      .bm-venue {
+        font-size: 0.65rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        padding: 1px 5px;
+        border-radius: 3px;
+        flex-shrink: 0;
+      }
+      .bm-venue.local {
+        background: #eff6ff;
+        color: var(--abh-blue);
+      }
+      .bm-venue.visitante {
+        background: #f1f5f9;
+        color: #64748b;
+      }
+
+      /* Serie ida y vuelta */
+      .ha-series-info {
+        font-size: 0.68rem;
+        color: #94a3b8;
+        text-align: center;
+        margin-top: 2px;
+      }
+      .mu-score-wins {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 800;
+        color: var(--abh-dark);
+        line-height: 1;
+      }
+      .mu-score-subtitle {
+        font-size: 0.62rem;
+        color: #94a3b8;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        margin-top: 2px;
+      }
 
       /* Group standings */
       .group-table-wrap {
@@ -2022,9 +2061,11 @@
       }
 
       function buildBracket(b, zone) {
-        const isGroup =
-          b.format === "triangular" || b.format === "round_robin_4";
-        return isGroup ? buildGroupBracket(b, zone) : buildKOBracket(b, zone);
+        if (b.format === "triangular" || b.format === "round_robin_4")
+          return buildGroupBracket(b, zone);
+        if (b.format === "home_and_away")
+          return buildHomeAndAwayBracket(b, zone);
+        return buildKOBracket(b, zone);
       }
 
       function bracketTeamLogo(team) {
@@ -2037,36 +2078,60 @@
       function buildKOBracket(b, zone) {
         const t1 = b.team_1,
           t2 = b.team_2;
-        const label = b.matchup_number
-          ? `Llave ${b.matchup_number}`
-          : "Enfrentamiento";
-        const isWinner1 =
-          b.is_completed && b.winner_id && t1 && b.winner_id === t1.id;
-        const isWinner2 =
-          b.is_completed && b.winner_id && t2 && b.winner_id === t2.id;
 
-        // Marcador del bracket (suma de partidos jugados)
+        // ─── Orden canónico local/visitante desde el primer partido ───────────
+        const refMatch = b.matches[0];
+        let teamHome = t1,
+          teamAway = t2;
+        if (refMatch && t1 && t2 && refMatch.home_team_id === t2.id) {
+          teamHome = t2;
+          teamAway = t1;
+        }
+
+        const isWinnerHome =
+          b.is_completed &&
+          b.winner_id &&
+          teamHome &&
+          b.winner_id === teamHome.id;
+        const isWinnerAway =
+          b.is_completed &&
+          b.winner_id &&
+          teamAway &&
+          b.winner_id === teamAway.id;
+
+        // ─── Marcador (ahora usa teamHome/teamAway, ya sin necesidad de isHome1) ─
         let scoreHtml = `<div class="mu-score-vs">vs</div>`;
         if (b.is_completed || b.matches.some((m) => m.played)) {
           const played = b.matches.filter((m) => m.played);
           if (played.length > 0) {
             const last = played[played.length - 1];
-            const isHome1 = last.home_team_id === t1?.id;
-            const g1 = isHome1 ? last.goals_home : last.goals_away;
-            const g2 = isHome1 ? last.goals_away : last.goals_home;
+            const isLastHome = last.home_team_id === teamHome?.id;
+            const gHome = isLastHome ? last.goals_home : last.goals_away;
+            const gAway = isLastHome ? last.goals_away : last.goals_home;
+            const penHome = isLastHome
+              ? last.shootouts_home
+              : last.shootouts_away;
+            const penAway = isLastHome
+              ? last.shootouts_away
+              : last.shootouts_home;
             scoreHtml = `<div class="mu-score">
-        <div class="mu-score-main">${g1} – ${g2}</div>
-        ${last.has_shootouts ? `<div class="mu-score-pen">Pen ${isHome1 ? last.shootouts_home : last.shootouts_away} – ${isHome1 ? last.shootouts_away : last.shootouts_home}</div>` : ""}
+        <div class="mu-score-main">${gHome} – ${gAway}</div>
+        ${last.has_shootouts ? `<div class="mu-score-pen">Pen ${penHome} – ${penAway}</div>` : ""}
       </div>`;
           }
         }
 
+        // ─── Badge ────────────────────────────────────────────────────────────
+        const label = b.matchup_number
+          ? `Llave ${b.matchup_number}`
+          : "Enfrentamiento";
         const badge = b.is_completed
           ? `<span class="bracket-badge done">Finalizado</span>`
           : `<span class="bracket-badge pending">Pendiente</span>`;
 
+        // ─── Filas de partidos (sin cambios, ya usan home_team_id/away_team_id) ─
         let matchRows = "";
-        b.matches.forEach((m, i) => {
+        b.matches.forEach((m) => {
           const ht = zone ? findTeamInZone(zone, m.home_team_id) : null;
           const at = zone ? findTeamInZone(zone, m.away_team_id) : null;
           const htName = ht?.short_name || ht?.name || "?";
@@ -2090,9 +2155,116 @@
           }
         });
 
+        // ─── HTML final ───────────────────────────────────────────────────────
         return `<div class="bracket-card">
     <div class="bracket-header">
       <span class="bracket-num">${escHtml(label)}</span>${badge}
+    </div>
+    <div class="matchup">
+      <div class="mu-team ${isWinnerHome ? "mu-winner" : ""}">
+        ${bracketTeamLogo(teamHome)}
+        <div class="mu-team-info">
+          <span class="mu-name">${escHtml(teamHome?.name || "Por definir")}</span>
+        </div>
+      </div>
+      ${scoreHtml}
+      <div class="mu-team right ${isWinnerAway ? "mu-winner" : ""}">
+        <div class="mu-team-info right">
+          <span class="mu-name">${escHtml(teamAway?.name || "Por definir")}</span>
+        </div>
+        ${bracketTeamLogo(teamAway)}
+      </div>
+    </div>
+    ${matchRows ? `<div class="bracket-matches">${matchRows}</div>` : ""}
+  </div>`;
+      }
+
+      function buildHomeAndAwayBracket(b, zone) {
+        const t1 = b.team_1,
+          t2 = b.team_2;
+        const label = b.matchup_number
+          ? `Serie ${b.matchup_number}`
+          : "Ida y vuelta";
+        const isWinner1 =
+          b.is_completed && b.winner_id && t1 && b.winner_id === t1.id;
+        const isWinner2 =
+          b.is_completed && b.winner_id && t2 && b.winner_id === t2.id;
+
+        const playedMatches = b.matches.filter((m) => m.played);
+        let goalsT1 = 0,
+          goalsT2 = 0;
+        playedMatches.forEach((m) => {
+          if (m.home_team_id === t1?.id) {
+            goalsT1 += m.goals_home ?? 0;
+            goalsT2 += m.goals_away ?? 0;
+          } else {
+            goalsT1 += m.goals_away ?? 0;
+            goalsT2 += m.goals_home ?? 0;
+          }
+        });
+        const hasStarted = b.matches.some((m) => m.played);
+        let scoreHtml;
+        if (hasStarted || b.is_completed) {
+          scoreHtml = `<div class="mu-score">
+        <div class="mu-score-wins">${goalsT1} – ${goalsT2}</div>
+        <div class="mu-score-subtitle">goles</div>
+      </div>`;
+        } else {
+          scoreHtml = `<div class="mu-score">
+        <div class="mu-score-vs">vs</div>
+        <div class="ha-series-info">Al mejor de ${b.series_wins_required ?? 1}</div>
+      </div>`;
+        }
+
+        const badge = b.is_completed
+          ? `<span class="bracket-badge done">Finalizado</span>`
+          : `<span class="bracket-badge pending">Pendiente</span>`;
+
+        const seriesLabel = b.series_wins_required
+          ? `Ida y vuelta · Al mejor de ${b.series_wins_required}`
+          : "Ida y vuelta";
+
+        let matchRows = "";
+        b.matches.forEach((m) => {
+          const ht = zone ? findTeamInZone(zone, m.home_team_id) : null;
+          const at = zone ? findTeamInZone(zone, m.away_team_id) : null;
+          const htName = ht?.short_name || ht?.name || "?";
+          const atName = at?.short_name || at?.name || "?";
+
+          const t1IsHome = m.home_team_id === t1?.id;
+          const venueLabel = t1IsHome
+            ? `<span class="bm-venue local">Local</span>`
+            : `<span class="bm-venue visitante">Visita</span>`;
+          const gameLabel = m.game ? `G${m.game}` : "";
+
+          if (m.played) {
+            const pen = m.has_shootouts
+              ? `<span class="bm-pen">(${m.shootouts_home}–${m.shootouts_away} pen)</span>`
+              : "";
+            matchRows += `<div class="bracket-match-row">
+        <span class="bm-game">${escHtml(gameLabel)}</span>
+        ${venueLabel}
+        <span class="bm-date">${m.date || "—"}</span>
+        <span class="bm-teams">${escHtml(htName)} vs ${escHtml(atName)}</span>
+        <span class="bm-result">${m.goals_home} – ${m.goals_away}</span>
+        ${pen}
+      </div>`;
+          } else {
+            matchRows += `<div class="bracket-match-row">
+        <span class="bm-game">${escHtml(gameLabel)}</span>
+        ${venueLabel}
+        <span class="bm-date">${m.date || "—"}</span>
+        <span class="bm-teams">${escHtml(htName)} vs ${escHtml(atName)}</span>
+        <span class="bm-pending">A jugarse</span>
+      </div>`;
+          }
+        });
+
+        return `<div class="bracket-card">
+    <div class="bracket-header">
+      <span class="bracket-num">${escHtml(label)}</span>
+      <span class="bracket-num" style="color:#cbd5e1;font-weight:400;font-family:'Barlow',sans-serif;text-transform:none;letter-spacing:0">${escHtml(seriesLabel)}</span>
+      ${badge}
     </div>
     <div class="matchup">
       <div class="mu-team ${isWinner1 ? "mu-winner" : ""}">
