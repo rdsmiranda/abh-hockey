@@ -6,7 +6,7 @@
         "start_date": "2026-03-07T03:00:00.000000Z",
         "end_date": null
     },
-    "generated_at": "2026-05-12T09:25:59-03:00",
+    "generated_at": "2026-05-17T10:43:09-03:00",
     "zones": [
         {
             "id": 1,
@@ -2537,9 +2537,9 @@
                                     "matchup_number": 2,
                                     "series_wins_required": 1,
                                     "team_1_wins": 0,
-                                    "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "team_2_wins": 1,
+                                    "winner_id": 7,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 19,
                                         "name": "S. Sportiva A",
@@ -2557,18 +2557,70 @@
                                     "matches": [
                                         {
                                             "game": 1,
-                                            "date": "09\/05\/2026",
-                                            "time": "10:00",
+                                            "date": "15\/05\/2026",
+                                            "time": "20:00",
                                             "home_team_id": 19,
                                             "away_team_id": 7,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
-                                            "has_shootouts": false,
-                                            "shootouts_home": null,
-                                            "shootouts_away": null
+                                            "played": true,
+                                            "goals_home": 3,
+                                            "goals_away": 3,
+                                            "has_shootouts": true,
+                                            "shootouts_home": 2,
+                                            "shootouts_away": 3
                                         }
                                     ]
+                                }
+                            ]
+                        },
+                        {
+                            "stage": "final",
+                            "label": "Final",
+                            "order": 4,
+                            "brackets": [
+                                {
+                                    "id": 83,
+                                    "format": "single_elimination",
+                                    "matchup_number": 1,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": null,
+                                    "team_2": {
+                                        "id": 7,
+                                        "name": "Independiente",
+                                        "short_name": "CAI",
+                                        "seed": 3,
+                                        "logo": "assets\/logos\/cai.png"
+                                    },
+                                    "matches": []
+                                }
+                            ]
+                        },
+                        {
+                            "stage": "third_place",
+                            "label": "Tercer puesto",
+                            "order": 5,
+                            "brackets": [
+                                {
+                                    "id": 84,
+                                    "format": "single_elimination",
+                                    "matchup_number": 1,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": null,
+                                    "team_2": {
+                                        "id": 19,
+                                        "name": "S. Sportiva A",
+                                        "short_name": "SS A",
+                                        "seed": 2,
+                                        "logo": "assets\/logos\/ss.png"
+                                    },
+                                    "matches": []
                                 }
                             ]
                         },
@@ -2603,8 +2655,8 @@
                                     "matches": [
                                         {
                                             "game": 1,
-                                            "date": "09\/05\/2026",
-                                            "time": "10:00",
+                                            "date": "18\/05\/2026",
+                                            "time": "17:30",
                                             "home_team_id": 24,
                                             "away_team_id": 10,
                                             "played": false,
@@ -5693,10 +5745,10 @@
                                     "format": "single_elimination",
                                     "matchup_number": 1,
                                     "series_wins_required": 1,
-                                    "team_1_wins": 0,
+                                    "team_1_wins": 1,
                                     "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "winner_id": 16,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 16,
                                         "name": "Puerto Belgrano A",
@@ -5714,13 +5766,13 @@
                                     "matches": [
                                         {
                                             "game": 1,
-                                            "date": "09\/05\/2026",
-                                            "time": "10:00",
+                                            "date": "16\/05\/2026",
+                                            "time": "12:00",
                                             "home_team_id": 16,
                                             "away_team_id": 20,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
+                                            "played": true,
+                                            "goals_home": 8,
+                                            "goals_away": 1,
                                             "has_shootouts": false,
                                             "shootouts_home": null,
                                             "shootouts_away": null
@@ -5732,10 +5784,10 @@
                                     "format": "single_elimination",
                                     "matchup_number": 2,
                                     "series_wins_required": 1,
-                                    "team_1_wins": 0,
+                                    "team_1_wins": 1,
                                     "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "winner_id": 23,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 23,
                                         "name": "Tiro Federal",
@@ -5753,10 +5805,102 @@
                                     "matches": [
                                         {
                                             "game": 1,
-                                            "date": "09\/05\/2026",
+                                            "date": "16\/05\/2026",
                                             "time": "10:00",
                                             "home_team_id": 23,
                                             "away_team_id": 29,
+                                            "played": true,
+                                            "goals_home": 6,
+                                            "goals_away": 0,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "stage": "final",
+                            "label": "Final",
+                            "order": 4,
+                            "brackets": [
+                                {
+                                    "id": 85,
+                                    "format": "single_elimination",
+                                    "matchup_number": 1,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 16,
+                                        "name": "Puerto Belgrano A",
+                                        "short_name": "PTO A",
+                                        "seed": 1,
+                                        "logo": "assets\/logos\/pto.png"
+                                    },
+                                    "team_2": {
+                                        "id": 23,
+                                        "name": "Tiro Federal",
+                                        "short_name": "TIRO",
+                                        "seed": 2,
+                                        "logo": "assets\/logos\/tiro.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": null,
+                                            "time": "",
+                                            "home_team_id": 16,
+                                            "away_team_id": 23,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "stage": "third_place",
+                            "label": "Tercer puesto",
+                            "order": 5,
+                            "brackets": [
+                                {
+                                    "id": 86,
+                                    "format": "single_elimination",
+                                    "matchup_number": 1,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 29,
+                                        "name": "Villa Mitre",
+                                        "short_name": "VM",
+                                        "seed": 3,
+                                        "logo": "assets\/logos\/vm.png"
+                                    },
+                                    "team_2": {
+                                        "id": 20,
+                                        "name": "S. Sportiva B",
+                                        "short_name": "SS B",
+                                        "seed": 4,
+                                        "logo": "assets\/logos\/ss.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": null,
+                                            "time": "",
+                                            "home_team_id": 29,
+                                            "away_team_id": 20,
                                             "played": false,
                                             "goals_home": null,
                                             "goals_away": null,
@@ -5799,7 +5943,7 @@
                                     "matches": [
                                         {
                                             "game": 1,
-                                            "date": "09\/05\/2026",
+                                            "date": "23\/05\/2026",
                                             "time": "10:00",
                                             "home_team_id": 4,
                                             "away_team_id": 25,
@@ -8946,10 +9090,10 @@
                                     "format": "single_elimination",
                                     "matchup_number": 1,
                                     "series_wins_required": 1,
-                                    "team_1_wins": 0,
+                                    "team_1_wins": 1,
                                     "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "winner_id": 22,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 22,
                                         "name": "Sporting",
@@ -8967,13 +9111,13 @@
                                     "matches": [
                                         {
                                             "game": 1,
-                                            "date": "09\/05\/2026",
-                                            "time": "10:00",
+                                            "date": "15\/05\/2026",
+                                            "time": "16:30",
                                             "home_team_id": 22,
                                             "away_team_id": 2,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
+                                            "played": true,
+                                            "goals_home": 5,
+                                            "goals_away": 0,
                                             "has_shootouts": false,
                                             "shootouts_home": null,
                                             "shootouts_away": null
@@ -9035,7 +9179,13 @@
                                     "team_2_wins": 0,
                                     "winner_id": null,
                                     "is_completed": false,
-                                    "team_1": null,
+                                    "team_1": {
+                                        "id": 22,
+                                        "name": "Sporting",
+                                        "short_name": "SPO",
+                                        "seed": 1,
+                                        "logo": "assets\/logos\/spo.png"
+                                    },
                                     "team_2": {
                                         "id": 14,
                                         "name": "Palihue",
@@ -9043,7 +9193,21 @@
                                         "seed": 2,
                                         "logo": "assets\/logos\/pal.png"
                                     },
-                                    "matches": []
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": null,
+                                            "time": "",
+                                            "home_team_id": 22,
+                                            "away_team_id": 14,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -9061,15 +9225,35 @@
                                     "team_2_wins": 0,
                                     "winner_id": null,
                                     "is_completed": false,
-                                    "team_1": null,
-                                    "team_2": {
+                                    "team_1": {
                                         "id": 17,
                                         "name": "Puerto Belgrano B",
                                         "short_name": "PTO B",
                                         "seed": 3,
                                         "logo": "assets\/logos\/pto.png"
                                     },
-                                    "matches": []
+                                    "team_2": {
+                                        "id": 2,
+                                        "name": "Argentino B",
+                                        "short_name": "ARG B",
+                                        "seed": 4,
+                                        "logo": "assets\/logos\/arg.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": null,
+                                            "time": "",
+                                            "home_team_id": 17,
+                                            "away_team_id": 2,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -9104,7 +9288,7 @@
                                     "matches": [
                                         {
                                             "game": 1,
-                                            "date": "09\/05\/2026",
+                                            "date": "23\/05\/2026",
                                             "time": "12:00",
                                             "home_team_id": 5,
                                             "away_team_id": 26,
@@ -11511,8 +11695,8 @@
                                     "matches": [
                                         {
                                             "game": 1,
-                                            "date": "09\/05\/2026",
-                                            "time": "20:00",
+                                            "date": "19\/05\/2026",
+                                            "time": "19:00",
                                             "home_team_id": 13,
                                             "away_team_id": 14,
                                             "played": false,
@@ -11546,15 +11730,26 @@
                                 "short_name": "VM",
                                 "logo": "assets\/logos\/vm.png"
                             },
-                            "played": 2,
-                            "won": 2,
+                            "played": 3,
+                            "won": 3,
                             "drawn": 0,
                             "lost": 0,
-                            "goals_for": 11,
-                            "goals_against": 0,
-                            "goal_difference": 11,
-                            "points": 6,
+                            "goals_for": 13,
+                            "goals_against": 1,
+                            "goal_difference": 12,
+                            "points": 9,
                             "recent_form": [
+                                {
+                                    "result": "W",
+                                    "score": "2 - 1",
+                                    "opponent": "TIRO",
+                                    "opponent_logo": "assets\/logos\/tiro.png",
+                                    "was_home": false,
+                                    "date": "16\/05\/2026",
+                                    "match_id": 298,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
                                 {
                                     "result": "W",
                                     "score": "10 - 0",
@@ -11587,15 +11782,37 @@
                                 "short_name": "TIRO",
                                 "logo": "assets\/logos\/tiro.png"
                             },
-                            "played": 1,
-                            "won": 1,
+                            "played": 3,
+                            "won": 2,
                             "drawn": 0,
-                            "lost": 0,
-                            "goals_for": 5,
-                            "goals_against": 0,
-                            "goal_difference": 5,
-                            "points": 3,
+                            "lost": 1,
+                            "goals_for": 8,
+                            "goals_against": 2,
+                            "goal_difference": 6,
+                            "points": 6,
                             "recent_form": [
+                                {
+                                    "result": "L",
+                                    "score": "1 - 2",
+                                    "opponent": "VM",
+                                    "opponent_logo": "assets\/logos\/vm.png",
+                                    "was_home": true,
+                                    "date": "16\/05\/2026",
+                                    "match_id": 298,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
+                                {
+                                    "result": "W",
+                                    "score": "2 - 0",
+                                    "opponent": "POR",
+                                    "opponent_logo": "assets\/logos\/por.png",
+                                    "was_home": false,
+                                    "date": "16\/05\/2026",
+                                    "match_id": 297,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
                                 {
                                     "result": "W",
                                     "score": "5 - 0",
@@ -11617,15 +11834,26 @@
                                 "short_name": "POR",
                                 "logo": "assets\/logos\/por.png"
                             },
-                            "played": 2,
+                            "played": 3,
                             "won": 1,
                             "drawn": 0,
-                            "lost": 1,
+                            "lost": 2,
                             "goals_for": 5,
-                            "goals_against": 2,
-                            "goal_difference": 3,
+                            "goals_against": 4,
+                            "goal_difference": 1,
                             "points": 3,
                             "recent_form": [
+                                {
+                                    "result": "L",
+                                    "score": "0 - 2",
+                                    "opponent": "TIRO",
+                                    "opponent_logo": "assets\/logos\/tiro.png",
+                                    "was_home": true,
+                                    "date": "16\/05\/2026",
+                                    "match_id": 297,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
                                 {
                                     "result": "W",
                                     "score": "5 - 1",
