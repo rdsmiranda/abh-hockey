@@ -6,7 +6,7 @@
         "start_date": "2026-03-07T03:00:00.000000Z",
         "end_date": null
     },
-    "generated_at": "2026-05-17T10:43:09-03:00",
+    "generated_at": "2026-05-18T21:33:46-03:00",
     "zones": [
         {
             "id": 1,
@@ -2659,6 +2659,19 @@
                                             "time": "17:30",
                                             "home_team_id": 24,
                                             "away_team_id": 10,
+                                            "played": true,
+                                            "goals_home": 1,
+                                            "goals_away": 2,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        },
+                                        {
+                                            "game": 2,
+                                            "date": "23\/05\/2026",
+                                            "time": "10:00",
+                                            "home_team_id": 24,
+                                            "away_team_id": 1,
                                             "played": false,
                                             "goals_home": null,
                                             "goals_away": null,
@@ -2679,41 +2692,23 @@
                                         {
                                             "position": 1,
                                             "team": {
-                                                "id": 24,
-                                                "name": "Universitario A",
-                                                "short_name": "UNI A",
-                                                "seed": 1,
-                                                "logo": "assets\/logos\/uni.png"
-                                            },
-                                            "played": 0,
-                                            "won": 0,
-                                            "drawn": 0,
-                                            "lost": 0,
-                                            "goals_for": 0,
-                                            "goals_against": 0,
-                                            "goal_difference": 0,
-                                            "points": 0
-                                        },
-                                        {
-                                            "position": 2,
-                                            "team": {
                                                 "id": 10,
                                                 "name": "Pacífico A",
                                                 "short_name": "PAC A",
                                                 "seed": 2,
                                                 "logo": "assets\/logos\/cap.png"
                                             },
-                                            "played": 0,
-                                            "won": 0,
+                                            "played": 1,
+                                            "won": 1,
                                             "drawn": 0,
                                             "lost": 0,
-                                            "goals_for": 0,
-                                            "goals_against": 0,
-                                            "goal_difference": 0,
-                                            "points": 0
+                                            "goals_for": 2,
+                                            "goals_against": 1,
+                                            "goal_difference": 1,
+                                            "points": 3
                                         },
                                         {
-                                            "position": 3,
+                                            "position": 2,
                                             "team": {
                                                 "id": 1,
                                                 "name": "Argentino A",
@@ -2728,6 +2723,24 @@
                                             "goals_for": 0,
                                             "goals_against": 0,
                                             "goal_difference": 0,
+                                            "points": 0
+                                        },
+                                        {
+                                            "position": 3,
+                                            "team": {
+                                                "id": 24,
+                                                "name": "Universitario A",
+                                                "short_name": "UNI A",
+                                                "seed": 1,
+                                                "logo": "assets\/logos\/uni.png"
+                                            },
+                                            "played": 1,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 1,
+                                            "goals_for": 1,
+                                            "goals_against": 2,
+                                            "goal_difference": -1,
                                             "points": 0
                                         }
                                     ]
