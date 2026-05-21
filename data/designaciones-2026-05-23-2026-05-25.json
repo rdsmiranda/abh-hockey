@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-05-20T21:54:09-03:00",
+    "generated_at": "2026-05-21T11:06:11-03:00",
     "from": "2026-05-23",
     "to": "2026-05-25",
     "umpires": [
@@ -1208,9 +1208,9 @@
                         "logo": "assets\/logos\/camh.png"
                     },
                     "pitch": "Pacífico",
-                    "umpire_1": "A designar",
+                    "umpire_1": "Julieta Soldini",
                     "umpire_2": "Federico Weitt",
-                    "fee": null,
+                    "fee": 38000,
                     "supervisor": null
                 },
                 {
