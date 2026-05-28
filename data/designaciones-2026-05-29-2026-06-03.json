@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-05-27T22:00:05-03:00",
+    "generated_at": "2026-05-27T22:09:54-03:00",
     "from": "2026-05-29",
     "to": "2026-06-03",
     "umpires": [
@@ -1386,8 +1386,8 @@
                     },
                     "pitch": "ABH",
                     "umpire_1": "Fausto Gallego",
-                    "umpire_2": "A designar",
-                    "fee": null,
+                    "umpire_2": "Mora Kessler",
+                    "fee": 42000,
                     "supervisor": null
                 }
             ]
