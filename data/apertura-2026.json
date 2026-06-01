@@ -6,7 +6,7 @@
         "start_date": "2026-03-07T03:00:00.000000Z",
         "end_date": null
     },
-    "generated_at": "2026-05-27T21:20:12-03:00",
+    "generated_at": "2026-06-01T08:44:10-03:00",
     "zones": [
         {
             "id": 1,
@@ -2290,9 +2290,9 @@
                                     "matchup_number": 1,
                                     "series_wins_required": 1,
                                     "team_1_wins": 0,
-                                    "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "team_2_wins": 1,
+                                    "winner_id": 19,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 1,
                                         "name": "Argentino A",
@@ -2314,58 +2314,12 @@
                                             "time": "10:00",
                                             "home_team_id": 1,
                                             "away_team_id": 19,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
-                                            "has_shootouts": false,
-                                            "shootouts_home": null,
-                                            "shootouts_away": null
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "stage": "third_place",
-                            "label": "Tercer puesto",
-                            "order": 5,
-                            "brackets": [
-                                {
-                                    "id": 76,
-                                    "format": "single_elimination",
-                                    "matchup_number": 1,
-                                    "series_wins_required": 1,
-                                    "team_1_wins": 0,
-                                    "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
-                                    "team_1": {
-                                        "id": 7,
-                                        "name": "Independiente",
-                                        "short_name": "CAI",
-                                        "seed": 2,
-                                        "logo": "assets\/logos\/cai.png"
-                                    },
-                                    "team_2": {
-                                        "id": 24,
-                                        "name": "Universitario A",
-                                        "short_name": "UNI A",
-                                        "seed": 4,
-                                        "logo": "assets\/logos\/uni.png"
-                                    },
-                                    "matches": [
-                                        {
-                                            "game": 1,
-                                            "date": "31\/05\/2026",
-                                            "time": "10:00",
-                                            "home_team_id": 7,
-                                            "away_team_id": 24,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
-                                            "has_shootouts": false,
-                                            "shootouts_home": null,
-                                            "shootouts_away": null
+                                            "played": true,
+                                            "goals_home": 3,
+                                            "goals_away": 3,
+                                            "has_shootouts": true,
+                                            "shootouts_home": 0,
+                                            "shootouts_away": 2
                                         }
                                     ]
                                 }
@@ -2406,6 +2360,19 @@
                                             "time": "12:00",
                                             "home_team_id": 8,
                                             "away_team_id": 3,
+                                            "played": true,
+                                            "goals_home": 4,
+                                            "goals_away": 0,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        },
+                                        {
+                                            "game": 2,
+                                            "date": "03\/06\/2026",
+                                            "time": "18:00",
+                                            "home_team_id": 8,
+                                            "away_team_id": 10,
                                             "played": false,
                                             "goals_home": null,
                                             "goals_away": null,
@@ -2432,35 +2399,17 @@
                                                 "seed": 1,
                                                 "logo": "assets\/logos\/camh.png"
                                             },
-                                            "played": 0,
-                                            "won": 0,
+                                            "played": 1,
+                                            "won": 1,
                                             "drawn": 0,
                                             "lost": 0,
-                                            "goals_for": 0,
+                                            "goals_for": 4,
                                             "goals_against": 0,
-                                            "goal_difference": 0,
-                                            "points": 0
+                                            "goal_difference": 4,
+                                            "points": 3
                                         },
                                         {
                                             "position": 2,
-                                            "team": {
-                                                "id": 3,
-                                                "name": "El Nacional A",
-                                                "short_name": "CEN A",
-                                                "seed": 2,
-                                                "logo": "assets\/logos\/cen.png"
-                                            },
-                                            "played": 0,
-                                            "won": 0,
-                                            "drawn": 0,
-                                            "lost": 0,
-                                            "goals_for": 0,
-                                            "goals_against": 0,
-                                            "goal_difference": 0,
-                                            "points": 0
-                                        },
-                                        {
-                                            "position": 3,
                                             "team": {
                                                 "id": 10,
                                                 "name": "Pacífico A",
@@ -2475,6 +2424,24 @@
                                             "goals_for": 0,
                                             "goals_against": 0,
                                             "goal_difference": 0,
+                                            "points": 0
+                                        },
+                                        {
+                                            "position": 3,
+                                            "team": {
+                                                "id": 3,
+                                                "name": "El Nacional A",
+                                                "short_name": "CEN A",
+                                                "seed": 2,
+                                                "logo": "assets\/logos\/cen.png"
+                                            },
+                                            "played": 1,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 1,
+                                            "goals_for": 0,
+                                            "goals_against": 4,
+                                            "goal_difference": -4,
                                             "points": 0
                                         }
                                     ]
@@ -2497,10 +2464,10 @@
                                     "format": "single_elimination",
                                     "matchup_number": 1,
                                     "series_wins_required": 1,
-                                    "team_1_wins": 0,
+                                    "team_1_wins": 1,
                                     "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "winner_id": 8,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 8,
                                         "name": "Monte Hermoso",
@@ -2522,9 +2489,9 @@
                                             "time": "10:00",
                                             "home_team_id": 8,
                                             "away_team_id": 3,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
+                                            "played": true,
+                                            "goals_home": 2,
+                                            "goals_away": 1,
                                             "has_shootouts": false,
                                             "shootouts_home": null,
                                             "shootouts_away": null
@@ -2586,7 +2553,13 @@
                                     "team_2_wins": 0,
                                     "winner_id": null,
                                     "is_completed": false,
-                                    "team_1": null,
+                                    "team_1": {
+                                        "id": 8,
+                                        "name": "Monte Hermoso",
+                                        "short_name": "CAMH",
+                                        "seed": 1,
+                                        "logo": "assets\/logos\/camh.png"
+                                    },
                                     "team_2": {
                                         "id": 7,
                                         "name": "Independiente",
@@ -2594,7 +2567,21 @@
                                         "seed": 3,
                                         "logo": "assets\/logos\/cai.png"
                                     },
-                                    "matches": []
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": null,
+                                            "time": "",
+                                            "home_team_id": 8,
+                                            "away_team_id": 7,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -2612,15 +2599,35 @@
                                     "team_2_wins": 0,
                                     "winner_id": null,
                                     "is_completed": false,
-                                    "team_1": null,
-                                    "team_2": {
+                                    "team_1": {
                                         "id": 19,
                                         "name": "S. Sportiva A",
                                         "short_name": "SS A",
                                         "seed": 2,
                                         "logo": "assets\/logos\/ss.png"
                                     },
-                                    "matches": []
+                                    "team_2": {
+                                        "id": 3,
+                                        "name": "El Nacional A",
+                                        "short_name": "CEN A",
+                                        "seed": 4,
+                                        "logo": "assets\/logos\/cen.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": null,
+                                            "time": "",
+                                            "home_team_id": 19,
+                                            "away_team_id": 3,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -2672,6 +2679,19 @@
                                             "time": "10:00",
                                             "home_team_id": 24,
                                             "away_team_id": 1,
+                                            "played": true,
+                                            "goals_home": 1,
+                                            "goals_away": 1,
+                                            "has_shootouts": true,
+                                            "shootouts_home": 1,
+                                            "shootouts_away": 3
+                                        },
+                                        {
+                                            "game": 3,
+                                            "date": "06\/06\/2026",
+                                            "time": "10:00",
+                                            "home_team_id": 10,
+                                            "away_team_id": 1,
                                             "played": false,
                                             "goals_home": null,
                                             "goals_away": null,
@@ -2716,14 +2736,14 @@
                                                 "seed": 3,
                                                 "logo": "assets\/logos\/arg.png"
                                             },
-                                            "played": 0,
+                                            "played": 1,
                                             "won": 0,
-                                            "drawn": 0,
+                                            "drawn": 1,
                                             "lost": 0,
-                                            "goals_for": 0,
-                                            "goals_against": 0,
+                                            "goals_for": 1,
+                                            "goals_against": 1,
                                             "goal_difference": 0,
-                                            "points": 0
+                                            "points": 2
                                         },
                                         {
                                             "position": 3,
@@ -2734,14 +2754,14 @@
                                                 "seed": 1,
                                                 "logo": "assets\/logos\/uni.png"
                                             },
-                                            "played": 1,
+                                            "played": 2,
                                             "won": 0,
-                                            "drawn": 0,
+                                            "drawn": 1,
                                             "lost": 1,
-                                            "goals_for": 1,
-                                            "goals_against": 2,
+                                            "goals_for": 2,
+                                            "goals_against": 3,
                                             "goal_difference": -1,
-                                            "points": 0
+                                            "points": 1
                                         }
                                     ]
                                 }
@@ -2802,10 +2822,10 @@
                                     "format": "single_elimination",
                                     "matchup_number": 2,
                                     "series_wins_required": 1,
-                                    "team_1_wins": 0,
+                                    "team_1_wins": 1,
                                     "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "winner_id": 8,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 8,
                                         "name": "Monte Hermoso",
@@ -2827,9 +2847,9 @@
                                             "time": "14:00",
                                             "home_team_id": 8,
                                             "away_team_id": 24,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
+                                            "played": true,
+                                            "goals_home": 2,
+                                            "goals_away": 1,
                                             "has_shootouts": false,
                                             "shootouts_home": null,
                                             "shootouts_away": null
@@ -2859,8 +2879,28 @@
                                         "seed": 1,
                                         "logo": "assets\/logos\/arg.png"
                                     },
-                                    "team_2": null,
-                                    "matches": []
+                                    "team_2": {
+                                        "id": 8,
+                                        "name": "Monte Hermoso",
+                                        "short_name": "CAMH",
+                                        "seed": 2,
+                                        "logo": "assets\/logos\/camh.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": null,
+                                            "time": "",
+                                            "home_team_id": 1,
+                                            "away_team_id": 8,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -2879,14 +2919,34 @@
                                     "winner_id": null,
                                     "is_completed": false,
                                     "team_1": {
+                                        "id": 24,
+                                        "name": "Universitario A",
+                                        "short_name": "UNI A",
+                                        "seed": 3,
+                                        "logo": "assets\/logos\/uni.png"
+                                    },
+                                    "team_2": {
                                         "id": 10,
                                         "name": "Pacífico A",
                                         "short_name": "CAP A",
                                         "seed": 4,
                                         "logo": "assets\/logos\/cap.png"
                                     },
-                                    "team_2": null,
-                                    "matches": []
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": null,
+                                            "time": "",
+                                            "home_team_id": 24,
+                                            "away_team_id": 10,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -2938,6 +2998,19 @@
                                             "time": "15:00",
                                             "home_team_id": 3,
                                             "away_team_id": 7,
+                                            "played": true,
+                                            "goals_home": 1,
+                                            "goals_away": 3,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        },
+                                        {
+                                            "game": 3,
+                                            "date": "07\/06\/2026",
+                                            "time": "16:00",
+                                            "home_team_id": 19,
+                                            "away_team_id": 7,
                                             "played": false,
                                             "goals_home": null,
                                             "goals_away": null,
@@ -2982,14 +3055,14 @@
                                                 "seed": 7,
                                                 "logo": "assets\/logos\/cai.png"
                                             },
-                                            "played": 0,
-                                            "won": 0,
+                                            "played": 1,
+                                            "won": 1,
                                             "drawn": 0,
                                             "lost": 0,
-                                            "goals_for": 0,
-                                            "goals_against": 0,
-                                            "goal_difference": 0,
-                                            "points": 0
+                                            "goals_for": 3,
+                                            "goals_against": 1,
+                                            "goal_difference": 2,
+                                            "points": 3
                                         },
                                         {
                                             "position": 3,
@@ -3000,13 +3073,13 @@
                                                 "seed": 5,
                                                 "logo": "assets\/logos\/cen.png"
                                             },
-                                            "played": 1,
+                                            "played": 2,
                                             "won": 0,
                                             "drawn": 0,
-                                            "lost": 1,
-                                            "goals_for": 0,
-                                            "goals_against": 4,
-                                            "goal_difference": -4,
+                                            "lost": 2,
+                                            "goals_for": 1,
+                                            "goals_against": 7,
+                                            "goal_difference": -6,
                                             "points": 0
                                         }
                                     ]
@@ -3029,10 +3102,10 @@
                                     "format": "single_elimination",
                                     "matchup_number": 1,
                                     "series_wins_required": 1,
-                                    "team_1_wins": 0,
+                                    "team_1_wins": 1,
                                     "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "winner_id": 24,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 24,
                                         "name": "Universitario A",
@@ -3069,9 +3142,9 @@
                                     "matchup_number": 2,
                                     "series_wins_required": 1,
                                     "team_1_wins": 0,
-                                    "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "team_2_wins": 1,
+                                    "winner_id": 8,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 10,
                                         "name": "Pacífico A",
@@ -3093,6 +3166,98 @@
                                             "time": "16:00",
                                             "home_team_id": 10,
                                             "away_team_id": 8,
+                                            "played": true,
+                                            "goals_home": 1,
+                                            "goals_away": 2,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "stage": "final",
+                            "label": "Final",
+                            "order": 4,
+                            "brackets": [
+                                {
+                                    "id": 87,
+                                    "format": "single_elimination",
+                                    "matchup_number": 1,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 24,
+                                        "name": "Universitario A",
+                                        "short_name": "UNI A",
+                                        "seed": 1,
+                                        "logo": "assets\/logos\/uni.png"
+                                    },
+                                    "team_2": {
+                                        "id": 8,
+                                        "name": "Monte Hermoso",
+                                        "short_name": "CAMH",
+                                        "seed": 3,
+                                        "logo": "assets\/logos\/camh.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": null,
+                                            "time": "",
+                                            "home_team_id": 24,
+                                            "away_team_id": 8,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "stage": "third_place",
+                            "label": "Tercer puesto",
+                            "order": 5,
+                            "brackets": [
+                                {
+                                    "id": 88,
+                                    "format": "single_elimination",
+                                    "matchup_number": 1,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 10,
+                                        "name": "Pacífico A",
+                                        "short_name": "CAP A",
+                                        "seed": 2,
+                                        "logo": "assets\/logos\/cap.png"
+                                    },
+                                    "team_2": {
+                                        "id": 1,
+                                        "name": "Argentino A",
+                                        "short_name": "ARG A",
+                                        "seed": 4,
+                                        "logo": "assets\/logos\/arg.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": null,
+                                            "time": "",
+                                            "home_team_id": 10,
+                                            "away_team_id": 1,
                                             "played": false,
                                             "goals_home": null,
                                             "goals_away": null,
@@ -3152,6 +3317,19 @@
                                             "time": "16:00",
                                             "home_team_id": 19,
                                             "away_team_id": 7,
+                                            "played": true,
+                                            "goals_home": 4,
+                                            "goals_away": 0,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        },
+                                        {
+                                            "game": 3,
+                                            "date": "06\/06\/2026",
+                                            "time": "16:00",
+                                            "home_team_id": 3,
+                                            "away_team_id": 7,
                                             "played": false,
                                             "goals_home": null,
                                             "goals_away": null,
@@ -3178,35 +3356,17 @@
                                                 "seed": 1,
                                                 "logo": "assets\/logos\/ss.png"
                                             },
-                                            "played": 1,
-                                            "won": 1,
+                                            "played": 2,
+                                            "won": 2,
                                             "drawn": 0,
                                             "lost": 0,
-                                            "goals_for": 1,
+                                            "goals_for": 5,
                                             "goals_against": 0,
-                                            "goal_difference": 1,
-                                            "points": 3
+                                            "goal_difference": 5,
+                                            "points": 6
                                         },
                                         {
                                             "position": 2,
-                                            "team": {
-                                                "id": 7,
-                                                "name": "Independiente",
-                                                "short_name": "CAI",
-                                                "seed": 3,
-                                                "logo": "assets\/logos\/cai.png"
-                                            },
-                                            "played": 0,
-                                            "won": 0,
-                                            "drawn": 0,
-                                            "lost": 0,
-                                            "goals_for": 0,
-                                            "goals_against": 0,
-                                            "goal_difference": 0,
-                                            "points": 0
-                                        },
-                                        {
-                                            "position": 3,
                                             "team": {
                                                 "id": 3,
                                                 "name": "El Nacional A",
@@ -3221,6 +3381,24 @@
                                             "goals_for": 0,
                                             "goals_against": 1,
                                             "goal_difference": -1,
+                                            "points": 0
+                                        },
+                                        {
+                                            "position": 3,
+                                            "team": {
+                                                "id": 7,
+                                                "name": "Independiente",
+                                                "short_name": "CAI",
+                                                "seed": 3,
+                                                "logo": "assets\/logos\/cai.png"
+                                            },
+                                            "played": 1,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 1,
+                                            "goals_for": 0,
+                                            "goals_against": 4,
+                                            "goal_difference": -4,
                                             "points": 0
                                         }
                                     ]
@@ -5537,10 +5715,10 @@
                                     "format": "single_elimination",
                                     "matchup_number": 1,
                                     "series_wins_required": 1,
-                                    "team_1_wins": 0,
+                                    "team_1_wins": 1,
                                     "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "winner_id": 16,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 16,
                                         "name": "Puerto Belgrano A",
@@ -5562,9 +5740,9 @@
                                             "time": "10:00",
                                             "home_team_id": 16,
                                             "away_team_id": 29,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
+                                            "played": true,
+                                            "goals_home": 2,
+                                            "goals_away": 1,
                                             "has_shootouts": false,
                                             "shootouts_home": null,
                                             "shootouts_away": null
@@ -5583,10 +5761,10 @@
                                     "format": "single_elimination",
                                     "matchup_number": 1,
                                     "series_wins_required": 1,
-                                    "team_1_wins": 0,
+                                    "team_1_wins": 1,
                                     "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "winner_id": 23,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 23,
                                         "name": "Tiro Federal",
@@ -5608,9 +5786,9 @@
                                             "time": "10:00",
                                             "home_team_id": 23,
                                             "away_team_id": 25,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
+                                            "played": true,
+                                            "goals_home": 5,
+                                            "goals_away": 0,
                                             "has_shootouts": false,
                                             "shootouts_home": null,
                                             "shootouts_away": null
@@ -5667,6 +5845,19 @@
                                             "time": "10:00",
                                             "home_team_id": 4,
                                             "away_team_id": 20,
+                                            "played": true,
+                                            "goals_home": 0,
+                                            "goals_away": 1,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        },
+                                        {
+                                            "game": 3,
+                                            "date": "07\/06\/2026",
+                                            "time": "10:00",
+                                            "home_team_id": 11,
+                                            "away_team_id": 20,
                                             "played": false,
                                             "goals_home": null,
                                             "goals_away": null,
@@ -5711,14 +5902,14 @@
                                                 "seed": 3,
                                                 "logo": "assets\/logos\/ss.png"
                                             },
-                                            "played": 0,
-                                            "won": 0,
+                                            "played": 1,
+                                            "won": 1,
                                             "drawn": 0,
                                             "lost": 0,
-                                            "goals_for": 0,
+                                            "goals_for": 1,
                                             "goals_against": 0,
-                                            "goal_difference": 0,
-                                            "points": 0
+                                            "goal_difference": 1,
+                                            "points": 3
                                         },
                                         {
                                             "position": 3,
@@ -5729,13 +5920,13 @@
                                                 "seed": 1,
                                                 "logo": "assets\/logos\/cen.png"
                                             },
-                                            "played": 1,
+                                            "played": 2,
                                             "won": 0,
                                             "drawn": 0,
-                                            "lost": 1,
+                                            "lost": 2,
                                             "goals_for": 0,
-                                            "goals_against": 2,
-                                            "goal_difference": -2,
+                                            "goals_against": 3,
+                                            "goal_difference": -3,
                                             "points": 0
                                         }
                                     ]
@@ -5844,9 +6035,9 @@
                                     "matchup_number": 1,
                                     "series_wins_required": 1,
                                     "team_1_wins": 0,
-                                    "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "team_2_wins": 1,
+                                    "winner_id": 23,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 16,
                                         "name": "Puerto Belgrano A",
@@ -5868,12 +6059,12 @@
                                             "time": "10:00",
                                             "home_team_id": 16,
                                             "away_team_id": 23,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
-                                            "has_shootouts": false,
-                                            "shootouts_home": null,
-                                            "shootouts_away": null
+                                            "played": true,
+                                            "goals_home": 1,
+                                            "goals_away": 1,
+                                            "has_shootouts": true,
+                                            "shootouts_home": 2,
+                                            "shootouts_away": 3
                                         }
                                     ]
                                 }
@@ -5890,9 +6081,9 @@
                                     "matchup_number": 1,
                                     "series_wins_required": 1,
                                     "team_1_wins": 0,
-                                    "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "team_2_wins": 1,
+                                    "winner_id": 20,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 29,
                                         "name": "Villa Mitre",
@@ -5914,12 +6105,12 @@
                                             "time": "10:00",
                                             "home_team_id": 29,
                                             "away_team_id": 20,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
-                                            "has_shootouts": false,
-                                            "shootouts_home": null,
-                                            "shootouts_away": null
+                                            "played": true,
+                                            "goals_home": 1,
+                                            "goals_away": 1,
+                                            "has_shootouts": true,
+                                            "shootouts_home": 2,
+                                            "shootouts_away": 3
                                         }
                                     ]
                                 }
@@ -5960,9 +6151,9 @@
                                             "time": "10:00",
                                             "home_team_id": 4,
                                             "away_team_id": 25,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
+                                            "played": true,
+                                            "goals_home": 0,
+                                            "goals_away": 3,
                                             "has_shootouts": false,
                                             "shootouts_home": null,
                                             "shootouts_away": null
@@ -5976,6 +6167,19 @@
                                             "played": true,
                                             "goals_home": 1,
                                             "goals_away": 2,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        },
+                                        {
+                                            "game": 3,
+                                            "date": "06\/06\/2026",
+                                            "time": "10:00",
+                                            "home_team_id": 25,
+                                            "away_team_id": 11,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
                                             "has_shootouts": false,
                                             "shootouts_home": null,
                                             "shootouts_away": null
@@ -5993,6 +6197,24 @@
                                         {
                                             "position": 1,
                                             "team": {
+                                                "id": 25,
+                                                "name": "Universitario B",
+                                                "short_name": "UNI B",
+                                                "seed": 2,
+                                                "logo": "assets\/logos\/uni.png"
+                                            },
+                                            "played": 1,
+                                            "won": 1,
+                                            "drawn": 0,
+                                            "lost": 0,
+                                            "goals_for": 3,
+                                            "goals_against": 0,
+                                            "goal_difference": 3,
+                                            "points": 3
+                                        },
+                                        {
+                                            "position": 2,
+                                            "team": {
                                                 "id": 11,
                                                 "name": "Pacífico B",
                                                 "short_name": "CAP B",
@@ -6009,24 +6231,6 @@
                                             "points": 3
                                         },
                                         {
-                                            "position": 2,
-                                            "team": {
-                                                "id": 25,
-                                                "name": "Universitario B",
-                                                "short_name": "UNI B",
-                                                "seed": 2,
-                                                "logo": "assets\/logos\/uni.png"
-                                            },
-                                            "played": 0,
-                                            "won": 0,
-                                            "drawn": 0,
-                                            "lost": 0,
-                                            "goals_for": 0,
-                                            "goals_against": 0,
-                                            "goal_difference": 0,
-                                            "points": 0
-                                        },
-                                        {
                                             "position": 3,
                                             "team": {
                                                 "id": 4,
@@ -6035,13 +6239,13 @@
                                                 "seed": 1,
                                                 "logo": "assets\/logos\/cen.png"
                                             },
-                                            "played": 1,
+                                            "played": 2,
                                             "won": 0,
                                             "drawn": 0,
-                                            "lost": 1,
+                                            "lost": 2,
                                             "goals_for": 1,
-                                            "goals_against": 2,
-                                            "goal_difference": -1,
+                                            "goals_against": 5,
+                                            "goal_difference": -4,
                                             "points": 0
                                         }
                                     ]
@@ -6150,9 +6354,9 @@
                                     "matchup_number": 1,
                                     "series_wins_required": 1,
                                     "team_1_wins": 0,
-                                    "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "team_2_wins": 1,
+                                    "winner_id": 16,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 25,
                                         "name": "Universitario B",
@@ -6174,9 +6378,9 @@
                                             "time": "13:00",
                                             "home_team_id": 25,
                                             "away_team_id": 16,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
+                                            "played": true,
+                                            "goals_home": 0,
+                                            "goals_away": 1,
                                             "has_shootouts": false,
                                             "shootouts_home": null,
                                             "shootouts_away": null
@@ -6195,10 +6399,10 @@
                                     "format": "single_elimination",
                                     "matchup_number": 1,
                                     "series_wins_required": 1,
-                                    "team_1_wins": 0,
+                                    "team_1_wins": 1,
                                     "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "winner_id": 23,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 23,
                                         "name": "Tiro Federal",
@@ -6220,9 +6424,9 @@
                                             "time": "13:00",
                                             "home_team_id": 23,
                                             "away_team_id": 20,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
+                                            "played": true,
+                                            "goals_home": 2,
+                                            "goals_away": 1,
                                             "has_shootouts": false,
                                             "shootouts_home": null,
                                             "shootouts_away": null
@@ -6279,6 +6483,19 @@
                                             "time": "14:00",
                                             "home_team_id": 29,
                                             "away_team_id": 11,
+                                            "played": true,
+                                            "goals_home": 5,
+                                            "goals_away": 1,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        },
+                                        {
+                                            "game": 3,
+                                            "date": "07\/06\/2026",
+                                            "time": "16:00",
+                                            "home_team_id": 4,
+                                            "away_team_id": 11,
                                             "played": false,
                                             "goals_home": null,
                                             "goals_away": null,
@@ -6305,35 +6522,17 @@
                                                 "seed": 1,
                                                 "logo": "assets\/logos\/vm.png"
                                             },
-                                            "played": 1,
-                                            "won": 1,
+                                            "played": 2,
+                                            "won": 2,
                                             "drawn": 0,
                                             "lost": 0,
-                                            "goals_for": 2,
-                                            "goals_against": 0,
-                                            "goal_difference": 2,
-                                            "points": 3
+                                            "goals_for": 7,
+                                            "goals_against": 1,
+                                            "goal_difference": 6,
+                                            "points": 6
                                         },
                                         {
                                             "position": 2,
-                                            "team": {
-                                                "id": 11,
-                                                "name": "Pacífico B",
-                                                "short_name": "CAP B",
-                                                "seed": 3,
-                                                "logo": "assets\/logos\/cap.png"
-                                            },
-                                            "played": 0,
-                                            "won": 0,
-                                            "drawn": 0,
-                                            "lost": 0,
-                                            "goals_for": 0,
-                                            "goals_against": 0,
-                                            "goal_difference": 0,
-                                            "points": 0
-                                        },
-                                        {
-                                            "position": 3,
                                             "team": {
                                                 "id": 4,
                                                 "name": "El Nacional B",
@@ -6348,6 +6547,24 @@
                                             "goals_for": 0,
                                             "goals_against": 2,
                                             "goal_difference": -2,
+                                            "points": 0
+                                        },
+                                        {
+                                            "position": 3,
+                                            "team": {
+                                                "id": 11,
+                                                "name": "Pacífico B",
+                                                "short_name": "CAP B",
+                                                "seed": 3,
+                                                "logo": "assets\/logos\/cap.png"
+                                            },
+                                            "played": 1,
+                                            "won": 0,
+                                            "drawn": 0,
+                                            "lost": 1,
+                                            "goals_for": 1,
+                                            "goals_against": 5,
+                                            "goal_difference": -4,
                                             "points": 0
                                         }
                                     ]
@@ -6455,10 +6672,10 @@
                                     "format": "single_elimination",
                                     "matchup_number": 1,
                                     "series_wins_required": 1,
-                                    "team_1_wins": 0,
+                                    "team_1_wins": 1,
                                     "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "winner_id": 25,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 25,
                                         "name": "Universitario B",
@@ -6480,9 +6697,9 @@
                                             "time": "16:00",
                                             "home_team_id": 25,
                                             "away_team_id": 20,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
+                                            "played": true,
+                                            "goals_home": 3,
+                                            "goals_away": 0,
                                             "has_shootouts": false,
                                             "shootouts_home": null,
                                             "shootouts_away": null
@@ -6502,9 +6719,9 @@
                                     "matchup_number": 1,
                                     "series_wins_required": 1,
                                     "team_1_wins": 0,
-                                    "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "team_2_wins": 1,
+                                    "winner_id": 4,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 29,
                                         "name": "Villa Mitre",
@@ -6526,12 +6743,12 @@
                                             "time": "16:00",
                                             "home_team_id": 4,
                                             "away_team_id": 29,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
-                                            "has_shootouts": false,
-                                            "shootouts_home": null,
-                                            "shootouts_away": null
+                                            "played": true,
+                                            "goals_home": 3,
+                                            "goals_away": 3,
+                                            "has_shootouts": true,
+                                            "shootouts_home": 3,
+                                            "shootouts_away": 2
                                         }
                                     ]
                                 }
@@ -6585,6 +6802,19 @@
                                             "time": "18:00",
                                             "home_team_id": 11,
                                             "away_team_id": 16,
+                                            "played": true,
+                                            "goals_home": 2,
+                                            "goals_away": 1,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        },
+                                        {
+                                            "game": 3,
+                                            "date": "06\/06\/2026",
+                                            "time": "16:00",
+                                            "home_team_id": 23,
+                                            "away_team_id": 16,
                                             "played": false,
                                             "goals_home": null,
                                             "goals_away": null,
@@ -6611,14 +6841,14 @@
                                                 "seed": 1,
                                                 "logo": "assets\/logos\/cap.png"
                                             },
-                                            "played": 1,
-                                            "won": 0,
+                                            "played": 2,
+                                            "won": 1,
                                             "drawn": 1,
                                             "lost": 0,
-                                            "goals_for": 3,
-                                            "goals_against": 3,
-                                            "goal_difference": 0,
-                                            "points": 2
+                                            "goals_for": 5,
+                                            "goals_against": 4,
+                                            "goal_difference": 1,
+                                            "points": 5
                                         },
                                         {
                                             "position": 2,
@@ -6647,13 +6877,13 @@
                                                 "seed": 3,
                                                 "logo": "assets\/logos\/pto.png"
                                             },
-                                            "played": 0,
+                                            "played": 1,
                                             "won": 0,
                                             "drawn": 0,
-                                            "lost": 0,
-                                            "goals_for": 0,
-                                            "goals_against": 0,
-                                            "goal_difference": 0,
+                                            "lost": 1,
+                                            "goals_for": 1,
+                                            "goals_against": 2,
+                                            "goal_difference": -1,
                                             "points": 0
                                         }
                                     ]
@@ -8895,10 +9125,10 @@
                                     "format": "single_elimination",
                                     "matchup_number": 1,
                                     "series_wins_required": 1,
-                                    "team_1_wins": 0,
+                                    "team_1_wins": 1,
                                     "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "winner_id": 22,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 22,
                                         "name": "Sporting",
@@ -8920,9 +9150,9 @@
                                             "time": "10:00",
                                             "home_team_id": 22,
                                             "away_team_id": 14,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
+                                            "played": true,
+                                            "goals_home": 3,
+                                            "goals_away": 2,
                                             "has_shootouts": false,
                                             "shootouts_home": null,
                                             "shootouts_away": null
@@ -8942,9 +9172,9 @@
                                     "matchup_number": 1,
                                     "series_wins_required": 1,
                                     "team_1_wins": 0,
-                                    "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "team_2_wins": 1,
+                                    "winner_id": 17,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 2,
                                         "name": "Argentino B",
@@ -8966,12 +9196,12 @@
                                             "time": "12:00",
                                             "home_team_id": 2,
                                             "away_team_id": 17,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
-                                            "has_shootouts": false,
-                                            "shootouts_home": null,
-                                            "shootouts_away": null
+                                            "played": true,
+                                            "goals_home": 1,
+                                            "goals_away": 1,
+                                            "has_shootouts": true,
+                                            "shootouts_home": 1,
+                                            "shootouts_away": 3
                                         }
                                     ]
                                 }
@@ -9025,6 +9255,19 @@
                                             "time": "13:30",
                                             "home_team_id": 5,
                                             "away_team_id": 30,
+                                            "played": true,
+                                            "goals_home": 2,
+                                            "goals_away": 0,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        },
+                                        {
+                                            "game": 3,
+                                            "date": "07\/06\/2026",
+                                            "time": "10:00",
+                                            "home_team_id": 26,
+                                            "away_team_id": 30,
                                             "played": false,
                                             "goals_home": null,
                                             "goals_away": null,
@@ -9051,14 +9294,14 @@
                                                 "seed": 1,
                                                 "logo": "assets\/logos\/cen.png"
                                             },
-                                            "played": 1,
-                                            "won": 1,
+                                            "played": 2,
+                                            "won": 2,
                                             "drawn": 0,
                                             "lost": 0,
-                                            "goals_for": 4,
+                                            "goals_for": 6,
                                             "goals_against": 0,
-                                            "goal_difference": 4,
-                                            "points": 3
+                                            "goal_difference": 6,
+                                            "points": 6
                                         },
                                         {
                                             "position": 2,
@@ -9069,13 +9312,13 @@
                                                 "seed": 3,
                                                 "logo": "assets\/logos\/por.png"
                                             },
-                                            "played": 0,
+                                            "played": 1,
                                             "won": 0,
                                             "drawn": 0,
-                                            "lost": 0,
+                                            "lost": 1,
                                             "goals_for": 0,
-                                            "goals_against": 0,
-                                            "goal_difference": 0,
+                                            "goals_against": 2,
+                                            "goal_difference": -2,
                                             "points": 0
                                         },
                                         {
@@ -9201,10 +9444,10 @@
                                     "format": "single_elimination",
                                     "matchup_number": 1,
                                     "series_wins_required": 1,
-                                    "team_1_wins": 0,
+                                    "team_1_wins": 1,
                                     "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "winner_id": 22,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 22,
                                         "name": "Sporting",
@@ -9226,9 +9469,9 @@
                                             "time": "10:00",
                                             "home_team_id": 22,
                                             "away_team_id": 14,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
+                                            "played": true,
+                                            "goals_home": 2,
+                                            "goals_away": 0,
                                             "has_shootouts": false,
                                             "shootouts_home": null,
                                             "shootouts_away": null
@@ -9248,9 +9491,9 @@
                                     "matchup_number": 1,
                                     "series_wins_required": 1,
                                     "team_1_wins": 0,
-                                    "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "team_2_wins": 1,
+                                    "winner_id": 2,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 17,
                                         "name": "Puerto Belgrano B",
@@ -9272,9 +9515,9 @@
                                             "time": "12:00",
                                             "home_team_id": 17,
                                             "away_team_id": 2,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
+                                            "played": true,
+                                            "goals_home": 2,
+                                            "goals_away": 3,
                                             "has_shootouts": false,
                                             "shootouts_home": null,
                                             "shootouts_away": null
@@ -9324,6 +9567,19 @@
                                             "has_shootouts": false,
                                             "shootouts_home": null,
                                             "shootouts_away": null
+                                        },
+                                        {
+                                            "game": 2,
+                                            "date": "30\/05\/2026",
+                                            "time": "12:00",
+                                            "home_team_id": 5,
+                                            "away_team_id": 30,
+                                            "played": true,
+                                            "goals_home": 2,
+                                            "goals_away": 0,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
                                         }
                                     ],
                                     "team_3": {
@@ -9344,14 +9600,14 @@
                                                 "seed": 1,
                                                 "logo": "assets\/logos\/cen.png"
                                             },
-                                            "played": 0,
-                                            "won": 0,
+                                            "played": 1,
+                                            "won": 1,
                                             "drawn": 0,
                                             "lost": 0,
-                                            "goals_for": 0,
+                                            "goals_for": 2,
                                             "goals_against": 0,
-                                            "goal_difference": 0,
-                                            "points": 0
+                                            "goal_difference": 2,
+                                            "points": 3
                                         },
                                         {
                                             "position": 2,
@@ -9380,13 +9636,13 @@
                                                 "seed": 3,
                                                 "logo": "assets\/logos\/por.png"
                                             },
-                                            "played": 0,
+                                            "played": 1,
                                             "won": 0,
                                             "drawn": 0,
-                                            "lost": 0,
+                                            "lost": 1,
                                             "goals_for": 0,
-                                            "goals_against": 0,
-                                            "goal_difference": 0,
+                                            "goals_against": 2,
+                                            "goal_difference": -2,
                                             "points": 0
                                         }
                                     ]
@@ -9494,10 +9750,10 @@
                                     "format": "single_elimination",
                                     "matchup_number": 1,
                                     "series_wins_required": 1,
-                                    "team_1_wins": 0,
+                                    "team_1_wins": 1,
                                     "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "winner_id": 14,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 14,
                                         "name": "Palihue",
@@ -9519,9 +9775,9 @@
                                             "time": "20:00",
                                             "home_team_id": 14,
                                             "away_team_id": 2,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
+                                            "played": true,
+                                            "goals_home": 3,
+                                            "goals_away": 0,
                                             "has_shootouts": false,
                                             "shootouts_home": null,
                                             "shootouts_away": null
@@ -9541,9 +9797,9 @@
                                     "matchup_number": 1,
                                     "series_wins_required": 1,
                                     "team_1_wins": 0,
-                                    "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "team_2_wins": 1,
+                                    "winner_id": 17,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 22,
                                         "name": "Sporting",
@@ -9565,9 +9821,9 @@
                                             "time": "13:00",
                                             "home_team_id": 22,
                                             "away_team_id": 17,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
+                                            "played": true,
+                                            "goals_home": 1,
+                                            "goals_away": 4,
                                             "has_shootouts": false,
                                             "shootouts_home": null,
                                             "shootouts_away": null
@@ -9814,9 +10070,9 @@
                                     "matchup_number": 1,
                                     "series_wins_required": 1,
                                     "team_1_wins": 0,
-                                    "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "team_2_wins": 1,
+                                    "winner_id": 2,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 22,
                                         "name": "Sporting",
@@ -9838,9 +10094,9 @@
                                             "time": "16:00",
                                             "home_team_id": 2,
                                             "away_team_id": 22,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
+                                            "played": true,
+                                            "goals_home": 3,
+                                            "goals_away": 0,
                                             "has_shootouts": false,
                                             "shootouts_home": null,
                                             "shootouts_away": null
@@ -9863,7 +10119,13 @@
                                     "team_2_wins": 0,
                                     "winner_id": null,
                                     "is_completed": false,
-                                    "team_1": null,
+                                    "team_1": {
+                                        "id": 22,
+                                        "name": "Sporting",
+                                        "short_name": "SPO",
+                                        "seed": 1,
+                                        "logo": "assets\/logos\/spo.png"
+                                    },
                                     "team_2": {
                                         "id": 26,
                                         "name": "Universitario C",
@@ -9876,8 +10138,8 @@
                                             "game": 1,
                                             "date": "06\/06\/2026",
                                             "time": "16:00",
-                                            "home_team_id": null,
-                                            "away_team_id": 26,
+                                            "home_team_id": 26,
+                                            "away_team_id": 22,
                                             "played": false,
                                             "goals_home": null,
                                             "goals_away": null,
@@ -9937,6 +10199,19 @@
                                             "time": "21:00",
                                             "home_team_id": 5,
                                             "away_team_id": 30,
+                                            "played": true,
+                                            "goals_home": 2,
+                                            "goals_away": 0,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        },
+                                        {
+                                            "game": 3,
+                                            "date": "06\/06\/2026",
+                                            "time": "16:00",
+                                            "home_team_id": 17,
+                                            "away_team_id": 30,
                                             "played": false,
                                             "goals_home": null,
                                             "goals_away": null,
@@ -9957,6 +10232,24 @@
                                         {
                                             "position": 1,
                                             "team": {
+                                                "id": 5,
+                                                "name": "El Nacional C",
+                                                "short_name": "CEN C",
+                                                "seed": 1,
+                                                "logo": "assets\/logos\/cen.png"
+                                            },
+                                            "played": 2,
+                                            "won": 1,
+                                            "drawn": 0,
+                                            "lost": 1,
+                                            "goals_for": 2,
+                                            "goals_against": 1,
+                                            "goal_difference": 1,
+                                            "points": 3
+                                        },
+                                        {
+                                            "position": 2,
+                                            "team": {
                                                 "id": 17,
                                                 "name": "Puerto Belgrano B",
                                                 "short_name": "PTO B",
@@ -9973,7 +10266,7 @@
                                             "points": 3
                                         },
                                         {
-                                            "position": 2,
+                                            "position": 3,
                                             "team": {
                                                 "id": 30,
                                                 "name": "Porteño",
@@ -9981,31 +10274,13 @@
                                                 "seed": 3,
                                                 "logo": "assets\/logos\/por.png"
                                             },
-                                            "played": 0,
-                                            "won": 0,
-                                            "drawn": 0,
-                                            "lost": 0,
-                                            "goals_for": 0,
-                                            "goals_against": 0,
-                                            "goal_difference": 0,
-                                            "points": 0
-                                        },
-                                        {
-                                            "position": 3,
-                                            "team": {
-                                                "id": 5,
-                                                "name": "El Nacional C",
-                                                "short_name": "CEN C",
-                                                "seed": 1,
-                                                "logo": "assets\/logos\/cen.png"
-                                            },
                                             "played": 1,
                                             "won": 0,
                                             "drawn": 0,
                                             "lost": 1,
                                             "goals_for": 0,
-                                            "goals_against": 1,
-                                            "goal_difference": -1,
+                                            "goals_against": 2,
+                                            "goal_difference": -2,
                                             "points": 0
                                         }
                                     ]
@@ -10827,10 +11102,10 @@
                                     "format": "single_elimination",
                                     "matchup_number": 1,
                                     "series_wins_required": 1,
-                                    "team_1_wins": 0,
+                                    "team_1_wins": 1,
                                     "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "winner_id": 12,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 12,
                                         "name": "Pacífico",
@@ -10852,9 +11127,9 @@
                                             "time": "10:30",
                                             "home_team_id": 12,
                                             "away_team_id": 9,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
+                                            "played": true,
+                                            "goals_home": 7,
+                                            "goals_away": 1,
                                             "has_shootouts": false,
                                             "shootouts_home": null,
                                             "shootouts_away": null
@@ -10866,10 +11141,10 @@
                                     "format": "single_elimination",
                                     "matchup_number": 2,
                                     "series_wins_required": 1,
-                                    "team_1_wins": 0,
+                                    "team_1_wins": 1,
                                     "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "winner_id": 6,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 6,
                                         "name": "El Nacional",
@@ -10894,6 +11169,98 @@
                                             "played": true,
                                             "goals_home": 2,
                                             "goals_away": 0,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "stage": "final",
+                            "label": "Final",
+                            "order": 4,
+                            "brackets": [
+                                {
+                                    "id": 91,
+                                    "format": "single_elimination",
+                                    "matchup_number": 1,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 12,
+                                        "name": "Pacífico",
+                                        "short_name": "CAP",
+                                        "seed": 1,
+                                        "logo": "assets\/logos\/cap.png"
+                                    },
+                                    "team_2": {
+                                        "id": 6,
+                                        "name": "El Nacional",
+                                        "short_name": "CEN",
+                                        "seed": 2,
+                                        "logo": "assets\/logos\/cen.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": null,
+                                            "time": "",
+                                            "home_team_id": 12,
+                                            "away_team_id": 6,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "stage": "third_place",
+                            "label": "Tercer puesto",
+                            "order": 5,
+                            "brackets": [
+                                {
+                                    "id": 92,
+                                    "format": "single_elimination",
+                                    "matchup_number": 1,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 18,
+                                        "name": "Puerto Belgrano",
+                                        "short_name": "PTO",
+                                        "seed": 3,
+                                        "logo": "assets\/logos\/pto.png"
+                                    },
+                                    "team_2": {
+                                        "id": 9,
+                                        "name": "Monte Hermoso",
+                                        "short_name": "CAMH",
+                                        "seed": 4,
+                                        "logo": "assets\/logos\/camh.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": null,
+                                            "time": "",
+                                            "home_team_id": 18,
+                                            "away_team_id": 9,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
                                             "has_shootouts": false,
                                             "shootouts_home": null,
                                             "shootouts_away": null
@@ -11004,9 +11371,9 @@
                                     "matchup_number": 1,
                                     "series_wins_required": 1,
                                     "team_1_wins": 0,
-                                    "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "team_2_wins": 1,
+                                    "winner_id": 6,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 28,
                                         "name": "Universitario",
@@ -11028,12 +11395,12 @@
                                             "time": "18:00",
                                             "home_team_id": 28,
                                             "away_team_id": 6,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
-                                            "has_shootouts": false,
-                                            "shootouts_home": null,
-                                            "shootouts_away": null
+                                            "played": true,
+                                            "goals_home": 1,
+                                            "goals_away": 1,
+                                            "has_shootouts": true,
+                                            "shootouts_home": 2,
+                                            "shootouts_away": 3
                                         }
                                     ]
                                 }
@@ -11049,10 +11416,10 @@
                                     "format": "single_elimination",
                                     "matchup_number": 1,
                                     "series_wins_required": 1,
-                                    "team_1_wins": 0,
+                                    "team_1_wins": 1,
                                     "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "winner_id": 18,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 18,
                                         "name": "Puerto Belgrano",
@@ -11074,9 +11441,9 @@
                                             "time": "16:00",
                                             "home_team_id": 18,
                                             "away_team_id": 12,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
+                                            "played": true,
+                                            "goals_home": 2,
+                                            "goals_away": 1,
                                             "has_shootouts": false,
                                             "shootouts_home": null,
                                             "shootouts_away": null
@@ -11097,8 +11464,8 @@
                                     "series_wins_required": 1,
                                     "team_1_wins": 0,
                                     "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "winner_id": 9,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 9,
                                         "name": "Monte Hermoso",
@@ -11133,12 +11500,12 @@
                                             "time": "16:00",
                                             "home_team_id": 9,
                                             "away_team_id": 15,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
-                                            "has_shootouts": false,
-                                            "shootouts_home": null,
-                                            "shootouts_away": null
+                                            "played": true,
+                                            "goals_home": 1,
+                                            "goals_away": 0,
+                                            "has_shootouts": true,
+                                            "shootouts_home": 2,
+                                            "shootouts_away": 1
                                         }
                                     ]
                                 }
@@ -11628,10 +11995,10 @@
                                     "format": "single_elimination",
                                     "matchup_number": 1,
                                     "series_wins_required": 1,
-                                    "team_1_wins": 0,
+                                    "team_1_wins": 1,
                                     "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "winner_id": 8,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 8,
                                         "name": "Monte Hermoso",
@@ -11653,9 +12020,9 @@
                                             "time": "20:00",
                                             "home_team_id": 8,
                                             "away_team_id": 21,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
+                                            "played": true,
+                                            "goals_home": 6,
+                                            "goals_away": 0,
                                             "has_shootouts": false,
                                             "shootouts_home": null,
                                             "shootouts_away": null
@@ -11667,10 +12034,10 @@
                                     "format": "single_elimination",
                                     "matchup_number": 2,
                                     "series_wins_required": 1,
-                                    "team_1_wins": 0,
+                                    "team_1_wins": 1,
                                     "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "winner_id": 27,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 27,
                                         "name": "Universitario",
@@ -11704,6 +12071,98 @@
                             ]
                         },
                         {
+                            "stage": "final",
+                            "label": "Final",
+                            "order": 4,
+                            "brackets": [
+                                {
+                                    "id": 89,
+                                    "format": "single_elimination",
+                                    "matchup_number": 1,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 8,
+                                        "name": "Monte Hermoso",
+                                        "short_name": "CAMH",
+                                        "seed": 1,
+                                        "logo": "assets\/logos\/camh.png"
+                                    },
+                                    "team_2": {
+                                        "id": 27,
+                                        "name": "Universitario",
+                                        "short_name": "UNI",
+                                        "seed": 2,
+                                        "logo": "assets\/logos\/uni.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": null,
+                                            "time": "",
+                                            "home_team_id": 8,
+                                            "away_team_id": 27,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "stage": "third_place",
+                            "label": "Tercer puesto",
+                            "order": 5,
+                            "brackets": [
+                                {
+                                    "id": 90,
+                                    "format": "single_elimination",
+                                    "matchup_number": 1,
+                                    "series_wins_required": 1,
+                                    "team_1_wins": 0,
+                                    "team_2_wins": 0,
+                                    "winner_id": null,
+                                    "is_completed": false,
+                                    "team_1": {
+                                        "id": 29,
+                                        "name": "Villa Mitre",
+                                        "short_name": "VM",
+                                        "seed": 3,
+                                        "logo": "assets\/logos\/vm.png"
+                                    },
+                                    "team_2": {
+                                        "id": 21,
+                                        "name": "S. Sportiva",
+                                        "short_name": "SS",
+                                        "seed": 4,
+                                        "logo": "assets\/logos\/ss.png"
+                                    },
+                                    "matches": [
+                                        {
+                                            "game": 1,
+                                            "date": null,
+                                            "time": "",
+                                            "home_team_id": 29,
+                                            "away_team_id": 21,
+                                            "played": false,
+                                            "goals_home": null,
+                                            "goals_away": null,
+                                            "has_shootouts": false,
+                                            "shootouts_home": null,
+                                            "shootouts_away": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
                             "stage": "relegation",
                             "label": "Series complementarias",
                             "order": 9,
@@ -11715,8 +12174,8 @@
                                     "series_wins_required": 1,
                                     "team_1_wins": 0,
                                     "team_2_wins": 0,
-                                    "winner_id": null,
-                                    "is_completed": false,
+                                    "winner_id": 13,
+                                    "is_completed": true,
                                     "team_1": {
                                         "id": 14,
                                         "name": "Palihue",
@@ -11751,12 +12210,12 @@
                                             "time": "20:00",
                                             "home_team_id": 14,
                                             "away_team_id": 13,
-                                            "played": false,
-                                            "goals_home": null,
-                                            "goals_away": null,
-                                            "has_shootouts": false,
-                                            "shootouts_home": null,
-                                            "shootouts_away": null
+                                            "played": true,
+                                            "goals_home": 1,
+                                            "goals_away": 1,
+                                            "has_shootouts": true,
+                                            "shootouts_home": 2,
+                                            "shootouts_away": 3
                                         }
                                     ]
                                 }
@@ -12048,15 +12507,26 @@
                                 "short_name": "PAC",
                                 "logo": "assets\/logos\/ad6508f6-a924-49b7-a78d-c5397f2850a7.jpg"
                             },
-                            "played": 3,
-                            "won": 1,
+                            "played": 4,
+                            "won": 2,
                             "drawn": 0,
                             "lost": 2,
-                            "goals_for": 4,
+                            "goals_for": 5,
                             "goals_against": 17,
-                            "goal_difference": -13,
-                            "points": 3,
+                            "goal_difference": -12,
+                            "points": 6,
                             "recent_form": [
+                                {
+                                    "result": "W",
+                                    "score": "1 - 0",
+                                    "opponent": "TIRO",
+                                    "opponent_logo": "assets\/logos\/tiro.png",
+                                    "was_home": true,
+                                    "date": "31\/05\/2026",
+                                    "match_id": 304,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
                                 {
                                     "result": "L",
                                     "score": "0 - 7",
@@ -12100,15 +12570,26 @@
                                 "short_name": "TIRO",
                                 "logo": "assets\/logos\/tiro.png"
                             },
-                            "played": 2,
+                            "played": 3,
                             "won": 0,
                             "drawn": 0,
-                            "lost": 2,
+                            "lost": 3,
                             "goals_for": 2,
-                            "goals_against": 8,
-                            "goal_difference": -6,
+                            "goals_against": 9,
+                            "goal_difference": -7,
                             "points": 0,
                             "recent_form": [
+                                {
+                                    "result": "L",
+                                    "score": "0 - 1",
+                                    "opponent": "PAC",
+                                    "opponent_logo": "assets\/logos\/ad6508f6-a924-49b7-a78d-c5397f2850a7.jpg",
+                                    "was_home": false,
+                                    "date": "31\/05\/2026",
+                                    "match_id": 304,
+                                    "shootouts": null,
+                                    "bonus_point": false
+                                },
                                 {
                                     "result": "L",
                                     "score": "0 - 5",
