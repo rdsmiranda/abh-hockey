@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-06-03T22:09:55-03:00",
+    "generated_at": "2026-06-04T12:02:09-03:00",
     "from": "2026-06-05",
     "to": "2026-06-07",
     "umpires": [
@@ -641,7 +641,7 @@
                     },
                     "pitch": "Pacífico",
                     "umpire_1": "Francisco Del Valle",
-                    "umpire_2": "Bruno Costa Biondi",
+                    "umpire_2": "Brenda Durand",
                     "fee": 64000,
                     "supervisor": null
                 },
@@ -761,7 +761,7 @@
                     },
                     "pitch": "Universitario (Agua)",
                     "umpire_1": "Nicolás Montenegro",
-                    "umpire_2": "Brenda Durand",
+                    "umpire_2": "Bruno Costa Biondi",
                     "fee": 57000,
                     "supervisor": null
                 },
