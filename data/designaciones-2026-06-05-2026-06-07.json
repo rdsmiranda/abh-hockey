@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-06-04T12:02:09-03:00",
+    "generated_at": "2026-06-04T19:08:58-03:00",
     "from": "2026-06-05",
     "to": "2026-06-07",
     "umpires": [
@@ -545,8 +545,8 @@
                     },
                     "pitch": "Monte Hermoso",
                     "umpire_1": "Carola Dichiara",
-                    "umpire_2": "A designar",
-                    "fee": null,
+                    "umpire_2": "Bruno Costa Biondi",
+                    "fee": 42000,
                     "supervisor": null
                 },
                 {
