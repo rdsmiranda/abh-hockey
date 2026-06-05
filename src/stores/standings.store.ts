@@ -9,6 +9,7 @@ import type {
   ChampionshipData,
   Zone,
   Category,
+  CategoryView,
 } from '@/types'
 import type { CategoryPlayoff } from '@/types'
 
@@ -49,9 +50,29 @@ export const useStandingsStore = defineStore('standings', () => {
   })
 
   const hasPlayoffs = computed<boolean>(
-    () =>
-      (activePlayoff.value?.stages?.length ?? 0) > 0,
+    () => (activePlayoff.value?.stages?.length ?? 0) > 0,
   )
+
+  /**
+   * Vistas disponibles para la categoría activa.
+   * Prioridad: campo `views` del JSON → inferencia desde los datos.
+   * La página usa esto para mostrar/ocultar tabs del segmented control de Vista.
+   */
+  const availableViews = computed<CategoryView[]>(() => {
+    const cat = activeCategory.value
+    if (!cat) return ['standings']
+
+    // Si el JSON declara explícitamente las vistas, usarlas directamente
+    if (cat.views && cat.views.length > 0) return cat.views
+
+    // Inferencia: standings siempre disponible si hay filas
+    const views: CategoryView[] = []
+    if (cat.standings.length > 0) views.push('standings')
+    // playoffs si existe la sección con al menos un stage
+    if (hasPlayoffs.value) views.push('playoffs')
+    // fixture y final se agregarán cuando los JSON los incluyan
+    return views.length > 0 ? views : ['standings']
+  })
 
   /** Timestamp legible en es-AR para mostrar en el meta-bar */
   const generatedAt = computed<string | null>(() => {
@@ -125,11 +146,15 @@ export const useStandingsStore = defineStore('standings', () => {
 
   function setCategory(catId: string): void {
     activeCategoryId.value = catId
+    // Resetear a la primera vista disponible para esta categoría
     activeSubTab.value = 'standings'
   }
 
-  function setSubTab(tab: 'standings' | 'playoffs'): void {
-    activeSubTab.value = tab
+  function setSubTab(tab: CategoryView): void {
+    // Solo cambiar si la vista está disponible para la categoría activa
+    if (availableViews.value.includes(tab)) {
+      activeSubTab.value = tab
+    }
   }
 
   // ── Helpers privados ──────────────────────────────────────────────────────
@@ -164,6 +189,7 @@ export const useStandingsStore = defineStore('standings', () => {
     activeCategory,
     activePlayoff,
     hasPlayoffs,
+    availableViews,
     generatedAt,
     // Actions
     loadIndex,

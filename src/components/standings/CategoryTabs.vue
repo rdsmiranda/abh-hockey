@@ -1,11 +1,8 @@
 <script setup lang="ts" generic="TId extends string | number">
 /**
- * Tabs horizontales genéricas.
- * Se usa en dos contextos diferentes sin cambios:
- *   1. Tabs de categoría (Primera, Reserva, Sub-16…)
- *   2. Sub-tabs de sección (Posiciones / Playoffs)
- *
- * El tipo genérico TId permite que el ID sea string o number.
+ * Segmented control genérico.
+ * Reemplaza los tabs con borde inferior por el estilo pill/capsule
+ * con fondo oscuro en el ítem activo, tal como muestra el diseño.
  */
 export interface TabItem<T extends string | number = string> {
   id: T
@@ -23,14 +20,14 @@ defineEmits<{
 </script>
 
 <template>
-  <div class="tabs" role="tablist">
+  <div class="seg" role="tablist">
     <button
       v-for="tab in tabs"
       :key="tab.id"
       type="button"
       role="tab"
       :aria-selected="String(tab.id) === String(modelValue)"
-      :class="['tab-btn', String(tab.id) === String(modelValue) && 'tab-btn--active']"
+      :class="['seg-btn', String(tab.id) === String(modelValue) && 'seg-btn--active']"
       @click="$emit('update:modelValue', tab.id)"
     >
       {{ tab.name }}
@@ -39,27 +36,41 @@ defineEmits<{
 </template>
 
 <style scoped>
-.tabs {
+.seg {
   display: flex;
-  gap: 0;
-  border-bottom: 2px solid var(--abh-border);
+  background: #e8edf5;
+  border-radius: 8px;
+  padding: 3px;
+  gap: 2px;
   margin-bottom: 1rem;
+  width: 100%;
 }
-.tab-btn {
+
+.seg-btn {
+  flex: 1;
   font-family: var(--font-barlow-condensed);
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 700;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 0.55rem 1.1rem;
+  padding: 0.55rem 0.75rem;
   border: none;
+  border-radius: 6px;
   background: transparent;
-  cursor: pointer;
   color: #64748b;
-  border-bottom: 2.5px solid transparent;
-  margin-bottom: -2px;
-  transition: color 0.15s, border-color 0.15s;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+  white-space: nowrap;
 }
-.tab-btn:hover     { color: var(--abh-blue); }
-.tab-btn--active   { color: var(--abh-blue); border-bottom-color: var(--abh-gold); }
+
+.seg-btn:hover:not(.seg-btn--active) {
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--abh-dark);
+}
+
+.seg-btn--active {
+  background: var(--abh-dark);
+  color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
+}
 </style>

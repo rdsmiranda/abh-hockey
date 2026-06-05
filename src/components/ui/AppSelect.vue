@@ -51,7 +51,8 @@ defineEmits<{
   cursor: pointer;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   transition: border-color 0.15s, box-shadow 0.15s;
-  min-width: 200px;
+  width: 100%;
+  min-width: 160px;
 }
 .app-select:hover {
   border-color: #cbd5e1;
