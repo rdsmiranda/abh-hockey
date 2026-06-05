@@ -21,7 +21,7 @@ export const useStandingsStore = defineStore('standings', () => {
   const selectedFile        = ref<string>('')
   const selectedZoneId      = ref<string>('')
   const activeCategoryId    = ref<string>('')
-  const activeSubTab        = ref<'standings' | 'playoffs'>('standings')
+  const activeSubTab        = ref<'standings' | 'fixture' | 'playoffs' | 'final'>('standings')
   const status              = ref<LoadStatus>('idle')
   const errorMessage        = ref<string | null>(null)
 
