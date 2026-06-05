@@ -1,0 +1,218 @@
+{
+  "championship": { "name": "Torneo Apertura", "year": 2025 },
+  "generated_at": "2025-06-04T12:00:00-03:00",
+  "zones": [
+    {
+      "id": 1,
+      "name": "Zona Norte",
+      "categories": [
+        {
+          "id": 1,
+          "name": "Primera",
+          "standings": [
+            {
+              "position": 1,
+              "team": { "id": 1, "name": "Villa Mitre", "short_name": "VIM" },
+              "played": 8, "won": 6, "drawn": 1, "lost": 1,
+              "goals_for": 18, "goals_against": 7, "goal_difference": 11, "points": 19,
+              "recent_form": [
+                { "result": "W", "score": "3-1", "opponent": "Olimpo", "was_home": true,  "date": "2025-05-25" },
+                { "result": "W", "score": "2-0", "opponent": "Liniers", "was_home": false, "date": "2025-05-18", "bonus_point": true },
+                { "result": "D", "score": "1-1", "opponent": "Tiro Federal", "was_home": true, "date": "2025-05-11" },
+                { "result": "W", "score": "4-2", "opponent": "Bahiense del Norte", "was_home": false, "date": "2025-05-04" },
+                { "result": "W", "score": "2-1", "opponent": "Napostá", "was_home": true, "date": "2025-04-27" }
+              ]
+            },
+            {
+              "position": 2,
+              "team": { "id": 2, "name": "Olimpo", "short_name": "OLI" },
+              "played": 8, "won": 5, "drawn": 1, "lost": 2,
+              "goals_for": 14, "goals_against": 8, "goal_difference": 6, "points": 16,
+              "recent_form": [
+                { "result": "L", "score": "1-3", "opponent": "Villa Mitre", "was_home": false, "date": "2025-05-25" },
+                { "result": "W", "score": "3-0", "opponent": "Bahiense del Norte", "was_home": true, "date": "2025-05-18" },
+                { "result": "W", "score": "2-1", "opponent": "Napostá", "was_home": false, "date": "2025-05-11" },
+                { "result": "W", "score": "1-0", "opponent": "Tiro Federal", "was_home": true, "date": "2025-05-04" },
+                { "result": "D", "score": "2-2", "opponent": "Liniers", "was_home": false, "date": "2025-04-27" }
+              ]
+            },
+            {
+              "position": 3,
+              "team": { "id": 3, "name": "Liniers", "short_name": "LIN" },
+              "played": 8, "won": 4, "drawn": 2, "lost": 2,
+              "goals_for": 11, "goals_against": 9, "goal_difference": 2, "points": 14,
+              "recent_form": [
+                { "result": "W", "score": "2-0", "opponent": "Napostá", "was_home": true, "date": "2025-05-25" },
+                { "result": "L", "score": "0-2", "opponent": "Villa Mitre", "was_home": true, "date": "2025-05-18" },
+                { "result": "W", "score": "3-1", "opponent": "Tiro Federal", "was_home": false, "date": "2025-05-11" },
+                { "result": "D", "score": "1-1", "opponent": "Bahiense del Norte", "was_home": true, "date": "2025-05-04" },
+                { "result": "D", "score": "2-2", "opponent": "Olimpo", "was_home": true, "date": "2025-04-27" }
+              ]
+            },
+            {
+              "position": 4,
+              "team": { "id": 4, "name": "Tiro Federal", "short_name": "TIR" },
+              "played": 8, "won": 2, "drawn": 2, "lost": 4,
+              "goals_for": 8, "goals_against": 14, "goal_difference": -6, "points": 8,
+              "recent_form": [
+                { "result": "L", "score": "0-2", "opponent": "Bahiense del Norte", "was_home": false, "date": "2025-05-25" },
+                { "result": "W", "score": "2-1", "opponent": "Napostá", "was_home": true, "date": "2025-05-18" },
+                { "result": "L", "score": "1-3", "opponent": "Liniers", "was_home": true, "date": "2025-05-11" },
+                { "result": "L", "score": "0-1", "opponent": "Olimpo", "was_home": false, "date": "2025-05-04" },
+                { "result": "D", "score": "1-1", "opponent": "Villa Mitre", "was_home": false, "date": "2025-04-27" }
+              ]
+            },
+            {
+              "position": 5,
+              "team": { "id": 5, "name": "Bahiense del Norte", "short_name": "BDN" },
+              "played": 8, "won": 2, "drawn": 1, "lost": 5,
+              "goals_for": 7, "goals_against": 16, "goal_difference": -9, "points": 7,
+              "recent_form": [
+                { "result": "W", "score": "2-0", "opponent": "Tiro Federal", "was_home": true, "date": "2025-05-25" },
+                { "result": "L", "score": "0-3", "opponent": "Olimpo", "was_home": false, "date": "2025-05-18" },
+                { "result": "L", "score": "0-2", "opponent": "Napostá", "was_home": false, "date": "2025-05-11" },
+                { "result": "D", "score": "1-1", "opponent": "Liniers", "was_home": false, "date": "2025-05-04" },
+                { "result": "L", "score": "2-4", "opponent": "Villa Mitre", "was_home": true, "date": "2025-04-27" }
+              ]
+            },
+            {
+              "position": 6,
+              "team": { "id": 6, "name": "Napostá", "short_name": "NAP" },
+              "played": 8, "won": 1, "drawn": 1, "lost": 6,
+              "goals_for": 5, "goals_against": 18, "goal_difference": -13, "points": 4,
+              "recent_form": [
+                { "result": "L", "score": "0-2", "opponent": "Liniers", "was_home": false, "date": "2025-05-25" },
+                { "result": "L", "score": "1-2", "opponent": "Tiro Federal", "was_home": false, "date": "2025-05-18" },
+                { "result": "W", "score": "2-0", "opponent": "Bahiense del Norte", "was_home": true, "date": "2025-05-11" },
+                { "result": "L", "score": "1-4", "opponent": "Villa Mitre", "was_home": false, "date": "2025-05-04" },
+                { "result": "D", "score": "0-0", "opponent": "Olimpo", "was_home": true, "date": "2025-04-27" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Reserva",
+          "standings": [
+            {
+              "position": 1,
+              "team": { "id": 1, "name": "Villa Mitre", "short_name": "VIM" },
+              "played": 7, "won": 5, "drawn": 1, "lost": 1,
+              "goals_for": 14, "goals_against": 5, "goal_difference": 9, "points": 16,
+              "recent_form": [
+                { "result": "W", "score": "2-0", "opponent": "Olimpo", "was_home": true, "date": "2025-05-25" },
+                { "result": "W", "score": "3-1", "opponent": "Liniers", "was_home": false, "date": "2025-05-18" },
+                { "result": "D", "score": "1-1", "opponent": "Tiro Federal", "was_home": true, "date": "2025-05-11" }
+              ]
+            },
+            {
+              "position": 2,
+              "team": { "id": 2, "name": "Olimpo", "short_name": "OLI" },
+              "played": 7, "won": 4, "drawn": 1, "lost": 2,
+              "goals_for": 10, "goals_against": 7, "goal_difference": 3, "points": 13,
+              "recent_form": [
+                { "result": "L", "score": "0-2", "opponent": "Villa Mitre", "was_home": false, "date": "2025-05-25" },
+                { "result": "W", "score": "2-1", "opponent": "Tiro Federal", "was_home": true, "date": "2025-05-18" },
+                { "result": "W", "score": "1-0", "opponent": "Liniers", "was_home": false, "date": "2025-05-11" }
+              ]
+            },
+            {
+              "position": 3,
+              "team": { "id": 3, "name": "Liniers", "short_name": "LIN" },
+              "played": 7, "won": 3, "drawn": 0, "lost": 4,
+              "goals_for": 8, "goals_against": 11, "goal_difference": -3, "points": 9,
+              "recent_form": [
+                { "result": "L", "score": "1-3", "opponent": "Villa Mitre", "was_home": true, "date": "2025-05-18" },
+                { "result": "L", "score": "0-1", "opponent": "Olimpo", "was_home": true, "date": "2025-05-11" },
+                { "result": "W", "score": "2-0", "opponent": "Tiro Federal", "was_home": false, "date": "2025-05-04" }
+              ]
+            },
+            {
+              "position": 4,
+              "team": { "id": 4, "name": "Tiro Federal", "short_name": "TIR" },
+              "played": 7, "won": 1, "drawn": 0, "lost": 6,
+              "goals_for": 4, "goals_against": 13, "goal_difference": -9, "points": 3,
+              "recent_form": [
+                { "result": "L", "score": "1-2", "opponent": "Olimpo", "was_home": false, "date": "2025-05-18" },
+                { "result": "D", "score": "1-1", "opponent": "Villa Mitre", "was_home": false, "date": "2025-05-11" },
+                { "result": "L", "score": "0-2", "opponent": "Liniers", "was_home": true, "date": "2025-05-04" }
+              ]
+            }
+          ]
+        }
+      ],
+      "playoffs": [
+        {
+          "category": "Primera",
+          "stages": [
+            {
+              "label": "Semifinal",
+              "brackets": [
+                {
+                  "format": "single_elimination",
+                  "matchup_number": 1,
+                  "team_1": { "id": 1, "name": "Villa Mitre", "short_name": "VIM" },
+                  "team_2": { "id": 4, "name": "Tiro Federal", "short_name": "TIR" },
+                  "is_completed": true,
+                  "winner_id": 1,
+                  "matches": [
+                    {
+                      "date": "2025-06-01",
+                      "home_team_id": 1,
+                      "away_team_id": 4,
+                      "played": true,
+                      "goals_home": 3,
+                      "goals_away": 1,
+                      "has_shootouts": false
+                    }
+                  ]
+                },
+                {
+                  "format": "single_elimination",
+                  "matchup_number": 2,
+                  "team_1": { "id": 2, "name": "Olimpo", "short_name": "OLI" },
+                  "team_2": { "id": 3, "name": "Liniers", "short_name": "LIN" },
+                  "is_completed": true,
+                  "winner_id": 2,
+                  "matches": [
+                    {
+                      "date": "2025-06-01",
+                      "home_team_id": 2,
+                      "away_team_id": 3,
+                      "played": true,
+                      "goals_home": 2,
+                      "goals_away": 2,
+                      "has_shootouts": true,
+                      "shootouts_home": 4,
+                      "shootouts_away": 3
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "Final",
+              "brackets": [
+                {
+                  "format": "single_elimination",
+                  "matchup_number": 1,
+                  "team_1": { "id": 1, "name": "Villa Mitre", "short_name": "VIM" },
+                  "team_2": { "id": 2, "name": "Olimpo", "short_name": "OLI" },
+                  "is_completed": false,
+                  "matches": [
+                    {
+                      "date": "2025-06-08",
+                      "home_team_id": 1,
+                      "away_team_id": 2,
+                      "played": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

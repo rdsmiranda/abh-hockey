@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* ── ABH design tokens ─────────────────────────────────────────────────────── */
+:root {
+  --abh-blue:   #4e6d9e;
+  --abh-gold:   #e8a020;
+  --abh-red:    #c0392b;
+  --abh-dark:   #1a2333;
+  --abh-light:  #f4f6fa;
+  --abh-border: #dce3ef;
+}
+
+/* ── Base ──────────────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background: var(--abh-light);
+  color: var(--abh-dark);
+  min-height: 100svh;
+  margin: 0;
+}
+
+/* ── Tailwind v4: exponer tokens como utilidades custom ────────────────────── */
+@theme {
+  --color-abh-blue:   #4e6d9e;
+  --color-abh-gold:   #e8a020;
+  --color-abh-red:    #c0392b;
+  --color-abh-dark:   #1a2333;
+  --color-abh-light:  #f4f6fa;
+  --color-abh-border: #dce3ef;
+
+  --font-barlow:           'Barlow', sans-serif;
+  --font-barlow-condensed: 'Barlow Condensed', sans-serif;
+}
+
+/* ── Scrollbar (webkit) ────────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--abh-light);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--abh-border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c1cfe4;
+}
+
+/* ── Focus visible global ──────────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--abh-blue);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
