@@ -3,35 +3,49 @@ import { ref, computed } from 'vue'
 import {
   fetchChampionshipIndex,
   fetchChampionship,
+  fetchFixture,
 } from '@/services/standings.service'
 import type {
   ChampionshipOption,
-  ChampionshipData,
+  ChampionshipPayload,
+  Team,
   Zone,
   Category,
   CategoryView,
+  Playoffs,
+  FinalStandingRow,
+  FixturePayload,
 } from '@/types'
-import type { CategoryPlayoff } from '@/types'
 
 export type LoadStatus = 'idle' | 'loading' | 'success' | 'error'
 
-export const useStandingsStore = defineStore('standings', () => {
-  // ── Estado primitivo ──────────────────────────────────────────────────────
+export const useChampionshipStore = defineStore('championship', () => {
+  // ── Estado ────────────────────────────────────────────────────────────────
   const championshipOptions = ref<ChampionshipOption[]>([])
-  const activeChampionship  = ref<ChampionshipData | null>(null)
+  const data                = ref<ChampionshipPayload | null>(null)
+  const fixture             = ref<FixturePayload | null>(null)
   const selectedFile        = ref<string>('')
   const selectedZoneId      = ref<string>('')
   const activeCategoryId    = ref<string>('')
-  const activeSubTab        = ref<'standings' | 'fixture' | 'playoffs' | 'final'>('standings')
+  const activeSubTab        = ref<CategoryView>('standings')
   const status              = ref<LoadStatus>('idle')
+  const fixtureStatus       = ref<LoadStatus>('idle')
   const errorMessage        = ref<string | null>(null)
 
-  // ── Getters (computed) ────────────────────────────────────────────────────
+  // ── Getters: equipos ──────────────────────────────────────────────────────
+
+  /** Diccionario de equipos. O(1) por acceso. */
+  const teams = computed<Record<string, Team>>(() => data.value?.teams ?? {})
+
+  /** Resolver un equipo por ID numérico. */
+  function team(id: number): Team | undefined {
+    return data.value?.teams[String(id)]
+  }
+
+  // ── Getters: navegación ───────────────────────────────────────────────────
 
   const activeZone = computed<Zone | null>(() =>
-    activeChampionship.value?.zones.find(
-      (z) => String(z.id) === selectedZoneId.value,
-    ) ?? null,
+    data.value?.zones.find((z) => String(z.id) === selectedZoneId.value) ?? null,
   )
 
   const activeCategory = computed<Category | null>(() =>
@@ -40,51 +54,48 @@ export const useStandingsStore = defineStore('standings', () => {
     ) ?? null,
   )
 
-  const activePlayoff = computed<CategoryPlayoff | null>(() => {
-    if (!activeZone.value || !activeCategory.value) return null
-    return (
-      activeZone.value.playoffs?.find(
-        (p) => p.category === activeCategory.value!.name,
-      ) ?? null
-    )
-  })
+  const activePlayoffs = computed<Playoffs | null>(
+    () => activeCategory.value?.playoffs ?? null,
+  )
+
+  const activeFinalStandings = computed<FinalStandingRow[] | null>(
+    () => activeCategory.value?.final_standings ?? null,
+  )
 
   const hasPlayoffs = computed<boolean>(
-    () => (activePlayoff.value?.stages?.length ?? 0) > 0,
+    () => (activePlayoffs.value?.stages?.length ?? 0) > 0,
+  )
+
+  const hasFinalStandings = computed<boolean>(
+    () => (activeFinalStandings.value?.length ?? 0) > 0,
   )
 
   /**
    * Vistas disponibles para la categoría activa.
    * Prioridad: campo `views` del JSON → inferencia desde los datos.
-   * La página usa esto para mostrar/ocultar tabs del segmented control de Vista.
    */
   const availableViews = computed<CategoryView[]>(() => {
     const cat = activeCategory.value
     if (!cat) return ['standings']
 
-    // Si el JSON declara explícitamente las vistas, usarlas directamente
     if (cat.views && cat.views.length > 0) return cat.views
 
-    // Inferencia: standings siempre disponible si hay filas
     const views: CategoryView[] = []
-    if (cat.standings.length > 0) views.push('standings')
-    // playoffs si existe la sección con al menos un stage
-    if (hasPlayoffs.value) views.push('playoffs')
-    // fixture y final se agregarán cuando los JSON los incluyan
+    if (cat.standings.length > 0)   views.push('standings')
+    if (hasPlayoffs.value)           views.push('playoffs')
+    if (hasFinalStandings.value)     views.push('final')
+    // 'fixture' se agrega cuando el fixture_file esté presente y
+    // haya partidos de esta zona+categoría — se delega al futuro
     return views.length > 0 ? views : ['standings']
   })
 
-  /** Timestamp legible en es-AR para mostrar en el meta-bar */
+  /** Timestamp legible en es-AR. */
   const generatedAt = computed<string | null>(() => {
-    const raw = activeChampionship.value?.generated_at
+    const raw = data.value?.generated_at
     if (!raw) return null
     const dt = new Date(raw)
     return (
-      dt.toLocaleDateString('es-AR', {
-        day: '2-digit',
-        month: '2-digit',
-        year: 'numeric',
-      }) +
+      dt.toLocaleDateString('es-AR', { day: '2-digit', month: '2-digit', year: 'numeric' }) +
       ' ' +
       dt.toLocaleTimeString('es-AR', { hour: '2-digit', minute: '2-digit' })
     )
@@ -92,10 +103,6 @@ export const useStandingsStore = defineStore('standings', () => {
 
   // ── Actions ───────────────────────────────────────────────────────────────
 
-  /**
-   * Carga el listado de campeonatos y luego el primero automáticamente.
-   * Guard: no hace nada si ya hay opciones cargadas.
-   */
   async function loadIndex(): Promise<void> {
     if (championshipOptions.value.length > 0) return
     status.value = 'loading'
@@ -114,19 +121,18 @@ export const useStandingsStore = defineStore('standings', () => {
     }
   }
 
-  /**
-   * Descarga y activa un campeonato por nombre de archivo.
-   * Guard: si el archivo ya está activo no hace un segundo fetch.
-   */
   async function loadChampionship(file: string): Promise<void> {
-    if (file === selectedFile.value && activeChampionship.value !== null) return
+    if (file === selectedFile.value && data.value !== null) return
     status.value = 'loading'
     errorMessage.value = null
+    // Resetear fixture al cambiar campeonato
+    fixture.value = null
+    fixtureStatus.value = 'idle'
     try {
-      const data = await fetchChampionship(file)
-      activeChampionship.value = data
+      const payload = await fetchChampionship(file)
+      data.value = payload
       selectedFile.value = file
-      _resetZoneSelection(data)
+      _resetZoneSelection(payload)
       status.value = 'success'
     } catch {
       status.value = 'error'
@@ -134,24 +140,36 @@ export const useStandingsStore = defineStore('standings', () => {
     }
   }
 
+  /**
+   * Carga el fixture de forma lazy.
+   * Solo se ejecuta cuando el usuario navega a la vista de fixture.
+   * Guard: no recarga si ya está cargado o en progreso.
+   */
+  async function loadFixture(): Promise<void> {
+    const fixtureFile = data.value?.fixture_file
+    if (!fixtureFile || fixture.value || fixtureStatus.value === 'loading') return
+    fixtureStatus.value = 'loading'
+    try {
+      fixture.value = await fetchFixture(fixtureFile)
+      fixtureStatus.value = 'success'
+    } catch {
+      fixtureStatus.value = 'error'
+    }
+  }
+
   function setZone(zoneId: string): void {
     selectedZoneId.value = zoneId
     activeSubTab.value = 'standings'
-    const zone = activeChampionship.value?.zones.find(
-      (z) => String(z.id) === zoneId,
-    )
-    activeCategoryId.value =
-      zone?.categories[0] ? String(zone.categories[0].id) : ''
+    const zone = data.value?.zones.find((z) => String(z.id) === zoneId)
+    activeCategoryId.value = zone?.categories[0] ? String(zone.categories[0].id) : ''
   }
 
   function setCategory(catId: string): void {
     activeCategoryId.value = catId
-    // Resetear a la primera vista disponible para esta categoría
     activeSubTab.value = 'standings'
   }
 
   function setSubTab(tab: CategoryView): void {
-    // Solo cambiar si la vista está disponible para la categoría activa
     if (availableViews.value.includes(tab)) {
       activeSubTab.value = tab
     }
@@ -159,8 +177,8 @@ export const useStandingsStore = defineStore('standings', () => {
 
   // ── Helpers privados ──────────────────────────────────────────────────────
 
-  function _resetZoneSelection(data: ChampionshipData): void {
-    const firstZone = data.zones[0]
+  function _resetZoneSelection(payload: ChampionshipPayload): void {
+    const firstZone = payload.zones[0]
     if (firstZone) {
       selectedZoneId.value = String(firstZone.id)
       activeCategoryId.value = firstZone.categories[0]
@@ -177,23 +195,31 @@ export const useStandingsStore = defineStore('standings', () => {
   return {
     // State
     championshipOptions,
-    activeChampionship,
+    data,
+    fixture,
     selectedFile,
     selectedZoneId,
     activeCategoryId,
     activeSubTab,
     status,
+    fixtureStatus,
     errorMessage,
-    // Getters
+    // Getters: equipos
+    teams,
+    team,
+    // Getters: navegación
     activeZone,
     activeCategory,
-    activePlayoff,
+    activePlayoffs,
+    activeFinalStandings,
     hasPlayoffs,
+    hasFinalStandings,
     availableViews,
     generatedAt,
     // Actions
     loadIndex,
     loadChampionship,
+    loadFixture,
     setZone,
     setCategory,
     setSubTab,

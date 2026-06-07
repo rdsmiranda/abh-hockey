@@ -1,21 +1,15 @@
 <script setup lang="ts">
-import type { Bracket, Team } from '@/types'
+import type { PlayoffBracket } from '@/types'
+import { useTeamResolver } from '@/composables/useTeam'
 
-const props = defineProps<{
-  bracket: Bracket
-  teamLookup: Map<number, Team>
-}>()
+const props = defineProps<{ bracket: PlayoffBracket }>()
+
+const { resolve, initials } = useTeamResolver()
 
 const formatLabel = props.bracket.format === 'triangular' ? 'Triangular' : 'Round Robin'
-const POS_CLASS = ['pos-1', 'pos-2', 'pos-3', 'pos-4']
+const POS_CLASS   = ['pos-1', 'pos-2', 'pos-3', 'pos-4']
 
-function resolve(id: number) { return props.teamLookup.get(id) }
-function initials(t: Team | undefined) {
-  return (t?.short_name ?? t?.name ?? '?').slice(0, 2).toUpperCase()
-}
-function hideOnError(e: Event) {
-  (e.target as HTMLImageElement).style.display = 'none'
-}
+function hideOnError(e: Event) { (e.target as HTMLImageElement).style.display = 'none' }
 </script>
 
 <template>
@@ -24,7 +18,7 @@ function hideOnError(e: Event) {
       <span class="bc-label">{{ formatLabel }}</span>
     </div>
 
-    <!-- Tabla de posiciones del grupo -->
+    <!-- Tabla del grupo -->
     <div v-if="bracket.group_standings?.length">
       <table class="group-table">
         <thead>
@@ -32,24 +26,24 @@ function hideOnError(e: Event) {
             <th style="width:28px">#</th>
             <th class="th-left">Equipo</th>
             <th title="Partidos jugados">PJ</th>
-            <th title="Ganados"       class="col-hide-sm">G</th>
-            <th title="Empatados"     class="col-hide-sm">E</th>
-            <th title="Perdidos"      class="col-hide-sm">P</th>
-            <th title="Goles a favor" class="col-hide-sm">GF</th>
+            <th title="Ganados"         class="col-hide-sm">G</th>
+            <th title="Empatados"       class="col-hide-sm">E</th>
+            <th title="Perdidos"        class="col-hide-sm">P</th>
+            <th title="Goles a favor"   class="col-hide-sm">GF</th>
             <th title="Goles en contra" class="col-hide-sm">GC</th>
-            <th title="Diferencia"    class="col-hide-sm">DG</th>
+            <th title="Diferencia"      class="col-hide-sm">DG</th>
             <th>Pts</th>
           </tr>
         </thead>
         <tbody>
-          <tr v-for="(s, i) in bracket.group_standings" :key="s.team.id">
+          <tr v-for="(s, i) in bracket.group_standings" :key="s.team_id">
             <td><span :class="['pos-badge', POS_CLASS[i]]">{{ i + 1 }}</span></td>
             <td class="td-left">
               <div class="group-team-cell">
-                <img v-if="s.team.logo" :src="s.team.logo" :alt="s.team.name" class="group-logo"
-                     @error="hideOnError" />
-                <span v-else class="group-logo-ph">{{ initials(s.team) }}</span>
-                {{ s.team.name }}
+                <img v-if="resolve(s.team_id)?.logo" :src="resolve(s.team_id)!.logo!"
+                     :alt="resolve(s.team_id)!.name" class="group-logo" @error="hideOnError" />
+                <span v-else class="group-logo-ph">{{ initials(s.team_id) }}</span>
+                {{ resolve(s.team_id)?.name ?? '?' }}
               </div>
             </td>
             <td>{{ s.played }}</td>
@@ -70,9 +64,7 @@ function hideOnError(e: Event) {
       <div v-for="(m, i) in bracket.matches" :key="i" class="bc-match-row">
         <span class="bm-date">{{ m.date ?? '—' }}</span>
         <span class="bm-teams">
-          {{ resolve(m.home_team_id)?.short_name ?? resolve(m.home_team_id)?.name ?? '?' }}
-          vs
-          {{ resolve(m.away_team_id)?.short_name ?? resolve(m.away_team_id)?.name ?? '?' }}
+          {{ resolve(m.home_team_id)?.short_name ?? '?' }} vs {{ resolve(m.away_team_id)?.short_name ?? '?' }}
         </span>
         <template v-if="m.played">
           <span class="bm-result">{{ m.goals_home }} – {{ m.goals_away }}</span>
@@ -86,8 +78,5 @@ function hideOnError(e: Event) {
 
 <style scoped>
 @import './bracket-shared.css';
-
-@media (max-width: 640px) {
-  .col-hide-sm { display: none; }
-}
+@media (max-width: 640px) { .col-hide-sm { display: none; } }
 </style>

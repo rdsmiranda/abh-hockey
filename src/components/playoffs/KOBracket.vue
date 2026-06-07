@@ -1,40 +1,33 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import type { Bracket, Team } from '@/types'
+import type { PlayoffBracket } from '@/types'
+import { useTeamResolver } from '@/composables/useTeam'
 
-const props = defineProps<{
-  bracket: Bracket
-  teamLookup: Map<number, Team>
-}>()
+const props = defineProps<{ bracket: PlayoffBracket }>()
 
-// Determinar quién juega de local en el primer partido
-// para mostrar equipos en orden canónico (local izq / visitante der)
-const teamHome = computed<Team | undefined>(() => {
+const { resolve, initials } = useTeamResolver()
+
+// Orden canónico: local izq, visitante der, basado en el primer partido
+const teamHomeId = computed<number>(() => {
   const ref = props.bracket.matches[0]
-  if (!ref) return props.bracket.team_1
-  if (props.bracket.team_2 && ref.home_team_id === props.bracket.team_2.id)
-    return props.bracket.team_2
-  return props.bracket.team_1
+  if (!ref) return props.bracket.team_1_id
+  return ref.home_team_id === props.bracket.team_2_id
+    ? props.bracket.team_2_id
+    : props.bracket.team_1_id
 })
-
-const teamAway = computed<Team | undefined>(() =>
-  teamHome.value?.id === props.bracket.team_1?.id
-    ? props.bracket.team_2
-    : props.bracket.team_1,
+const teamAwayId = computed<number>(() =>
+  teamHomeId.value === props.bracket.team_1_id
+    ? props.bracket.team_2_id
+    : props.bracket.team_1_id,
 )
 
 const isWinnerHome = computed(() =>
-  props.bracket.is_completed &&
-  !!props.bracket.winner_id &&
-  props.bracket.winner_id === teamHome.value?.id,
+  props.bracket.is_completed && props.bracket.winner_id === teamHomeId.value,
 )
 const isWinnerAway = computed(() =>
-  props.bracket.is_completed &&
-  !!props.bracket.winner_id &&
-  props.bracket.winner_id === teamAway.value?.id,
+  props.bracket.is_completed && props.bracket.winner_id === teamAwayId.value,
 )
 
-// Último partido jugado para el marcador principal
 const lastPlayed = computed(() => {
   const played = props.bracket.matches.filter((m) => m.played)
   return played.at(-1) ?? null
@@ -43,13 +36,12 @@ const lastPlayed = computed(() => {
 const scoreDisplay = computed<{ home: number; away: number; pen?: string } | null>(() => {
   const m = lastPlayed.value
   if (!m) return null
-  const isLastHome = m.home_team_id === teamHome.value?.id
+  const isLastHome = m.home_team_id === teamHomeId.value
   const gh = isLastHome ? m.goals_home! : m.goals_away!
   const ga = isLastHome ? m.goals_away! : m.goals_home!
-  const pen =
-    m.has_shootouts
-      ? `Pen ${isLastHome ? m.shootouts_home : m.shootouts_away} – ${isLastHome ? m.shootouts_away : m.shootouts_home}`
-      : undefined
+  const pen = m.has_shootouts
+    ? `Pen ${isLastHome ? m.shootouts_home : m.shootouts_away} – ${isLastHome ? m.shootouts_away : m.shootouts_home}`
+    : undefined
   return { home: gh, away: ga, pen }
 })
 
@@ -57,11 +49,6 @@ const label = computed(() =>
   props.bracket.matchup_number ? `Llave ${props.bracket.matchup_number}` : 'Enfrentamiento',
 )
 
-function teamName(t: Team | undefined) { return t?.name ?? 'Por definir' }
-function teamInitials(t: Team | undefined) {
-  return (t?.short_name ?? t?.name ?? '?').slice(0, 2).toUpperCase()
-}
-function resolve(id: number) { return props.teamLookup.get(id) }
 function hideOnError(e: Event) {
   (e.target as HTMLImageElement).style.display = 'none'
 }
@@ -79,11 +66,11 @@ function hideOnError(e: Event) {
     <div class="matchup">
       <!-- Local -->
       <div :class="['mu-team', isWinnerHome && 'mu-team--winner']">
-        <img v-if="teamHome?.logo" :src="teamHome.logo" :alt="teamHome.name" class="mu-logo"
-             @error="hideOnError" />
-        <div v-else class="mu-logo-ph">{{ teamInitials(teamHome) }}</div>
+        <img v-if="resolve(teamHomeId)?.logo" :src="resolve(teamHomeId)!.logo!" :alt="resolve(teamHomeId)!.name"
+             class="mu-logo" @error="hideOnError" />
+        <div v-else class="mu-logo-ph">{{ initials(teamHomeId) }}</div>
         <div class="mu-info">
-          <span class="mu-name">{{ teamName(teamHome) }}</span>
+          <span class="mu-name">{{ resolve(teamHomeId)?.name ?? 'Por definir' }}</span>
         </div>
       </div>
 
@@ -99,26 +86,20 @@ function hideOnError(e: Event) {
       <!-- Visitante -->
       <div :class="['mu-team mu-team--right', isWinnerAway && 'mu-team--winner']">
         <div class="mu-info mu-info--right">
-          <span class="mu-name">{{ teamName(teamAway) }}</span>
+          <span class="mu-name">{{ resolve(teamAwayId)?.name ?? 'Por definir' }}</span>
         </div>
-        <img v-if="teamAway?.logo" :src="teamAway.logo" :alt="teamAway.name" class="mu-logo"
-             @error="hideOnError" />
-        <div v-else class="mu-logo-ph">{{ teamInitials(teamAway) }}</div>
+        <img v-if="resolve(teamAwayId)?.logo" :src="resolve(teamAwayId)!.logo!" :alt="resolve(teamAwayId)!.name"
+             class="mu-logo" @error="hideOnError" />
+        <div v-else class="mu-logo-ph">{{ initials(teamAwayId) }}</div>
       </div>
     </div>
 
     <!-- Detalle de partidos -->
     <div v-if="bracket.matches.length" class="bc-matches">
-      <div
-        v-for="(m, i) in bracket.matches"
-        :key="i"
-        class="bc-match-row"
-      >
+      <div v-for="(m, i) in bracket.matches" :key="i" class="bc-match-row">
         <span class="bm-date">{{ m.date ?? '—' }}</span>
         <span class="bm-teams">
-          {{ resolve(m.home_team_id)?.short_name ?? resolve(m.home_team_id)?.name ?? '?' }}
-          vs
-          {{ resolve(m.away_team_id)?.short_name ?? resolve(m.away_team_id)?.name ?? '?' }}
+          {{ resolve(m.home_team_id)?.short_name ?? '?' }} vs {{ resolve(m.away_team_id)?.short_name ?? '?' }}
         </span>
         <template v-if="m.played">
           <span class="bm-result">{{ m.goals_home }} – {{ m.goals_away }}</span>

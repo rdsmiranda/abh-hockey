@@ -1,14 +1,15 @@
 <script setup lang="ts">
-import type { Team } from '@/types'
+import { useTeam } from '@/composables/useTeam'
 
 const props = defineProps<{
-  team: Team
+  teamId: number
+  /** Tamaño del logo. Default: 'md' (26px). 'sm' = 18px para tablas compactas. */
+  size?: 'sm' | 'md'
 }>()
 
-const initials = () =>
-  (props.team.short_name ?? props.team.name)
-    .substring(0, 2)
-    .toUpperCase()
+const team = useTeam(props.teamId)
+
+const logoSize = props.size === 'sm' ? 18 : 26
 
 function hideOnError(e: Event) {
   (e.target as HTMLImageElement).style.display = 'none'
@@ -18,24 +19,31 @@ function hideOnError(e: Event) {
 <template>
   <div class="team-cell">
     <img
-      v-if="team.logo"
+      v-if="team?.logo"
       :src="team.logo"
       :alt="team.short_name ?? team.name"
+      :style="{ width: `${logoSize}px`, height: `${logoSize}px` }"
       class="team-logo"
       @error="hideOnError"
     />
-    <span v-else class="team-logo-ph" aria-hidden="true">{{ initials() }}</span>
+    <span
+      v-else
+      class="team-logo-ph"
+      :style="{ width: `${logoSize}px`, height: `${logoSize}px` }"
+      aria-hidden="true"
+    >
+      {{ (team?.short_name ?? team?.name ?? '?').substring(0, 2).toUpperCase() }}
+    </span>
 
-    <span class="team-name">{{ team.name }}</span>
-    <span class="team-short">{{ team.short_name ?? team.name }}</span>
+    <span class="team-name">{{ team?.name ?? '—' }}</span>
+    <span class="team-short">{{ team?.short_name ?? team?.name ?? '—' }}</span>
   </div>
 </template>
 
 <style scoped>
 .team-cell  { display: flex; align-items: center; gap: 0.55rem; }
-.team-logo  { width: 26px; height: 26px; object-fit: contain; flex-shrink: 0; }
+.team-logo  { object-fit: contain; flex-shrink: 0; }
 .team-logo-ph {
-  width: 26px; height: 26px;
   background: var(--abh-border);
   border-radius: 50%;
   flex-shrink: 0;

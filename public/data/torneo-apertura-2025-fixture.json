@@ -1,7 +1,6 @@
 {
   "championship_id": 1,
   "generated_at": "2025-06-04T12:00:00-03:00",
-
   "rounds": [
     {
       "id": 1,
@@ -10,68 +9,28 @@
       "date_to": "2025-04-06",
       "matches": [
         {
-          "id": 101,
-          "zone_id": 1,
-          "category_id": 1,
-          "date": "2025-04-06",
-          "time": "15:00",
-          "home_team_id": 1,
-          "away_team_id": 2,
+          "id": 101, "zone_id": 1, "category_id": 1,
+          "date": "2025-04-06", "time": "15:00",
+          "home_team_id": 1, "away_team_id": 2,
           "pitch": "Cancha Norte",
-          "played": true,
-          "goals_home": 2,
-          "goals_away": 1,
-          "has_shootouts": false,
-          "shootouts_home": null,
-          "shootouts_away": null
+          "played": true, "goals_home": 2, "goals_away": 1,
+          "has_shootouts": false, "shootouts_home": null, "shootouts_away": null
         },
         {
-          "id": 102,
-          "zone_id": 1,
-          "category_id": 1,
-          "date": "2025-04-06",
-          "time": "17:00",
-          "home_team_id": 3,
-          "away_team_id": 4,
-          "pitch": "Cancha Norte",
-          "played": true,
-          "goals_home": 1,
-          "goals_away": 1,
-          "has_shootouts": false,
-          "shootouts_home": null,
-          "shootouts_away": null
-        },
-        {
-          "id": 103,
-          "zone_id": 1,
-          "category_id": 1,
-          "date": "2025-04-06",
-          "time": "19:00",
-          "home_team_id": 5,
-          "away_team_id": 6,
+          "id": 102, "zone_id": 1, "category_id": 1,
+          "date": "2025-04-06", "time": "17:00",
+          "home_team_id": 3, "away_team_id": 4,
           "pitch": "Cancha Sur",
-          "played": true,
-          "goals_home": 3,
-          "goals_away": 0,
-          "has_shootouts": false,
-          "shootouts_home": null,
-          "shootouts_away": null
+          "played": true, "goals_home": 1, "goals_away": 1,
+          "has_shootouts": false, "shootouts_home": null, "shootouts_away": null
         },
         {
-          "id": 104,
-          "zone_id": 1,
-          "category_id": 2,
-          "date": "2025-04-06",
-          "time": "09:00",
-          "home_team_id": 1,
-          "away_team_id": 2,
+          "id": 103, "zone_id": 1, "category_id": 2,
+          "date": "2025-04-06", "time": "13:00",
+          "home_team_id": 1, "away_team_id": 2,
           "pitch": "Cancha Norte",
-          "played": true,
-          "goals_home": 1,
-          "goals_away": 0,
-          "has_shootouts": false,
-          "shootouts_home": null,
-          "shootouts_away": null
+          "played": true, "goals_home": 3, "goals_away": 0,
+          "has_shootouts": false, "shootouts_home": null, "shootouts_away": null
         }
       ]
     },
@@ -82,108 +41,44 @@
       "date_to": "2025-04-13",
       "matches": [
         {
-          "id": 201,
-          "zone_id": 1,
-          "category_id": 1,
-          "date": "2025-04-13",
-          "time": "15:00",
-          "home_team_id": 2,
-          "away_team_id": 3,
-          "pitch": "Cancha Sur",
-          "played": true,
-          "goals_home": 0,
-          "goals_away": 2,
-          "has_shootouts": false,
-          "shootouts_home": null,
-          "shootouts_away": null
-        },
-        {
-          "id": 202,
-          "zone_id": 1,
-          "category_id": 1,
-          "date": "2025-04-13",
-          "time": "17:00",
-          "home_team_id": 4,
-          "away_team_id": 5,
-          "pitch": "Cancha Sur",
-          "played": true,
-          "goals_home": 2,
-          "goals_away": 2,
-          "has_shootouts": true,
-          "shootouts_home": 3,
-          "shootouts_away": 4
-        },
-        {
-          "id": 203,
-          "zone_id": 1,
-          "category_id": 1,
-          "date": "2025-04-13",
-          "time": "19:00",
-          "home_team_id": 6,
-          "away_team_id": 1,
+          "id": 201, "zone_id": 1, "category_id": 1,
+          "date": "2025-04-13", "time": "15:00",
+          "home_team_id": 2, "away_team_id": 3,
           "pitch": "Cancha Norte",
-          "played": true,
-          "goals_home": 0,
-          "goals_away": 1,
-          "has_shootouts": false,
-          "shootouts_home": null,
-          "shootouts_away": null
+          "played": true, "goals_home": 0, "goals_away": 2,
+          "has_shootouts": false, "shootouts_home": null, "shootouts_away": null
+        },
+        {
+          "id": 202, "zone_id": 1, "category_id": 1,
+          "date": "2025-04-13", "time": "17:00",
+          "home_team_id": 5, "away_team_id": 6,
+          "pitch": "Cancha Sur",
+          "played": true, "goals_home": 1, "goals_away": 0,
+          "has_shootouts": false, "shootouts_home": null, "shootouts_away": null
         }
       ]
     },
     {
       "id": 9,
       "label": "Fecha 9",
-      "date_from": "2025-06-15",
-      "date_to": "2025-06-15",
+      "date_from": "2025-06-08",
+      "date_to": "2025-06-08",
       "matches": [
         {
-          "id": 901,
-          "zone_id": 1,
-          "category_id": 1,
-          "date": "2025-06-15",
-          "time": "15:00",
-          "home_team_id": 1,
-          "away_team_id": 3,
-          "pitch": null,
-          "played": false,
-          "goals_home": null,
-          "goals_away": null,
-          "has_shootouts": false,
-          "shootouts_home": null,
-          "shootouts_away": null
+          "id": 901, "zone_id": 1, "category_id": 1,
+          "date": "2025-06-08", "time": "15:00",
+          "home_team_id": 1, "away_team_id": 6,
+          "pitch": "Cancha Norte",
+          "played": false, "goals_home": null, "goals_away": null,
+          "has_shootouts": false, "shootouts_home": null, "shootouts_away": null
         },
         {
-          "id": 902,
-          "zone_id": 1,
-          "category_id": 1,
-          "date": "2025-06-15",
-          "time": "17:00",
-          "home_team_id": 2,
-          "away_team_id": 4,
-          "pitch": null,
-          "played": false,
-          "goals_home": null,
-          "goals_away": null,
-          "has_shootouts": false,
-          "shootouts_home": null,
-          "shootouts_away": null
-        },
-        {
-          "id": 903,
-          "zone_id": 1,
-          "category_id": 1,
-          "date": "2025-06-15",
-          "time": "19:00",
-          "home_team_id": 5,
-          "away_team_id": 6,
-          "pitch": null,
-          "played": false,
-          "goals_home": null,
-          "goals_away": null,
-          "has_shootouts": false,
-          "shootouts_home": null,
-          "shootouts_away": null
+          "id": 902, "zone_id": 1, "category_id": 1,
+          "date": "2025-06-08", "time": "15:00",
+          "home_team_id": 3, "away_team_id": 5,
+          "pitch": "Cancha Sur",
+          "played": false, "goals_home": null, "goals_away": null,
+          "has_shootouts": false, "shootouts_home": null, "shootouts_away": null
         }
       ]
     }

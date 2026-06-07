@@ -1,28 +1,38 @@
-// Re-export centralizado: los componentes importan desde '@/types', no desde
-// '@/types/championship' directamente. Si se reorganizan los archivos de tipos,
-// solo cambia este index, no todos los componentes.
+// Re-export centralizado.
+// Los componentes importan desde '@/types', no desde '@/types/championship'.
 
 export type {
-  ChampionshipOption,
-  ChampionshipMeta,
-  ChampionshipData,
-  Zone,
-  Category,
-  CategoryView,
+  // Equipo
   Team,
-  StandingRow,
-  RecentFormEntry,
+  // Resultados
   MatchResult,
-} from './championship'
-
-export type {
-  CategoryPlayoff,
-  PlayoffStage,
+  Shootouts,
+  // Forma reciente
+  RecentForm,
+  // Posiciones regulares
+  StandingRow,
+  // Playoffs
   BracketFormat,
-  Bracket,
-  BracketMatch,
+  PlayoffMatch,
   GroupStandingRow,
-} from './playoff'
+  PlayoffBracket,
+  PlayoffStage,
+  Playoffs,
+  // Posiciones finales
+  FinalStandingRow,
+  // Vistas y categoría
+  CategoryView,
+  Category,
+  // Zona y campeonato
+  Zone,
+  Championship,
+  ChampionshipPayload,
+  ChampionshipOption,
+  // Fixture
+  FixtureMatch,
+  FixtureRound,
+  FixturePayload,
+} from './championship'
 
 export type {
   DesignationIndex,

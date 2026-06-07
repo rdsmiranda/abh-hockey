@@ -1,28 +1,28 @@
 <script setup lang="ts">
-import type { RecentFormEntry } from '@/types'
+import { useChampionshipStore } from '@/stores/championship.store'
+import type { RecentForm } from '@/types'
 
-defineProps<{
+const props = defineProps<{
   result: 'W' | 'D' | 'L'
-  match: RecentFormEntry
+  match: RecentForm
 }>()
 
 const emit = defineEmits<{
-  show: [match: RecentFormEntry, rect: DOMRect]
+  show: [match: RecentForm, rect: DOMRect]
   hide: []
 }>()
 
+const store = useChampionshipStore()
 const LABEL: Record<string, string> = { W: 'G', D: 'E', L: 'P' }
 
-function onShow(event: MouseEvent | FocusEvent) {
-  const el = event.currentTarget as HTMLElement
-  emit('show', (event as CustomEvent).detail ?? undefined, el.getBoundingClientRect())
-}
+const opponentName = () =>
+  store.team(props.match.opponent_id)?.short_name ??
+  store.team(props.match.opponent_id)?.name ??
+  '?'
 
-// Necesitamos emitir el match junto con el rect.
-// Lo resolvemos capturando props en el handler.
-function handleShow(event: MouseEvent | FocusEvent, match: RecentFormEntry) {
+function handleShow(event: MouseEvent | FocusEvent) {
   const el = event.currentTarget as HTMLElement
-  emit('show', match, el.getBoundingClientRect())
+  emit('show', props.match, el.getBoundingClientRect())
 }
 </script>
 
@@ -31,10 +31,10 @@ function handleShow(event: MouseEvent | FocusEvent, match: RecentFormEntry) {
     <button
       :class="['form-badge', result]"
       type="button"
-      :aria-label="`${result === 'W' ? 'Victoria' : result === 'D' ? 'Empate' : 'Derrota'} vs ${match.opponent}, ${match.score}`"
-      @mouseenter="handleShow($event, match)"
+      :aria-label="`${result === 'W' ? 'Victoria' : result === 'D' ? 'Empate' : 'Derrota'} vs ${opponentName()}, ${match.score}`"
+      @mouseenter="handleShow"
       @mouseleave="$emit('hide')"
-      @focus="handleShow($event, match)"
+      @focus="handleShow"
       @blur="$emit('hide')"
     >
       {{ LABEL[result] ?? result }}
@@ -44,25 +44,15 @@ function handleShow(event: MouseEvent | FocusEvent, match: RecentFormEntry) {
 </template>
 
 <style scoped>
-.hc-anchor {
-  position: relative;
-  display: inline-block;
-}
+.hc-anchor { position: relative; display: inline-block; }
 .form-badge {
   position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 22px;
-  height: 22px;
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 22px; height: 22px;
   border-radius: 4px;
   font-family: var(--font-barlow-condensed);
-  font-size: 11px;
-  font-weight: 700;
-  color: #fff;
-  cursor: pointer;
-  border: none;
-  background: none;
+  font-size: 11px; font-weight: 700; color: #fff;
+  cursor: pointer; border: none; background: none;
   transition: transform 0.12s;
   user-select: none;
 }
@@ -72,15 +62,10 @@ function handleShow(event: MouseEvent | FocusEvent, match: RecentFormEntry) {
 .form-badge.L { background: #ef4444; }
 
 .bonus-dot {
-  position: absolute;
-  top: -3px; right: -3px;
+  position: absolute; top: -3px; right: -3px;
   width: 9px; height: 9px;
-  background: #fde047;
-  border-radius: 50%;
-  border: 1px solid #fff;
-  font-size: 6px;
-  display: flex; align-items: center; justify-content: center;
-  color: #713f12;
-  font-weight: 800;
+  background: #fde047; border-radius: 50%; border: 1px solid #fff;
+  font-size: 6px; display: flex; align-items: center; justify-content: center;
+  color: #713f12; font-weight: 800;
 }
 </style>

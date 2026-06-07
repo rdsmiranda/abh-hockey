@@ -1,40 +1,30 @@
 import { fetchJson, HttpError } from './http'
-import type { ChampionshipOption, ChampionshipData } from '@/types'
+import type { ChampionshipOption, ChampionshipPayload, FixturePayload } from '@/types'
 
-/**
- * Descarga el listado de campeonatos disponibles.
- * Fuente: data/index.json
- */
 export async function fetchChampionshipIndex(): Promise<ChampionshipOption[]> {
   const data = await fetchJson<unknown>('index.json')
-
-  // Validación de contrato mínima: detecta cambios en el JSON antes de que
-  // lleguen a los componentes como datos incorrectos sin error claro.
   if (!Array.isArray(data)) {
-    throw new Error(
-      'index.json no tiene el formato esperado (se esperaba un array)',
-    )
+    throw new Error('index.json no tiene el formato esperado (se esperaba un array)')
   }
-
   return data as ChampionshipOption[]
 }
 
-/**
- * Descarga los datos completos de un campeonato.
- *
- * @param file - Nombre del archivo, ej: "torneo-apertura-2025.json"
- *               Debe provenir del index, nunca de input del usuario.
- */
-export async function fetchChampionship(
-  file: string,
-): Promise<ChampionshipData> {
-  // Guard básico: evitar path traversal aunque los datos vengan del propio index
+export async function fetchChampionship(file: string): Promise<ChampionshipPayload> {
   if (!file.endsWith('.json') || file.includes('/') || file.includes('..')) {
     throw new Error(`Nombre de archivo inválido: "${file}"`)
   }
-
-  return fetchJson<ChampionshipData>(file)
+  return fetchJson<ChampionshipPayload>(file)
 }
 
-// Re-export para que los stores solo importen desde services/
+/**
+ * Carga el archivo de fixture de forma lazy.
+ * El nombre del archivo viene de ChampionshipPayload.fixture_file.
+ */
+export async function fetchFixture(file: string): Promise<FixturePayload> {
+  if (!file.endsWith('.json') || file.includes('/') || file.includes('..')) {
+    throw new Error(`Nombre de archivo de fixture inválido: "${file}"`)
+  }
+  return fetchJson<FixturePayload>(file)
+}
+
 export { HttpError }

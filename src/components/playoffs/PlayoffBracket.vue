@@ -1,46 +1,33 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import type { CategoryPlayoff, Zone } from '@/types'
-import type { Bracket } from '@/types'
-import { useTeamLookup } from '@/composables/useTeamLookup'
-import KOBracket           from './KOBracket.vue'
-import HomeAndAwayBracket  from './HomeAndAwayBracket.vue'
-import GroupBracket        from './GroupBracket.vue'
+import type { Playoffs } from '@/types'
+import KOBracket          from './KOBracket.vue'
+import HomeAndAwayBracket from './HomeAndAwayBracket.vue'
+import GroupBracket       from './GroupBracket.vue'
 
-const props = defineProps<{
-  playoff: CategoryPlayoff
-  zone: Zone
+defineProps<{
+  playoffs: Playoffs
 }>()
-
-// Construimos el lookup UNA vez para toda la vista de playoffs
-const zoneRef   = computed(() => props.zone)
-const teamLookup = useTeamLookup(zoneRef)
 </script>
 
 <template>
-  <div class="playoff-wrap">
-    <template v-for="stage in playoff.stages" :key="stage.label">
-      <!-- Encabezado de fase -->
+  <div>
+    <template v-for="stage in playoffs.stages" :key="stage.id">
       <div class="stage-header">
         <h3 class="stage-title">{{ stage.label }}</h3>
       </div>
 
-      <!-- Cada bracket delega al componente correcto según su formato -->
-      <template v-for="(bracket, i) in stage.brackets" :key="i">
+      <template v-for="bracket in stage.brackets" :key="bracket.id">
         <GroupBracket
           v-if="bracket.format === 'triangular' || bracket.format === 'round_robin_4'"
           :bracket="bracket"
-          :team-lookup="teamLookup"
         />
         <HomeAndAwayBracket
           v-else-if="bracket.format === 'home_and_away'"
           :bracket="bracket"
-          :team-lookup="teamLookup"
         />
         <KOBracket
           v-else
           :bracket="bracket"
-          :team-lookup="teamLookup"
         />
       </template>
     </template>
