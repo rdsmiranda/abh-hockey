@@ -2,7 +2,6 @@
 import { onMounted, computed } from 'vue'
 import { useChampionshipStore } from '@/stores/championship.store'
 import StateBanner from '@/components/ui/StateBanner.vue'
-import type { FixtureMatch } from '@/types'
 
 const props = defineProps<{
   zoneId: number
@@ -18,27 +17,31 @@ function hideOnError(e: Event) {
   (e.target as HTMLImageElement).style.display = 'none'
 }
 
-// Filtra solo los partidos de esta zona+categoría
+// Filtra los partidos de esta zona+categoría.
+// Usa Number() en ambos lados para ser robusto a IDs serializados como string por Laravel.
 const filteredRounds = computed(() => {
   if (!store.fixture) return []
+  const zId = Number(props.zoneId)
+  const cId = Number(props.categoryId)
   return store.fixture.rounds
     .map((round) => ({
       ...round,
       matches: round.matches.filter(
-        (m) => m.zone_id === props.zoneId && m.category_id === props.categoryId,
+        (m) => Number(m.zone_id) === zId && Number(m.category_id) === cId,
       ),
     }))
     .filter((round) => round.matches.length > 0)
 })
 
-function teamName(id: number) {
-  return store.team(id)?.name ?? '?'
+function teamName(id: number | string) {
+  return store.team(Number(id))?.name ?? '?'
 }
-function teamShort(id: number) {
-  return store.team(id)?.short_name ?? store.team(id)?.name ?? '?'
+function teamShort(id: number | string) {
+  const t = store.team(Number(id))
+  return t?.short_name ?? t?.name ?? '?'
 }
-function teamLogo(id: number) {
-  return store.team(id)?.logo ?? null
+function teamLogo(id: number | string) {
+  return store.team(Number(id))?.logo ?? null
 }
 
 function formatDate(dateStr: string): string {
@@ -77,12 +80,12 @@ function formatDate(dateStr: string): string {
       <!-- Encabezado de fecha -->
       <div class="round-header">
         <h3 class="round-label">{{ round.label }}</h3>
-        <span class="round-dates">
+        <!-- <span class="round-dates">
           {{ formatDate(round.date_from) }}
           <template v-if="round.date_from !== round.date_to">
             — {{ formatDate(round.date_to) }}
           </template>
-        </span>
+        </span> -->
       </div>
 
       <!-- Partidos -->

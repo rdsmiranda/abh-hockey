@@ -6,25 +6,28 @@ export async function fetchChampionshipIndex(): Promise<ChampionshipOption[]> {
   if (!Array.isArray(data)) {
     throw new Error('index.json no tiene el formato esperado (se esperaba un array)')
   }
-  return data as ChampionshipOption[]
+  // Normalizar: Laravel puede exportar "filename" en lugar de "file"
+  return (data as Record<string, string>[]).map((entry) => ({
+    file:  entry['file'] ?? entry['filename'] ?? '',
+    label: entry['label'] ?? '',
+  }))
 }
 
 export async function fetchChampionship(file: string): Promise<ChampionshipPayload> {
-  if (!file.endsWith('.json') || file.includes('/') || file.includes('..')) {
+  // Sanitizar: solo nombre de archivo, sin path traversal
+  const clean = file.replace(/^.*[\\/]/, '') // quitar cualquier path prefix
+  if (!clean.endsWith('.json') || clean.includes('..')) {
     throw new Error(`Nombre de archivo inválido: "${file}"`)
   }
-  return fetchJson<ChampionshipPayload>(file)
+  return fetchJson<ChampionshipPayload>(clean)
 }
 
-/**
- * Carga el archivo de fixture de forma lazy.
- * El nombre del archivo viene de ChampionshipPayload.fixture_file.
- */
 export async function fetchFixture(file: string): Promise<FixturePayload> {
-  if (!file.endsWith('.json') || file.includes('/') || file.includes('..')) {
+  const clean = file.replace(/^.*[\\/]/, '')
+  if (!clean.endsWith('.json') || clean.includes('..')) {
     throw new Error(`Nombre de archivo de fixture inválido: "${file}"`)
   }
-  return fetchJson<FixturePayload>(file)
+  return fetchJson<FixturePayload>(clean)
 }
 
 export { HttpError }

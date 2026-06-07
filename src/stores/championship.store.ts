@@ -37,9 +37,9 @@ export const useChampionshipStore = defineStore('championship', () => {
   /** Diccionario de equipos. O(1) por acceso. */
   const teams = computed<Record<string, Team>>(() => data.value?.teams ?? {})
 
-  /** Resolver un equipo por ID numérico. */
-  function team(id: number): Team | undefined {
-    return data.value?.teams[String(id)]
+  /** Resolver un equipo por ID numérico o string — robusto a ambos. */
+  function team(id: number | string): Team | undefined {
+    return data.value?.teams[String(Number(id))]
   }
 
   // ── Getters: navegación ───────────────────────────────────────────────────
@@ -78,14 +78,16 @@ export const useChampionshipStore = defineStore('championship', () => {
     const cat = activeCategory.value
     if (!cat) return ['standings']
 
+    // Si el JSON declara explícitamente las vistas, usarlas directamente
     if (cat.views && cat.views.length > 0) return cat.views
 
+    // Inferencia desde los datos presentes
     const views: CategoryView[] = []
-    if (cat.standings.length > 0)   views.push('standings')
-    if (hasPlayoffs.value)           views.push('playoffs')
-    if (hasFinalStandings.value)     views.push('final')
-    // 'fixture' se agrega cuando el fixture_file esté presente y
-    // haya partidos de esta zona+categoría — se delega al futuro
+    if (cat.standings.length > 0) views.push('standings')
+    // Fixture disponible si el championship tiene fixture_file declarado
+    if (data.value?.fixture_file)  views.push('fixture')
+    if (hasPlayoffs.value)          views.push('playoffs')
+    if (hasFinalStandings.value)    views.push('final')
     return views.length > 0 ? views : ['standings']
   })
 
@@ -115,7 +117,8 @@ export const useChampionshipStore = defineStore('championship', () => {
       } else {
         status.value = 'success'
       }
-    } catch {
+    } catch (err) {
+      console.error('[championship.store] loadIndex:', err)
       status.value = 'error'
       errorMessage.value = 'No se pudo cargar el listado de campeonatos.'
     }
@@ -125,18 +128,26 @@ export const useChampionshipStore = defineStore('championship', () => {
     if (file === selectedFile.value && data.value !== null) return
     status.value = 'loading'
     errorMessage.value = null
-    // Resetear fixture al cambiar campeonato
     fixture.value = null
     fixtureStatus.value = 'idle'
     try {
       const payload = await fetchChampionship(file)
-      data.value = payload
+      // Normalizar claves del diccionario teams a string para lookup consistente
+      // y asegurar que todos los IDs sean numbers (Laravel puede serializar como string)
+      const normalizedTeams: Record<string, Team> = {}
+      for (const [k, v] of Object.entries(payload.teams)) {
+        normalizedTeams[String(Number(k))] = { ...v, id: Number(v.id) }
+      }
+      data.value = { ...payload, teams: normalizedTeams }
       selectedFile.value = file
-      _resetZoneSelection(payload)
+      _resetZoneSelection(data.value)
       status.value = 'success'
-    } catch {
+    } catch (err) {
+      console.error('[championship.store] loadChampionship:', err)
       status.value = 'error'
-      errorMessage.value = 'No se pudo cargar el campeonato seleccionado.'
+      errorMessage.value = err instanceof Error
+        ? `Error al cargar el campeonato: ${err.message}`
+        : 'No se pudo cargar el campeonato seleccionado.'
     }
   }
 
