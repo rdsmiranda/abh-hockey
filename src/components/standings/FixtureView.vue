@@ -47,7 +47,7 @@ function teamLogo(id: number | string) {
 function formatDate(dateStr: string): string {
   const [y, mo, d] = dateStr.split('-').map(Number)
   const dt = new Date(y!, mo! - 1, d)
-  return dt.toLocaleDateString('es-AR', { weekday: 'short', day: '2-digit', month: '2-digit' })
+  return dt.toLocaleDateString('es-AR', { weekday: 'short', day: '2-digit', month: 'short' })
 }
 </script>
 
@@ -116,7 +116,7 @@ function formatDate(dateStr: string): string {
                 {{ match.goals_home }} – {{ match.goals_away }}
               </div>
               <div v-if="match.has_shootouts" class="fc-pen">
-                ({{ match.shootouts_home }}–{{ match.shootouts_away }} pen)
+                ({{ match.shootouts_home }}–{{ match.shootouts_away }} shootouts)
               </div>
             </template>
             <template v-else>
@@ -137,6 +137,12 @@ function formatDate(dateStr: string): string {
             <div v-else class="fc-logo-ph">
               {{ teamShort(match.away_team_id).slice(0, 2).toUpperCase() }}
             </div>
+          </div>
+
+          <!-- Fecha y hora del partido -->
+          <div v-if="match.date || match.time" class="fc-meta">
+            <span v-if="match.date" class="fc-meta-date">{{ formatDate(match.date) }}</span>
+            <span v-if="match.time" class="fc-meta-time">{{ match.time }}</span>
           </div>
         </div>
       </div>
@@ -163,7 +169,7 @@ function formatDate(dateStr: string): string {
 
 .fixture-card {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: 1fr auto 1fr auto;
   align-items: center;
   gap: .5rem;
   background: #fff;
@@ -173,6 +179,29 @@ function formatDate(dateStr: string): string {
   transition: border-color .15s;
 }
 .fixture-card:hover { border-color: #c1cfe4; }
+
+/* Fecha/hora por partido */
+.fc-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1px;
+  padding-left: .5rem;
+  border-left: 1px solid var(--abh-border);
+  min-width: 64px;
+}
+.fc-meta-date {
+  font-size: .72rem;
+  color: #94a3b8;
+  white-space: nowrap;
+}
+.fc-meta-time {
+  font-family: var(--font-barlow-condensed);
+  font-size: .8rem;
+  font-weight: 700;
+  color: #64748b;
+  white-space: nowrap;
+}
 
 /* Equipos */
 .fc-team { display: flex; align-items: center; gap: .45rem; min-width: 0; }
@@ -208,6 +237,23 @@ function formatDate(dateStr: string): string {
 @media (max-width: 500px) {
   .fc-name  { display: none; }
   .fc-short { display: block; }
-  .fixture-card { padding: .5rem .6rem; }
+  .fixture-card {
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto auto;
+    padding: .5rem .6rem;
+  }
+  .fc-meta {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .4rem;
+    padding-left: 0;
+    border-left: none;
+    border-top: 1px solid var(--abh-border);
+    padding-top: .35rem;
+    margin-top: .1rem;
+    min-width: unset;
+  }
 }
 </style>

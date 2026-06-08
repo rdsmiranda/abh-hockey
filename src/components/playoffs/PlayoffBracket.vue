@@ -16,25 +16,28 @@ defineProps<{
         <h3 class="stage-title">{{ stage.label }}</h3>
       </div>
 
-      <template v-for="bracket in stage.brackets" :key="bracket.id">
-        <GroupBracket
-          v-if="bracket.format === 'triangular' || bracket.format === 'round_robin_4'"
-          :bracket="bracket"
-        />
-        <HomeAndAwayBracket
-          v-else-if="bracket.format === 'home_and_away'"
-          :bracket="bracket"
-        />
-        <KOBracket
-          v-else
-          :bracket="bracket"
-        />
-      </template>
+      <div class="brackets-list">
+        <template v-for="bracket in stage.brackets" :key="bracket.id">
+          <GroupBracket
+            v-if="bracket.format === 'triangular' || bracket.format === 'round_robin_4'"
+            :bracket="bracket"
+          />
+          <HomeAndAwayBracket
+            v-else-if="bracket.format === 'home_and_away'"
+            :bracket="bracket"
+          />
+          <KOBracket
+            v-else
+            :bracket="bracket"
+          />
+        </template>
+      </div>
     </template>
   </div>
 </template>
 
 <style scoped>
+.brackets-list { display: flex; flex-direction: column; gap: .4rem; margin-bottom: 1rem; }
 .stage-header {
   display: flex; align-items: center; gap: .75rem;
   margin: 1.5rem 0 .65rem;

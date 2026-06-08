@@ -118,7 +118,7 @@ const metaSubtitle = computed(() => {
 
       <!-- ── Vista ─────────────────────────────────────────── -->
       <div v-if="viewTabs.length > 1" class="filter-group" style="margin-bottom:1.25rem">
-        <label class="filter-label">Vista</label>
+        <!-- <label class="filter-label">Vista</label> -->
         <CategoryTabs
           :tabs="viewTabs"
           :model-value="store.activeSubTab"

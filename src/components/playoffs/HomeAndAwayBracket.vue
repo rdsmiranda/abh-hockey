@@ -103,7 +103,7 @@ function hideOnError(e: Event) { (e.target as HTMLImageElement).style.display = 
         <template v-if="m.played">
           <span class="bm-result">{{ m.goals_home }} – {{ m.goals_away }}</span>
           <span v-if="m.has_shootouts" class="bm-pen">
-            ({{ m.shootouts_home }}–{{ m.shootouts_away }} pen)
+            ({{ m.shootouts_home }}–{{ m.shootouts_away }} shootouts)
           </span>
         </template>
         <span v-else class="bm-pending">A jugarse</span>
