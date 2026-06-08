@@ -1,0 +1,1040 @@
+{
+    "generated_at": "2026-06-04T19:08:58-03:00",
+    "from": "2026-06-05",
+    "to": "2026-06-07",
+    "umpires": [
+        {
+            "id": 56,
+            "name": "Abril Acosta"
+        },
+        {
+            "id": 157,
+            "name": "Agustín Frantz"
+        },
+        {
+            "id": 91,
+            "name": "Agustina Abot"
+        },
+        {
+            "id": 57,
+            "name": "Agustina Bermúdez"
+        },
+        {
+            "id": 154,
+            "name": "Agustina Fría"
+        },
+        {
+            "id": 121,
+            "name": "Agustina Loza"
+        },
+        {
+            "id": 136,
+            "name": "Agustina Menna"
+        },
+        {
+            "id": 92,
+            "name": "Alejo Ruiz"
+        },
+        {
+            "id": 165,
+            "name": "Amparo García"
+        },
+        {
+            "id": 151,
+            "name": "Antonella Cárdenas"
+        },
+        {
+            "id": 164,
+            "name": "Antonella Lara"
+        },
+        {
+            "id": 143,
+            "name": "Antonella Puntilla"
+        },
+        {
+            "id": 58,
+            "name": "Basilio Canale"
+        },
+        {
+            "id": 59,
+            "name": "Betsabé Lobato"
+        },
+        {
+            "id": 98,
+            "name": "Bianca Mendoza"
+        },
+        {
+            "id": 60,
+            "name": "Brenda Durand"
+        },
+        {
+            "id": 163,
+            "name": "Brisa Cuevas"
+        },
+        {
+            "id": 147,
+            "name": "Brisa Díaz"
+        },
+        {
+            "id": 61,
+            "name": "Bruno Costa Biondi"
+        },
+        {
+            "id": 134,
+            "name": "Camila Suay"
+        },
+        {
+            "id": 113,
+            "name": "Candela Pujol"
+        },
+        {
+            "id": 135,
+            "name": "Candelaria Álvarez"
+        },
+        {
+            "id": 156,
+            "name": "Carola Dichiara"
+        },
+        {
+            "id": 80,
+            "name": "Catalina Díaz"
+        },
+        {
+            "id": 116,
+            "name": "Catalina Zaninovich"
+        },
+        {
+            "id": 112,
+            "name": "Constanza Zorzano"
+        },
+        {
+            "id": 81,
+            "name": "Delfina Giacomich"
+        },
+        {
+            "id": 119,
+            "name": "Delfina Morales"
+        },
+        {
+            "id": 86,
+            "name": "Delfina Pasqualini"
+        },
+        {
+            "id": 97,
+            "name": "Dolores Rossello"
+        },
+        {
+            "id": 95,
+            "name": "Edith Dadin"
+        },
+        {
+            "id": 115,
+            "name": "Emilia Reyes"
+        },
+        {
+            "id": 172,
+            "name": "Emiliano Grillo"
+        },
+        {
+            "id": 109,
+            "name": "Evelyn Scoreanzi"
+        },
+        {
+            "id": 62,
+            "name": "Ezequiel Muñoz"
+        },
+        {
+            "id": 63,
+            "name": "Fabián Guzmán"
+        },
+        {
+            "id": 175,
+            "name": "Fausto Gallego"
+        },
+        {
+            "id": 167,
+            "name": "Federico Fernández"
+        },
+        {
+            "id": 114,
+            "name": "Federico Weitt"
+        },
+        {
+            "id": 84,
+            "name": "Felicitas Urra"
+        },
+        {
+            "id": 125,
+            "name": "Francisco Cañizares"
+        },
+        {
+            "id": 66,
+            "name": "Francisco Del Valle"
+        },
+        {
+            "id": 152,
+            "name": "Gala San Martín"
+        },
+        {
+            "id": 64,
+            "name": "Gimena Pedernera"
+        },
+        {
+            "id": 127,
+            "name": "Guadalupe Germain"
+        },
+        {
+            "id": 158,
+            "name": "Guillermina Verón"
+        },
+        {
+            "id": 96,
+            "name": "Guillermo Miranda"
+        },
+        {
+            "id": 65,
+            "name": "Hernán Del Ruiz"
+        },
+        {
+            "id": 174,
+            "name": "Isabella Biagetti"
+        },
+        {
+            "id": 124,
+            "name": "Isabella Olivieri"
+        },
+        {
+            "id": 74,
+            "name": "Javier Loza"
+        },
+        {
+            "id": 94,
+            "name": "Josefina Abadie"
+        },
+        {
+            "id": 133,
+            "name": "Josefina Imirizaldu"
+        },
+        {
+            "id": 138,
+            "name": "Josefina Sauer"
+        },
+        {
+            "id": 67,
+            "name": "Josefina Sebastian"
+        },
+        {
+            "id": 141,
+            "name": "Juan Cruz Díaz"
+        },
+        {
+            "id": 117,
+            "name": "Juana Gutierrez"
+        },
+        {
+            "id": 166,
+            "name": "Julia Barrios"
+        },
+        {
+            "id": 108,
+            "name": "Julieta Baez"
+        },
+        {
+            "id": 69,
+            "name": "Julieta Errazu"
+        },
+        {
+            "id": 68,
+            "name": "Julieta Soldini"
+        },
+        {
+            "id": 105,
+            "name": "Klein Clara"
+        },
+        {
+            "id": 128,
+            "name": "Leandro Marinero"
+        },
+        {
+            "id": 83,
+            "name": "Leonardo Gomes"
+        },
+        {
+            "id": 118,
+            "name": "Lourdes Monti"
+        },
+        {
+            "id": 131,
+            "name": "Luana Paredes Berruet"
+        },
+        {
+            "id": 103,
+            "name": "Lucia Centurión"
+        },
+        {
+            "id": 140,
+            "name": "Lucía Gallucci"
+        },
+        {
+            "id": 120,
+            "name": "Lucía Vera"
+        },
+        {
+            "id": 129,
+            "name": "Luciana Cornou"
+        },
+        {
+            "id": 70,
+            "name": "Luciano Donati"
+        },
+        {
+            "id": 71,
+            "name": "Magalí Forment"
+        },
+        {
+            "id": 126,
+            "name": "Magalí González"
+        },
+        {
+            "id": 104,
+            "name": "Maite Baratcabal"
+        },
+        {
+            "id": 101,
+            "name": "Manuel Pereyra"
+        },
+        {
+            "id": 87,
+            "name": "Manuela Hernando"
+        },
+        {
+            "id": 93,
+            "name": "Martin Aldunate"
+        },
+        {
+            "id": 132,
+            "name": "Martina Pla"
+        },
+        {
+            "id": 148,
+            "name": "Matías Rigassio"
+        },
+        {
+            "id": 73,
+            "name": "Maximiliano Borettini"
+        },
+        {
+            "id": 110,
+            "name": "Mayra Cannes"
+        },
+        {
+            "id": 107,
+            "name": "Melanie Armendia"
+        },
+        {
+            "id": 122,
+            "name": "Melany Hernández"
+        },
+        {
+            "id": 142,
+            "name": "Melina Giusti"
+        },
+        {
+            "id": 99,
+            "name": "Micaela Pisani"
+        },
+        {
+            "id": 88,
+            "name": "Milton Barrera"
+        },
+        {
+            "id": 155,
+            "name": "Mora Kessler"
+        },
+        {
+            "id": 168,
+            "name": "Morena Andrade"
+        },
+        {
+            "id": 176,
+            "name": "Morena Canan Moulia"
+        },
+        {
+            "id": 149,
+            "name": "Morena Cervatto"
+        },
+        {
+            "id": 169,
+            "name": "Morena Medei"
+        },
+        {
+            "id": 150,
+            "name": "Naiara Berger"
+        },
+        {
+            "id": 75,
+            "name": "Nicolás Montenegro"
+        },
+        {
+            "id": 139,
+            "name": "Noelia Sueldo"
+        },
+        {
+            "id": 160,
+            "name": "Paulo Ferreyra"
+        },
+        {
+            "id": 102,
+            "name": "Pilar Saldungaray"
+        },
+        {
+            "id": 106,
+            "name": "Rocio Gomez Peña"
+        },
+        {
+            "id": 76,
+            "name": "Rodrigo Miranda"
+        },
+        {
+            "id": 89,
+            "name": "Rosario Zabalegui"
+        },
+        {
+            "id": 162,
+            "name": "Sabrina Martínez"
+        },
+        {
+            "id": 170,
+            "name": "Sebastián Krieger"
+        },
+        {
+            "id": 137,
+            "name": "Servidio Rodrigo"
+        },
+        {
+            "id": 173,
+            "name": "Sofía Belloni"
+        },
+        {
+            "id": 77,
+            "name": "Sofía Carrizo"
+        },
+        {
+            "id": 123,
+            "name": "Sofía Ciambelli"
+        },
+        {
+            "id": 85,
+            "name": "Sofía Currulef"
+        },
+        {
+            "id": 171,
+            "name": "Sol Ayala"
+        },
+        {
+            "id": 72,
+            "name": "Sol Caspe"
+        },
+        {
+            "id": 153,
+            "name": "Sol Maleswki"
+        },
+        {
+            "id": 161,
+            "name": "Tomás Bertello"
+        },
+        {
+            "id": 90,
+            "name": "Valentina Morales"
+        },
+        {
+            "id": 82,
+            "name": "Valentina Puntilla"
+        },
+        {
+            "id": 78,
+            "name": "Victoria Avagnale"
+        },
+        {
+            "id": 79,
+            "name": "Victoria Grenada"
+        },
+        {
+            "id": 130,
+            "name": "Victoria Pene"
+        },
+        {
+            "id": 100,
+            "name": "Virginia Villanueva"
+        }
+    ],
+    "days": [
+        {
+            "date": "2026-06-05",
+            "matches": [
+                {
+                    "id": 443,
+                    "time": "19:30",
+                    "zone": "Intermedia",
+                    "category": "Intermedia",
+                    "round": "Tercer Puesto",
+                    "home_team": {
+                        "id": 29,
+                        "name": "Villa Mitre",
+                        "short_name": "VM",
+                        "logo": "assets\/logos\/vm.png"
+                    },
+                    "away_team": {
+                        "id": 21,
+                        "name": "S. Sportiva",
+                        "short_name": "SS",
+                        "logo": "assets\/logos\/ss.png"
+                    },
+                    "pitch": "Villa Mitre",
+                    "umpire_1": "Guillermina Verón",
+                    "umpire_2": "Nicolás Montenegro",
+                    "fee": 45000,
+                    "supervisor": null
+                }
+            ]
+        },
+        {
+            "date": "2026-06-06",
+            "matches": [
+                {
+                    "id": 326,
+                    "time": "10:00",
+                    "zone": "Oro",
+                    "category": "Sub16",
+                    "round": "Triangular",
+                    "home_team": {
+                        "id": 10,
+                        "name": "Pacífico A",
+                        "short_name": "CAP A",
+                        "logo": "assets\/logos\/cap.png"
+                    },
+                    "away_team": {
+                        "id": 1,
+                        "name": "Argentino A",
+                        "short_name": "ARG A",
+                        "logo": "assets\/logos\/arg.png"
+                    },
+                    "pitch": "Pacífico",
+                    "umpire_1": "Josefina Abadie",
+                    "umpire_2": "Sofía Currulef",
+                    "fee": 42000,
+                    "supervisor": null
+                },
+                {
+                    "id": 412,
+                    "time": "10:00",
+                    "zone": "Oro",
+                    "category": "Sub16",
+                    "round": "Final",
+                    "home_team": {
+                        "id": 8,
+                        "name": "Monte Hermoso",
+                        "short_name": "CAMH",
+                        "logo": "assets\/logos\/camh.png"
+                    },
+                    "away_team": {
+                        "id": 7,
+                        "name": "Independiente",
+                        "short_name": "CAI",
+                        "logo": "assets\/logos\/cai.png"
+                    },
+                    "pitch": "Monte Hermoso",
+                    "umpire_1": "Carola Dichiara",
+                    "umpire_2": "Bruno Costa Biondi",
+                    "fee": 42000,
+                    "supervisor": null
+                },
+                {
+                    "id": 413,
+                    "time": "10:00",
+                    "zone": "Oro",
+                    "category": "Sub16",
+                    "round": "Tercer Puesto",
+                    "home_team": {
+                        "id": 19,
+                        "name": "S. Sportiva A",
+                        "short_name": "SS A",
+                        "logo": "assets\/logos\/ss.png"
+                    },
+                    "away_team": {
+                        "id": 3,
+                        "name": "El Nacional A",
+                        "short_name": "CEN A",
+                        "logo": "assets\/logos\/cen.png"
+                    },
+                    "pitch": "S. Sportiva",
+                    "umpire_1": "Agustina Abot",
+                    "umpire_2": "Sol Caspe",
+                    "fee": 42000,
+                    "supervisor": null
+                },
+                {
+                    "id": 336,
+                    "time": "16:00",
+                    "zone": "Oro",
+                    "category": "Primera",
+                    "round": "Triangular",
+                    "home_team": {
+                        "id": 3,
+                        "name": "El Nacional A",
+                        "short_name": "CEN A",
+                        "logo": "assets\/logos\/cen.png"
+                    },
+                    "away_team": {
+                        "id": 7,
+                        "name": "Independiente",
+                        "short_name": "CAI",
+                        "logo": "assets\/logos\/cai.png"
+                    },
+                    "pitch": "El Nacional",
+                    "umpire_1": "Hernán Del Ruiz",
+                    "umpire_2": "Sofía Carrizo",
+                    "fee": 64000,
+                    "supervisor": null
+                },
+                {
+                    "id": 414,
+                    "time": "16:00",
+                    "zone": "Oro",
+                    "category": "Primera",
+                    "round": "Final",
+                    "home_team": {
+                        "id": 24,
+                        "name": "Universitario A",
+                        "short_name": "UNI A",
+                        "logo": "assets\/logos\/uni.png"
+                    },
+                    "away_team": {
+                        "id": 8,
+                        "name": "Monte Hermoso",
+                        "short_name": "CAMH",
+                        "logo": "assets\/logos\/camh.png"
+                    },
+                    "pitch": "Universitario (Agua)",
+                    "umpire_1": "Agustina Bermúdez",
+                    "umpire_2": "Victoria Avagnale",
+                    "fee": 64000,
+                    "supervisor": null
+                },
+                {
+                    "id": 415,
+                    "time": "16:00",
+                    "zone": "Oro",
+                    "category": "Primera",
+                    "round": "Tercer Puesto",
+                    "home_team": {
+                        "id": 10,
+                        "name": "Pacífico A",
+                        "short_name": "CAP A",
+                        "logo": "assets\/logos\/cap.png"
+                    },
+                    "away_team": {
+                        "id": 1,
+                        "name": "Argentino A",
+                        "short_name": "ARG A",
+                        "logo": "assets\/logos\/arg.png"
+                    },
+                    "pitch": "Pacífico",
+                    "umpire_1": "Francisco Del Valle",
+                    "umpire_2": "Brenda Durand",
+                    "fee": 64000,
+                    "supervisor": null
+                },
+                {
+                    "id": 346,
+                    "time": "10:00",
+                    "zone": "Plata",
+                    "category": "Sub16",
+                    "round": "Triangular",
+                    "home_team": {
+                        "id": 25,
+                        "name": "Universitario B",
+                        "short_name": "UNI B",
+                        "logo": "assets\/logos\/uni.png"
+                    },
+                    "away_team": {
+                        "id": 11,
+                        "name": "Pacífico B",
+                        "short_name": "CAP B",
+                        "logo": "assets\/logos\/cap.png"
+                    },
+                    "pitch": "Universitario (Agua)",
+                    "umpire_1": "Martina Pla",
+                    "umpire_2": "Nicolás Montenegro",
+                    "fee": 42000,
+                    "supervisor": null
+                },
+                {
+                    "id": 438,
+                    "time": "12:00",
+                    "zone": "Plata",
+                    "category": "Sub16",
+                    "round": "Final Extra",
+                    "home_team": {
+                        "id": 16,
+                        "name": "Puerto Belgrano A",
+                        "short_name": "PTO A",
+                        "logo": "assets\/logos\/pto.png"
+                    },
+                    "away_team": {
+                        "id": 23,
+                        "name": "Tiro Federal",
+                        "short_name": "TIRO",
+                        "logo": "assets\/logos\/tiro.png"
+                    },
+                    "pitch": "Pacífico",
+                    "umpire_1": "Agustina Bermúdez",
+                    "umpire_2": "Guadalupe Germain",
+                    "fee": 42000,
+                    "supervisor": null
+                },
+                {
+                    "id": 351,
+                    "time": "14:00",
+                    "zone": "Plata",
+                    "category": "Sub19",
+                    "round": "Triangular",
+                    "home_team": {
+                        "id": 4,
+                        "name": "El Nacional B",
+                        "short_name": "CEN B",
+                        "logo": "assets\/logos\/cen.png"
+                    },
+                    "away_team": {
+                        "id": 11,
+                        "name": "Pacífico B",
+                        "short_name": "CAP B",
+                        "logo": "assets\/logos\/cap.png"
+                    },
+                    "pitch": "El Nacional",
+                    "umpire_1": "Sofía Carrizo",
+                    "umpire_2": "Victoria Pene",
+                    "fee": 48000,
+                    "supervisor": null
+                },
+                {
+                    "id": 356,
+                    "time": "16:00",
+                    "zone": "Plata",
+                    "category": "Primera",
+                    "round": "Triangular",
+                    "home_team": {
+                        "id": 23,
+                        "name": "Tiro Federal",
+                        "short_name": "TIRO",
+                        "logo": "assets\/logos\/tiro.png"
+                    },
+                    "away_team": {
+                        "id": 16,
+                        "name": "Puerto Belgrano A",
+                        "short_name": "PTO A",
+                        "logo": "assets\/logos\/pto.png"
+                    },
+                    "pitch": "ABH",
+                    "umpire_1": "Rodrigo Miranda",
+                    "umpire_2": "Guadalupe Germain",
+                    "fee": 64000,
+                    "supervisor": null
+                },
+                {
+                    "id": 430,
+                    "time": "14:00",
+                    "zone": "Bronce",
+                    "category": "Primera",
+                    "round": "Tercer Puesto",
+                    "home_team": {
+                        "id": 26,
+                        "name": "Universitario C",
+                        "short_name": "UNI C",
+                        "logo": "assets\/logos\/uni.png"
+                    },
+                    "away_team": {
+                        "id": 22,
+                        "name": "Sporting",
+                        "short_name": "SPO",
+                        "logo": "assets\/logos\/spo.png"
+                    },
+                    "pitch": "Universitario (Agua)",
+                    "umpire_1": "Nicolás Montenegro",
+                    "umpire_2": "Bruno Costa Biondi",
+                    "fee": 57000,
+                    "supervisor": null
+                },
+                {
+                    "id": 429,
+                    "time": "18:00",
+                    "zone": "Bronce",
+                    "category": "Primera",
+                    "round": "Final Extra",
+                    "home_team": {
+                        "id": 14,
+                        "name": "Palihue",
+                        "short_name": "PAL",
+                        "logo": "assets\/logos\/pal.png"
+                    },
+                    "away_team": {
+                        "id": 2,
+                        "name": "Argentino B",
+                        "short_name": "ARG B",
+                        "logo": "assets\/logos\/arg.png"
+                    },
+                    "pitch": "Pacífico",
+                    "umpire_1": "Francisco Del Valle",
+                    "umpire_2": "Sofía Ciambelli",
+                    "fee": 64000,
+                    "supervisor": null
+                },
+                {
+                    "id": 442,
+                    "time": "20:00",
+                    "zone": "Intermedia",
+                    "category": "Intermedia",
+                    "round": "Final",
+                    "home_team": {
+                        "id": 8,
+                        "name": "Monte Hermoso",
+                        "short_name": "CAMH",
+                        "logo": "assets\/logos\/camh.png"
+                    },
+                    "away_team": {
+                        "id": 27,
+                        "name": "Universitario",
+                        "short_name": "UNI",
+                        "logo": "assets\/logos\/uni.png"
+                    },
+                    "pitch": "Monte Hermoso",
+                    "umpire_1": "Valentina Puntilla",
+                    "umpire_2": "Antonella Puntilla",
+                    "fee": 50000,
+                    "supervisor": null
+                },
+                {
+                    "id": 420,
+                    "time": "14:00",
+                    "zone": "Caballeros",
+                    "category": "Sub14",
+                    "round": "Final",
+                    "home_team": {
+                        "id": 12,
+                        "name": "Pacífico",
+                        "short_name": "CAP",
+                        "logo": "assets\/logos\/cap.png"
+                    },
+                    "away_team": {
+                        "id": 6,
+                        "name": "El Nacional",
+                        "short_name": "CEN",
+                        "logo": "assets\/logos\/cen.png"
+                    },
+                    "pitch": "Pacífico",
+                    "umpire_1": "Guillermo Miranda",
+                    "umpire_2": "Milton Barrera",
+                    "fee": 38000,
+                    "supervisor": null
+                }
+            ]
+        },
+        {
+            "date": "2026-06-07",
+            "matches": [
+                {
+                    "id": 331,
+                    "time": "10:00",
+                    "zone": "Oro",
+                    "category": "Sub14",
+                    "round": "Triangular",
+                    "home_team": {
+                        "id": 3,
+                        "name": "El Nacional A",
+                        "short_name": "CEN A",
+                        "logo": "assets\/logos\/cen.png"
+                    },
+                    "away_team": {
+                        "id": 10,
+                        "name": "Pacífico A",
+                        "short_name": "CAP A",
+                        "logo": "assets\/logos\/cap.png"
+                    },
+                    "pitch": "El Nacional",
+                    "umpire_1": "Martina Pla",
+                    "umpire_2": "Sol Caspe",
+                    "fee": 38000,
+                    "supervisor": null
+                },
+                {
+                    "id": 435,
+                    "time": "12:00",
+                    "zone": "Oro",
+                    "category": "Sub14",
+                    "round": "Final Extra",
+                    "home_team": {
+                        "id": 1,
+                        "name": "Argentino A",
+                        "short_name": "ARG A",
+                        "logo": "assets\/logos\/arg.png"
+                    },
+                    "away_team": {
+                        "id": 19,
+                        "name": "S. Sportiva A",
+                        "short_name": "SS A",
+                        "logo": "assets\/logos\/ss.png"
+                    },
+                    "pitch": "Pacífico",
+                    "umpire_1": "Rodrigo Miranda",
+                    "umpire_2": "Lucía Vera",
+                    "fee": 38000,
+                    "supervisor": null
+                },
+                {
+                    "id": 319,
+                    "time": "16:00",
+                    "zone": "Oro",
+                    "category": "Sub19",
+                    "round": "Triangular",
+                    "home_team": {
+                        "id": 19,
+                        "name": "S. Sportiva A",
+                        "short_name": "SS A",
+                        "logo": "assets\/logos\/ss.png"
+                    },
+                    "away_team": {
+                        "id": 7,
+                        "name": "Independiente",
+                        "short_name": "CAI",
+                        "logo": "assets\/logos\/cai.png"
+                    },
+                    "pitch": "S. Sportiva",
+                    "umpire_1": "Brenda Durand",
+                    "umpire_2": "Fabián Guzmán",
+                    "fee": 48000,
+                    "supervisor": null
+                },
+                {
+                    "id": 417,
+                    "time": "16:00",
+                    "zone": "Oro",
+                    "category": "Sub19",
+                    "round": "Tercer Puesto",
+                    "home_team": {
+                        "id": 24,
+                        "name": "Universitario A",
+                        "short_name": "UNI A",
+                        "logo": "assets\/logos\/uni.png"
+                    },
+                    "away_team": {
+                        "id": 10,
+                        "name": "Pacífico A",
+                        "short_name": "CAP A",
+                        "logo": "assets\/logos\/cap.png"
+                    },
+                    "pitch": "Universitario (Agua)",
+                    "umpire_1": "Guillermo Miranda",
+                    "umpire_2": "Sofía Ciambelli",
+                    "fee": 48000,
+                    "supervisor": null
+                },
+                {
+                    "id": 341,
+                    "time": "10:00",
+                    "zone": "Plata",
+                    "category": "Sub14",
+                    "round": "Triangular",
+                    "home_team": {
+                        "id": 11,
+                        "name": "Pacífico B",
+                        "short_name": "CAP B",
+                        "logo": "assets\/logos\/cap.png"
+                    },
+                    "away_team": {
+                        "id": 20,
+                        "name": "S. Sportiva B",
+                        "short_name": "SS B",
+                        "logo": "assets\/logos\/ss.png"
+                    },
+                    "pitch": "Pacífico",
+                    "umpire_1": "Juan Cruz Díaz",
+                    "umpire_2": "Julieta Soldini",
+                    "fee": 38000,
+                    "supervisor": null
+                },
+                {
+                    "id": 441,
+                    "time": "16:00",
+                    "zone": "Plata",
+                    "category": "Sub19",
+                    "round": "Final Extra",
+                    "home_team": {
+                        "id": 25,
+                        "name": "Universitario B",
+                        "short_name": "UNI B",
+                        "logo": "assets\/logos\/uni.png"
+                    },
+                    "away_team": {
+                        "id": 16,
+                        "name": "Puerto Belgrano A",
+                        "short_name": "PTO A",
+                        "logo": "assets\/logos\/pto.png"
+                    },
+                    "pitch": "Pacífico",
+                    "umpire_1": "Maximiliano Borettini",
+                    "umpire_2": "Guadalupe Germain",
+                    "fee": 48000,
+                    "supervisor": null
+                },
+                {
+                    "id": 421,
+                    "time": "11:30",
+                    "zone": "Caballeros",
+                    "category": "Sub14",
+                    "round": "Tercer Puesto",
+                    "home_team": {
+                        "id": 18,
+                        "name": "Puerto Belgrano",
+                        "short_name": "PTO",
+                        "logo": "assets\/logos\/pto.png"
+                    },
+                    "away_team": {
+                        "id": 9,
+                        "name": "Monte Hermoso",
+                        "short_name": "CAMH",
+                        "logo": "assets\/logos\/camh.png"
+                    },
+                    "pitch": "Puerto Belgrano",
+                    "umpire_1": "Francisco Cañizares",
+                    "umpire_2": "Emiliano Grillo",
+                    "fee": 38000,
+                    "supervisor": null
+                },
+                {
+                    "id": 422,
+                    "time": "19:00",
+                    "zone": "Caballeros",
+                    "category": "Primera",
+                    "round": "Final Extra",
+                    "home_team": {
+                        "id": 28,
+                        "name": "Universitario",
+                        "short_name": "UNI",
+                        "logo": "assets\/logos\/uni.png"
+                    },
+                    "away_team": {
+                        "id": 6,
+                        "name": "El Nacional",
+                        "short_name": "CEN",
+                        "logo": "assets\/logos\/cen.png"
+                    },
+                    "pitch": "Universitario (Agua)",
+                    "umpire_1": "Francisco Del Valle",
+                    "umpire_2": "Victoria Avagnale",
+                    "fee": 64000,
+                    "supervisor": null
+                }
+            ]
+        }
+    ]
+}
