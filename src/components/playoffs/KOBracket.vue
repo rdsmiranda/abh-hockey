@@ -30,7 +30,7 @@ const isWinnerAway = computed(() =>
 
 const scoreDisplay = computed<{ home: number; away: number; pen?: string } | null>(() => {
   const played = props.bracket.matches.filter((m) => m.played)
-  const m = played.at(-1)
+  const m = played[played.length - 1] // played.at(-1)
   if (!m) return null
   const isLastHome = Number(m.home_team_id) === homeId.value
   const gh = isLastHome ? m.goals_home! : m.goals_away!

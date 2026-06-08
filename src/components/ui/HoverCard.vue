@@ -25,7 +25,7 @@ function hideOnError(e: Event) {
   (e.target as HTMLImageElement).style.display = 'none'
 }
 
-const style = computed<Record<string, string>>(() => {
+const style = computed<Partial<Record<string, string>>>(() => {
   if (!props.anchorRect) return { display: 'none' }
   const rect = props.anchorRect
   let left = rect.left + rect.width / 2 - CARD_WIDTH / 2

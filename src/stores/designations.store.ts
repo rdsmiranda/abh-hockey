@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 import { fetchDesignations } from '@/services/designations.service'
-import type { DesignationData, DesignationDay, DesignationMatch, Umpire } from '@/types'
+import type { DesignationData, DesignationDay, Umpire } from '@/types'
 import type { LoadStatus } from './championship.store'
 
 export const useDesignationsStore = defineStore('designations', () => {

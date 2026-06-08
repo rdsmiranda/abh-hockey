@@ -6,7 +6,6 @@ import StateBanner       from '@/components/ui/StateBanner.vue'
 import ZoneFilterButtons from '@/components/designations/ZoneFilterButtons.vue'
 import DaySection        from '@/components/designations/DaySection.vue'
 import type { ComboboxOption } from '@/components/ui/Combobox.vue'
-import type { Umpire } from '@/types'
 
 const store = useDesignationsStore()
 

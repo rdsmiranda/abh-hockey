@@ -9,7 +9,7 @@ export interface TabItem<T extends string | number = string> {
   name: string
 }
 
-const props = defineProps<{
+defineProps<{
   tabs: TabItem<TId>[]
   modelValue: TId
 }>()
