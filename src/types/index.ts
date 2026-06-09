@@ -32,6 +32,8 @@ export type {
   FixtureMatch,
   FixtureRound,
   FixturePayload,
+  // Matches
+  MatchCardData
 } from './championship'
 
 export type {

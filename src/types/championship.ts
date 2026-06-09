@@ -62,6 +62,7 @@ export interface PlayoffMatch {
   time: string | null
   home_team_id: number
   away_team_id: number
+  pitch: string | null
   played: boolean
   goals_home: number | null
   goals_away: number | null
@@ -193,6 +194,23 @@ export interface FixtureRound {
   date_from: string
   date_to: string
   matches: FixtureMatch[]
+}
+
+// ── MatchCard (componente compartido) ────────────────────────────────────────
+// Subconjunto mínimo que necesita el componente visual.
+// Tanto FixtureMatch como PlayoffMatch se mapean a este tipo antes de renderizar.
+export interface MatchCardData {
+  home_team_id: number
+  away_team_id: number
+  date: string | null
+  time: string | null
+  pitch: string | null       // No viene en playoffs → null
+  played: boolean
+  goals_home: number | null
+  goals_away: number | null
+  has_shootouts: boolean
+  shootouts_home: number | null
+  shootouts_away: number | null
 }
 
 export interface FixturePayload {
