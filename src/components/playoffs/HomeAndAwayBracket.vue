@@ -2,7 +2,7 @@
 import type { PlayoffBracket } from '@/types'
 import MatchCard from '@/components/ui/MatchCard.vue'
 
-const props = defineProps<{ bracket: PlayoffBracket }>()
+defineProps<{ bracket: PlayoffBracket }>()
 
 function matchWinnerId(m: PlayoffBracket['matches'][number]): number | null {
   if (!m.played) return null

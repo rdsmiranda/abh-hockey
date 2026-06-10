@@ -5,15 +5,6 @@ import MatchCard from '@/components/ui/MatchCard.vue'
 
 const props = defineProps<{ bracket: PlayoffBracket }>()
 
-const t1 = computed(() => Number(props.bracket.team_1_id))
-const t2 = computed(() => Number(props.bracket.team_2_id))
-
-// const homeId = computed<number>(() => {
-//   const first = props.bracket.matches[0]
-//   if (!first) return t1.value
-//   return Number(first.home_team_id) === t2.value ? t2.value : t1.value
-// })
-
 const matchCardData = computed<MatchCardData | null>(() => {
   const matches = props.bracket.matches
   if (!matches.length) return null

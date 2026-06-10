@@ -37,8 +37,8 @@ export type {
 } from './championship'
 
 export type {
-  DesignationIndex,
   DesignationData,
+  DesignationTeam,
   Umpire,
   DesignationDay,
   DesignationMatch,

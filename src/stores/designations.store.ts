@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 import { fetchDesignations } from '@/services/designations.service'
-import type { DesignationData, DesignationDay, DesignationMatch, Umpire, Team } from '@/types'
+import type { DesignationData, DesignationDay, DesignationMatch, DesignationTeam, Umpire, Team } from '@/types'
 import type { LoadStatus } from './championship.store'
 
 export const useDesignationsStore = defineStore('designations', () => {
@@ -106,9 +106,10 @@ export const useDesignationsStore = defineStore('designations', () => {
         normalizedUmpires[String(Number(k))] = { ...v, id: Number(v.id) }
       }
 
-      const normalizedTeams: Record<string, Team> = {}
+      const normalizedTeams: Record<string, DesignationTeam> = {}
       for (const [k, v] of Object.entries(payload.teams)) {
-        normalizedTeams[String(Number(k))] = { ...v, id: Number(v.id) }
+        // Some team logos may be null in the payload; DesignationTeam expects a string.
+        normalizedTeams[String(Number(k))] = { ...v, id: Number((v as any).id), logo: (v as any).logo ?? '' }
       }
 
       data.value = { ...payload, umpires: normalizedUmpires, teams: normalizedTeams }
