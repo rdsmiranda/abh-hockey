@@ -1,0 +1,203 @@
+{
+    "championship": {
+        "id": 3,
+        "name": "Clausura",
+        "year": 2026,
+        "start_date": "2026-06-13",
+        "end_date": "2026-12-06"
+    },
+    "generated_at": "2026-06-10T16:36:15-03:00",
+    "fixture_file": "clausura-2026-fixture.json",
+    "teams": {
+        "6": {
+            "id": 6,
+            "name": "El Nacional",
+            "short_name": "CEN",
+            "logo": "assets\/logos\/cen.png"
+        },
+        "12": {
+            "id": 12,
+            "name": "Pacífico",
+            "short_name": "CAP",
+            "logo": "assets\/logos\/cap.png"
+        },
+        "15": {
+            "id": 15,
+            "name": "Palihue",
+            "short_name": "PAL",
+            "logo": "assets\/logos\/pal.png"
+        },
+        "18": {
+            "id": 18,
+            "name": "Puerto Belgrano",
+            "short_name": "PTO",
+            "logo": "assets\/logos\/pto.png"
+        },
+        "28": {
+            "id": 28,
+            "name": "Universitario",
+            "short_name": "UNI",
+            "logo": "assets\/logos\/uni.png"
+        },
+        "42": {
+            "id": 42,
+            "name": "Porteño",
+            "short_name": "POR",
+            "logo": "assets\/logos\/por.png"
+        }
+    },
+    "zones": [
+        {
+            "id": 9,
+            "name": "Caballeros",
+            "categories": [
+                {
+                    "id": 4,
+                    "name": "Primera",
+                    "standings": [
+                        {
+                            "position": 1,
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": [],
+                            "team_id": 28
+                        },
+                        {
+                            "position": 2,
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": [],
+                            "team_id": 15
+                        },
+                        {
+                            "position": 3,
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": [],
+                            "team_id": 18
+                        },
+                        {
+                            "position": 4,
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": [],
+                            "team_id": 12
+                        },
+                        {
+                            "position": 5,
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": [],
+                            "team_id": 6
+                        }
+                    ],
+                    "playoffs": null,
+                    "final_standings": null
+                },
+                {
+                    "id": 7,
+                    "name": "Menores",
+                    "standings": [
+                        {
+                            "position": 1,
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": [],
+                            "team_id": 28
+                        },
+                        {
+                            "position": 2,
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": [],
+                            "team_id": 18
+                        },
+                        {
+                            "position": 3,
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": [],
+                            "team_id": 12
+                        },
+                        {
+                            "position": 4,
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": [],
+                            "team_id": 6
+                        },
+                        {
+                            "position": 5,
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": [],
+                            "team_id": 42
+                        }
+                    ],
+                    "playoffs": null,
+                    "final_standings": null
+                }
+            ]
+        }
+    ]
+}
