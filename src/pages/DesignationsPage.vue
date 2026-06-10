@@ -26,7 +26,7 @@ function onUmpireChange(opt: ComboboxOption | null) {
 // ID del árbitro seleccionado para pasar a DaySection → DesignationCard
 const highlightId = computed<number | null>(() => store.selectedUmpire?.id ?? null)
 
-// Mensaje cuando no hay resultados
+// Mensaje cuando hay partidos pero los filtros no arrojan resultados
 const emptyMessage = computed<string>(() => {
   const who   = store.selectedUmpire ? ` para ${store.selectedUmpire.name}` : ''
   const where = store.selectedZone   ? ` en ${store.selectedZone}`          : ''
@@ -39,40 +39,53 @@ const selectedUmpireOption = computed<ComboboxOption | null>(() =>
     ? { id: store.selectedUmpire.id, label: store.selectedUmpire.name }
     : null,
 )
+
+// true solo si hay filtros activos (árbitro o zona)
+const hasActiveFilters = computed(() =>
+  store.selectedUmpire !== null || store.selectedZone !== null,
+)
 </script>
 
 <template>
   <div>
-    <!-- ── Filtros ─────────────────────────────────────────── -->
-    <div class="filters">
-      <div class="filter-group">
-        <label class="filter-label">Árbitro</label>
-        <Combobox
-          :options="umpireOptions"
-          :model-value="selectedUmpireOption"
-          placeholder="Buscar árbitro…"
-          @update:model-value="onUmpireChange"
-        />
-      </div>
-
-      <div v-if="store.hasMultipleZones" class="filter-group">
-        <label class="filter-label">Zona</label>
-        <ZoneFilterButtons
-          :zones="store.availableZones"
-          :model-value="store.selectedZone"
-          @update:model-value="store.selectZone"
-        />
-      </div>
-    </div>
-
-    <!-- ── Estado carga / error ────────────────────────────── -->
+    <!-- ── Estado: carga / error ──────────────────────────────── -->
     <StateBanner
       v-if="store.status !== 'success'"
       :state="store.status"
       :message="store.errorMessage ?? undefined"
     />
 
+    <!-- ── Estado: sin partidos próximos (no hay nada para filtrar) ── -->
+    <StateBanner
+      v-else-if="store.isEmpty"
+      state="empty"
+      message="No se encontraron designaciones publicadas."
+    />
+
+    <!-- ── Estado: carga exitosa con partidos próximos ────────── -->
     <template v-else>
+      <!-- Filtros — solo visibles cuando hay partidos próximos -->
+      <div class="filters">
+        <div class="filter-group">
+          <label class="filter-label">Árbitro</label>
+          <Combobox
+            :options="umpireOptions"
+            :model-value="selectedUmpireOption"
+            placeholder="Buscar árbitro…"
+            @update:model-value="onUmpireChange"
+          />
+        </div>
+
+        <div v-if="store.hasMultipleZones" class="filter-group">
+          <label class="filter-label">Zona</label>
+          <ZoneFilterButtons
+            :zones="store.availableZones"
+            :model-value="store.selectedZone"
+            @update:model-value="store.selectZone"
+          />
+        </div>
+      </div>
+
       <!-- Meta bar -->
       <div class="meta-bar">
         <span class="meta-title">{{ store.periodLabel }}</span>
@@ -81,9 +94,9 @@ const selectedUmpireOption = computed<ComboboxOption | null>(() =>
         </span>
       </div>
 
-      <!-- Sin resultados -->
+      <!-- Sin resultados por filtros activos -->
       <div
-        v-if="store.filteredDays.length === 0"
+        v-if="store.filteredDays.length === 0 && hasActiveFilters"
         class="text-center py-10 text-sm text-slate-400"
         v-html="emptyMessage"
       />

@@ -47,8 +47,16 @@ export const useDesignationsStore = defineStore('designations', () => {
   const hasMultipleZones = computed(() => availableZones.value.length > 1)
 
   /**
-   * Días filtrados por zona y árbitro seleccionados.
-   * El filtro de árbitro ahora compara IDs (O(1)) en lugar de strings.
+   * Fecha de hoy en formato YYYY-MM-DD respetando el timezone local.
+   * Se usa toLocaleDateString('en-CA') porque produce ese formato de forma nativa.
+   * Queda fuera del computed porque es estático dentro de la sesión.
+   */
+  const today = new Date().toLocaleDateString('en-CA')
+
+  /**
+   * Días filtrados por fecha (>= hoy), zona y árbitro seleccionados.
+   * El filtro de fecha se aplica primero para descartar partidos pasados.
+   * El filtro de árbitro compara IDs (O(1)) en lugar de strings.
    * Los días vacíos tras filtrar se omiten.
    */
   const filteredDays = computed<DesignationDay[]>(() => {
@@ -60,14 +68,23 @@ export const useDesignationsStore = defineStore('designations', () => {
     return data.value.days
       .map((day) => {
         const matches = day.matches.filter((m: DesignationMatch) => {
+          const dateOk   = m.date >= today
           const zoneOk   = zone === null || (m.zone ?? '—') === zone
           const umpireOk = uid === null || m.umpire_1_id === uid || m.umpire_2_id === uid
-          return zoneOk && umpireOk
+          return dateOk && zoneOk && umpireOk
         })
         return { ...day, matches }
       })
       .filter((day) => day.matches.length > 0)
   })
+
+  /**
+   * true cuando la carga fue exitosa pero no hay partidos próximos.
+   * Permite al componente distinguir este caso de un error de red,
+   * mostrando "No se encontraron designaciones publicadas." en ambos casos
+   * pero sin mezclar los dos estados.
+   */
+  const isEmpty = computed(() => status.value === 'success' && filteredDays.value.length === 0)
 
   // ── Getters: metadatos ────────────────────────────────────────────────────
 
@@ -156,6 +173,7 @@ export const useDesignationsStore = defineStore('designations', () => {
     availableZones,
     hasMultipleZones,
     filteredDays,
+    isEmpty,
     // Getters: metadatos
     periodLabel,
     generatedAt,
