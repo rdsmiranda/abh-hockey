@@ -6,7 +6,7 @@
         "start_date": "2026-03-07",
         "end_date": null
     },
-    "generated_at": "2026-06-09T19:16:30-03:00",
+    "generated_at": "2026-06-10T16:56:02-03:00",
     "fixture_file": "apertura-2026-fixture.json",
     "teams": {
         "1": {
@@ -2426,7 +2426,7 @@
                                             {
                                                 "game": 1,
                                                 "date": "2026-06-13",
-                                                "time": "10:00",
+                                                "time": "14:00",
                                                 "home_team_id": 1,
                                                 "away_team_id": 8,
                                                 "pitch": "Argentino",
@@ -10486,6 +10486,17 @@
                                 "short_name": "CAMH",
                                 "logo": "assets\/logos\/camh.png"
                             }
+                        },
+                        {
+                            "position": 5,
+                            "team_id": 28,
+                            "note": null,
+                            "team_obj": {
+                                "id": 28,
+                                "name": "Universitario",
+                                "short_name": "UNI",
+                                "logo": "assets\/logos\/uni.png"
+                            }
                         }
                     ]
                 },
@@ -11733,7 +11744,7 @@
                                             {
                                                 "game": 1,
                                                 "date": "2026-06-13",
-                                                "time": "19:00",
+                                                "time": "18:00",
                                                 "home_team_id": 29,
                                                 "away_team_id": 21,
                                                 "pitch": "Villa Mitre",
