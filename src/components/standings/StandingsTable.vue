@@ -1,11 +1,16 @@
 <script setup lang="ts">
-import type { StandingRow, RecentForm } from '@/types'
+import type { StandingRow } from '@/types'
 import TeamCell  from './TeamCell.vue'
 import FormBadge from './FormBadge.vue'
 import HoverCard from '@/components/ui/HoverCard.vue'
 import { useFormBadge } from '@/composables/useFormBadge'
 
-defineProps<{ standings: StandingRow[] }>()
+withDefaults(defineProps<{
+  standings: StandingRow[]
+  showRecentForm?: boolean
+}>(), {
+  showRecentForm: true,
+})
 
 const { activeMatch, anchorRect, show, hide } = useFormBadge()
 </script>
@@ -30,7 +35,7 @@ const { activeMatch, anchorRect, show, hide } = useFormBadge()
             <th title="Goles en contra" class="col-hide-sm">GC</th>
             <th title="Diferencia de goles">DG</th>
             <th>Pts</th>
-            <th>Últ. 5</th>
+            <th v-if="showRecentForm">Últ. 5</th>
           </tr>
         </thead>
         <tbody>
@@ -47,7 +52,7 @@ const { activeMatch, anchorRect, show, hide } = useFormBadge()
             <td class="col-hide-sm">{{ row.goals_against }}</td>
             <td class="td-gd">{{ row.goal_difference > 0 ? '+' : '' }}{{ row.goal_difference }}</td>
             <td class="td-pts">{{ row.points }}</td>
-            <td>
+            <td v-if="showRecentForm">
               <div class="form-badges">
                 <FormBadge
                   v-for="(entry, i) in row.recent_form"
@@ -64,7 +69,7 @@ const { activeMatch, anchorRect, show, hide } = useFormBadge()
         </tbody>
       </table>
     </div>
-    <HoverCard :match="activeMatch" :anchor-rect="anchorRect" />
+    <HoverCard v-if="showRecentForm" :match="activeMatch" :anchor-rect="anchorRect" />
   </template>
 </template>
 

@@ -1,63 +1,67 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 import { fetchDesignations } from '@/services/designations.service'
-import type { DesignationData, DesignationDay, Umpire } from '@/types'
+import type { DesignationData, DesignationDay, DesignationMatch, Umpire, Team } from '@/types'
 import type { LoadStatus } from './championship.store'
 
 export const useDesignationsStore = defineStore('designations', () => {
   // ── Estado ────────────────────────────────────────────────────────────────
-  const data            = ref<DesignationData | null>(null)
-  const selectedUmpire  = ref<Umpire | null>(null)
-  const selectedZone    = ref<string | null>(null)   // null = "Todas"
-  const status          = ref<LoadStatus>('idle')
-  const errorMessage    = ref<string | null>(null)
+  const data           = ref<DesignationData | null>(null)
+  const selectedUmpire = ref<Umpire | null>(null)
+  const selectedZone   = ref<string | null>(null)   // null = "Todas"
+  const status         = ref<LoadStatus>('idle')
+  const errorMessage   = ref<string | null>(null)
 
-  // ── Getters ───────────────────────────────────────────────────────────────
+  // ── Getters: catálogos ────────────────────────────────────────────────────
 
-  /** Lista de árbitros para el combobox — vacía si no hay datos */
-  const umpires = computed<Umpire[]>(() => data.value?.umpires ?? [])
+  /** Lista de árbitros para el combobox — vacía si no hay datos. */
+  const umpires = computed<Umpire[]>(() => Object.values(data.value?.umpires ?? {}))
 
   /**
-   * Zonas únicas en orden de primera aparición.
-   * Se usa para construir los botones de filtro de zona.
+   * Resolver un árbitro por ID. Mismo patrón que team() en championship.store.
+   * Robusto a IDs numéricos o string.
    */
-  const availableZones = computed<string[]>(() => {
-    const seen = new Set<string>()
-    const result: string[] = []
-    for (const day of data.value?.days ?? []) {
-      for (const match of day.matches) {
-        const z = match.zone ?? '—'
-        if (!seen.has(z)) {
-          seen.add(z)
-          result.push(z)
-        }
-      }
-    }
-    return result
-  })
+  function umpire(id: number | string | null | undefined): Umpire | undefined {
+    if (id == null) return undefined
+    return data.value?.umpires[String(Number(id))]
+  }
 
-  /** true si hay más de una zona — decide si se muestra el filtro */
+  /**
+   * Resolver un equipo por ID.
+   * Mismo patrón que team() en championship.store.
+   */
+  function team(id: number | string | null | undefined): Team | undefined {
+    if (id == null) return undefined
+    return data.value?.teams[String(Number(id))]
+  }
+
+  // ── Getters: filtros ──────────────────────────────────────────────────────
+
+  /**
+   * Zonas disponibles en orden de exportación.
+   * El comando Laravel ya las incluye en el JSON, no hace falta recorrer partidos.
+   */
+  const availableZones = computed<string[]>(() => data.value?.zones ?? [])
+
+  /** true si hay más de una zona — decide si se muestra el filtro. */
   const hasMultipleZones = computed(() => availableZones.value.length > 1)
 
   /**
    * Días filtrados por zona y árbitro seleccionados.
-   * Cada día solo incluye los partidos que pasan ambos filtros.
-   * Los días vacíos (sin partidos tras filtrar) se omiten.
+   * El filtro de árbitro ahora compara IDs (O(1)) en lugar de strings.
+   * Los días vacíos tras filtrar se omiten.
    */
   const filteredDays = computed<DesignationDay[]>(() => {
     if (!data.value) return []
 
-    const umpireName = selectedUmpire.value?.name.toLowerCase() ?? null
-    const zone       = selectedZone.value
+    const uid  = selectedUmpire.value?.id ?? null
+    const zone = selectedZone.value
 
     return data.value.days
       .map((day) => {
-        const matches = day.matches.filter((m) => {
-          const zoneOk = zone === null || (m.zone ?? '—') === zone
-          const umpireOk =
-            umpireName === null ||
-            m.umpire_1?.toLowerCase().includes(umpireName) ||
-            m.umpire_2?.toLowerCase().includes(umpireName)
+        const matches = day.matches.filter((m: DesignationMatch) => {
+          const zoneOk   = zone === null || (m.zone ?? '—') === zone
+          const umpireOk = uid === null || m.umpire_1_id === uid || m.umpire_2_id === uid
           return zoneOk && umpireOk
         })
         return { ...day, matches }
@@ -65,7 +69,9 @@ export const useDesignationsStore = defineStore('designations', () => {
       .filter((day) => day.matches.length > 0)
   })
 
-  /** Período del encabezado en formato legible */
+  // ── Getters: metadatos ────────────────────────────────────────────────────
+
+  /** Período del encabezado en formato legible. */
   const periodLabel = computed<string>(() => {
     if (!data.value?.from) return ''
     const from = _formatDateLong(data.value.from)
@@ -78,11 +84,7 @@ export const useDesignationsStore = defineStore('designations', () => {
     if (!raw) return null
     const dt = new Date(raw)
     return (
-      dt.toLocaleDateString('es-AR', {
-        day: '2-digit',
-        month: '2-digit',
-        year: 'numeric',
-      }) +
+      dt.toLocaleDateString('es-AR', { day: '2-digit', month: '2-digit', year: 'numeric' }) +
       ' ' +
       dt.toLocaleTimeString('es-AR', { hour: '2-digit', minute: '2-digit' })
     )
@@ -90,13 +92,26 @@ export const useDesignationsStore = defineStore('designations', () => {
 
   // ── Actions ───────────────────────────────────────────────────────────────
 
-  /** Carga las designaciones. Guard: no recarga si ya hay datos. */
   async function load(): Promise<void> {
     if (data.value !== null) return
     status.value = 'loading'
     errorMessage.value = null
     try {
-      data.value = await fetchDesignations()
+      const payload = await fetchDesignations()
+
+      // Normalizar claves de los catálogos a string para lookup consistente.
+      // Mismo patrón que championship.store normaliza `teams`.
+      const normalizedUmpires: Record<string, Umpire> = {}
+      for (const [k, v] of Object.entries(payload.umpires)) {
+        normalizedUmpires[String(Number(k))] = { ...v, id: Number(v.id) }
+      }
+
+      const normalizedTeams: Record<string, Team> = {}
+      for (const [k, v] of Object.entries(payload.teams)) {
+        normalizedTeams[String(Number(k))] = { ...v, id: Number(v.id) }
+      }
+
+      data.value = { ...payload, umpires: normalizedUmpires, teams: normalizedTeams }
       status.value = 'success'
     } catch {
       status.value = 'error'
@@ -104,8 +119,8 @@ export const useDesignationsStore = defineStore('designations', () => {
     }
   }
 
-  function selectUmpire(umpire: Umpire | null): void {
-    selectedUmpire.value = umpire
+  function selectUmpire(u: Umpire | null): void {
+    selectedUmpire.value = u
   }
 
   function selectZone(zone: string | null): void {
@@ -114,8 +129,9 @@ export const useDesignationsStore = defineStore('designations', () => {
 
   // ── Helpers privados ──────────────────────────────────────────────────────
 
-  const DAYS_ES   = ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado']
-  const MONTHS_ES = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre']
+  const DAYS_ES   = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado']
+  const MONTHS_ES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
+                     'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
 
   function _formatDateLong(dateStr: string): string {
     const [y, mo, d] = dateStr.split('-').map(Number)
@@ -131,11 +147,15 @@ export const useDesignationsStore = defineStore('designations', () => {
     selectedZone,
     status,
     errorMessage,
-    // Getters
+    // Getters: catálogos
     umpires,
+    umpire,
+    team,
+    // Getters: filtros
     availableZones,
     hasMultipleZones,
     filteredDays,
+    // Getters: metadatos
     periodLabel,
     generatedAt,
     // Actions

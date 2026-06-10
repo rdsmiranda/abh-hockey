@@ -6,7 +6,7 @@
         "start_date": "2026-03-07",
         "end_date": null
     },
-    "generated_at": "2026-06-08T14:58:41-03:00",
+    "generated_at": "2026-06-09T19:16:30-03:00",
     "fixture_file": "apertura-2026-fixture.json",
     "teams": {
         "1": {
@@ -2426,7 +2426,7 @@
                                             {
                                                 "game": 1,
                                                 "date": "2026-06-13",
-                                                "time": "16:00",
+                                                "time": "10:00",
                                                 "home_team_id": 1,
                                                 "away_team_id": 8,
                                                 "pitch": "Argentino",
@@ -2528,7 +2528,7 @@
                                             {
                                                 "game": 3,
                                                 "date": "2026-06-13",
-                                                "time": "16:00",
+                                                "time": "10:00",
                                                 "home_team_id": 19,
                                                 "away_team_id": 7,
                                                 "pitch": "S. Sportiva",
@@ -3347,7 +3347,7 @@
                                                 "time": "16:00",
                                                 "home_team_id": 7,
                                                 "away_team_id": 25,
-                                                "pitch": null,
+                                                "pitch": "Independiente",
                                                 "played": false,
                                                 "goals_home": null,
                                                 "goals_away": null,
@@ -6679,6 +6679,43 @@
                                                 "goals_against": 3,
                                                 "goal_difference": -1,
                                                 "points": 2
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "promotion",
+                                "label": "Promoción",
+                                "order": 10,
+                                "brackets": [
+                                    {
+                                        "id": 121,
+                                        "format": "single_elimination",
+                                        "matchup_number": 1,
+                                        "series_wins_required": 1,
+                                        "team_1_id": 16,
+                                        "team_1_seed": 1,
+                                        "team_2_id": 14,
+                                        "team_2_seed": 2,
+                                        "team_1_wins": 0,
+                                        "team_2_wins": 0,
+                                        "winner_id": null,
+                                        "is_completed": false,
+                                        "matches": [
+                                            {
+                                                "game": null,
+                                                "date": "2026-06-13",
+                                                "time": "16:00",
+                                                "home_team_id": 16,
+                                                "away_team_id": 14,
+                                                "pitch": "Puerto Belgrano",
+                                                "played": false,
+                                                "goals_home": null,
+                                                "goals_away": null,
+                                                "has_shootouts": false,
+                                                "shootouts_home": null,
+                                                "shootouts_away": null
                                             }
                                         ]
                                     }
@@ -11695,8 +11732,8 @@
                                         "matches": [
                                             {
                                                 "game": 1,
-                                                "date": "2026-06-05",
-                                                "time": "19:30",
+                                                "date": "2026-06-13",
+                                                "time": "19:00",
                                                 "home_team_id": 29,
                                                 "away_team_id": 21,
                                                 "pitch": "Villa Mitre",

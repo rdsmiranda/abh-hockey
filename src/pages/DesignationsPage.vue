@@ -23,10 +23,8 @@ function onUmpireChange(opt: ComboboxOption | null) {
   store.selectUmpire(found)
 }
 
-// Nombre en minúsculas para pasar a los MatchCard
-const highlightName = computed<string | null>(() =>
-  store.selectedUmpire?.name.toLowerCase() ?? null,
-)
+// ID del árbitro seleccionado para pasar a DaySection → DesignationCard
+const highlightId = computed<number | null>(() => store.selectedUmpire?.id ?? null)
 
 // Mensaje cuando no hay resultados
 const emptyMessage = computed<string>(() => {
@@ -95,7 +93,7 @@ const selectedUmpireOption = computed<ComboboxOption | null>(() =>
         v-for="day in store.filteredDays"
         :key="day.date"
         :day="day"
-        :highlight-name="highlightName"
+        :highlight-id="highlightId"
       />
     </template>
   </div>

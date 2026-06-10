@@ -49,6 +49,7 @@ export interface StandingRow {
   recent_form: RecentForm[]
 }
 
+
 // ── Playoffs ──────────────────────────────────────────────────────────────────
 export type BracketFormat =
   | 'single_elimination'
@@ -101,7 +102,7 @@ export interface PlayoffBracket {
   team_1_wins: number | null
   team_2_wins: number | null
   matches: PlayoffMatch[]
-  group_standings?: GroupStandingRow[]
+  group_standings?: StandingRow[]
 }
 
 export interface PlayoffStage {

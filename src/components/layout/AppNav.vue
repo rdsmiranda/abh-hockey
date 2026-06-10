@@ -4,7 +4,7 @@
 </script>
 
 <template>
-  <nav class="bg-white border-b border-[--abh-border] px-6 sticky top-0 z-40">
+  <nav class="bg-white border-b border-(--abh-border) px-6 sticky top-0 z-40">
     <div class="max-w-[1100px] mx-auto flex">
       <RouterLink
         to="/posiciones"

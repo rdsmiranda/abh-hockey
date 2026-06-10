@@ -5,7 +5,7 @@ function onLogoError(e: Event) {
 </script>
 
 <template>
-  <header class="bg-gradient-to-br from-[--abh-dark] to-[#243352] border-b-[3px] border-[--abh-gold] px-6">
+  <header class="bg-gradient-to-br from-(--abh-dark) to-[#243352] border-b-[3px] border-(--abh-gold) px-6">
     <div class="max-w-[1100px] mx-auto flex items-center gap-4 py-3">
       <img
         src="/assets/logo-abh.png"
@@ -14,10 +14,10 @@ function onLogoError(e: Event) {
         @error="onLogoError"
       />
       <div>
-        <h1 class="font-[--font-barlow-condensed] text-[1.4rem] font-black text-white tracking-[0.03em] uppercase leading-tight">
+        <h1 class="font-(--font-barlow-condensed) text-[1.4rem] font-black text-white tracking-[0.03em] uppercase leading-tight">
           Asociación Bahiense de Hockey
         </h1>
-        <p class="text-[0.72rem] text-[--abh-gold] font-semibold tracking-[0.12em] uppercase mt-px">
+        <p class="text-[0.72rem] text-(--abh-gold) font-semibold tracking-[0.12em] uppercase mt-px">
           Comisión de Árbitros
         </p>
       </div>
