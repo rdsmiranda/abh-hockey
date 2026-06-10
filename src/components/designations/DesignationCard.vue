@@ -78,8 +78,6 @@ function zoneStyle(zone: string): { background: string; color: string } {
         <span v-if="match.round" class="badge-round">{{ match.round }}</span>
       </div>
       <div class="card-top__right">
-        <span v-if="feeFormatted" class="badge-fee">{{ feeFormatted }}</span>
-        <span v-else class="badge-fee badge-fee--muted">Sin importe</span>
         <div v-if="match.date" class="card-date">
           <span class="card-date__label">{{ formatDate(match.date) }}</span>
         </div>
@@ -100,7 +98,7 @@ function zoneStyle(zone: string): { background: string; color: string } {
         <div v-else class="mc-logo-ph">{{ initials(homeTeam?.short_name ?? homeTeam?.name) }}</div>
         <div class="mc-info">
           <div class="mc-name">{{ homeTeam?.name ?? 'A confirmar' }}</div>
-          <div v-if="homeTeam?.short_name" class="mc-short">{{ homeTeam.short_name }}</div>
+          <div class="mc-short">{{ homeTeam?.short_name ?? initials(homeTeam?.name) }}</div>
         </div>
       </div>
 
@@ -128,33 +126,40 @@ function zoneStyle(zone: string): { background: string; color: string } {
         <div v-else class="mc-logo-ph">{{ initials(awayTeam?.short_name ?? awayTeam?.name) }}</div>
         <div class="mc-info mc-info--right">
           <div class="mc-name">{{ awayTeam?.name ?? 'A confirmar' }}</div>
-          <div v-if="awayTeam?.short_name" class="mc-short">{{ awayTeam.short_name }}</div>
+          <div class="mc-short">{{ awayTeam?.short_name ?? initials(awayTeam?.name) }}</div>
         </div>
       </div>
     </div>
 
     <!-- ── Árbitros ──────────────────────────────────────── -->
     <div class="card-umpires">
-      <div :class="['umpire-slot', isU1Hi && 'umpire-slot--hi']">
-        <svg class="ump-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-          <circle cx="8" cy="5" r="2.8"/>
-          <path d="M2 14c0-2.8 2.5-4.5 6-4.5s6 1.7 6 4.5"/>
-        </svg>
-        <span :class="['ump-name', !umpire1 && 'ump-name--muted']">
-          {{ umpire1?.name ?? 'A designar' }}
-        </span>
+      <div class="fee-slot">
+        <span v-if="feeFormatted" class="badge-fee">{{ feeFormatted }}</span>
+        <span v-else class="badge-fee badge-fee--muted">Sin importe</span>
       </div>
 
-      <span class="umpires-sep" aria-hidden="true" />
+      <div class="umpires-group">
+        <div :class="['umpire-slot', isU1Hi && 'umpire-slot--hi']">
+          <svg class="ump-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <circle cx="8" cy="5" r="2.8"/>
+            <path d="M2 14c0-2.8 2.5-4.5 6-4.5s6 1.7 6 4.5"/>
+          </svg>
+          <span :class="['ump-name', !umpire1 && 'ump-name--muted']">
+            {{ umpire1?.name ?? 'A designar' }}
+          </span>
+        </div>
 
-      <div :class="['umpire-slot', isU2Hi && 'umpire-slot--hi']">
-        <svg class="ump-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-          <circle cx="8" cy="5" r="2.8"/>
-          <path d="M2 14c0-2.8 2.5-4.5 6-4.5s6 1.7 6 4.5"/>
-        </svg>
-        <span :class="['ump-name', !umpire2 && 'ump-name--muted']">
-          {{ umpire2?.name ?? 'A designar' }}
-        </span>
+        <span class="umpires-sep" aria-hidden="true" />
+
+        <div :class="['umpire-slot', isU2Hi && 'umpire-slot--hi']">
+          <svg class="ump-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <circle cx="8" cy="5" r="2.8"/>
+            <path d="M2 14c0-2.8 2.5-4.5 6-4.5s6 1.7 6 4.5"/>
+          </svg>
+          <span :class="['ump-name', !umpire2 && 'ump-name--muted']">
+            {{ umpire2?.name ?? 'A designar' }}
+          </span>
+        </div>
       </div>
     </div>
   </article>
@@ -223,20 +228,6 @@ function zoneStyle(zone: string): { background: string; color: string } {
 .badge-round {
   font-size: .72rem;
   font-weight: 500;
-  color: #94a3b8;
-}
-.badge-fee {
-  font-family: var(--font-barlow-condensed);
-  font-size: .88rem;
-  font-weight: 800;
-  color: var(--abh-dark);
-  white-space: nowrap;
-}
-.badge-fee--muted {
-  font-family: var(--font-barlow);
-  font-size: .72rem;
-  font-weight: 400;
-  font-style: italic;
   color: #94a3b8;
 }
 
@@ -308,6 +299,7 @@ function zoneStyle(zone: string): { background: string; color: string } {
   font-size: .7rem;
   color: #94a3b8;
   margin-top: 1px;
+  display: none;
 }
 
 /* Centro horario + cancha */
@@ -342,14 +334,95 @@ function zoneStyle(zone: string): { background: string; color: string } {
   color: #94a3b8;
 }
 
+@media (max-width: 500px) {
+  /* Teams: logo encima, short name debajo */
+  .teams-block {
+    padding: .9rem .75rem;
+    gap: .25rem;
+  }
+  .team-side {
+    flex-direction: column;
+    align-items: center;
+    gap: .35rem;
+    text-align: center;
+  }
+  .team-side--away {
+    flex-direction: column;
+    text-align: center;
+  }
+  .mc-logo { width: 40px; height: 40px; }
+  .mc-logo-ph { width: 40px; height: 40px; }
+  .mc-info { min-width: 0; }
+  .mc-info--right { text-align: center; }
+  .mc-name { display: none; }
+  .mc-short {
+    display: block;
+    font-size: .72rem;
+    font-weight: 600;
+    color: var(--abh-dark);
+    margin-top: 0;
+  }
+
+  /* Top bar: sin cambios, una sola fila */
+  .card-top {
+    padding: .4rem .75rem;
+  }
+
+  /* Footer: árbitros centrados, importe en segunda fila centrado */
+  .card-umpires {
+    justify-content: center;
+    row-gap: .35rem;
+  }
+  .fee-slot {
+    flex-basis: 100%;
+    justify-content: center;
+    order: 2;
+    padding-top: .25rem;
+    border-top: 1px solid var(--abh-border);
+  }
+  .umpires-group {
+    order: 1;
+    flex-basis: 100%;
+    justify-content: center;
+  }
+}
+
 /* ── Árbitros ───────────────────────────────────────────── */
 .card-umpires {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding: .45rem .85rem;
   border-top: 1px solid var(--abh-border);
   background: var(--abh-light);
+  gap: .5rem;
+}
+.fee-slot {
+  display: flex;
+  align-items: center;
+  order: 2;
+}
+.umpires-group {
+  order: 1;
+}
+.badge-fee {
+  font-family: var(--font-barlow-condensed);
+  font-size: .88rem;
+  font-weight: 800;
+  color: var(--abh-dark);
+  white-space: nowrap;
+}
+.badge-fee--muted {
+  font-family: var(--font-barlow);
+  font-size: .72rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #94a3b8;
+}
+.umpires-group {
+  display: flex;
+  align-items: center;
   gap: .5rem;
 }
 .umpire-slot {

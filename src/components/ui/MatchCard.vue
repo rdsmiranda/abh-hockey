@@ -143,7 +143,26 @@ function hideOnError(e: Event) {
 
 @media (max-width: 500px) {
   .fc-name  { display: none; }
-  .fc-short { display: block; }
+  .fc-short {
+    display: block;
+    font-size: .72rem;
+    font-weight: 600;
+    color: var(--abh-dark);
+    text-align: center;
+  }
+  .fc-team {
+    flex-direction: column;
+    align-items: center;
+    gap: .3rem;
+  }
+  .fc-team--away {
+    flex-direction: column;
+  }
+  .fc-team--away .fc-logo,
+  .fc-team--away .fc-logo-ph { order: 1; }
+  .fc-team--away .fc-short   { order: 2; }
+  .fc-logo    { width: 38px; height: 38px; }
+  .fc-logo-ph { width: 38px; height: 38px; }
   .fixture-card {
     grid-template-columns: 1fr auto 1fr;
     grid-template-rows: auto auto;
