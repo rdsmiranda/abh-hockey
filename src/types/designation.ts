@@ -56,7 +56,7 @@ export interface DesignationMatch {
   id: number
   /** Hora del partido, ej: "10:00" */
   time?: string
-  date?: string
+  date: string
   /** Nombre de la categoría, ej: "Primera", "Sub16" */
   category?: string
   /** Nombre de la jornada/ronda, ej: "Final", "Triangular" */
