@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-06-10T20:54:22-03:00",
+    "generated_at": "2026-06-10T21:37:04-03:00",
     "from": "2026-06-12",
     "to": "2026-06-14",
     "umpires": {
@@ -675,7 +675,7 @@
                     "away_team_id": 42,
                     "pitch": "Universitario (Agua)",
                     "umpire_1_id": 91,
-                    "umpire_2_id": null,
+                    "umpire_2_id": 114,
                     "fee": null,
                     "supervisor": null
                 },
