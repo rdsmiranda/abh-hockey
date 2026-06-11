@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-06-10T16:32:41-03:00",
+    "generated_at": "2026-06-10T20:54:22-03:00",
     "from": "2026-06-12",
     "to": "2026-06-14",
     "umpires": {
@@ -689,7 +689,7 @@
                     "home_team_id": 18,
                     "away_team_id": 12,
                     "pitch": "Puerto Belgrano",
-                    "umpire_1_id": null,
+                    "umpire_1_id": 96,
                     "umpire_2_id": null,
                     "fee": null,
                     "supervisor": null
