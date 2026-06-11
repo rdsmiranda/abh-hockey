@@ -21,6 +21,12 @@ const opponent = computed(() =>
   props.match ? store.team(props.match.opponent_id) : undefined,
 )
 
+function formatDate(dateStr: string): string {
+  const [y, mo, d] = dateStr.split('-').map(Number)
+  const dt = new Date(y!, mo! - 1, d)
+  return dt.toLocaleDateString('es-AR', { weekday: 'short', day: '2-digit', month: 'short' })
+}
+
 function hideOnError(e: Event) {
   (e.target as HTMLImageElement).style.display = 'none'
 }
@@ -67,7 +73,7 @@ const style = computed<Partial<Record<string, string>>>(() => {
         <div class="hc-body">
           <div class="hc-row">
             <span class="hc-label">Fecha</span>
-            <span class="hc-value">{{ match.date }}</span>
+            <span class="hc-value">{{ formatDate(match.date) }}</span>
           </div>
           <div class="hc-row">
             <span class="hc-label">Resultado</span>

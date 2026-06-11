@@ -62,7 +62,13 @@ function hideOnError(e: Event) {
       </template>
       <template v-else>
         <div class="fc-time">{{ match.time ?? '—' }}</div>
-        <div v-if="match.pitch" class="fc-pitch">{{ match.pitch }}</div>
+        <div v-if="match.pitch" class="fc-pitch">
+            <svg class="fc-pitch-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M8 1.5C5.515 1.5 3.5 3.515 3.5 6c0 3.5 4.5 8.5 4.5 8.5s4.5-5 4.5-8.5c0-2.485-2.015-4.5-4.5-4.5z"/>
+            <circle cx="8" cy="6" r="1.5"/>
+          </svg>
+            {{ match.pitch }}
+        </div>
       </template>
     </div>
 
@@ -127,7 +133,22 @@ function hideOnError(e: Event) {
 }
 .fc-pen   { font-size: .65rem; color: #94a3b8; }
 .fc-time  { font-family: var(--font-barlow-condensed); font-size: 1rem; font-weight: 700; color: var(--abh-dark); }
-.fc-pitch { font-size: .65rem; color: #94a3b8; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 80px; }
+
+.fc-pitch {
+  display: flex;
+  align-items: center;
+  gap: .2rem;
+  font-size: .68rem;
+  color: #64748b;
+  white-space: nowrap;
+}
+
+.fc-pitch-icon {
+  width: 11px;
+  height: 11px;
+  flex-shrink: 0;
+  color: #94a3b8;
+}
 
 .fc-meta {
   display: flex; flex-direction: column; align-items: flex-end;
