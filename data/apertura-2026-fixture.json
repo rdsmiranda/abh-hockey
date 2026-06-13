@@ -1,6 +1,6 @@
 {
     "championship_id": 1,
-    "generated_at": "2026-06-09T19:16:43-03:00",
+    "generated_at": "2026-06-13T12:04:28-03:00",
     "rounds": [
         {
             "id": 35,
@@ -5902,7 +5902,7 @@
                     "zone_id": 1,
                     "category_id": 3,
                     "date": "2026-06-13",
-                    "time": "10:00",
+                    "time": "14:00",
                     "home_team_id": 1,
                     "away_team_id": 8,
                     "pitch": "Argentino",
@@ -5925,7 +5925,7 @@
                     "zone_id": 5,
                     "category_id": 5,
                     "date": "2026-06-13",
-                    "time": "19:00",
+                    "time": "18:00",
                     "home_team_id": 29,
                     "away_team_id": 21,
                     "pitch": "Villa Mitre",
@@ -6527,9 +6527,9 @@
                     "home_team_id": 19,
                     "away_team_id": 7,
                     "pitch": "S. Sportiva",
-                    "played": false,
-                    "goals_home": null,
-                    "goals_away": null,
+                    "played": true,
+                    "goals_home": 1,
+                    "goals_away": 0,
                     "has_shootouts": false,
                     "shootouts_home": null,
                     "shootouts_away": null
