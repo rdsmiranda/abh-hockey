@@ -6,7 +6,7 @@
         "start_date": "2026-03-07",
         "end_date": null
     },
-    "generated_at": "2026-06-11T20:42:42-03:00",
+    "generated_at": "2026-06-13T12:04:22-03:00",
     "fixture_file": "apertura-2026-fixture.json",
     "teams": {
         "1": {
@@ -1741,8 +1741,8 @@
                                         "team_2_seed": 6,
                                         "team_1_wins": 0,
                                         "team_2_wins": 0,
-                                        "winner_id": null,
-                                        "is_completed": false,
+                                        "winner_id": 19,
+                                        "is_completed": true,
                                         "matches": [
                                             {
                                                 "game": 1,
@@ -1779,9 +1779,9 @@
                                                 "home_team_id": 19,
                                                 "away_team_id": 7,
                                                 "pitch": "S. Sportiva",
-                                                "played": false,
-                                                "goals_home": null,
-                                                "goals_away": null,
+                                                "played": true,
+                                                "goals_home": 1,
+                                                "goals_away": 0,
                                                 "has_shootouts": false,
                                                 "shootouts_home": null,
                                                 "shootouts_away": null
@@ -1795,25 +1795,25 @@
                                             {
                                                 "position": 1,
                                                 "team_id": 19,
-                                                "played": 1,
-                                                "won": 1,
+                                                "played": 2,
+                                                "won": 2,
                                                 "drawn": 0,
                                                 "lost": 0,
-                                                "goals_for": 4,
+                                                "goals_for": 5,
                                                 "goals_against": 0,
-                                                "goal_difference": 4,
-                                                "points": 3
+                                                "goal_difference": 5,
+                                                "points": 6
                                             },
                                             {
                                                 "position": 2,
                                                 "team_id": 7,
-                                                "played": 1,
+                                                "played": 2,
                                                 "won": 1,
                                                 "drawn": 0,
-                                                "lost": 0,
+                                                "lost": 1,
                                                 "goals_for": 3,
-                                                "goals_against": 1,
-                                                "goal_difference": 2,
+                                                "goals_against": 2,
+                                                "goal_difference": 1,
                                                 "points": 3
                                             },
                                             {
