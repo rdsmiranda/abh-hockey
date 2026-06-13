@@ -1,6 +1,6 @@
 {
     "championship_id": 3,
-    "generated_at": "2026-06-10T16:39:06-03:00",
+    "generated_at": "2026-06-12T21:53:05-03:00",
     "rounds": [
         {
             "id": 82,
@@ -16,9 +16,9 @@
                     "home_team_id": 28,
                     "away_team_id": 15,
                     "pitch": "Universitario (Agua)",
-                    "played": false,
-                    "goals_home": null,
-                    "goals_away": null,
+                    "played": true,
+                    "goals_home": 9,
+                    "goals_away": 0,
                     "has_shootouts": false,
                     "shootouts_home": null,
                     "shootouts_away": null

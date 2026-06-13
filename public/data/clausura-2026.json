@@ -6,7 +6,7 @@
         "start_date": "2026-06-13",
         "end_date": "2026-12-06"
     },
-    "generated_at": "2026-06-10T16:36:15-03:00",
+    "generated_at": "2026-06-12T21:52:57-03:00",
     "fixture_file": "clausura-2026-fixture.json",
     "teams": {
         "6": {
@@ -54,18 +54,30 @@
                 {
                     "id": 4,
                     "name": "Primera",
+                    "order": 5,
                     "standings": [
                         {
                             "position": 1,
-                            "played": 0,
-                            "won": 0,
+                            "played": 1,
+                            "won": 1,
                             "drawn": 0,
                             "lost": 0,
-                            "goals_for": 0,
+                            "goals_for": 9,
                             "goals_against": 0,
-                            "goal_difference": 0,
-                            "points": 0,
-                            "recent_form": [],
+                            "goal_difference": 9,
+                            "points": 3,
+                            "recent_form": [
+                                {
+                                    "result": "W",
+                                    "score": "9-0",
+                                    "was_home": true,
+                                    "date": "2026-06-12",
+                                    "match_id": 468,
+                                    "bonus_point": false,
+                                    "shootouts": null,
+                                    "opponent_id": 15
+                                }
+                            ],
                             "team_id": 28
                         },
                         {
@@ -79,7 +91,7 @@
                             "goal_difference": 0,
                             "points": 0,
                             "recent_form": [],
-                            "team_id": 15
+                            "team_id": 6
                         },
                         {
                             "position": 3,
@@ -92,7 +104,7 @@
                             "goal_difference": 0,
                             "points": 0,
                             "recent_form": [],
-                            "team_id": 18
+                            "team_id": 12
                         },
                         {
                             "position": 4,
@@ -105,20 +117,31 @@
                             "goal_difference": 0,
                             "points": 0,
                             "recent_form": [],
-                            "team_id": 12
+                            "team_id": 18
                         },
                         {
                             "position": 5,
-                            "played": 0,
+                            "played": 1,
                             "won": 0,
                             "drawn": 0,
-                            "lost": 0,
+                            "lost": 1,
                             "goals_for": 0,
-                            "goals_against": 0,
-                            "goal_difference": 0,
+                            "goals_against": 9,
+                            "goal_difference": -9,
                             "points": 0,
-                            "recent_form": [],
-                            "team_id": 6
+                            "recent_form": [
+                                {
+                                    "result": "L",
+                                    "score": "0-9",
+                                    "was_home": false,
+                                    "date": "2026-06-12",
+                                    "match_id": 468,
+                                    "bonus_point": false,
+                                    "shootouts": null,
+                                    "opponent_id": 28
+                                }
+                            ],
+                            "team_id": 15
                         }
                     ],
                     "playoffs": null,
@@ -127,6 +150,7 @@
                 {
                     "id": 7,
                     "name": "Menores",
+                    "order": 4,
                     "standings": [
                         {
                             "position": 1,
