@@ -6,7 +6,7 @@
         "start_date": "2026-03-07",
         "end_date": null
     },
-    "generated_at": "2026-06-13T12:04:22-03:00",
+    "generated_at": "2026-06-13T20:08:32-03:00",
     "fixture_file": "apertura-2026-fixture.json",
     "teams": {
         "1": {
@@ -985,12 +985,12 @@
                                                 "home_team_id": 7,
                                                 "away_team_id": 25,
                                                 "pitch": "Independiente",
-                                                "played": false,
-                                                "goals_home": null,
-                                                "goals_away": null,
-                                                "has_shootouts": false,
-                                                "shootouts_home": null,
-                                                "shootouts_away": null
+                                                "played": true,
+                                                "goals_home": 1,
+                                                "goals_away": 1,
+                                                "has_shootouts": true,
+                                                "shootouts_home": 4,
+                                                "shootouts_away": 2
                                             }
                                         ]
                                     }
@@ -1666,9 +1666,9 @@
                                         "team_2_id": 8,
                                         "team_2_seed": 2,
                                         "team_1_wins": 0,
-                                        "team_2_wins": 0,
-                                        "winner_id": null,
-                                        "is_completed": false,
+                                        "team_2_wins": 1,
+                                        "winner_id": 8,
+                                        "is_completed": true,
                                         "matches": [
                                             {
                                                 "game": 1,
@@ -1677,9 +1677,9 @@
                                                 "home_team_id": 1,
                                                 "away_team_id": 8,
                                                 "pitch": "Argentino",
-                                                "played": false,
-                                                "goals_home": null,
-                                                "goals_away": null,
+                                                "played": true,
+                                                "goals_home": 1,
+                                                "goals_away": 4,
                                                 "has_shootouts": false,
                                                 "shootouts_home": null,
                                                 "shootouts_away": null
@@ -1717,6 +1717,43 @@
                                                 "played": true,
                                                 "goals_home": 2,
                                                 "goals_away": 0,
+                                                "has_shootouts": false,
+                                                "shootouts_home": null,
+                                                "shootouts_away": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "extra_final",
+                                "label": "Final extra",
+                                "order": 6,
+                                "brackets": [
+                                    {
+                                        "id": 122,
+                                        "format": "single_elimination",
+                                        "matchup_number": 1,
+                                        "series_wins_required": 1,
+                                        "team_1_id": 1,
+                                        "team_1_seed": 1,
+                                        "team_2_id": 8,
+                                        "team_2_seed": 2,
+                                        "team_1_wins": 0,
+                                        "team_2_wins": 0,
+                                        "winner_id": null,
+                                        "is_completed": false,
+                                        "matches": [
+                                            {
+                                                "game": 1,
+                                                "date": "2026-06-14",
+                                                "time": "16:00",
+                                                "home_team_id": 1,
+                                                "away_team_id": 8,
+                                                "pitch": "ABH",
+                                                "played": false,
+                                                "goals_home": null,
+                                                "goals_away": null,
                                                 "has_shootouts": false,
                                                 "shootouts_home": null,
                                                 "shootouts_away": null
@@ -4256,12 +4293,12 @@
                                                 "home_team_id": 16,
                                                 "away_team_id": 14,
                                                 "pitch": "Puerto Belgrano",
-                                                "played": false,
-                                                "goals_home": null,
-                                                "goals_away": null,
-                                                "has_shootouts": false,
-                                                "shootouts_home": null,
-                                                "shootouts_away": null
+                                                "played": true,
+                                                "goals_home": 1,
+                                                "goals_away": 1,
+                                                "has_shootouts": true,
+                                                "shootouts_home": 3,
+                                                "shootouts_away": 4
                                             }
                                         ]
                                     }
@@ -11752,9 +11789,9 @@
                                         "team_2_id": 21,
                                         "team_2_seed": 4,
                                         "team_1_wins": 0,
-                                        "team_2_wins": 0,
-                                        "winner_id": null,
-                                        "is_completed": false,
+                                        "team_2_wins": 1,
+                                        "winner_id": 21,
+                                        "is_completed": true,
                                         "matches": [
                                             {
                                                 "game": 1,
@@ -11763,9 +11800,9 @@
                                                 "home_team_id": 29,
                                                 "away_team_id": 21,
                                                 "pitch": "Villa Mitre",
-                                                "played": false,
-                                                "goals_home": null,
-                                                "goals_away": null,
+                                                "played": true,
+                                                "goals_home": 0,
+                                                "goals_away": 1,
                                                 "has_shootouts": false,
                                                 "shootouts_home": null,
                                                 "shootouts_away": null
@@ -11827,7 +11864,74 @@
                             }
                         ]
                     },
-                    "final_standings": null
+                    "final_standings": [
+                        {
+                            "position": 1,
+                            "team_id": 8,
+                            "note": null,
+                            "team_obj": {
+                                "id": 8,
+                                "name": "Monte Hermoso",
+                                "short_name": "CAMH",
+                                "logo": "assets\/logos\/camh.png"
+                            }
+                        },
+                        {
+                            "position": 2,
+                            "team_id": 27,
+                            "note": null,
+                            "team_obj": {
+                                "id": 27,
+                                "name": "Universitario",
+                                "short_name": "UNI",
+                                "logo": "assets\/logos\/uni.png"
+                            }
+                        },
+                        {
+                            "position": 3,
+                            "team_id": 21,
+                            "note": null,
+                            "team_obj": {
+                                "id": 21,
+                                "name": "S. Sportiva",
+                                "short_name": "SS",
+                                "logo": "assets\/logos\/ss.png"
+                            }
+                        },
+                        {
+                            "position": 4,
+                            "team_id": 29,
+                            "note": null,
+                            "team_obj": {
+                                "id": 29,
+                                "name": "Villa Mitre",
+                                "short_name": "VM",
+                                "logo": "assets\/logos\/vm.png"
+                            }
+                        },
+                        {
+                            "position": 5,
+                            "team_id": 13,
+                            "note": null,
+                            "team_obj": {
+                                "id": 13,
+                                "name": "Pacífico",
+                                "short_name": "CAP",
+                                "logo": "assets\/logos\/cap.png"
+                            }
+                        },
+                        {
+                            "position": 6,
+                            "team_id": 14,
+                            "note": null,
+                            "team_obj": {
+                                "id": 14,
+                                "name": "Palihue",
+                                "short_name": "PAL",
+                                "logo": "assets\/logos\/pal.png"
+                            }
+                        }
+                    ]
                 }
             ]
         },
