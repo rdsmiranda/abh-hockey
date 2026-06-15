@@ -6,7 +6,7 @@
         "start_date": "2026-03-07",
         "end_date": null
     },
-    "generated_at": "2026-06-14T12:38:47-03:00",
+    "generated_at": "2026-06-14T22:45:04-03:00",
     "fixture_file": "apertura-2026-fixture.json",
     "teams": {
         "1": {
@@ -1740,9 +1740,9 @@
                                         "team_2_id": 8,
                                         "team_2_seed": 2,
                                         "team_1_wins": 0,
-                                        "team_2_wins": 0,
-                                        "winner_id": null,
-                                        "is_completed": false,
+                                        "team_2_wins": 1,
+                                        "winner_id": 8,
+                                        "is_completed": true,
                                         "matches": [
                                             {
                                                 "game": 1,
@@ -1751,9 +1751,9 @@
                                                 "home_team_id": 1,
                                                 "away_team_id": 8,
                                                 "pitch": "ABH",
-                                                "played": false,
-                                                "goals_home": null,
-                                                "goals_away": null,
+                                                "played": true,
+                                                "goals_home": 1,
+                                                "goals_away": 3,
                                                 "has_shootouts": false,
                                                 "shootouts_home": null,
                                                 "shootouts_away": null
@@ -1871,7 +1871,85 @@
                             }
                         ]
                     },
-                    "final_standings": null
+                    "final_standings": [
+                        {
+                            "position": 1,
+                            "team_id": 8,
+                            "note": null,
+                            "team_obj": {
+                                "id": 8,
+                                "name": "Monte Hermoso",
+                                "short_name": "CAMH",
+                                "logo": "assets\/logos\/camh.png"
+                            }
+                        },
+                        {
+                            "position": 2,
+                            "team_id": 1,
+                            "note": null,
+                            "team_obj": {
+                                "id": 1,
+                                "name": "Argentino A",
+                                "short_name": "ARG A",
+                                "logo": "assets\/logos\/arg.png"
+                            }
+                        },
+                        {
+                            "position": 3,
+                            "team_id": 24,
+                            "note": null,
+                            "team_obj": {
+                                "id": 24,
+                                "name": "Universitario A",
+                                "short_name": "UNI A",
+                                "logo": "assets\/logos\/uni.png"
+                            }
+                        },
+                        {
+                            "position": 4,
+                            "team_id": 10,
+                            "note": null,
+                            "team_obj": {
+                                "id": 10,
+                                "name": "Pacífico A",
+                                "short_name": "CAP A",
+                                "logo": "assets\/logos\/cap.png"
+                            }
+                        },
+                        {
+                            "position": 5,
+                            "team_id": 19,
+                            "note": null,
+                            "team_obj": {
+                                "id": 19,
+                                "name": "S. Sportiva A",
+                                "short_name": "SS A",
+                                "logo": "assets\/logos\/ss.png"
+                            }
+                        },
+                        {
+                            "position": 6,
+                            "team_id": 7,
+                            "note": null,
+                            "team_obj": {
+                                "id": 7,
+                                "name": "Independiente",
+                                "short_name": "CAI",
+                                "logo": "assets\/logos\/cai.png"
+                            }
+                        },
+                        {
+                            "position": 7,
+                            "team_id": 3,
+                            "note": null,
+                            "team_obj": {
+                                "id": 3,
+                                "name": "El Nacional A",
+                                "short_name": "CEN A",
+                                "logo": "assets\/logos\/cen.png"
+                            }
+                        }
+                    ]
                 },
                 {
                     "id": 2,
