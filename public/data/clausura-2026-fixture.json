@@ -1,6 +1,6 @@
 {
     "championship_id": 3,
-    "generated_at": "2026-06-14T12:38:40-03:00",
+    "generated_at": "2026-06-14T22:45:17-03:00",
     "rounds": [
         {
             "id": 82,
@@ -48,9 +48,9 @@
                     "home_team_id": 18,
                     "away_team_id": 12,
                     "pitch": "Puerto Belgrano",
-                    "played": false,
-                    "goals_home": null,
-                    "goals_away": null,
+                    "played": true,
+                    "goals_home": 0,
+                    "goals_away": 8,
                     "has_shootouts": false,
                     "shootouts_home": null,
                     "shootouts_away": null
@@ -64,9 +64,9 @@
                     "home_team_id": 18,
                     "away_team_id": 12,
                     "pitch": "Puerto Belgrano",
-                    "played": false,
-                    "goals_home": null,
-                    "goals_away": null,
+                    "played": true,
+                    "goals_home": 2,
+                    "goals_away": 0,
                     "has_shootouts": false,
                     "shootouts_home": null,
                     "shootouts_away": null

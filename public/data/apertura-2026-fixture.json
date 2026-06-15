@@ -1,6 +1,6 @@
 {
     "championship_id": 1,
-    "generated_at": "2026-06-14T12:38:44-03:00",
+    "generated_at": "2026-06-14T22:45:15-03:00",
     "rounds": [
         {
             "id": 35,
@@ -6266,9 +6266,9 @@
                     "home_team_id": 1,
                     "away_team_id": 8,
                     "pitch": "ABH",
-                    "played": false,
-                    "goals_home": null,
-                    "goals_away": null,
+                    "played": true,
+                    "goals_home": 1,
+                    "goals_away": 3,
                     "has_shootouts": false,
                     "shootouts_home": null,
                     "shootouts_away": null
