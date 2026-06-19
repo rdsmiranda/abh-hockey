@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-06-18T20:24:45-03:00",
+    "generated_at": "2026-06-19T18:14:18-03:00",
     "from": "2026-06-20",
     "to": "2026-06-20",
     "umpires": {
@@ -937,7 +937,7 @@
                     "away_team_id": 1,
                     "pitch": "El Nacional",
                     "umpire_1_id": 73,
-                    "umpire_2_id": 71,
+                    "umpire_2_id": 76,
                     "fee": 48000,
                     "supervisor": null
                 },
@@ -951,7 +951,7 @@
                     "home_team_id": 29,
                     "away_team_id": 25,
                     "pitch": "Villa Mitre",
-                    "umpire_1_id": 76,
+                    "umpire_1_id": 61,
                     "umpire_2_id": 143,
                     "fee": 48000,
                     "supervisor": null
@@ -1072,7 +1072,7 @@
                     "away_team_id": 1,
                     "pitch": "El Nacional",
                     "umpire_1_id": 73,
-                    "umpire_2_id": 71,
+                    "umpire_2_id": 76,
                     "fee": 64000,
                     "supervisor": null
                 },
@@ -1086,7 +1086,7 @@
                     "home_team_id": 29,
                     "away_team_id": 25,
                     "pitch": "Villa Mitre",
-                    "umpire_1_id": 76,
+                    "umpire_1_id": 61,
                     "umpire_2_id": 143,
                     "fee": 64000,
                     "supervisor": null
