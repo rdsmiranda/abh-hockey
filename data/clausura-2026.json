@@ -6,7 +6,7 @@
         "start_date": "2026-06-13",
         "end_date": "2026-12-06"
     },
-    "generated_at": "2026-06-17T21:42:51-03:00",
+    "generated_at": "2026-06-19T23:35:36-03:00",
     "fixture_file": "clausura-2026-fixture.json",
     "teams": {
         "1": {
@@ -50,6 +50,12 @@
             "name": "Independiente",
             "short_name": "CAI",
             "logo": "assets\/logos\/cai.png"
+        },
+        "8": {
+            "id": 8,
+            "name": "Monte Hermoso",
+            "short_name": "CAMH",
+            "logo": "assets\/logos\/camh.png"
         },
         "10": {
             "id": 10,
@@ -513,6 +519,19 @@
                             "points": 0,
                             "recent_form": [],
                             "team_id": 1
+                        },
+                        {
+                            "position": 7,
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": [],
+                            "team_id": 8
                         }
                     ],
                     "playoffs": null,
@@ -600,6 +619,19 @@
                             "points": 0,
                             "recent_form": [],
                             "team_id": 1
+                        },
+                        {
+                            "position": 7,
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": [],
+                            "team_id": 8
                         }
                     ],
                     "playoffs": null,
@@ -687,6 +719,19 @@
                             "points": 0,
                             "recent_form": [],
                             "team_id": 1
+                        },
+                        {
+                            "position": 7,
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": [],
+                            "team_id": 8
                         }
                     ],
                     "playoffs": null,
@@ -774,6 +819,19 @@
                             "points": 0,
                             "recent_form": [],
                             "team_id": 1
+                        },
+                        {
+                            "position": 7,
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": [],
+                            "team_id": 8
                         }
                     ],
                     "playoffs": null,
@@ -867,6 +925,19 @@
                             "points": 0,
                             "recent_form": [],
                             "team_id": 11
+                        },
+                        {
+                            "position": 7,
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": [],
+                            "team_id": 14
                         }
                     ],
                     "playoffs": null,
@@ -954,6 +1025,19 @@
                             "points": 0,
                             "recent_form": [],
                             "team_id": 11
+                        },
+                        {
+                            "position": 7,
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": [],
+                            "team_id": 14
                         }
                     ],
                     "playoffs": null,
@@ -1041,6 +1125,19 @@
                             "points": 0,
                             "recent_form": [],
                             "team_id": 11
+                        },
+                        {
+                            "position": 7,
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": [],
+                            "team_id": 14
                         }
                     ],
                     "playoffs": null,
@@ -1128,6 +1225,19 @@
                             "points": 0,
                             "recent_form": [],
                             "team_id": 11
+                        },
+                        {
+                            "position": 7,
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": [],
+                            "team_id": 14
                         }
                     ],
                     "playoffs": null,
@@ -1575,6 +1685,19 @@
                             "points": 0,
                             "recent_form": [],
                             "team_id": 14
+                        },
+                        {
+                            "position": 7,
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": [],
+                            "team_id": 8
                         }
                     ],
                     "playoffs": null,
