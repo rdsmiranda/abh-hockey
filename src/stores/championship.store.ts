@@ -103,6 +103,19 @@ export const useChampionshipStore = defineStore('championship', () => {
     )
   })
 
+  /**
+     * Título del campeonato para mostrar en UI.
+     * Si `label` viene null/vacío, muestra solo "Nombre Año".
+     * Si tiene contenido, agrega `"Label"` entre comillas.
+     */
+  const championshipTitle = computed<string>(() => {
+    const champ = data.value?.championship
+    if (!champ) return ''
+    const base = `${champ.name} ${champ.year}`
+    const label = champ.label?.trim()
+    return label ? `${base} "${label}"` : base
+    })
+
   // ── Actions ───────────────────────────────────────────────────────────────
 
   async function loadIndex(): Promise<void> {
@@ -227,6 +240,7 @@ export const useChampionshipStore = defineStore('championship', () => {
     hasFinalStandings,
     availableViews,
     generatedAt,
+    championshipTitle,
     // Actions
     loadIndex,
     loadChampionship,

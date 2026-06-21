@@ -107,7 +107,7 @@ const metaSubtitle = computed(() => {
       <div class="meta-bar">
         <div>
           <div class="meta-title">
-            {{ store.data.championship.name }} {{ store.data.championship.year }}
+            {{ store.championshipTitle }}
           </div>
           <div v-if="metaSubtitle" class="meta-subtitle">{{ metaSubtitle }}</div>
         </div>

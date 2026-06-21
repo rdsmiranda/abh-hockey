@@ -150,6 +150,7 @@ export interface Championship {
   id: number
   name: string
   year: number
+  label: string
   start_date: string
   end_date: string
 }
