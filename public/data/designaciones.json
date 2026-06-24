@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-06-24T15:33:32-03:00",
+    "generated_at": "2026-06-24T16:03:07-03:00",
     "from": "2026-06-27",
     "to": "2026-06-30",
     "umpires": {
@@ -279,6 +279,10 @@
             "id": 140,
             "name": "Lucía Gallucci"
         },
+        "181": {
+            "id": 181,
+            "name": "Lucía San Martín"
+        },
         "120": {
             "id": 120,
             "name": "Lucía Vera"
@@ -290,6 +294,10 @@
         "70": {
             "id": 70,
             "name": "Luciano Donati"
+        },
+        "180": {
+            "id": 180,
+            "name": "Lucila Musi"
         },
         "71": {
             "id": 71,
@@ -695,9 +703,9 @@
                     "home_team_id": 7,
                     "away_team_id": 8,
                     "pitch": "Independiente",
-                    "umpire_1_id": null,
+                    "umpire_1_id": 180,
                     "umpire_2_id": 172,
-                    "fee": null,
+                    "fee": 38000,
                     "supervisor": null
                 },
                 {
@@ -725,9 +733,9 @@
                     "home_team_id": 7,
                     "away_team_id": 8,
                     "pitch": "Independiente",
-                    "umpire_1_id": null,
+                    "umpire_1_id": 181,
                     "umpire_2_id": 172,
-                    "fee": null,
+                    "fee": 42000,
                     "supervisor": null
                 },
                 {
