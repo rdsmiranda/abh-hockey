@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-06-24T16:03:07-03:00",
+    "generated_at": "2026-06-24T17:47:51-03:00",
     "from": "2026-06-27",
     "to": "2026-06-30",
     "umpires": {
@@ -1183,9 +1183,9 @@
                     "home_team_id": 21,
                     "away_team_id": 29,
                     "pitch": "S. Sportiva",
-                    "umpire_1_id": 96,
+                    "umpire_1_id": 141,
                     "umpire_2_id": 85,
-                    "fee": 45000,
+                    "fee": 40000,
                     "supervisor": null
                 },
                 {
@@ -1199,8 +1199,8 @@
                     "away_team_id": 8,
                     "pitch": "Palihue",
                     "umpire_1_id": 65,
-                    "umpire_2_id": 141,
-                    "fee": 45000,
+                    "umpire_2_id": 96,
+                    "fee": 50000,
                     "supervisor": null
                 }
             ]
