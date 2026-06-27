@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-06-24T17:47:51-03:00",
+    "generated_at": "2026-06-27T11:30:18-03:00",
     "from": "2026-06-27",
     "to": "2026-06-30",
     "umpires": {
@@ -884,7 +884,7 @@
                     "away_team_id": 14,
                     "pitch": "Pacífico",
                     "umpire_1_id": 120,
-                    "umpire_2_id": 135,
+                    "umpire_2_id": 124,
                     "fee": 42000,
                     "supervisor": null
                 },
@@ -1199,8 +1199,8 @@
                     "away_team_id": 8,
                     "pitch": "Palihue",
                     "umpire_1_id": 65,
-                    "umpire_2_id": 96,
-                    "fee": 50000,
+                    "umpire_2_id": 141,
+                    "fee": 45000,
                     "supervisor": null
                 }
             ]
