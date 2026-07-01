@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-07-01T17:09:55-03:00",
+    "generated_at": "2026-07-01T19:34:13-03:00",
     "from": "2026-07-04",
     "to": "2026-07-09",
     "umpires": {
@@ -1047,9 +1047,9 @@
                     "home_team_id": 2,
                     "away_team_id": 16,
                     "pitch": "Argentino",
-                    "umpire_1_id": null,
+                    "umpire_1_id": 121,
                     "umpire_2_id": 125,
-                    "fee": null,
+                    "fee": 38000,
                     "supervisor": null
                 },
                 {
@@ -1092,9 +1092,9 @@
                     "home_team_id": 2,
                     "away_team_id": 16,
                     "pitch": "Argentino",
-                    "umpire_1_id": null,
+                    "umpire_1_id": 121,
                     "umpire_2_id": 125,
-                    "fee": null,
+                    "fee": 42000,
                     "supervisor": null
                 },
                 {
