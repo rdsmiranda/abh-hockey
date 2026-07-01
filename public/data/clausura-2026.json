@@ -7,7 +7,7 @@
         "start_date": "2026-06-13",
         "end_date": "2026-12-06"
     },
-    "generated_at": "2026-06-30T19:04:17-03:00",
+    "generated_at": "2026-07-01T17:09:03-03:00",
     "fixture_file": "clausura-2026-fixture.json",
     "teams": {
         "1": {
@@ -184,11 +184,35 @@
             "short_name": "POR",
             "logo": "assets\/logos\/por.png"
         },
+        "32": {
+            "id": 32,
+            "name": "Tiro Federal",
+            "short_name": "TIRO",
+            "logo": "assets\/logos\/tiro.png"
+        },
+        "33": {
+            "id": 33,
+            "name": "Villa Mitre",
+            "short_name": "VM",
+            "logo": "assets\/logos\/vm.png"
+        },
+        "36": {
+            "id": 36,
+            "name": "Pacífico de Cabildo",
+            "short_name": "PAC",
+            "logo": "assets\/logos\/ad6508f6-a924-49b7-a78d-c5397f2850a7.jpg"
+        },
         "42": {
             "id": 42,
             "name": "Porteño",
             "short_name": "POR",
             "logo": "assets\/logos\/por.png"
+        },
+        "43": {
+            "id": 43,
+            "name": "S. Sportiva",
+            "short_name": "SS",
+            "logo": "assets\/logos\/ss.png"
         }
     },
     "zones": [
@@ -3498,6 +3522,108 @@
                                 }
                             ],
                             "team_id": 42
+                        }
+                    ],
+                    "playoffs": null,
+                    "final_standings": null
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Promocional",
+            "categories": [
+                {
+                    "id": 2,
+                    "name": "Sub16",
+                    "order": 2,
+                    "standings": [
+                        {
+                            "position": 1,
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": [],
+                            "team_id": 32
+                        },
+                        {
+                            "position": 2,
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": [],
+                            "team_id": 36
+                        }
+                    ],
+                    "playoffs": null,
+                    "final_standings": null
+                },
+                {
+                    "id": 1,
+                    "name": "Sub14",
+                    "order": 1,
+                    "standings": [
+                        {
+                            "position": 1,
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": [],
+                            "team_id": 32
+                        },
+                        {
+                            "position": 2,
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": [],
+                            "team_id": 43
+                        },
+                        {
+                            "position": 3,
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": [],
+                            "team_id": 33
+                        },
+                        {
+                            "position": 4,
+                            "played": 0,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 0,
+                            "goals_for": 0,
+                            "goals_against": 0,
+                            "goal_difference": 0,
+                            "points": 0,
+                            "recent_form": [],
+                            "team_id": 36
                         }
                     ],
                     "playoffs": null,
