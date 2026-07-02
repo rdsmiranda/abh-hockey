@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-07-01T19:34:13-03:00",
+    "generated_at": "2026-07-01T21:01:41-03:00",
     "from": "2026-07-04",
     "to": "2026-07-09",
     "umpires": {
@@ -601,17 +601,17 @@
             "short_name": "CEN C",
             "logo": "assets\/logos\/cen.png"
         },
-        "21": {
-            "id": 21,
-            "name": "S. Sportiva",
-            "short_name": "SS",
-            "logo": "assets\/logos\/ss.png"
-        },
         "13": {
             "id": 13,
             "name": "Pacífico",
             "short_name": "CAP",
             "logo": "assets\/logos\/cap.png"
+        },
+        "21": {
+            "id": 21,
+            "name": "S. Sportiva",
+            "short_name": "SS",
+            "logo": "assets\/logos\/ss.png"
         },
         "30": {
             "id": 30,
@@ -1224,9 +1224,9 @@
                     "zone": "Intermedia",
                     "category": "Intermedia",
                     "round": "Fecha 3",
-                    "home_team_id": 21,
-                    "away_team_id": 13,
-                    "pitch": "S. Sportiva",
+                    "home_team_id": 13,
+                    "away_team_id": 21,
+                    "pitch": "Pacífico",
                     "umpire_1_id": 61,
                     "umpire_2_id": 130,
                     "fee": 50000,
