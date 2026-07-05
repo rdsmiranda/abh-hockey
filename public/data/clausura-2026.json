@@ -7,7 +7,7 @@
         "start_date": "2026-06-13",
         "end_date": "2026-12-06"
     },
-    "generated_at": "2026-07-05T20:23:36-03:00",
+    "generated_at": "2026-07-05T20:50:23-03:00",
     "fixture_file": "clausura-2026-fixture.json",
     "teams": {
         "1": {
@@ -4409,6 +4409,30 @@
                             "won": 1,
                             "drawn": 0,
                             "lost": 0,
+                            "goals_for": 13,
+                            "goals_against": 0,
+                            "goal_difference": 13,
+                            "points": 3,
+                            "recent_form": [
+                                {
+                                    "result": "W",
+                                    "score": "13-0",
+                                    "was_home": true,
+                                    "date": "2026-07-05",
+                                    "match_id": 1093,
+                                    "bonus_point": false,
+                                    "shootouts": null,
+                                    "opponent_id": 36
+                                }
+                            ],
+                            "team_id": 33
+                        },
+                        {
+                            "position": 2,
+                            "played": 1,
+                            "won": 1,
+                            "drawn": 0,
+                            "lost": 0,
                             "goals_for": 1,
                             "goals_against": 0,
                             "goal_difference": 1,
@@ -4428,33 +4452,7 @@
                             "team_id": 32
                         },
                         {
-                            "position": 2,
-                            "played": 0,
-                            "won": 0,
-                            "drawn": 0,
-                            "lost": 0,
-                            "goals_for": 0,
-                            "goals_against": 0,
-                            "goal_difference": 0,
-                            "points": 0,
-                            "recent_form": [],
-                            "team_id": 33
-                        },
-                        {
                             "position": 3,
-                            "played": 0,
-                            "won": 0,
-                            "drawn": 0,
-                            "lost": 0,
-                            "goals_for": 0,
-                            "goals_against": 0,
-                            "goal_difference": 0,
-                            "points": 0,
-                            "recent_form": [],
-                            "team_id": 36
-                        },
-                        {
-                            "position": 4,
                             "played": 1,
                             "won": 0,
                             "drawn": 0,
@@ -4476,6 +4474,30 @@
                                 }
                             ],
                             "team_id": 43
+                        },
+                        {
+                            "position": 4,
+                            "played": 1,
+                            "won": 0,
+                            "drawn": 0,
+                            "lost": 1,
+                            "goals_for": 0,
+                            "goals_against": 13,
+                            "goal_difference": -13,
+                            "points": 0,
+                            "recent_form": [
+                                {
+                                    "result": "L",
+                                    "score": "0-13",
+                                    "was_home": false,
+                                    "date": "2026-07-05",
+                                    "match_id": 1093,
+                                    "bonus_point": false,
+                                    "shootouts": null,
+                                    "opponent_id": 33
+                                }
+                            ],
+                            "team_id": 36
                         }
                     ],
                     "playoffs": null,
