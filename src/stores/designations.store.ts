@@ -79,12 +79,29 @@ export const useDesignationsStore = defineStore('designations', () => {
   })
 
   /**
-   * true cuando la carga fue exitosa pero no hay partidos próximos.
-   * Permite al componente distinguir este caso de un error de red,
-   * mostrando "No se encontraron designaciones publicadas." en ambos casos
-   * pero sin mezclar los dos estados.
+   * Días con partidos futuros, SIN aplicar los filtros de zona/árbitro
+   * elegidos por el usuario (solo se descarta por fecha).
+   * Sirve para distinguir "no hay partidos publicados" de
+   * "el filtro elegido no arrojó resultados".
    */
-  const isEmpty = computed(() => status.value === 'success' && filteredDays.value.length === 0)
+  const upcomingDays = computed<DesignationDay[]>(() => {
+    if (!data.value) return []
+
+    return data.value.days
+      .map((day) => ({
+        ...day,
+        matches: day.matches.filter((m: DesignationMatch) => m.date >= today),
+      }))
+      .filter((day) => day.matches.length > 0)
+  })
+
+  /**
+   * true cuando la carga fue exitosa pero no hay partidos próximos en absoluto,
+   * independientemente de los filtros de zona/árbitro aplicados.
+   * Permite al componente distinguir este caso de un error de red,
+   * y también del caso en que sí hay partidos pero el filtro activo no matchea.
+   */
+  const isEmpty = computed(() => status.value === 'success' && upcomingDays.value.length === 0)
 
   // ── Getters: metadatos ────────────────────────────────────────────────────
 
@@ -173,6 +190,7 @@ export const useDesignationsStore = defineStore('designations', () => {
     availableZones,
     hasMultipleZones,
     filteredDays,
+    upcomingDays,
     isEmpty,
     // Getters: metadatos
     periodLabel,

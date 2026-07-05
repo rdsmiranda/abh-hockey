@@ -98,8 +98,7 @@ const hasActiveFilters = computed(() =>
       <div
         v-if="store.filteredDays.length === 0 && hasActiveFilters"
         class="text-center py-10 text-sm text-slate-400"
-        v-html="emptyMessage"
-      />
+      >{{ emptyMessage }}</div>
 
       <!-- Días con partidos -->
       <DaySection
