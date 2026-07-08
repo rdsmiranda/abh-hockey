@@ -1,6 +1,6 @@
 {
     "championship_id": 3,
-    "generated_at": "2026-07-08T16:01:01-03:00",
+    "generated_at": "2026-07-08T16:14:57-03:00",
     "rounds": [
         {
             "id": 82,
@@ -2779,22 +2779,6 @@
                     "shootouts_away": null
                 },
                 {
-                    "id": 886,
-                    "zone_id": 12,
-                    "category_id": 4,
-                    "date": "2026-07-11",
-                    "time": "16:00",
-                    "home_team_id": 22,
-                    "away_team_id": 26,
-                    "pitch": "Sporting",
-                    "played": false,
-                    "goals_home": null,
-                    "goals_away": null,
-                    "has_shootouts": false,
-                    "shootouts_home": null,
-                    "shootouts_away": null
-                },
-                {
                     "id": 885,
                     "zone_id": 12,
                     "category_id": 4,
@@ -2819,6 +2803,22 @@
                     "home_team_id": 17,
                     "away_team_id": 16,
                     "pitch": "Puerto Belgrano",
+                    "played": false,
+                    "goals_home": null,
+                    "goals_away": null,
+                    "has_shootouts": false,
+                    "shootouts_home": null,
+                    "shootouts_away": null
+                },
+                {
+                    "id": 886,
+                    "zone_id": 12,
+                    "category_id": 4,
+                    "date": "2026-07-11",
+                    "time": "16:00",
+                    "home_team_id": 22,
+                    "away_team_id": 26,
+                    "pitch": "Sporting",
                     "played": false,
                     "goals_home": null,
                     "goals_away": null,
@@ -3056,7 +3056,7 @@
                     "time": "12:30",
                     "home_team_id": 28,
                     "away_team_id": 18,
-                    "pitch": "Puerto Belgrano",
+                    "pitch": "Universitario (Agua)",
                     "played": false,
                     "goals_home": null,
                     "goals_away": null,
