@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-07-08T16:14:52-03:00",
+    "generated_at": "2026-07-08T16:23:56-03:00",
     "from": "2026-07-09",
     "to": "2026-07-14",
     "umpires": {
@@ -813,9 +813,9 @@
                     "home_team_id": 19,
                     "away_team_id": 8,
                     "pitch": "S. Sportiva",
-                    "umpire_1_id": null,
+                    "umpire_1_id": 127,
                     "umpire_2_id": 156,
-                    "fee": null,
+                    "fee": 42000,
                     "supervisor": null
                 },
                 {
