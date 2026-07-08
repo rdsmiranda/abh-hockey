@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-07-08T16:04:25-03:00",
+    "generated_at": "2026-07-08T16:14:52-03:00",
     "from": "2026-07-09",
     "to": "2026-07-14",
     "umpires": {
@@ -1024,8 +1024,8 @@
                     "away_team_id": 2,
                     "pitch": "El Nacional",
                     "umpire_1_id": 131,
-                    "umpire_2_id": null,
-                    "fee": null,
+                    "umpire_2_id": 134,
+                    "fee": 38000,
                     "supervisor": null
                 },
                 {
@@ -1069,8 +1069,8 @@
                     "away_team_id": 2,
                     "pitch": "El Nacional",
                     "umpire_1_id": 131,
-                    "umpire_2_id": null,
-                    "fee": null,
+                    "umpire_2_id": 134,
+                    "fee": 42000,
                     "supervisor": null
                 },
                 {
@@ -1209,8 +1209,8 @@
                     "away_team_id": 12,
                     "pitch": "El Nacional",
                     "umpire_1_id": 131,
-                    "umpire_2_id": null,
-                    "fee": null,
+                    "umpire_2_id": 72,
+                    "fee": 38000,
                     "supervisor": null
                 },
                 {
@@ -1222,7 +1222,7 @@
                     "round": "Fecha 4",
                     "home_team_id": 28,
                     "away_team_id": 18,
-                    "pitch": "Puerto Belgrano",
+                    "pitch": "Universitario (Agua)",
                     "umpire_1_id": 96,
                     "umpire_2_id": 134,
                     "fee": 38000,
