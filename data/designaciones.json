@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-07-08T16:23:56-03:00",
+    "generated_at": "2026-07-08T21:30:22-03:00",
     "from": "2026-07-09",
     "to": "2026-07-14",
     "umpires": {
@@ -607,18 +607,6 @@
             "short_name": "SS",
             "logo": "assets\/logos\/ss.png"
         },
-        "6": {
-            "id": 6,
-            "name": "El Nacional",
-            "short_name": "CEN",
-            "logo": "assets\/logos\/cen.png"
-        },
-        "12": {
-            "id": 12,
-            "name": "Pacífico",
-            "short_name": "CAP",
-            "logo": "assets\/logos\/cap.png"
-        },
         "28": {
             "id": 28,
             "name": "Universitario",
@@ -630,6 +618,18 @@
             "name": "Puerto Belgrano",
             "short_name": "PTO",
             "logo": "assets\/logos\/pto.png"
+        },
+        "6": {
+            "id": 6,
+            "name": "El Nacional",
+            "short_name": "CEN",
+            "logo": "assets\/logos\/cen.png"
+        },
+        "12": {
+            "id": 12,
+            "name": "Pacífico",
+            "short_name": "CAP",
+            "logo": "assets\/logos\/cap.png"
         }
     },
     "zones": [
@@ -1199,21 +1199,6 @@
             "date": "2026-07-12",
             "matches": [
                 {
-                    "id": 494,
-                    "time": "10:00",
-                    "date": "2026-07-12",
-                    "zone": "Caballeros",
-                    "category": "Menores",
-                    "round": "Fecha 4",
-                    "home_team_id": 6,
-                    "away_team_id": 12,
-                    "pitch": "El Nacional",
-                    "umpire_1_id": 131,
-                    "umpire_2_id": 72,
-                    "fee": 38000,
-                    "supervisor": null
-                },
-                {
                     "id": 495,
                     "time": "12:30",
                     "date": "2026-07-12",
@@ -1225,6 +1210,21 @@
                     "pitch": "Universitario (Agua)",
                     "umpire_1_id": 96,
                     "umpire_2_id": 134,
+                    "fee": 38000,
+                    "supervisor": null
+                },
+                {
+                    "id": 494,
+                    "time": "13:00",
+                    "date": "2026-07-12",
+                    "zone": "Caballeros",
+                    "category": "Menores",
+                    "round": "Fecha 4",
+                    "home_team_id": 6,
+                    "away_team_id": 12,
+                    "pitch": "El Nacional",
+                    "umpire_1_id": 131,
+                    "umpire_2_id": 72,
                     "fee": 38000,
                     "supervisor": null
                 },
