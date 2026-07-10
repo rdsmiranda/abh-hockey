@@ -1,6 +1,6 @@
 {
-    "generated_at": "2026-07-08T21:30:22-03:00",
-    "from": "2026-07-09",
+    "generated_at": "2026-07-10T09:13:50-03:00",
+    "from": "2026-07-10",
     "to": "2026-07-14",
     "umpires": {
         "56": {
@@ -493,36 +493,6 @@
         }
     },
     "teams": {
-        "24": {
-            "id": 24,
-            "name": "Universitario A",
-            "short_name": "UNI A",
-            "logo": "assets\/logos\/uni.png"
-        },
-        "10": {
-            "id": 10,
-            "name": "Pacífico A",
-            "short_name": "CAP A",
-            "logo": "assets\/logos\/cap.png"
-        },
-        "29": {
-            "id": 29,
-            "name": "Villa Mitre",
-            "short_name": "VM",
-            "logo": "assets\/logos\/vm.png"
-        },
-        "14": {
-            "id": 14,
-            "name": "Palihue",
-            "short_name": "PAL",
-            "logo": "assets\/logos\/pal.png"
-        },
-        "4": {
-            "id": 4,
-            "name": "El Nacional B",
-            "short_name": "CEN B",
-            "logo": "assets\/logos\/cen.png"
-        },
         "23": {
             "id": 23,
             "name": "Tiro Federal",
@@ -564,6 +534,24 @@
             "name": "Pacífico B",
             "short_name": "CAP B",
             "logo": "assets\/logos\/cap.png"
+        },
+        "4": {
+            "id": 4,
+            "name": "El Nacional B",
+            "short_name": "CEN B",
+            "logo": "assets\/logos\/cen.png"
+        },
+        "29": {
+            "id": 29,
+            "name": "Villa Mitre",
+            "short_name": "VM",
+            "logo": "assets\/logos\/vm.png"
+        },
+        "14": {
+            "id": 14,
+            "name": "Palihue",
+            "short_name": "PAL",
+            "logo": "assets\/logos\/pal.png"
         },
         "17": {
             "id": 17,
@@ -630,111 +618,28 @@
             "name": "Pacífico",
             "short_name": "CAP",
             "logo": "assets\/logos\/cap.png"
+        },
+        "24": {
+            "id": 24,
+            "name": "Universitario A",
+            "short_name": "UNI A",
+            "logo": "assets\/logos\/uni.png"
+        },
+        "10": {
+            "id": 10,
+            "name": "Pacífico A",
+            "short_name": "CAP A",
+            "logo": "assets\/logos\/cap.png"
         }
     },
     "zones": [
-        "Oro",
         "Plata",
-        "Intermedia",
+        "Oro",
         "Bronce",
+        "Intermedia",
         "Caballeros"
     ],
     "days": [
-        {
-            "date": "2026-07-09",
-            "matches": [
-                {
-                    "id": 578,
-                    "time": "12:30",
-                    "date": "2026-07-09",
-                    "zone": "Oro",
-                    "category": "Sub16",
-                    "round": "Fecha 4",
-                    "home_team_id": 24,
-                    "away_team_id": 10,
-                    "pitch": "Universitario (Agua)",
-                    "umpire_1_id": 91,
-                    "umpire_2_id": 72,
-                    "fee": 42000,
-                    "supervisor": null
-                },
-                {
-                    "id": 575,
-                    "time": "14:00",
-                    "date": "2026-07-09",
-                    "zone": "Oro",
-                    "category": "Sub19",
-                    "round": "Fecha 4",
-                    "home_team_id": 24,
-                    "away_team_id": 10,
-                    "pitch": "Universitario (Agua)",
-                    "umpire_1_id": 76,
-                    "umpire_2_id": 127,
-                    "fee": 48000,
-                    "supervisor": null
-                },
-                {
-                    "id": 572,
-                    "time": "16:00",
-                    "date": "2026-07-09",
-                    "zone": "Oro",
-                    "category": "Primera",
-                    "round": "Fecha 4",
-                    "home_team_id": 24,
-                    "away_team_id": 10,
-                    "pitch": "Universitario (Agua)",
-                    "umpire_1_id": 58,
-                    "umpire_2_id": 127,
-                    "fee": 64000,
-                    "supervisor": null
-                },
-                {
-                    "id": 733,
-                    "time": "14:00",
-                    "date": "2026-07-09",
-                    "zone": "Plata",
-                    "category": "Sub19",
-                    "round": "Fecha 4",
-                    "home_team_id": 29,
-                    "away_team_id": 14,
-                    "pitch": "Villa Mitre",
-                    "umpire_1_id": 158,
-                    "umpire_2_id": 141,
-                    "fee": 43000,
-                    "supervisor": null
-                },
-                {
-                    "id": 705,
-                    "time": "17:00",
-                    "date": "2026-07-09",
-                    "zone": "Plata",
-                    "category": "Primera",
-                    "round": "Fecha 2",
-                    "home_team_id": 4,
-                    "away_team_id": 23,
-                    "pitch": "El Nacional",
-                    "umpire_1_id": 57,
-                    "umpire_2_id": 67,
-                    "fee": 64000,
-                    "supervisor": null
-                },
-                {
-                    "id": 1036,
-                    "time": "18:00",
-                    "date": "2026-07-09",
-                    "zone": "Intermedia",
-                    "category": "Intermedia",
-                    "round": "Fecha 4",
-                    "home_team_id": 29,
-                    "away_team_id": 14,
-                    "pitch": "Villa Mitre",
-                    "umpire_1_id": 158,
-                    "umpire_2_id": 68,
-                    "fee": 50000,
-                    "supervisor": null
-                }
-            ]
-        },
         {
             "date": "2026-07-10",
             "matches": [
@@ -783,7 +688,7 @@
                     "home_team_id": 19,
                     "away_team_id": 8,
                     "pitch": "S. Sportiva",
-                    "umpire_1_id": 182,
+                    "umpire_1_id": 179,
                     "umpire_2_id": 138,
                     "fee": 38000,
                     "supervisor": null
