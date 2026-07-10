@@ -1,6 +1,6 @@
 {
     "championship_id": 3,
-    "generated_at": "2026-07-09T20:14:02-03:00",
+    "generated_at": "2026-07-10T09:12:20-03:00",
     "rounds": [
         {
             "id": 82,
@@ -2444,9 +2444,9 @@
                     "home_team_id": 29,
                     "away_team_id": 14,
                     "pitch": "Villa Mitre",
-                    "played": false,
-                    "goals_home": null,
-                    "goals_away": null,
+                    "played": true,
+                    "goals_home": 2,
+                    "goals_away": 1,
                     "has_shootouts": false,
                     "shootouts_home": null,
                     "shootouts_away": null
