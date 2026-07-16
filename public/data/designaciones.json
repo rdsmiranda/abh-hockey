@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-07-16T13:18:34-03:00",
+    "generated_at": "2026-07-16T13:29:16-03:00",
     "from": "2026-07-17",
     "to": "2026-07-19",
     "umpires": {
@@ -748,8 +748,8 @@
                     "away_team_id": 3,
                     "pitch": "Pacífico",
                     "umpire_1_id": 113,
-                    "umpire_2_id": null,
-                    "fee": null,
+                    "umpire_2_id": 131,
+                    "fee": 38000,
                     "supervisor": null
                 },
                 {
@@ -793,8 +793,8 @@
                     "away_team_id": 3,
                     "pitch": "Pacífico",
                     "umpire_1_id": 113,
-                    "umpire_2_id": null,
-                    "fee": null,
+                    "umpire_2_id": 131,
+                    "fee": 42000,
                     "supervisor": null
                 },
                 {
