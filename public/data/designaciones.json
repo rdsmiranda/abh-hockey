@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-07-16T13:33:21-03:00",
+    "generated_at": "2026-07-16T18:46:19-03:00",
     "from": "2026-07-17",
     "to": "2026-07-19",
     "umpires": {
@@ -1216,6 +1216,36 @@
                     "umpire_2_id": 67,
                     "fee": 50000,
                     "supervisor": null
+                },
+                {
+                    "id": 1094,
+                    "time": "10:00",
+                    "date": "2026-07-18",
+                    "zone": "Promocional",
+                    "category": "Sub14",
+                    "round": "Fecha 2",
+                    "home_team_id": 36,
+                    "away_team_id": 32,
+                    "pitch": "ABH",
+                    "umpire_1_id": 114,
+                    "umpire_2_id": 104,
+                    "fee": 38000,
+                    "supervisor": null
+                },
+                {
+                    "id": 1110,
+                    "time": "11:30",
+                    "date": "2026-07-18",
+                    "zone": "Promocional",
+                    "category": "Sub16",
+                    "round": "Fecha 1",
+                    "home_team_id": 36,
+                    "away_team_id": 32,
+                    "pitch": "ABH",
+                    "umpire_1_id": 114,
+                    "umpire_2_id": 104,
+                    "fee": 42000,
+                    "supervisor": null
                 }
             ]
         },
@@ -1238,21 +1268,6 @@
                     "supervisor": null
                 },
                 {
-                    "id": 1094,
-                    "time": "10:00",
-                    "date": "2026-07-19",
-                    "zone": "Promocional",
-                    "category": "Sub14",
-                    "round": "Fecha 2",
-                    "home_team_id": 36,
-                    "away_team_id": 32,
-                    "pitch": "ABH",
-                    "umpire_1_id": 114,
-                    "umpire_2_id": 104,
-                    "fee": 38000,
-                    "supervisor": null
-                },
-                {
                     "id": 1095,
                     "time": "10:00",
                     "date": "2026-07-19",
@@ -1265,21 +1280,6 @@
                     "umpire_1_id": 102,
                     "umpire_2_id": 121,
                     "fee": 38000,
-                    "supervisor": null
-                },
-                {
-                    "id": 1110,
-                    "time": "11:30",
-                    "date": "2026-07-19",
-                    "zone": "Promocional",
-                    "category": "Sub16",
-                    "round": "Fecha 1",
-                    "home_team_id": 36,
-                    "away_team_id": 32,
-                    "pitch": "ABH",
-                    "umpire_1_id": 114,
-                    "umpire_2_id": 104,
-                    "fee": 42000,
                     "supervisor": null
                 }
             ]
