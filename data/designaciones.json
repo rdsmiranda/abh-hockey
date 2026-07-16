@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-07-16T18:46:19-03:00",
+    "generated_at": "2026-07-16T19:26:02-03:00",
     "from": "2026-07-17",
     "to": "2026-07-19",
     "umpires": {
@@ -779,21 +779,6 @@
                     "pitch": "Monte Hermoso",
                     "umpire_1_id": 139,
                     "umpire_2_id": 88,
-                    "fee": 42000,
-                    "supervisor": null
-                },
-                {
-                    "id": 591,
-                    "time": "12:30",
-                    "date": "2026-07-18",
-                    "zone": "Oro",
-                    "category": "Sub16",
-                    "round": "Fecha 5",
-                    "home_team_id": 10,
-                    "away_team_id": 3,
-                    "pitch": "Pacífico",
-                    "umpire_1_id": 113,
-                    "umpire_2_id": 131,
                     "fee": 42000,
                     "supervisor": null
                 },
