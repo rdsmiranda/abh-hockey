@@ -95,7 +95,7 @@ tbody td { padding: .6rem; text-align: center; color: var(--abh-dark); }
 .td-pts { font-family: var(--font-barlow-condensed); font-weight: 800; font-size: 1rem; }
 .td-gd { color: #64748b; font-size: .8rem; }
 
-.form-badges { display: flex; align-items: center; gap: 3px; justify-content: center; }
+.form-badges { display: flex; align-items: center; gap: 3px; justify-content: left; }
 
 @media (max-width: 640px) { .col-hide-sm { display: none; } }
 </style>
