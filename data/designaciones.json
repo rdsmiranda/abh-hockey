@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-07-29T09:16:57-03:00",
+    "generated_at": "2026-07-29T14:01:15-03:00",
     "from": "2026-07-31",
     "to": "2026-08-02",
     "umpires": {
@@ -565,9 +565,9 @@
                     "home_team_id": 20,
                     "away_team_id": 11,
                     "pitch": "S. Sportiva",
-                    "umpire_1_id": null,
+                    "umpire_1_id": 119,
                     "umpire_2_id": 72,
-                    "fee": null,
+                    "fee": 38000,
                     "supervisor": null
                 }
             ]
@@ -586,8 +586,8 @@
                     "away_team_id": 3,
                     "pitch": "Pacífico",
                     "umpire_1_id": 120,
-                    "umpire_2_id": null,
-                    "fee": null,
+                    "umpire_2_id": 131,
+                    "fee": 42000,
                     "supervisor": null
                 },
                 {
@@ -600,9 +600,9 @@
                     "home_team_id": 4,
                     "away_team_id": 29,
                     "pitch": "El Nacional",
-                    "umpire_1_id": null,
+                    "umpire_1_id": 114,
                     "umpire_2_id": 142,
-                    "fee": null,
+                    "fee": 42000,
                     "supervisor": null
                 }
             ]
