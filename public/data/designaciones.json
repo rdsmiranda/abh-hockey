@@ -1,7 +1,7 @@
 {
-    "generated_at": "2026-07-29T14:01:15-03:00",
-    "from": "2026-07-31",
-    "to": "2026-08-02",
+    "generated_at": "2026-08-05T15:39:14-03:00",
+    "from": "2026-08-07",
+    "to": "2026-08-11",
     "umpires": {
         "56": {
             "id": 56,
@@ -130,6 +130,10 @@
         "97": {
             "id": 97,
             "name": "Dolores Rossello"
+        },
+        "184": {
+            "id": 184,
+            "name": "Edgar González"
         },
         "95": {
             "id": 95,
@@ -467,6 +471,10 @@
             "id": 153,
             "name": "Sol Maleswki"
         },
+        "185": {
+            "id": 185,
+            "name": "Tiziana Schiavoni"
+        },
         "161": {
             "id": 161,
             "name": "Tomás Bertello"
@@ -497,23 +505,41 @@
         }
     },
     "teams": {
-        "20": {
-            "id": 20,
-            "name": "S. Sportiva B",
-            "short_name": "SS B",
-            "logo": "assets\/logos\/ss.png"
+        "16": {
+            "id": 16,
+            "name": "Puerto Belgrano A",
+            "short_name": "PTO A",
+            "logo": "assets\/logos\/pto.png"
         },
-        "11": {
-            "id": 11,
-            "name": "Pacífico B",
-            "short_name": "CAP B",
-            "logo": "assets\/logos\/cap.png"
+        "5": {
+            "id": 5,
+            "name": "El Nacional C",
+            "short_name": "CEN C",
+            "logo": "assets\/logos\/cen.png"
         },
-        "10": {
-            "id": 10,
-            "name": "Pacífico A",
-            "short_name": "CAP A",
-            "logo": "assets\/logos\/cap.png"
+        "15": {
+            "id": 15,
+            "name": "Palihue",
+            "short_name": "PAL",
+            "logo": "assets\/logos\/pal.png"
+        },
+        "28": {
+            "id": 28,
+            "name": "Universitario",
+            "short_name": "UNI",
+            "logo": "assets\/logos\/uni.png"
+        },
+        "24": {
+            "id": 24,
+            "name": "Universitario A",
+            "short_name": "UNI A",
+            "logo": "assets\/logos\/uni.png"
+        },
+        "7": {
+            "id": 7,
+            "name": "Independiente",
+            "short_name": "CAI",
+            "logo": "assets\/logos\/cai.png"
         },
         "3": {
             "id": 3,
@@ -521,11 +547,53 @@
             "short_name": "CEN A",
             "logo": "assets\/logos\/cen.png"
         },
+        "8": {
+            "id": 8,
+            "name": "Monte Hermoso",
+            "short_name": "CAMH",
+            "logo": "assets\/logos\/camh.png"
+        },
+        "19": {
+            "id": 19,
+            "name": "S. Sportiva A",
+            "short_name": "SS A",
+            "logo": "assets\/logos\/ss.png"
+        },
+        "1": {
+            "id": 1,
+            "name": "Argentino A",
+            "short_name": "ARG A",
+            "logo": "assets\/logos\/arg.png"
+        },
+        "11": {
+            "id": 11,
+            "name": "Pacífico B",
+            "short_name": "CAP B",
+            "logo": "assets\/logos\/cap.png"
+        },
+        "25": {
+            "id": 25,
+            "name": "Universitario B",
+            "short_name": "UNI B",
+            "logo": "assets\/logos\/uni.png"
+        },
+        "14": {
+            "id": 14,
+            "name": "Palihue",
+            "short_name": "PAL",
+            "logo": "assets\/logos\/pal.png"
+        },
         "4": {
             "id": 4,
             "name": "El Nacional B",
             "short_name": "CEN B",
             "logo": "assets\/logos\/cen.png"
+        },
+        "23": {
+            "id": 23,
+            "name": "Tiro Federal",
+            "short_name": "TIRO",
+            "logo": "assets\/logos\/tiro.png"
         },
         "29": {
             "id": 29,
@@ -539,88 +607,780 @@
             "short_name": "SPO",
             "logo": "assets\/logos\/spo.png"
         },
-        "5": {
-            "id": 5,
-            "name": "El Nacional C",
-            "short_name": "CEN C",
-            "logo": "assets\/logos\/cen.png"
+        "27": {
+            "id": 27,
+            "name": "Universitario",
+            "short_name": "UNI",
+            "logo": "assets\/logos\/uni.png"
+        },
+        "13": {
+            "id": 13,
+            "name": "Pacífico",
+            "short_name": "CAP",
+            "logo": "assets\/logos\/cap.png"
+        },
+        "21": {
+            "id": 21,
+            "name": "S. Sportiva",
+            "short_name": "SS",
+            "logo": "assets\/logos\/ss.png"
+        },
+        "30": {
+            "id": 30,
+            "name": "Porteño",
+            "short_name": "POR",
+            "logo": "assets\/logos\/por.png"
+        },
+        "10": {
+            "id": 10,
+            "name": "Pacífico A",
+            "short_name": "CAP A",
+            "logo": "assets\/logos\/cap.png"
+        },
+        "26": {
+            "id": 26,
+            "name": "Universitario C",
+            "short_name": "UNI C",
+            "logo": "assets\/logos\/uni.png"
+        },
+        "17": {
+            "id": 17,
+            "name": "Puerto Belgrano B",
+            "short_name": "PTO B",
+            "logo": "assets\/logos\/pto.png"
+        },
+        "2": {
+            "id": 2,
+            "name": "Argentino B",
+            "short_name": "ARG B",
+            "logo": "assets\/logos\/arg.png"
+        },
+        "42": {
+            "id": 42,
+            "name": "Porteño",
+            "short_name": "POR",
+            "logo": "assets\/logos\/por.png"
+        },
+        "12": {
+            "id": 12,
+            "name": "Pacífico",
+            "short_name": "CAP",
+            "logo": "assets\/logos\/cap.png"
+        },
+        "18": {
+            "id": 18,
+            "name": "Puerto Belgrano",
+            "short_name": "PTO",
+            "logo": "assets\/logos\/pto.png"
+        },
+        "32": {
+            "id": 32,
+            "name": "Tiro Federal",
+            "short_name": "TIRO",
+            "logo": "assets\/logos\/tiro.png"
+        },
+        "33": {
+            "id": 33,
+            "name": "Villa Mitre",
+            "short_name": "VM",
+            "logo": "assets\/logos\/vm.png"
+        },
+        "43": {
+            "id": 43,
+            "name": "S. Sportiva",
+            "short_name": "SS",
+            "logo": "assets\/logos\/ss.png"
+        },
+        "36": {
+            "id": 36,
+            "name": "Pacífico de Cabildo",
+            "short_name": "PAC",
+            "logo": "assets\/logos\/ad6508f6-a924-49b7-a78d-c5397f2850a7.jpg"
         }
     },
     "zones": [
-        "Plata",
+        "Bronce",
+        "Caballeros",
         "Oro",
-        "Bronce"
+        "Plata",
+        "Intermedia",
+        "Promocional"
     ],
     "days": [
         {
-            "date": "2026-07-31",
+            "date": "2026-08-07",
             "matches": [
                 {
-                    "id": 750,
-                    "time": "12:00",
-                    "date": "2026-07-31",
+                    "id": 903,
+                    "time": "16:00",
+                    "date": "2026-08-07",
+                    "zone": "Bronce",
+                    "category": "Sub16",
+                    "round": "Fecha 5",
+                    "home_team_id": 16,
+                    "away_team_id": 5,
+                    "pitch": "Puerto Belgrano",
+                    "umpire_1_id": 177,
+                    "umpire_2_id": 123,
+                    "fee": 42000,
+                    "supervisor": null
+                },
+                {
+                    "id": 478,
+                    "time": "20:30",
+                    "date": "2026-08-07",
+                    "zone": "Caballeros",
+                    "category": "Primera",
+                    "round": "Fecha 6",
+                    "home_team_id": 15,
+                    "away_team_id": 28,
+                    "pitch": "Palihue",
+                    "umpire_1_id": 63,
+                    "umpire_2_id": 158,
+                    "fee": 64000,
+                    "supervisor": null
+                }
+            ]
+        },
+        {
+            "date": "2026-08-08",
+            "matches": [
+                {
+                    "id": 605,
+                    "time": "11:00",
+                    "date": "2026-08-08",
+                    "zone": "Oro",
+                    "category": "Sub14",
+                    "round": "Fecha 6",
+                    "home_team_id": 24,
+                    "away_team_id": 7,
+                    "pitch": "Universitario (Agua)",
+                    "umpire_1_id": 94,
+                    "umpire_2_id": 72,
+                    "fee": 38000,
+                    "supervisor": null
+                },
+                {
+                    "id": 607,
+                    "time": "11:00",
+                    "date": "2026-08-08",
+                    "zone": "Oro",
+                    "category": "Sub14",
+                    "round": "Fecha 6",
+                    "home_team_id": 3,
+                    "away_team_id": 8,
+                    "pitch": "El Nacional",
+                    "umpire_1_id": 131,
+                    "umpire_2_id": 138,
+                    "fee": 38000,
+                    "supervisor": null
+                },
+                {
+                    "id": 602,
+                    "time": "12:30",
+                    "date": "2026-08-08",
+                    "zone": "Oro",
+                    "category": "Sub16",
+                    "round": "Fecha 6",
+                    "home_team_id": 24,
+                    "away_team_id": 7,
+                    "pitch": "Universitario (Agua)",
+                    "umpire_1_id": 91,
+                    "umpire_2_id": 72,
+                    "fee": 42000,
+                    "supervisor": null
+                },
+                {
+                    "id": 603,
+                    "time": "12:30",
+                    "date": "2026-08-08",
+                    "zone": "Oro",
+                    "category": "Sub16",
+                    "round": "Fecha 6",
+                    "home_team_id": 19,
+                    "away_team_id": 1,
+                    "pitch": "S. Sportiva",
+                    "umpire_1_id": 122,
+                    "umpire_2_id": 61,
+                    "fee": 42000,
+                    "supervisor": null
+                },
+                {
+                    "id": 604,
+                    "time": "12:30",
+                    "date": "2026-08-08",
+                    "zone": "Oro",
+                    "category": "Sub16",
+                    "round": "Fecha 6",
+                    "home_team_id": 3,
+                    "away_team_id": 8,
+                    "pitch": "El Nacional",
+                    "umpire_1_id": 131,
+                    "umpire_2_id": 169,
+                    "fee": 42000,
+                    "supervisor": null
+                },
+                {
+                    "id": 599,
+                    "time": "14:00",
+                    "date": "2026-08-08",
+                    "zone": "Oro",
+                    "category": "Sub19",
+                    "round": "Fecha 6",
+                    "home_team_id": 24,
+                    "away_team_id": 7,
+                    "pitch": "Universitario (Agua)",
+                    "umpire_1_id": 59,
+                    "umpire_2_id": 61,
+                    "fee": 43000,
+                    "supervisor": null
+                },
+                {
+                    "id": 600,
+                    "time": "14:00",
+                    "date": "2026-08-08",
+                    "zone": "Oro",
+                    "category": "Sub19",
+                    "round": "Fecha 6",
+                    "home_team_id": 19,
+                    "away_team_id": 1,
+                    "pitch": "S. Sportiva",
+                    "umpire_1_id": 65,
+                    "umpire_2_id": 96,
+                    "fee": 48000,
+                    "supervisor": null
+                },
+                {
+                    "id": 601,
+                    "time": "14:00",
+                    "date": "2026-08-08",
+                    "zone": "Oro",
+                    "category": "Sub19",
+                    "round": "Fecha 6",
+                    "home_team_id": 3,
+                    "away_team_id": 8,
+                    "pitch": "El Nacional",
+                    "umpire_1_id": 66,
+                    "umpire_2_id": 127,
+                    "fee": 43000,
+                    "supervisor": null
+                },
+                {
+                    "id": 596,
+                    "time": "16:00",
+                    "date": "2026-08-08",
+                    "zone": "Oro",
+                    "category": "Primera",
+                    "round": "Fecha 6",
+                    "home_team_id": 24,
+                    "away_team_id": 7,
+                    "pitch": "Universitario (Agua)",
+                    "umpire_1_id": 59,
+                    "umpire_2_id": 67,
+                    "fee": 57000,
+                    "supervisor": null
+                },
+                {
+                    "id": 597,
+                    "time": "16:00",
+                    "date": "2026-08-08",
+                    "zone": "Oro",
+                    "category": "Primera",
+                    "round": "Fecha 6",
+                    "home_team_id": 19,
+                    "away_team_id": 1,
+                    "pitch": "S. Sportiva",
+                    "umpire_1_id": 65,
+                    "umpire_2_id": 96,
+                    "fee": 64000,
+                    "supervisor": null
+                },
+                {
+                    "id": 598,
+                    "time": "16:00",
+                    "date": "2026-08-08",
+                    "zone": "Oro",
+                    "category": "Primera",
+                    "round": "Fecha 6",
+                    "home_team_id": 3,
+                    "away_team_id": 8,
+                    "pitch": "El Nacional",
+                    "umpire_1_id": 66,
+                    "umpire_2_id": 127,
+                    "fee": 57000,
+                    "supervisor": null
+                },
+                {
+                    "id": 761,
+                    "time": "11:00",
+                    "date": "2026-08-08",
                     "zone": "Plata",
                     "category": "Sub14",
-                    "round": "Fecha 5",
-                    "home_team_id": 20,
-                    "away_team_id": 11,
+                    "round": "Fecha 6",
+                    "home_team_id": 11,
+                    "away_team_id": 25,
+                    "pitch": "Pacífico",
+                    "umpire_1_id": 120,
+                    "umpire_2_id": 178,
+                    "fee": 38000,
+                    "supervisor": null
+                },
+                {
+                    "id": 762,
+                    "time": "11:00",
+                    "date": "2026-08-08",
+                    "zone": "Plata",
+                    "category": "Sub14",
+                    "round": "Fecha 6",
+                    "home_team_id": 14,
+                    "away_team_id": 4,
+                    "pitch": "Palihue",
+                    "umpire_1_id": 184,
+                    "umpire_2_id": 114,
+                    "fee": 38000,
+                    "supervisor": null
+                },
+                {
+                    "id": 763,
+                    "time": "12:00",
+                    "date": "2026-08-08",
+                    "zone": "Plata",
+                    "category": "Sub14",
+                    "round": "Fecha 6",
+                    "home_team_id": 23,
+                    "away_team_id": 29,
+                    "pitch": "ABH",
+                    "umpire_1_id": 103,
+                    "umpire_2_id": 118,
+                    "fee": 38000,
+                    "supervisor": null
+                },
+                {
+                    "id": 758,
+                    "time": "12:30",
+                    "date": "2026-08-08",
+                    "zone": "Plata",
+                    "category": "Sub16",
+                    "round": "Fecha 6",
+                    "home_team_id": 11,
+                    "away_team_id": 25,
+                    "pitch": "Pacífico",
+                    "umpire_1_id": 120,
+                    "umpire_2_id": 178,
+                    "fee": 42000,
+                    "supervisor": null
+                },
+                {
+                    "id": 759,
+                    "time": "12:30",
+                    "date": "2026-08-08",
+                    "zone": "Plata",
+                    "category": "Sub16",
+                    "round": "Fecha 6",
+                    "home_team_id": 14,
+                    "away_team_id": 4,
+                    "pitch": "Palihue",
+                    "umpire_1_id": 184,
+                    "umpire_2_id": 114,
+                    "fee": 42000,
+                    "supervisor": null
+                },
+                {
+                    "id": 760,
+                    "time": "13:30",
+                    "date": "2026-08-08",
+                    "zone": "Plata",
+                    "category": "Sub16",
+                    "round": "Fecha 6",
+                    "home_team_id": 23,
+                    "away_team_id": 29,
+                    "pitch": "ABH",
+                    "umpire_1_id": 104,
+                    "umpire_2_id": 121,
+                    "fee": 42000,
+                    "supervisor": null
+                },
+                {
+                    "id": 756,
+                    "time": "14:00",
+                    "date": "2026-08-08",
+                    "zone": "Plata",
+                    "category": "Sub19",
+                    "round": "Fecha 6",
+                    "home_team_id": 14,
+                    "away_team_id": 4,
+                    "pitch": "Palihue",
+                    "umpire_1_id": 158,
+                    "umpire_2_id": 107,
+                    "fee": 48000,
+                    "supervisor": null
+                },
+                {
+                    "id": 752,
+                    "time": "15:00",
+                    "date": "2026-08-08",
+                    "zone": "Plata",
+                    "category": "Primera",
+                    "round": "Fecha 6",
+                    "home_team_id": 11,
+                    "away_team_id": 25,
+                    "pitch": "Pacífico",
+                    "umpire_1_id": 63,
+                    "umpire_2_id": 123,
+                    "fee": 64000,
+                    "supervisor": null
+                },
+                {
+                    "id": 753,
+                    "time": "16:00",
+                    "date": "2026-08-08",
+                    "zone": "Plata",
+                    "category": "Primera",
+                    "round": "Fecha 6",
+                    "home_team_id": 14,
+                    "away_team_id": 4,
+                    "pitch": "Palihue",
+                    "umpire_1_id": 158,
+                    "umpire_2_id": 107,
+                    "fee": 64000,
+                    "supervisor": null
+                },
+                {
+                    "id": 754,
+                    "time": "16:00",
+                    "date": "2026-08-08",
+                    "zone": "Plata",
+                    "category": "Primera",
+                    "round": "Fecha 6",
+                    "home_team_id": 23,
+                    "away_team_id": 29,
+                    "pitch": "ABH",
+                    "umpire_1_id": 76,
+                    "umpire_2_id": 68,
+                    "fee": 64000,
+                    "supervisor": null
+                },
+                {
+                    "id": 918,
+                    "time": "11:00",
+                    "date": "2026-08-08",
+                    "zone": "Bronce",
+                    "category": "Sub14",
+                    "round": "Fecha 6",
+                    "home_team_id": 16,
+                    "away_team_id": 22,
+                    "pitch": "Sporting",
+                    "umpire_1_id": 97,
+                    "umpire_2_id": 183,
+                    "fee": 38000,
+                    "supervisor": null
+                },
+                {
+                    "id": 915,
+                    "time": "12:30",
+                    "date": "2026-08-08",
+                    "zone": "Bronce",
+                    "category": "Sub16",
+                    "round": "Fecha 6",
+                    "home_team_id": 16,
+                    "away_team_id": 22,
+                    "pitch": "Sporting",
+                    "umpire_1_id": 125,
+                    "umpire_2_id": 108,
+                    "fee": 42000,
+                    "supervisor": null
+                },
+                {
+                    "id": 912,
+                    "time": "14:00",
+                    "date": "2026-08-08",
+                    "zone": "Bronce",
+                    "category": "Sub19",
+                    "round": "Fecha 6",
+                    "home_team_id": 16,
+                    "away_team_id": 22,
+                    "pitch": "Sporting",
+                    "umpire_1_id": 57,
+                    "umpire_2_id": 143,
+                    "fee": 48000,
+                    "supervisor": null
+                },
+                {
+                    "id": 909,
+                    "time": "16:00",
+                    "date": "2026-08-08",
+                    "zone": "Bronce",
+                    "category": "Primera",
+                    "round": "Fecha 6",
+                    "home_team_id": 16,
+                    "away_team_id": 22,
+                    "pitch": "Sporting",
+                    "umpire_1_id": 57,
+                    "umpire_2_id": 143,
+                    "fee": 64000,
+                    "supervisor": null
+                },
+                {
+                    "id": 1042,
+                    "time": "18:00",
+                    "date": "2026-08-08",
+                    "zone": "Intermedia",
+                    "category": "Intermedia",
+                    "round": "Fecha 6",
+                    "home_team_id": 27,
+                    "away_team_id": 13,
+                    "pitch": "Universitario (Agua)",
+                    "umpire_1_id": 158,
+                    "umpire_2_id": 143,
+                    "fee": 50000,
+                    "supervisor": null
+                },
+                {
+                    "id": 1043,
+                    "time": "18:00",
+                    "date": "2026-08-08",
+                    "zone": "Intermedia",
+                    "category": "Intermedia",
+                    "round": "Fecha 6",
+                    "home_team_id": 21,
+                    "away_team_id": 30,
                     "pitch": "S. Sportiva",
-                    "umpire_1_id": 119,
-                    "umpire_2_id": 72,
+                    "umpire_1_id": 65,
+                    "umpire_2_id": 68,
+                    "fee": 50000,
+                    "supervisor": null
+                },
+                {
+                    "id": 1041,
+                    "time": "19:00",
+                    "date": "2026-08-08",
+                    "zone": "Intermedia",
+                    "category": "Intermedia",
+                    "round": "Fecha 6",
+                    "home_team_id": 29,
+                    "away_team_id": 8,
+                    "pitch": "Villa Mitre",
+                    "umpire_1_id": 141,
+                    "umpire_2_id": 123,
+                    "fee": 45000,
+                    "supervisor": null
+                }
+            ]
+        },
+        {
+            "date": "2026-08-09",
+            "matches": [
+                {
+                    "id": 588,
+                    "time": "13:00",
+                    "date": "2026-08-09",
+                    "zone": "Oro",
+                    "category": "Sub19",
+                    "round": "Fecha 5",
+                    "home_team_id": 10,
+                    "away_team_id": 3,
+                    "pitch": "Pacífico",
+                    "umpire_1_id": 65,
+                    "umpire_2_id": 68,
+                    "fee": 48000,
+                    "supervisor": null
+                },
+                {
+                    "id": 919,
+                    "time": "11:00",
+                    "date": "2026-08-09",
+                    "zone": "Bronce",
+                    "category": "Sub14",
+                    "round": "Fecha 6",
+                    "home_team_id": 5,
+                    "away_team_id": 26,
+                    "pitch": "El Nacional",
+                    "umpire_1_id": 131,
+                    "umpire_2_id": 88,
+                    "fee": 38000,
+                    "supervisor": null
+                },
+                {
+                    "id": 916,
+                    "time": "12:30",
+                    "date": "2026-08-09",
+                    "zone": "Bronce",
+                    "category": "Sub16",
+                    "round": "Fecha 6",
+                    "home_team_id": 5,
+                    "away_team_id": 26,
+                    "pitch": "El Nacional",
+                    "umpire_1_id": 131,
+                    "umpire_2_id": 88,
+                    "fee": 42000,
+                    "supervisor": null
+                },
+                {
+                    "id": 911,
+                    "time": "13:00",
+                    "date": "2026-08-09",
+                    "zone": "Bronce",
+                    "category": "Sub19",
+                    "round": "Fecha 6",
+                    "home_team_id": 17,
+                    "away_team_id": 2,
+                    "pitch": "Puerto Belgrano",
+                    "umpire_1_id": 71,
+                    "umpire_2_id": 130,
+                    "fee": 48000,
+                    "supervisor": null
+                },
+                {
+                    "id": 913,
+                    "time": "14:00",
+                    "date": "2026-08-09",
+                    "zone": "Bronce",
+                    "category": "Sub19",
+                    "round": "Fecha 6",
+                    "home_team_id": 5,
+                    "away_team_id": 26,
+                    "pitch": "El Nacional",
+                    "umpire_1_id": 82,
+                    "umpire_2_id": 143,
+                    "fee": 48000,
+                    "supervisor": null
+                },
+                {
+                    "id": 908,
+                    "time": "15:00",
+                    "date": "2026-08-09",
+                    "zone": "Bronce",
+                    "category": "Primera",
+                    "round": "Fecha 6",
+                    "home_team_id": 17,
+                    "away_team_id": 2,
+                    "pitch": "Puerto Belgrano",
+                    "umpire_1_id": 71,
+                    "umpire_2_id": 130,
+                    "fee": 64000,
+                    "supervisor": null
+                },
+                {
+                    "id": 910,
+                    "time": "16:00",
+                    "date": "2026-08-09",
+                    "zone": "Bronce",
+                    "category": "Primera",
+                    "round": "Fecha 6",
+                    "home_team_id": 5,
+                    "away_team_id": 26,
+                    "pitch": "El Nacional",
+                    "umpire_1_id": 82,
+                    "umpire_2_id": 143,
+                    "fee": 64000,
+                    "supervisor": null
+                },
+                {
+                    "id": 1040,
+                    "time": "18:00",
+                    "date": "2026-08-09",
+                    "zone": "Intermedia",
+                    "category": "Intermedia",
+                    "round": "Fecha 5",
+                    "home_team_id": 14,
+                    "away_team_id": 30,
+                    "pitch": "Palihue",
+                    "umpire_1_id": 63,
+                    "umpire_2_id": 61,
+                    "fee": 50000,
+                    "supervisor": null
+                },
+                {
+                    "id": 498,
+                    "time": "12:00",
+                    "date": "2026-08-09",
+                    "zone": "Caballeros",
+                    "category": "Menores",
+                    "round": "Fecha 6",
+                    "home_team_id": 42,
+                    "away_team_id": 28,
+                    "pitch": "ABH",
+                    "umpire_1_id": 175,
+                    "umpire_2_id": 134,
+                    "fee": 38000,
+                    "supervisor": null
+                },
+                {
+                    "id": 499,
+                    "time": "15:00",
+                    "date": "2026-08-09",
+                    "zone": "Caballeros",
+                    "category": "Menores",
+                    "round": "Fecha 6",
+                    "home_team_id": 12,
+                    "away_team_id": 18,
+                    "pitch": "Pacífico",
+                    "umpire_1_id": 177,
+                    "umpire_2_id": 96,
+                    "fee": 38000,
+                    "supervisor": null
+                },
+                {
+                    "id": 479,
+                    "time": "17:00",
+                    "date": "2026-08-09",
+                    "zone": "Caballeros",
+                    "category": "Primera",
+                    "round": "Fecha 6",
+                    "home_team_id": 12,
+                    "away_team_id": 18,
+                    "pitch": "Pacífico",
+                    "umpire_1_id": 66,
+                    "umpire_2_id": 127,
+                    "fee": 57000,
+                    "supervisor": null
+                },
+                {
+                    "id": 1096,
+                    "time": "10:00",
+                    "date": "2026-08-09",
+                    "zone": "Promocional",
+                    "category": "Sub14",
+                    "round": "Fecha 3",
+                    "home_team_id": 32,
+                    "away_team_id": 33,
+                    "pitch": "ABH",
+                    "umpire_1_id": null,
+                    "umpire_2_id": 185,
+                    "fee": null,
+                    "supervisor": null
+                },
+                {
+                    "id": 1097,
+                    "time": "10:00",
+                    "date": "2026-08-09",
+                    "zone": "Promocional",
+                    "category": "Sub14",
+                    "round": "Fecha 3",
+                    "home_team_id": 43,
+                    "away_team_id": 36,
+                    "pitch": "S. Sportiva",
+                    "umpire_1_id": 179,
+                    "umpire_2_id": 91,
                     "fee": 38000,
                     "supervisor": null
                 }
             ]
         },
         {
-            "date": "2026-08-01",
+            "date": "2026-08-11",
             "matches": [
                 {
-                    "id": 591,
-                    "time": "12:30",
-                    "date": "2026-08-01",
-                    "zone": "Oro",
-                    "category": "Sub16",
-                    "round": "Fecha 5",
-                    "home_team_id": 10,
-                    "away_team_id": 3,
-                    "pitch": "Pacífico",
-                    "umpire_1_id": 120,
-                    "umpire_2_id": 131,
-                    "fee": 42000,
-                    "supervisor": null
-                },
-                {
-                    "id": 748,
-                    "time": "15:00",
-                    "date": "2026-08-01",
+                    "id": 740,
+                    "time": "21:00",
+                    "date": "2026-08-11",
                     "zone": "Plata",
-                    "category": "Sub16",
-                    "round": "Fecha 5",
-                    "home_team_id": 4,
-                    "away_team_id": 29,
-                    "pitch": "El Nacional",
-                    "umpire_1_id": 114,
-                    "umpire_2_id": 142,
-                    "fee": 42000,
-                    "supervisor": null
-                }
-            ]
-        },
-        {
-            "date": "2026-08-02",
-            "matches": [
-                {
-                    "id": 874,
-                    "time": "15:00",
-                    "date": "2026-08-02",
-                    "zone": "Bronce",
                     "category": "Primera",
-                    "round": "Fecha 3",
-                    "home_team_id": 22,
-                    "away_team_id": 5,
-                    "pitch": "Sporting",
-                    "umpire_1_id": 76,
+                    "round": "Fecha 5",
+                    "home_team_id": 25,
+                    "away_team_id": 14,
+                    "pitch": "Universitario (Agua)",
+                    "umpire_1_id": 65,
                     "umpire_2_id": 61,
                     "fee": 64000,
                     "supervisor": null
