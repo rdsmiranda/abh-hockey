@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-08-05T15:49:46-03:00",
+    "generated_at": "2026-08-07T17:28:38-03:00",
     "from": "2026-08-07",
     "to": "2026-08-11",
     "umpires": {
@@ -800,7 +800,7 @@
                     "home_team_id": 19,
                     "away_team_id": 1,
                     "pitch": "S. Sportiva",
-                    "umpire_1_id": 122,
+                    "umpire_1_id": 119,
                     "umpire_2_id": 61,
                     "fee": 42000,
                     "supervisor": null
@@ -995,7 +995,7 @@
                     "home_team_id": 23,
                     "away_team_id": 29,
                     "pitch": "ABH",
-                    "umpire_1_id": 104,
+                    "umpire_1_id": 68,
                     "umpire_2_id": 121,
                     "fee": 42000,
                     "supervisor": null
@@ -1301,7 +1301,7 @@
                     "away_team_id": 28,
                     "pitch": "ABH",
                     "umpire_1_id": 175,
-                    "umpire_2_id": 134,
+                    "umpire_2_id": 91,
                     "fee": 38000,
                     "supervisor": null
                 },
