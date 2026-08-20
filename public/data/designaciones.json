@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-08-19T21:26:21-03:00",
+    "generated_at": "2026-08-20T12:37:14-03:00",
     "from": "2026-08-21",
     "to": "2026-08-23",
     "umpires": {
@@ -709,7 +709,7 @@
                     "away_team_id": 17,
                     "pitch": "El Nacional",
                     "umpire_1_id": 131,
-                    "umpire_2_id": 177,
+                    "umpire_2_id": 97,
                     "fee": 44000,
                     "supervisor": null
                 },
@@ -724,7 +724,7 @@
                     "away_team_id": 17,
                     "pitch": "El Nacional",
                     "umpire_1_id": 131,
-                    "umpire_2_id": 177,
+                    "umpire_2_id": 97,
                     "fee": 48000,
                     "supervisor": null
                 },
@@ -1119,7 +1119,7 @@
                     "away_team_id": 17,
                     "pitch": "Universitario (Agua)",
                     "umpire_1_id": 134,
-                    "umpire_2_id": 97,
+                    "umpire_2_id": 177,
                     "fee": 44000,
                     "supervisor": null
                 },
@@ -1149,7 +1149,7 @@
                     "away_team_id": 17,
                     "pitch": "Universitario (Agua)",
                     "umpire_1_id": 92,
-                    "umpire_2_id": 97,
+                    "umpire_2_id": 177,
                     "fee": 48000,
                     "supervisor": null
                 },
