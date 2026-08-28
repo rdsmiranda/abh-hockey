@@ -1,6 +1,6 @@
 {
-    "generated_at": "2026-08-28T08:38:16-03:00",
-    "from": "2026-08-28",
+    "generated_at": "2026-08-28T08:44:54-03:00",
+    "from": "2026-08-27",
     "to": "2026-09-01",
     "umpires": {
         "56": {
@@ -517,6 +517,30 @@
         }
     },
     "teams": {
+        "24": {
+            "id": 24,
+            "name": "Universitario A",
+            "short_name": "UNI A",
+            "logo": "assets\/logos\/uni.png"
+        },
+        "3": {
+            "id": 3,
+            "name": "El Nacional A",
+            "short_name": "CEN A",
+            "logo": "assets\/logos\/cen.png"
+        },
+        "29": {
+            "id": 29,
+            "name": "Villa Mitre",
+            "short_name": "VM",
+            "logo": "assets\/logos\/vm.png"
+        },
+        "11": {
+            "id": 11,
+            "name": "Pacífico B",
+            "short_name": "CAP B",
+            "logo": "assets\/logos\/cap.png"
+        },
         "15": {
             "id": 15,
             "name": "Palihue",
@@ -527,12 +551,6 @@
             "id": 6,
             "name": "El Nacional",
             "short_name": "CEN",
-            "logo": "assets\/logos\/cen.png"
-        },
-        "3": {
-            "id": 3,
-            "name": "El Nacional A",
-            "short_name": "CEN A",
             "logo": "assets\/logos\/cen.png"
         },
         "19": {
@@ -570,12 +588,6 @@
             "name": "Palihue",
             "short_name": "PAL",
             "logo": "assets\/logos\/pal.png"
-        },
-        "11": {
-            "id": 11,
-            "name": "Pacífico B",
-            "short_name": "CAP B",
-            "logo": "assets\/logos\/cap.png"
         },
         "23": {
             "id": 23,
@@ -637,12 +649,6 @@
             "short_name": "SPO",
             "logo": "assets\/logos\/spo.png"
         },
-        "29": {
-            "id": 29,
-            "name": "Villa Mitre",
-            "short_name": "VM",
-            "logo": "assets\/logos\/vm.png"
-        },
         "21": {
             "id": 21,
             "name": "S. Sportiva",
@@ -678,23 +684,52 @@
             "name": "S. Sportiva",
             "short_name": "SS",
             "logo": "assets\/logos\/ss.png"
-        },
-        "24": {
-            "id": 24,
-            "name": "Universitario A",
-            "short_name": "UNI A",
-            "logo": "assets\/logos\/uni.png"
         }
     },
     "zones": [
-        "Caballeros",
         "Oro",
         "Plata",
+        "Caballeros",
         "Bronce",
         "Intermedia",
         "Promocional"
     ],
     "days": [
+        {
+            "date": "2026-08-27",
+            "matches": [
+                {
+                    "id": 649,
+                    "time": "19:30",
+                    "date": "2026-08-27",
+                    "zone": "Oro",
+                    "category": "Sub19",
+                    "round": "Fecha 10",
+                    "home_team_id": 24,
+                    "away_team_id": 3,
+                    "pitch": "Universitario (Agua)",
+                    "umpire_1_id": 77,
+                    "umpire_2_id": 82,
+                    "fee": 54000,
+                    "supervisor": null
+                },
+                {
+                    "id": 766,
+                    "time": "21:00",
+                    "date": "2026-08-27",
+                    "zone": "Plata",
+                    "category": "Primera",
+                    "round": "Fecha 7",
+                    "home_team_id": 29,
+                    "away_team_id": 11,
+                    "pitch": "Villa Mitre",
+                    "umpire_1_id": 76,
+                    "umpire_2_id": 158,
+                    "fee": 72000,
+                    "supervisor": null
+                }
+            ]
+        },
         {
             "date": "2026-08-28",
             "matches": [
@@ -1168,7 +1203,7 @@
                     "home_team_id": 29,
                     "away_team_id": 11,
                     "pitch": "Villa Mitre",
-                    "umpire_1_id": 121,
+                    "umpire_1_id": 118,
                     "umpire_2_id": 120,
                     "fee": 48000,
                     "supervisor": null
