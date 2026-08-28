@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-08-28T09:16:22-03:00",
+    "generated_at": "2026-08-28T10:14:20-03:00",
     "from": "2026-08-28",
     "to": "2026-09-01",
     "umpires": {
@@ -804,7 +804,7 @@
                     "away_team_id": 19,
                     "pitch": "El Nacional",
                     "umpire_1_id": 58,
-                    "umpire_2_id": 77,
+                    "umpire_2_id": 59,
                     "fee": 72000,
                     "supervisor": null
                 },
@@ -969,7 +969,7 @@
                     "away_team_id": 25,
                     "pitch": "S. Sportiva",
                     "umpire_1_id": 158,
-                    "umpire_2_id": 59,
+                    "umpire_2_id": 107,
                     "fee": 72000,
                     "supervisor": null
                 },
