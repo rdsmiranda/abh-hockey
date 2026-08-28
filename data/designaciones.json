@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-08-28T10:14:20-03:00",
+    "generated_at": "2026-08-28T15:06:21-03:00",
     "from": "2026-08-28",
     "to": "2026-09-01",
     "umpires": {
@@ -734,18 +734,18 @@
                     "supervisor": null
                 },
                 {
-                    "id": 639,
+                    "id": 642,
                     "time": "14:00",
                     "date": "2026-08-29",
                     "zone": "Oro",
-                    "category": "Sub16",
+                    "category": "Sub14",
                     "round": "Fecha 9",
                     "home_team_id": 10,
                     "away_team_id": 1,
                     "pitch": "Pacífico",
                     "umpire_1_id": 72,
                     "umpire_2_id": 81,
-                    "fee": 48000,
+                    "fee": 44000,
                     "supervisor": null
                 },
                 {
@@ -1266,6 +1266,26 @@
             ]
         },
         {
+            "date": "2026-08-31",
+            "matches": [
+                {
+                    "id": 797,
+                    "time": "18:00",
+                    "date": "2026-08-31",
+                    "zone": "Plata",
+                    "category": "Sub14",
+                    "round": "Fecha 9",
+                    "home_team_id": 14,
+                    "away_team_id": 11,
+                    "pitch": "Palihue",
+                    "umpire_1_id": 135,
+                    "umpire_2_id": 120,
+                    "fee": 44000,
+                    "supervisor": null
+                }
+            ]
+        },
+        {
             "date": "2026-09-01",
             "matches": [
                 {
@@ -1279,8 +1299,8 @@
                     "away_team_id": 1,
                     "pitch": "S. Sportiva",
                     "umpire_1_id": 119,
-                    "umpire_2_id": null,
-                    "fee": null,
+                    "umpire_2_id": 61,
+                    "fee": 44000,
                     "supervisor": null
                 },
                 {
