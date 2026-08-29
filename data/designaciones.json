@@ -1,6 +1,6 @@
 {
-    "generated_at": "2026-08-28T15:06:21-03:00",
-    "from": "2026-08-28",
+    "generated_at": "2026-08-28T21:47:47-03:00",
+    "from": "2026-08-29",
     "to": "2026-09-01",
     "umpires": {
         "56": {
@@ -517,18 +517,6 @@
         }
     },
     "teams": {
-        "15": {
-            "id": 15,
-            "name": "Palihue",
-            "short_name": "PAL",
-            "logo": "assets\/logos\/pal.png"
-        },
-        "6": {
-            "id": 6,
-            "name": "El Nacional",
-            "short_name": "CEN",
-            "logo": "assets\/logos\/cen.png"
-        },
         "3": {
             "id": 3,
             "name": "El Nacional A",
@@ -667,6 +655,12 @@
             "short_name": "CAP",
             "logo": "assets\/logos\/cap.png"
         },
+        "6": {
+            "id": 6,
+            "name": "El Nacional",
+            "short_name": "CEN",
+            "logo": "assets\/logos\/cen.png"
+        },
         "33": {
             "id": 33,
             "name": "Villa Mitre",
@@ -687,34 +681,14 @@
         }
     },
     "zones": [
-        "Caballeros",
         "Oro",
         "Plata",
         "Bronce",
         "Intermedia",
+        "Caballeros",
         "Promocional"
     ],
     "days": [
-        {
-            "date": "2026-08-28",
-            "matches": [
-                {
-                    "id": 477,
-                    "time": "20:00",
-                    "date": "2026-08-28",
-                    "zone": "Caballeros",
-                    "category": "Primera",
-                    "round": "Fecha 5",
-                    "home_team_id": 15,
-                    "away_team_id": 6,
-                    "pitch": "Palihue",
-                    "umpire_1_id": 66,
-                    "umpire_2_id": 127,
-                    "fee": 72000,
-                    "supervisor": null
-                }
-            ]
-        },
         {
             "date": "2026-08-29",
             "matches": [
@@ -743,7 +717,7 @@
                     "home_team_id": 10,
                     "away_team_id": 1,
                     "pitch": "Pacífico",
-                    "umpire_1_id": 72,
+                    "umpire_1_id": 97,
                     "umpire_2_id": 81,
                     "fee": 44000,
                     "supervisor": null
@@ -773,9 +747,9 @@
                     "home_team_id": 10,
                     "away_team_id": 1,
                     "pitch": "Pacífico",
-                    "umpire_1_id": 127,
-                    "umpire_2_id": 85,
-                    "fee": 48000,
+                    "umpire_1_id": 65,
+                    "umpire_2_id": 127,
+                    "fee": 54000,
                     "supervisor": null
                 },
                 {
@@ -1314,8 +1288,8 @@
                     "away_team_id": 3,
                     "pitch": "Universitario (Agua)",
                     "umpire_1_id": 88,
-                    "umpire_2_id": null,
-                    "fee": null,
+                    "umpire_2_id": 131,
+                    "fee": 48000,
                     "supervisor": null
                 }
             ]
