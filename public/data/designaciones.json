@@ -1,6 +1,6 @@
 {
-    "generated_at": "2026-09-09T14:39:43-03:00",
-    "from": "2026-09-09",
+    "generated_at": "2026-09-10T13:36:31-03:00",
+    "from": "2026-09-10",
     "to": "2026-09-13",
     "umpires": {
         "56": {
@@ -704,41 +704,6 @@
     ],
     "days": [
         {
-            "date": "2026-09-09",
-            "matches": [
-                {
-                    "id": 811,
-                    "time": "16:30",
-                    "date": "2026-09-09",
-                    "zone": "Plata",
-                    "category": "Sub14",
-                    "round": "Fecha 10",
-                    "home_team_id": 4,
-                    "away_team_id": 25,
-                    "pitch": "El Nacional",
-                    "umpire_1_id": 131,
-                    "umpire_2_id": 88,
-                    "fee": 44000,
-                    "supervisor": null
-                },
-                {
-                    "id": 802,
-                    "time": "21:00",
-                    "date": "2026-09-09",
-                    "zone": "Plata",
-                    "category": "Primera",
-                    "round": "Fecha 10",
-                    "home_team_id": 4,
-                    "away_team_id": 25,
-                    "pitch": "El Nacional",
-                    "umpire_1_id": 76,
-                    "umpire_2_id": 143,
-                    "fee": 72000,
-                    "supervisor": null
-                }
-            ]
-        },
-        {
             "date": "2026-09-10",
             "matches": [
                 {
@@ -802,8 +767,8 @@
                     "away_team_id": 23,
                     "pitch": "Universitario (Agua)",
                     "umpire_1_id": 91,
-                    "umpire_2_id": null,
-                    "fee": null,
+                    "umpire_2_id": 72,
+                    "fee": 44000,
                     "supervisor": null
                 },
                 {
@@ -1441,9 +1406,9 @@
                     "home_team_id": 18,
                     "away_team_id": 12,
                     "pitch": "Puerto Belgrano",
-                    "umpire_1_id": null,
+                    "umpire_1_id": 96,
                     "umpire_2_id": 120,
-                    "fee": null,
+                    "fee": 44000,
                     "supervisor": null
                 },
                 {
@@ -1457,8 +1422,8 @@
                     "away_team_id": 32,
                     "pitch": "Villa Mitre",
                     "umpire_1_id": 185,
-                    "umpire_2_id": null,
-                    "fee": null,
+                    "umpire_2_id": 85,
+                    "fee": 44000,
                     "supervisor": null
                 },
                 {
