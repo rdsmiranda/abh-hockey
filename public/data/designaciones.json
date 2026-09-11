@@ -1,6 +1,6 @@
 {
-    "generated_at": "2026-09-10T13:36:31-03:00",
-    "from": "2026-09-10",
+    "generated_at": "2026-09-11T19:58:01-03:00",
+    "from": "2026-09-12",
     "to": "2026-09-13",
     "umpires": {
         "56": {
@@ -525,76 +525,10 @@
         }
     },
     "teams": {
-        "4": {
-            "id": 4,
-            "name": "El Nacional B",
-            "short_name": "CEN B",
-            "logo": "assets\/logos\/cen.png"
-        },
-        "25": {
-            "id": 25,
-            "name": "Universitario B",
-            "short_name": "UNI B",
-            "logo": "assets\/logos\/uni.png"
-        },
-        "2": {
-            "id": 2,
-            "name": "Argentino B",
-            "short_name": "ARG B",
-            "logo": "assets\/logos\/arg.png"
-        },
-        "5": {
-            "id": 5,
-            "name": "El Nacional C",
-            "short_name": "CEN C",
-            "logo": "assets\/logos\/cen.png"
-        },
         "10": {
             "id": 10,
             "name": "Pacífico A",
             "short_name": "CAP A",
-            "logo": "assets\/logos\/cap.png"
-        },
-        "1": {
-            "id": 1,
-            "name": "Argentino A",
-            "short_name": "ARG A",
-            "logo": "assets\/logos\/arg.png"
-        },
-        "23": {
-            "id": 23,
-            "name": "Tiro Federal",
-            "short_name": "TIRO",
-            "logo": "assets\/logos\/tiro.png"
-        },
-        "11": {
-            "id": 11,
-            "name": "Pacífico B",
-            "short_name": "CAP B",
-            "logo": "assets\/logos\/cap.png"
-        },
-        "18": {
-            "id": 18,
-            "name": "Puerto Belgrano",
-            "short_name": "PTO",
-            "logo": "assets\/logos\/pto.png"
-        },
-        "15": {
-            "id": 15,
-            "name": "Palihue",
-            "short_name": "PAL",
-            "logo": "assets\/logos\/pal.png"
-        },
-        "28": {
-            "id": 28,
-            "name": "Universitario",
-            "short_name": "UNI",
-            "logo": "assets\/logos\/uni.png"
-        },
-        "12": {
-            "id": 12,
-            "name": "Pacífico",
-            "short_name": "CAP",
             "logo": "assets\/logos\/cap.png"
         },
         "24": {
@@ -621,11 +555,35 @@
             "short_name": "CAI",
             "logo": "assets\/logos\/cai.png"
         },
+        "1": {
+            "id": 1,
+            "name": "Argentino A",
+            "short_name": "ARG A",
+            "logo": "assets\/logos\/arg.png"
+        },
+        "4": {
+            "id": 4,
+            "name": "El Nacional B",
+            "short_name": "CEN B",
+            "logo": "assets\/logos\/cen.png"
+        },
+        "11": {
+            "id": 11,
+            "name": "Pacífico B",
+            "short_name": "CAP B",
+            "logo": "assets\/logos\/cap.png"
+        },
         "20": {
             "id": 20,
             "name": "S. Sportiva B",
             "short_name": "SS B",
             "logo": "assets\/logos\/ss.png"
+        },
+        "23": {
+            "id": 23,
+            "name": "Tiro Federal",
+            "short_name": "TIRO",
+            "logo": "assets\/logos\/tiro.png"
         },
         "14": {
             "id": 14,
@@ -638,6 +596,12 @@
             "name": "Villa Mitre",
             "short_name": "VM",
             "logo": "assets\/logos\/vm.png"
+        },
+        "2": {
+            "id": 2,
+            "name": "Argentino B",
+            "short_name": "ARG B",
+            "logo": "assets\/logos\/arg.png"
         },
         "17": {
             "id": 17,
@@ -663,11 +627,29 @@
             "short_name": "UNI C",
             "logo": "assets\/logos\/uni.png"
         },
+        "5": {
+            "id": 5,
+            "name": "El Nacional C",
+            "short_name": "CEN C",
+            "logo": "assets\/logos\/cen.png"
+        },
         "21": {
             "id": 21,
             "name": "S. Sportiva",
             "short_name": "SS",
             "logo": "assets\/logos\/ss.png"
+        },
+        "18": {
+            "id": 18,
+            "name": "Puerto Belgrano",
+            "short_name": "PTO",
+            "logo": "assets\/logos\/pto.png"
+        },
+        "12": {
+            "id": 12,
+            "name": "Pacífico",
+            "short_name": "CAP",
+            "logo": "assets\/logos\/cap.png"
         },
         "33": {
             "id": 33,
@@ -695,129 +677,14 @@
         }
     },
     "zones": [
+        "Oro",
         "Plata",
         "Bronce",
-        "Oro",
-        "Caballeros",
         "Intermedia",
+        "Caballeros",
         "Promocional"
     ],
     "days": [
-        {
-            "date": "2026-09-10",
-            "matches": [
-                {
-                    "id": 805,
-                    "time": "19:30",
-                    "date": "2026-09-10",
-                    "zone": "Plata",
-                    "category": "Sub19",
-                    "round": "Fecha 10",
-                    "home_team_id": 4,
-                    "away_team_id": 25,
-                    "pitch": "Universitario (Agua)",
-                    "umpire_1_id": 76,
-                    "umpire_2_id": 143,
-                    "fee": 54000,
-                    "supervisor": null
-                },
-                {
-                    "id": 954,
-                    "time": "18:30",
-                    "date": "2026-09-10",
-                    "zone": "Bronce",
-                    "category": "Sub14",
-                    "round": "Fecha 9",
-                    "home_team_id": 2,
-                    "away_team_id": 5,
-                    "pitch": "Argentino",
-                    "umpire_1_id": 92,
-                    "umpire_2_id": 132,
-                    "fee": 44000,
-                    "supervisor": null
-                }
-            ]
-        },
-        {
-            "date": "2026-09-11",
-            "matches": [
-                {
-                    "id": 639,
-                    "time": "19:00",
-                    "date": "2026-09-11",
-                    "zone": "Oro",
-                    "category": "Sub16",
-                    "round": "Fecha 9",
-                    "home_team_id": 10,
-                    "away_team_id": 1,
-                    "pitch": "Pacífico",
-                    "umpire_1_id": 72,
-                    "umpire_2_id": 81,
-                    "fee": 48000,
-                    "supervisor": null
-                },
-                {
-                    "id": 774,
-                    "time": "12:00",
-                    "date": "2026-09-11",
-                    "zone": "Plata",
-                    "category": "Sub14",
-                    "round": "Fecha 7",
-                    "home_team_id": 25,
-                    "away_team_id": 23,
-                    "pitch": "Universitario (Agua)",
-                    "umpire_1_id": 91,
-                    "umpire_2_id": 72,
-                    "fee": 44000,
-                    "supervisor": null
-                },
-                {
-                    "id": 755,
-                    "time": "15:00",
-                    "date": "2026-09-11",
-                    "zone": "Plata",
-                    "category": "Sub19",
-                    "round": "Fecha 6",
-                    "home_team_id": 11,
-                    "away_team_id": 25,
-                    "pitch": "Pacífico",
-                    "umpire_1_id": 61,
-                    "umpire_2_id": 68,
-                    "fee": 54000,
-                    "supervisor": null
-                },
-                {
-                    "id": 480,
-                    "time": "20:30",
-                    "date": "2026-09-11",
-                    "zone": "Caballeros",
-                    "category": "Primera",
-                    "round": "Fecha 7",
-                    "home_team_id": 18,
-                    "away_team_id": 15,
-                    "pitch": "Palihue",
-                    "umpire_1_id": 66,
-                    "umpire_2_id": 127,
-                    "fee": 72000,
-                    "supervisor": null
-                },
-                {
-                    "id": 486,
-                    "time": "21:00",
-                    "date": "2026-09-11",
-                    "zone": "Caballeros",
-                    "category": "Primera",
-                    "round": "Fecha 10",
-                    "home_team_id": 28,
-                    "away_team_id": 12,
-                    "pitch": "Pacífico",
-                    "umpire_1_id": 76,
-                    "umpire_2_id": 59,
-                    "fee": 72000,
-                    "supervisor": null
-                }
-            ]
-        },
         {
             "date": "2026-09-12",
             "matches": [
@@ -1366,36 +1233,6 @@
         {
             "date": "2026-09-13",
             "matches": [
-                {
-                    "id": 978,
-                    "time": "14:30",
-                    "date": "2026-09-13",
-                    "zone": "Bronce",
-                    "category": "Sub14",
-                    "round": "Fecha 11",
-                    "home_team_id": 26,
-                    "away_team_id": 5,
-                    "pitch": "Universitario (Agua)",
-                    "umpire_1_id": 94,
-                    "umpire_2_id": 131,
-                    "fee": 44000,
-                    "supervisor": null
-                },
-                {
-                    "id": 975,
-                    "time": "16:30",
-                    "date": "2026-09-13",
-                    "zone": "Bronce",
-                    "category": "Sub16",
-                    "round": "Fecha 11",
-                    "home_team_id": 26,
-                    "away_team_id": 5,
-                    "pitch": "Universitario (Agua)",
-                    "umpire_1_id": 94,
-                    "umpire_2_id": 131,
-                    "fee": 48000,
-                    "supervisor": null
-                },
                 {
                     "id": 1083,
                     "time": "15:00",
