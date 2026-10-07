@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-07T18:37:33-03:00",
+    "generated_at": "2026-10-07T20:26:27-03:00",
     "from": "2026-10-09",
     "to": "2026-10-12",
     "umpires": {
@@ -790,9 +790,9 @@
                     "home_team_id": 7,
                     "away_team_id": 24,
                     "pitch": "Independiente",
-                    "umpire_1_id": null,
+                    "umpire_1_id": 136,
                     "umpire_2_id": 117,
-                    "fee": null,
+                    "fee": 44000,
                     "supervisor": null
                 },
                 {
@@ -820,9 +820,9 @@
                     "home_team_id": 7,
                     "away_team_id": 24,
                     "pitch": "Independiente",
-                    "umpire_1_id": null,
+                    "umpire_1_id": 176,
                     "umpire_2_id": 117,
-                    "fee": null,
+                    "fee": 48000,
                     "supervisor": null
                 },
                 {
@@ -1229,7 +1229,7 @@
                     "round": "Fecha 10",
                     "home_team_id": 28,
                     "away_team_id": 12,
-                    "pitch": "Pacífico",
+                    "pitch": "Universitario (Agua)",
                     "umpire_1_id": 90,
                     "umpire_2_id": 72,
                     "fee": 44000,
