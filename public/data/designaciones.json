@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-07T20:26:27-03:00",
+    "generated_at": "2026-10-08T07:32:03-03:00",
     "from": "2026-10-09",
     "to": "2026-10-12",
     "umpires": {
@@ -1108,21 +1108,6 @@
                     "umpire_1_id": 71,
                     "umpire_2_id": 113,
                     "fee": 48000,
-                    "supervisor": null
-                },
-                {
-                    "id": 996,
-                    "time": "14:00",
-                    "date": "2026-10-10",
-                    "zone": "Bronce",
-                    "category": "Sub19",
-                    "round": "Fecha 13",
-                    "home_team_id": 22,
-                    "away_team_id": 5,
-                    "pitch": "Sporting",
-                    "umpire_1_id": 57,
-                    "umpire_2_id": 61,
-                    "fee": 54000,
                     "supervisor": null
                 },
                 {
