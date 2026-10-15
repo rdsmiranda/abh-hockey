@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-15T08:38:26-03:00",
+    "generated_at": "2026-10-15T16:11:26-03:00",
     "from": "2026-10-15",
     "to": "2026-10-23",
     "umpires": {
@@ -725,9 +725,9 @@
                     "home_team_id": 22,
                     "away_team_id": 26,
                     "pitch": "Sporting",
-                    "umpire_1_id": null,
+                    "umpire_1_id": 107,
                     "umpire_2_id": 88,
-                    "fee": null,
+                    "fee": 44000,
                     "supervisor": null
                 },
                 {
@@ -740,9 +740,9 @@
                     "home_team_id": 22,
                     "away_team_id": 26,
                     "pitch": "Sporting",
-                    "umpire_1_id": null,
+                    "umpire_1_id": 107,
                     "umpire_2_id": 88,
-                    "fee": null,
+                    "fee": 48000,
                     "supervisor": null
                 },
                 {
@@ -831,7 +831,7 @@
                     "away_team_id": 33,
                     "pitch": "ABH",
                     "umpire_1_id": null,
-                    "umpire_2_id": null,
+                    "umpire_2_id": 140,
                     "fee": null,
                     "supervisor": null
                 }
