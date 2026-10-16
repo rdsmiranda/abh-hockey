@@ -1,6 +1,6 @@
 {
     "championship_id": 3,
-    "generated_at": "2026-10-15T16:11:20-03:00",
+    "generated_at": "2026-10-15T23:04:33-03:00",
     "rounds": [
         {
             "id": 82,
@@ -9727,9 +9727,9 @@
                     "home_team_id": 4,
                     "away_team_id": 14,
                     "pitch": "El Nacional",
-                    "played": false,
-                    "goals_home": null,
-                    "goals_away": null,
+                    "played": true,
+                    "goals_home": 2,
+                    "goals_away": 1,
                     "has_shootouts": false,
                     "shootouts_home": null,
                     "shootouts_away": null
