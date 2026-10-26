@@ -1,6 +1,6 @@
 {
     "championship_id": 3,
-    "generated_at": "2026-10-26T07:21:12-03:00",
+    "generated_at": "2026-10-26T07:27:27-03:00",
     "rounds": [
         {
             "id": 82,
@@ -9822,22 +9822,6 @@
                     "shootouts_away": null
                 },
                 {
-                    "id": 1088,
-                    "zone_id": 9,
-                    "category_id": 7,
-                    "date": "2026-10-25",
-                    "time": "16:00",
-                    "home_team_id": 6,
-                    "away_team_id": 12,
-                    "pitch": "El Nacional",
-                    "played": true,
-                    "goals_home": 0,
-                    "goals_away": 11,
-                    "has_shootouts": false,
-                    "shootouts_home": null,
-                    "shootouts_away": null
-                },
-                {
                     "id": 1077,
                     "zone_id": 9,
                     "category_id": 4,
@@ -9849,6 +9833,22 @@
                     "played": true,
                     "goals_home": 4,
                     "goals_away": 1,
+                    "has_shootouts": false,
+                    "shootouts_home": null,
+                    "shootouts_away": null
+                },
+                {
+                    "id": 1088,
+                    "zone_id": 9,
+                    "category_id": 7,
+                    "date": "2026-10-25",
+                    "time": "16:00",
+                    "home_team_id": 6,
+                    "away_team_id": 12,
+                    "pitch": "El Nacional",
+                    "played": true,
+                    "goals_home": 0,
+                    "goals_away": 11,
                     "has_shootouts": false,
                     "shootouts_home": null,
                     "shootouts_away": null
@@ -10116,9 +10116,9 @@
                     "home_team_id": 14,
                     "away_team_id": 21,
                     "pitch": "Palihue",
-                    "played": false,
-                    "goals_home": null,
-                    "goals_away": null,
+                    "played": true,
+                    "goals_home": 1,
+                    "goals_away": 3,
                     "has_shootouts": false,
                     "shootouts_home": null,
                     "shootouts_away": null
