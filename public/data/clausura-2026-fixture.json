@@ -1,6 +1,6 @@
 {
     "championship_id": 3,
-    "generated_at": "2026-10-26T22:48:25-03:00",
+    "generated_at": "2026-10-27T20:02:46-03:00",
     "rounds": [
         {
             "id": 82,
@@ -9822,22 +9822,6 @@
                     "shootouts_away": null
                 },
                 {
-                    "id": 1088,
-                    "zone_id": 9,
-                    "category_id": 7,
-                    "date": "2026-10-25",
-                    "time": "16:00",
-                    "home_team_id": 6,
-                    "away_team_id": 12,
-                    "pitch": "El Nacional",
-                    "played": true,
-                    "goals_home": 0,
-                    "goals_away": 11,
-                    "has_shootouts": false,
-                    "shootouts_home": null,
-                    "shootouts_away": null
-                },
-                {
                     "id": 1077,
                     "zone_id": 9,
                     "category_id": 4,
@@ -9849,6 +9833,22 @@
                     "played": true,
                     "goals_home": 4,
                     "goals_away": 1,
+                    "has_shootouts": false,
+                    "shootouts_home": null,
+                    "shootouts_away": null
+                },
+                {
+                    "id": 1088,
+                    "zone_id": 9,
+                    "category_id": 7,
+                    "date": "2026-10-25",
+                    "time": "16:00",
+                    "home_team_id": 6,
+                    "away_team_id": 12,
+                    "pitch": "El Nacional",
+                    "played": true,
+                    "goals_home": 0,
+                    "goals_away": 11,
                     "has_shootouts": false,
                     "shootouts_home": null,
                     "shootouts_away": null
@@ -10227,22 +10227,6 @@
                     "shootouts_away": null
                 },
                 {
-                    "id": 696,
-                    "zone_id": 10,
-                    "category_id": 3,
-                    "date": "2026-10-24",
-                    "time": "14:00",
-                    "home_team_id": 24,
-                    "away_team_id": 1,
-                    "pitch": "Universitario (Agua)",
-                    "played": true,
-                    "goals_home": 5,
-                    "goals_away": 0,
-                    "has_shootouts": false,
-                    "shootouts_home": null,
-                    "shootouts_away": null
-                },
-                {
                     "id": 697,
                     "zone_id": 10,
                     "category_id": 3,
@@ -10253,6 +10237,22 @@
                     "pitch": "El Nacional",
                     "played": true,
                     "goals_home": 4,
+                    "goals_away": 0,
+                    "has_shootouts": false,
+                    "shootouts_home": null,
+                    "shootouts_away": null
+                },
+                {
+                    "id": 696,
+                    "zone_id": 10,
+                    "category_id": 3,
+                    "date": "2026-10-24",
+                    "time": "14:00",
+                    "home_team_id": 24,
+                    "away_team_id": 1,
+                    "pitch": "Universitario (Agua)",
+                    "played": true,
+                    "goals_home": 5,
                     "goals_away": 0,
                     "has_shootouts": false,
                     "shootouts_home": null,
@@ -10498,9 +10498,9 @@
                     "home_team_id": 17,
                     "away_team_id": 16,
                     "pitch": "Puerto Belgrano",
-                    "played": false,
-                    "goals_home": null,
-                    "goals_away": null,
+                    "played": true,
+                    "goals_home": 2,
+                    "goals_away": 11,
                     "has_shootouts": false,
                     "shootouts_home": null,
                     "shootouts_away": null
