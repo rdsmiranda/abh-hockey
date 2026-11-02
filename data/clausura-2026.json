@@ -7,7 +7,7 @@
         "start_date": "2026-06-13",
         "end_date": "2026-12-06"
     },
-    "generated_at": "2026-10-27T20:02:41-03:00",
+    "generated_at": "2026-11-02T07:24:13-03:00",
     "fixture_file": "clausura-2026-fixture.json",
     "teams": {
         "1": {
@@ -4129,6 +4129,75 @@
                         {
                             "position": 3,
                             "played": 15,
+                            "won": 8,
+                            "drawn": 4,
+                            "lost": 3,
+                            "goals_for": 28,
+                            "goals_against": 16,
+                            "goal_difference": 12,
+                            "points": 29,
+                            "recent_form": [
+                                {
+                                    "result": "W",
+                                    "score": "2-0",
+                                    "was_home": false,
+                                    "date": "2026-10-28",
+                                    "match_id": 992,
+                                    "bonus_point": false,
+                                    "shootouts": null,
+                                    "opponent_id": 17
+                                },
+                                {
+                                    "result": "L",
+                                    "score": "0-2",
+                                    "was_home": false,
+                                    "date": "2026-10-26",
+                                    "match_id": 1016,
+                                    "bonus_point": false,
+                                    "shootouts": null,
+                                    "opponent_id": 2
+                                },
+                                {
+                                    "result": "D",
+                                    "score": "2-2",
+                                    "was_home": false,
+                                    "date": "2026-10-17",
+                                    "match_id": 1005,
+                                    "bonus_point": false,
+                                    "shootouts": {
+                                        "for": 1,
+                                        "against": 3,
+                                        "won": false,
+                                        "score": "1-3"
+                                    },
+                                    "opponent_id": 22
+                                },
+                                {
+                                    "result": "W",
+                                    "score": "1-0",
+                                    "was_home": true,
+                                    "date": "2026-09-26",
+                                    "match_id": 980,
+                                    "bonus_point": false,
+                                    "shootouts": null,
+                                    "opponent_id": 16
+                                },
+                                {
+                                    "result": "W",
+                                    "score": "4-1",
+                                    "was_home": true,
+                                    "date": "2026-09-12",
+                                    "match_id": 969,
+                                    "bonus_point": false,
+                                    "shootouts": null,
+                                    "opponent_id": 5
+                                }
+                            ],
+                            "team_id": 26
+                        },
+                        {
+                            "position": 4,
+                            "played": 15,
                             "won": 7,
                             "drawn": 3,
                             "lost": 5,
@@ -4196,85 +4265,26 @@
                             "team_id": 22
                         },
                         {
-                            "position": 4,
-                            "played": 14,
-                            "won": 7,
-                            "drawn": 4,
-                            "lost": 3,
-                            "goals_for": 26,
-                            "goals_against": 16,
-                            "goal_difference": 10,
-                            "points": 26,
+                            "position": 5,
+                            "played": 15,
+                            "won": 1,
+                            "drawn": 1,
+                            "lost": 13,
+                            "goals_for": 14,
+                            "goals_against": 61,
+                            "goal_difference": -47,
+                            "points": 5,
                             "recent_form": [
                                 {
                                     "result": "L",
                                     "score": "0-2",
-                                    "was_home": false,
-                                    "date": "2026-10-26",
-                                    "match_id": 1016,
-                                    "bonus_point": false,
-                                    "shootouts": null,
-                                    "opponent_id": 2
-                                },
-                                {
-                                    "result": "D",
-                                    "score": "2-2",
-                                    "was_home": false,
-                                    "date": "2026-10-17",
-                                    "match_id": 1005,
-                                    "bonus_point": false,
-                                    "shootouts": {
-                                        "for": 1,
-                                        "against": 3,
-                                        "won": false,
-                                        "score": "1-3"
-                                    },
-                                    "opponent_id": 22
-                                },
-                                {
-                                    "result": "W",
-                                    "score": "1-0",
                                     "was_home": true,
-                                    "date": "2026-09-26",
-                                    "match_id": 980,
+                                    "date": "2026-10-28",
+                                    "match_id": 992,
                                     "bonus_point": false,
                                     "shootouts": null,
-                                    "opponent_id": 16
+                                    "opponent_id": 26
                                 },
-                                {
-                                    "result": "W",
-                                    "score": "4-1",
-                                    "was_home": true,
-                                    "date": "2026-09-12",
-                                    "match_id": 969,
-                                    "bonus_point": false,
-                                    "shootouts": null,
-                                    "opponent_id": 5
-                                },
-                                {
-                                    "result": "L",
-                                    "score": "1-2",
-                                    "was_home": true,
-                                    "date": "2026-09-05",
-                                    "match_id": 957,
-                                    "bonus_point": false,
-                                    "shootouts": null,
-                                    "opponent_id": 2
-                                }
-                            ],
-                            "team_id": 26
-                        },
-                        {
-                            "position": 5,
-                            "played": 14,
-                            "won": 1,
-                            "drawn": 1,
-                            "lost": 12,
-                            "goals_for": 14,
-                            "goals_against": 59,
-                            "goal_difference": -45,
-                            "points": 5,
-                            "recent_form": [
                                 {
                                     "result": "L",
                                     "score": "1-4",
@@ -4314,16 +4324,6 @@
                                     "bonus_point": false,
                                     "shootouts": null,
                                     "opponent_id": 2
-                                },
-                                {
-                                    "result": "L",
-                                    "score": "0-5",
-                                    "was_home": false,
-                                    "date": "2026-09-05",
-                                    "match_id": 956,
-                                    "bonus_point": false,
-                                    "shootouts": null,
-                                    "opponent_id": 22
                                 }
                             ],
                             "team_id": 17
@@ -6204,15 +6204,25 @@
                         },
                         {
                             "position": 3,
-                            "played": 9,
-                            "won": 5,
+                            "played": 10,
+                            "won": 6,
                             "drawn": 1,
                             "lost": 3,
-                            "goals_for": 24,
+                            "goals_for": 37,
                             "goals_against": 10,
-                            "goal_difference": 14,
-                            "points": 17,
+                            "goal_difference": 27,
+                            "points": 20,
                             "recent_form": [
+                                {
+                                    "result": "W",
+                                    "score": "13-0",
+                                    "was_home": true,
+                                    "date": "2026-11-01",
+                                    "match_id": 1079,
+                                    "bonus_point": false,
+                                    "shootouts": null,
+                                    "opponent_id": 15
+                                },
                                 {
                                     "result": "W",
                                     "score": "5-0",
@@ -6257,31 +6267,36 @@
                                         "score": "5-4"
                                     },
                                     "opponent_id": 12
-                                },
-                                {
-                                    "result": "W",
-                                    "score": "9-1",
-                                    "was_home": false,
-                                    "date": "2026-08-28",
-                                    "match_id": 477,
-                                    "bonus_point": false,
-                                    "shootouts": null,
-                                    "opponent_id": 15
                                 }
                             ],
                             "team_id": 6
                         },
                         {
                             "position": 4,
-                            "played": 11,
+                            "played": 12,
                             "won": 1,
-                            "drawn": 2,
+                            "drawn": 3,
                             "lost": 8,
-                            "goals_for": 11,
-                            "goals_against": 35,
+                            "goals_for": 12,
+                            "goals_against": 36,
                             "goal_difference": -24,
-                            "points": 6,
+                            "points": 8,
                             "recent_form": [
+                                {
+                                    "result": "D",
+                                    "score": "1-1",
+                                    "was_home": true,
+                                    "date": "2026-10-28",
+                                    "match_id": 1075,
+                                    "bonus_point": true,
+                                    "shootouts": {
+                                        "for": 3,
+                                        "against": 1,
+                                        "won": true,
+                                        "score": "3-1"
+                                    },
+                                    "opponent_id": 15
+                                },
                                 {
                                     "result": "L",
                                     "score": "0-5",
@@ -6321,36 +6336,46 @@
                                     "bonus_point": false,
                                     "shootouts": null,
                                     "opponent_id": 28
-                                },
-                                {
-                                    "result": "D",
-                                    "score": "2-2",
-                                    "was_home": true,
-                                    "date": "2026-08-30",
-                                    "match_id": 484,
-                                    "bonus_point": false,
-                                    "shootouts": {
-                                        "for": 4,
-                                        "against": 5,
-                                        "won": false,
-                                        "score": "4-5"
-                                    },
-                                    "opponent_id": 6
                                 }
                             ],
                             "team_id": 12
                         },
                         {
                             "position": 5,
-                            "played": 9,
+                            "played": 11,
                             "won": 0,
-                            "drawn": 1,
-                            "lost": 8,
-                            "goals_for": 2,
-                            "goals_against": 46,
-                            "goal_difference": -44,
-                            "points": 1,
+                            "drawn": 2,
+                            "lost": 9,
+                            "goals_for": 3,
+                            "goals_against": 60,
+                            "goal_difference": -57,
+                            "points": 2,
                             "recent_form": [
+                                {
+                                    "result": "L",
+                                    "score": "0-13",
+                                    "was_home": false,
+                                    "date": "2026-11-01",
+                                    "match_id": 1079,
+                                    "bonus_point": false,
+                                    "shootouts": null,
+                                    "opponent_id": 6
+                                },
+                                {
+                                    "result": "D",
+                                    "score": "1-1",
+                                    "was_home": false,
+                                    "date": "2026-10-28",
+                                    "match_id": 1075,
+                                    "bonus_point": false,
+                                    "shootouts": {
+                                        "for": 1,
+                                        "against": 3,
+                                        "won": false,
+                                        "score": "1-3"
+                                    },
+                                    "opponent_id": 12
+                                },
                                 {
                                     "result": "L",
                                     "score": "0-4",
@@ -6380,31 +6405,6 @@
                                     "bonus_point": false,
                                     "shootouts": null,
                                     "opponent_id": 28
-                                },
-                                {
-                                    "result": "L",
-                                    "score": "1-9",
-                                    "was_home": true,
-                                    "date": "2026-08-28",
-                                    "match_id": 477,
-                                    "bonus_point": false,
-                                    "shootouts": null,
-                                    "opponent_id": 6
-                                },
-                                {
-                                    "result": "D",
-                                    "score": "1-1",
-                                    "was_home": true,
-                                    "date": "2026-08-21",
-                                    "match_id": 483,
-                                    "bonus_point": false,
-                                    "shootouts": {
-                                        "for": 0,
-                                        "against": 1,
-                                        "won": false,
-                                        "score": "0-1"
-                                    },
-                                    "opponent_id": 12
                                 }
                             ],
                             "team_id": 15
@@ -6420,15 +6420,25 @@
                     "standings": [
                         {
                             "position": 1,
-                            "played": 11,
-                            "won": 10,
+                            "played": 12,
+                            "won": 11,
                             "drawn": 1,
                             "lost": 0,
-                            "goals_for": 46,
+                            "goals_for": 50,
                             "goals_against": 2,
-                            "goal_difference": 44,
-                            "points": 31,
+                            "goal_difference": 48,
+                            "points": 34,
                             "recent_form": [
+                                {
+                                    "result": "W",
+                                    "score": "4-0",
+                                    "was_home": true,
+                                    "date": "2026-11-01",
+                                    "match_id": 1090,
+                                    "bonus_point": false,
+                                    "shootouts": null,
+                                    "opponent_id": 28
+                                },
                                 {
                                     "result": "W",
                                     "score": "11-0",
@@ -6468,31 +6478,31 @@
                                     "bonus_point": false,
                                     "shootouts": null,
                                     "opponent_id": 18
-                                },
-                                {
-                                    "result": "W",
-                                    "score": "6-0",
-                                    "was_home": true,
-                                    "date": "2026-08-30",
-                                    "match_id": 504,
-                                    "bonus_point": false,
-                                    "shootouts": null,
-                                    "opponent_id": 6
                                 }
                             ],
                             "team_id": 12
                         },
                         {
                             "position": 2,
-                            "played": 11,
+                            "played": 12,
                             "won": 6,
                             "drawn": 2,
-                            "lost": 3,
+                            "lost": 4,
                             "goals_for": 11,
-                            "goals_against": 14,
-                            "goal_difference": -3,
+                            "goals_against": 18,
+                            "goal_difference": -7,
                             "points": 20,
                             "recent_form": [
+                                {
+                                    "result": "L",
+                                    "score": "0-4",
+                                    "was_home": false,
+                                    "date": "2026-11-01",
+                                    "match_id": 1090,
+                                    "bonus_point": false,
+                                    "shootouts": null,
+                                    "opponent_id": 12
+                                },
                                 {
                                     "result": "D",
                                     "score": "0-0",
@@ -6532,16 +6542,6 @@
                                     "bonus_point": false,
                                     "shootouts": null,
                                     "opponent_id": 42
-                                },
-                                {
-                                    "result": "D",
-                                    "score": "0-0",
-                                    "was_home": true,
-                                    "date": "2026-09-13",
-                                    "match_id": 501,
-                                    "bonus_point": false,
-                                    "shootouts": null,
-                                    "opponent_id": 6
                                 }
                             ],
                             "team_id": 28
@@ -6612,15 +6612,25 @@
                         },
                         {
                             "position": 4,
-                            "played": 10,
-                            "won": 3,
+                            "played": 11,
+                            "won": 4,
                             "drawn": 1,
                             "lost": 6,
-                            "goals_for": 9,
+                            "goals_for": 11,
                             "goals_against": 25,
-                            "goal_difference": -16,
-                            "points": 10,
+                            "goal_difference": -14,
+                            "points": 13,
                             "recent_form": [
+                                {
+                                    "result": "W",
+                                    "score": "2-0",
+                                    "was_home": true,
+                                    "date": "2026-11-01",
+                                    "match_id": 1091,
+                                    "bonus_point": false,
+                                    "shootouts": null,
+                                    "opponent_id": 42
+                                },
                                 {
                                     "result": "L",
                                     "score": "0-11",
@@ -6660,31 +6670,31 @@
                                     "bonus_point": false,
                                     "shootouts": null,
                                     "opponent_id": 28
-                                },
-                                {
-                                    "result": "W",
-                                    "score": "2-0",
-                                    "was_home": false,
-                                    "date": "2026-09-06",
-                                    "match_id": 1081,
-                                    "bonus_point": false,
-                                    "shootouts": null,
-                                    "opponent_id": 42
                                 }
                             ],
                             "team_id": 6
                         },
                         {
                             "position": 5,
-                            "played": 11,
+                            "played": 12,
                             "won": 0,
                             "drawn": 0,
-                            "lost": 11,
+                            "lost": 12,
                             "goals_for": 0,
-                            "goals_against": 22,
-                            "goal_difference": -22,
+                            "goals_against": 24,
+                            "goal_difference": -24,
                             "points": 0,
                             "recent_form": [
+                                {
+                                    "result": "L",
+                                    "score": "0-2",
+                                    "was_home": false,
+                                    "date": "2026-11-01",
+                                    "match_id": 1091,
+                                    "bonus_point": false,
+                                    "shootouts": null,
+                                    "opponent_id": 6
+                                },
                                 {
                                     "result": "L",
                                     "score": "0-2",
@@ -6721,16 +6731,6 @@
                                     "was_home": true,
                                     "date": "2026-09-06",
                                     "match_id": 1081,
-                                    "bonus_point": false,
-                                    "shootouts": null,
-                                    "opponent_id": 6
-                                },
-                                {
-                                    "result": "L",
-                                    "score": "0-2",
-                                    "was_home": true,
-                                    "date": "2026-08-30",
-                                    "match_id": 497,
                                     "bonus_point": false,
                                     "shootouts": null,
                                     "opponent_id": 6
