@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-04T15:59:49-03:00",
+    "generated_at": "2026-11-05T19:38:58-03:00",
     "from": "2026-11-07",
     "to": "2026-11-11",
     "umpires": {
@@ -1283,6 +1283,51 @@
                     "umpire_1_id": 132,
                     "umpire_2_id": 91,
                     "fee": 44000,
+                    "supervisor": null
+                },
+                {
+                    "id": 1174,
+                    "time": "16:00",
+                    "date": "2026-11-08",
+                    "zone": "Bronce",
+                    "category": "Sub19",
+                    "round": "Semifinales",
+                    "home_team_id": 16,
+                    "away_team_id": 2,
+                    "pitch": "Puerto Belgrano",
+                    "umpire_1_id": 68,
+                    "umpire_2_id": 107,
+                    "fee": 54000,
+                    "supervisor": null
+                },
+                {
+                    "id": 1175,
+                    "time": "16:00",
+                    "date": "2026-11-08",
+                    "zone": "Bronce",
+                    "category": "Sub19",
+                    "round": "Semifinales",
+                    "home_team_id": 22,
+                    "away_team_id": 17,
+                    "pitch": "Sporting",
+                    "umpire_1_id": 71,
+                    "umpire_2_id": 141,
+                    "fee": 54000,
+                    "supervisor": null
+                },
+                {
+                    "id": 1176,
+                    "time": "16:00",
+                    "date": "2026-11-08",
+                    "zone": "Bronce",
+                    "category": "Sub19",
+                    "round": "Ida y Vuelta",
+                    "home_team_id": 5,
+                    "away_team_id": 26,
+                    "pitch": "El Nacional",
+                    "umpire_1_id": 158,
+                    "umpire_2_id": 120,
+                    "fee": 48000,
                     "supervisor": null
                 },
                 {
