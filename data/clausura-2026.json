@@ -7,7 +7,7 @@
         "start_date": "2026-06-13",
         "end_date": "2026-12-06"
     },
-    "generated_at": "2026-11-05T19:38:47-03:00",
+    "generated_at": "2026-11-05T19:48:12-03:00",
     "fixture_file": "clausura-2026-fixture.json",
     "teams": {
         "1": {
@@ -5701,14 +5701,14 @@
                             "won": 15,
                             "drawn": 0,
                             "lost": 0,
-                            "goals_for": 122,
+                            "goals_for": 121,
                             "goals_against": 4,
-                            "goal_difference": 118,
+                            "goal_difference": 117,
                             "points": 45,
                             "recent_form": [
                                 {
                                     "result": "W",
-                                    "score": "13-1",
+                                    "score": "12-1",
                                     "was_home": false,
                                     "date": "2026-11-05",
                                     "match_id": 997,
@@ -5894,13 +5894,13 @@
                             "drawn": 2,
                             "lost": 7,
                             "goals_for": 43,
-                            "goals_against": 46,
-                            "goal_difference": -3,
+                            "goals_against": 45,
+                            "goal_difference": -2,
                             "points": 22,
                             "recent_form": [
                                 {
                                     "result": "L",
-                                    "score": "1-13",
+                                    "score": "1-12",
                                     "was_home": true,
                                     "date": "2026-11-05",
                                     "match_id": 997,
