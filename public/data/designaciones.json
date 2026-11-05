@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-05T19:38:58-03:00",
+    "generated_at": "2026-11-05T19:39:57-03:00",
     "from": "2026-11-07",
     "to": "2026-11-11",
     "umpires": {
@@ -1101,8 +1101,8 @@
                     "away_team_id": 3,
                     "pitch": "Independiente",
                     "umpire_1_id": 170,
-                    "umpire_2_id": null,
-                    "fee": null,
+                    "umpire_2_id": 175,
+                    "fee": 44000,
                     "supervisor": null
                 },
                 {
@@ -1220,7 +1220,7 @@
                     "home_team_id": 25,
                     "away_team_id": 20,
                     "pitch": "Universitario (Agua)",
-                    "umpire_1_id": 59,
+                    "umpire_1_id": 78,
                     "umpire_2_id": 130,
                     "fee": 54000,
                     "supervisor": null
