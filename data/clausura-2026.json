@@ -7,7 +7,7 @@
         "start_date": "2026-06-13",
         "end_date": "2026-12-06"
     },
-    "generated_at": "2026-11-04T23:09:15-03:00",
+    "generated_at": "2026-11-05T19:38:47-03:00",
     "fixture_file": "clausura-2026-fixture.json",
     "teams": {
         "1": {
@@ -5697,15 +5697,25 @@
                     "standings": [
                         {
                             "position": 1,
-                            "played": 14,
-                            "won": 14,
+                            "played": 15,
+                            "won": 15,
                             "drawn": 0,
                             "lost": 0,
-                            "goals_for": 109,
-                            "goals_against": 3,
-                            "goal_difference": 106,
-                            "points": 42,
+                            "goals_for": 122,
+                            "goals_against": 4,
+                            "goal_difference": 118,
+                            "points": 45,
                             "recent_form": [
+                                {
+                                    "result": "W",
+                                    "score": "13-1",
+                                    "was_home": false,
+                                    "date": "2026-11-05",
+                                    "match_id": 997,
+                                    "bonus_point": false,
+                                    "shootouts": null,
+                                    "opponent_id": 2
+                                },
                                 {
                                     "result": "W",
                                     "score": "18-0",
@@ -5745,16 +5755,6 @@
                                     "bonus_point": false,
                                     "shootouts": null,
                                     "opponent_id": 22
-                                },
-                                {
-                                    "result": "W",
-                                    "score": "19-0",
-                                    "was_home": false,
-                                    "date": "2026-09-06",
-                                    "match_id": 961,
-                                    "bonus_point": false,
-                                    "shootouts": null,
-                                    "opponent_id": 5
                                 }
                             ],
                             "team_id": 16
@@ -5889,15 +5889,25 @@
                         },
                         {
                             "position": 4,
-                            "played": 14,
+                            "played": 15,
                             "won": 6,
                             "drawn": 2,
-                            "lost": 6,
-                            "goals_for": 42,
-                            "goals_against": 33,
-                            "goal_difference": 9,
+                            "lost": 7,
+                            "goals_for": 43,
+                            "goals_against": 46,
+                            "goal_difference": -3,
                             "points": 22,
                             "recent_form": [
+                                {
+                                    "result": "L",
+                                    "score": "1-13",
+                                    "was_home": true,
+                                    "date": "2026-11-05",
+                                    "match_id": 997,
+                                    "bonus_point": false,
+                                    "shootouts": null,
+                                    "opponent_id": 16
+                                },
                                 {
                                     "result": "W",
                                     "score": "7-0",
@@ -5937,21 +5947,6 @@
                                     "bonus_point": false,
                                     "shootouts": null,
                                     "opponent_id": 17
-                                },
-                                {
-                                    "result": "D",
-                                    "score": "2-2",
-                                    "was_home": false,
-                                    "date": "2026-09-05",
-                                    "match_id": 960,
-                                    "bonus_point": true,
-                                    "shootouts": {
-                                        "for": 3,
-                                        "against": 1,
-                                        "won": true,
-                                        "score": "3-1"
-                                    },
-                                    "opponent_id": 26
                                 }
                             ],
                             "team_id": 2
@@ -6085,7 +6080,114 @@
                             "team_id": 5
                         }
                     ],
-                    "playoffs": null,
+                    "playoffs": {
+                        "stages": [
+                            {
+                                "id": "semifinals",
+                                "label": "Semifinales",
+                                "order": 3,
+                                "brackets": [
+                                    {
+                                        "id": 163,
+                                        "format": "single_elimination",
+                                        "matchup_number": 1,
+                                        "series_wins_required": 1,
+                                        "team_1_id": 16,
+                                        "team_1_seed": 1,
+                                        "team_2_id": 2,
+                                        "team_2_seed": 4,
+                                        "team_1_wins": 0,
+                                        "team_2_wins": 0,
+                                        "winner_id": null,
+                                        "is_completed": false,
+                                        "matches": [
+                                            {
+                                                "game": 1,
+                                                "date": "2026-11-08",
+                                                "time": "16:00",
+                                                "home_team_id": 16,
+                                                "away_team_id": 2,
+                                                "pitch": "Puerto Belgrano",
+                                                "played": false,
+                                                "goals_home": null,
+                                                "goals_away": null,
+                                                "has_shootouts": false,
+                                                "shootouts_home": null,
+                                                "shootouts_away": null
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": 164,
+                                        "format": "single_elimination",
+                                        "matchup_number": 2,
+                                        "series_wins_required": 1,
+                                        "team_1_id": 22,
+                                        "team_1_seed": 2,
+                                        "team_2_id": 17,
+                                        "team_2_seed": 3,
+                                        "team_1_wins": 0,
+                                        "team_2_wins": 0,
+                                        "winner_id": null,
+                                        "is_completed": false,
+                                        "matches": [
+                                            {
+                                                "game": 1,
+                                                "date": "2026-11-08",
+                                                "time": "16:00",
+                                                "home_team_id": 22,
+                                                "away_team_id": 17,
+                                                "pitch": "Sporting",
+                                                "played": false,
+                                                "goals_home": null,
+                                                "goals_away": null,
+                                                "has_shootouts": false,
+                                                "shootouts_home": null,
+                                                "shootouts_away": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "relegation",
+                                "label": "Series complementarias",
+                                "order": 9,
+                                "brackets": [
+                                    {
+                                        "id": 165,
+                                        "format": "home_and_away",
+                                        "matchup_number": 1,
+                                        "series_wins_required": 1,
+                                        "team_1_id": 26,
+                                        "team_1_seed": 1,
+                                        "team_2_id": 5,
+                                        "team_2_seed": 2,
+                                        "team_1_wins": 0,
+                                        "team_2_wins": 0,
+                                        "winner_id": null,
+                                        "is_completed": false,
+                                        "matches": [
+                                            {
+                                                "game": 1,
+                                                "date": "2026-11-08",
+                                                "time": "16:00",
+                                                "home_team_id": 5,
+                                                "away_team_id": 26,
+                                                "pitch": "El Nacional",
+                                                "played": false,
+                                                "goals_home": null,
+                                                "goals_away": null,
+                                                "has_shootouts": false,
+                                                "shootouts_home": null,
+                                                "shootouts_away": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
                     "final_standings": null
                 },
                 {
