@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-05T19:39:57-03:00",
+    "generated_at": "2026-11-07T08:46:45-03:00",
     "from": "2026-11-07",
     "to": "2026-11-11",
     "umpires": {
@@ -885,7 +885,7 @@
                     "home_team_id": 11,
                     "away_team_id": 23,
                     "pitch": "Pacífico",
-                    "umpire_1_id": 65,
+                    "umpire_1_id": 57,
                     "umpire_2_id": 143,
                     "fee": 72000,
                     "supervisor": null
