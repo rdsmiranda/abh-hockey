@@ -7,7 +7,7 @@
         "start_date": "2026-06-13",
         "end_date": "2026-12-06"
     },
-    "generated_at": "2026-11-09T10:04:25-03:00",
+    "generated_at": "2026-11-09T17:18:47-03:00",
     "fixture_file": "clausura-2026-fixture.json",
     "teams": {
         "1": {
@@ -8942,7 +8942,7 @@
                                         "matches": [
                                             {
                                                 "game": 1,
-                                                "date": "2026-11-07",
+                                                "date": "2026-11-14",
                                                 "time": "18:00",
                                                 "home_team_id": 8,
                                                 "away_team_id": 27,
@@ -8979,7 +8979,7 @@
                                         "matches": [
                                             {
                                                 "game": 1,
-                                                "date": "2026-11-07",
+                                                "date": "2026-11-14",
                                                 "time": "19:00",
                                                 "home_team_id": 21,
                                                 "away_team_id": 29,
@@ -9011,8 +9011,8 @@
                                         "team_2_seed": 2,
                                         "team_1_wins": 0,
                                         "team_2_wins": 0,
-                                        "winner_id": null,
-                                        "is_completed": false,
+                                        "winner_id": 14,
+                                        "is_completed": true,
                                         "matches": [
                                             {
                                                 "game": 1,
@@ -9021,9 +9021,9 @@
                                                 "home_team_id": 14,
                                                 "away_team_id": 13,
                                                 "pitch": "Palihue",
-                                                "played": false,
-                                                "goals_home": null,
-                                                "goals_away": null,
+                                                "played": true,
+                                                "goals_home": 2,
+                                                "goals_away": 1,
                                                 "has_shootouts": false,
                                                 "shootouts_home": null,
                                                 "shootouts_away": null
@@ -9065,25 +9065,25 @@
                                             {
                                                 "position": 1,
                                                 "team_id": 14,
-                                                "played": 1,
-                                                "won": 1,
+                                                "played": 2,
+                                                "won": 2,
                                                 "drawn": 0,
                                                 "lost": 0,
-                                                "goals_for": 2,
-                                                "goals_against": 0,
-                                                "goal_difference": 2,
-                                                "points": 3
+                                                "goals_for": 4,
+                                                "goals_against": 1,
+                                                "goal_difference": 3,
+                                                "points": 6
                                             },
                                             {
                                                 "position": 2,
                                                 "team_id": 13,
-                                                "played": 1,
+                                                "played": 2,
                                                 "won": 1,
                                                 "drawn": 0,
-                                                "lost": 0,
-                                                "goals_for": 2,
-                                                "goals_against": 0,
-                                                "goal_difference": 2,
+                                                "lost": 1,
+                                                "goals_for": 3,
+                                                "goals_against": 2,
+                                                "goal_difference": 1,
                                                 "points": 3
                                             },
                                             {
