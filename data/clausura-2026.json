@@ -7,7 +7,7 @@
         "start_date": "2026-06-13",
         "end_date": "2026-12-06"
     },
-    "generated_at": "2026-11-08T09:08:09-03:00",
+    "generated_at": "2026-11-09T09:46:26-03:00",
     "fixture_file": "clausura-2026-fixture.json",
     "teams": {
         "1": {
@@ -804,11 +804,11 @@
                                         "matches": [
                                             {
                                                 "game": 1,
-                                                "date": null,
-                                                "time": "",
+                                                "date": "2026-11-21",
+                                                "time": "16:00",
                                                 "home_team_id": 8,
                                                 "away_team_id": 10,
-                                                "pitch": null,
+                                                "pitch": "Monte Hermoso",
                                                 "played": false,
                                                 "goals_home": null,
                                                 "goals_away": null,
@@ -1451,9 +1451,9 @@
                                         "team_2_id": 1,
                                         "team_2_seed": 4,
                                         "team_1_wins": 0,
-                                        "team_2_wins": 0,
-                                        "winner_id": null,
-                                        "is_completed": false,
+                                        "team_2_wins": 1,
+                                        "winner_id": 1,
+                                        "is_completed": true,
                                         "matches": [
                                             {
                                                 "game": 1,
@@ -1462,12 +1462,12 @@
                                                 "home_team_id": 19,
                                                 "away_team_id": 1,
                                                 "pitch": "S. Sportiva",
-                                                "played": false,
-                                                "goals_home": null,
-                                                "goals_away": null,
-                                                "has_shootouts": false,
-                                                "shootouts_home": null,
-                                                "shootouts_away": null
+                                                "played": true,
+                                                "goals_home": 1,
+                                                "goals_away": 1,
+                                                "has_shootouts": true,
+                                                "shootouts_home": 1,
+                                                "shootouts_away": 3
                                             }
                                         ]
                                     },
@@ -1480,10 +1480,10 @@
                                         "team_1_seed": 2,
                                         "team_2_id": 24,
                                         "team_2_seed": 3,
-                                        "team_1_wins": 0,
+                                        "team_1_wins": 1,
                                         "team_2_wins": 0,
-                                        "winner_id": null,
-                                        "is_completed": false,
+                                        "winner_id": 8,
+                                        "is_completed": true,
                                         "matches": [
                                             {
                                                 "game": 1,
@@ -1491,6 +1491,43 @@
                                                 "time": "16:00",
                                                 "home_team_id": 8,
                                                 "away_team_id": 24,
+                                                "pitch": "Monte Hermoso",
+                                                "played": true,
+                                                "goals_home": 3,
+                                                "goals_away": 0,
+                                                "has_shootouts": false,
+                                                "shootouts_home": null,
+                                                "shootouts_away": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "final",
+                                "label": "Final",
+                                "order": 4,
+                                "brackets": [
+                                    {
+                                        "id": 193,
+                                        "format": "single_elimination",
+                                        "matchup_number": 1,
+                                        "series_wins_required": 1,
+                                        "team_1_id": 8,
+                                        "team_1_seed": 2,
+                                        "team_2_id": 1,
+                                        "team_2_seed": 4,
+                                        "team_1_wins": 0,
+                                        "team_2_wins": 0,
+                                        "winner_id": null,
+                                        "is_completed": false,
+                                        "matches": [
+                                            {
+                                                "game": 1,
+                                                "date": "2026-11-15",
+                                                "time": "16:00",
+                                                "home_team_id": 8,
+                                                "away_team_id": 1,
                                                 "pitch": "Monte Hermoso",
                                                 "played": false,
                                                 "goals_home": null,
@@ -1500,6 +1537,50 @@
                                                 "shootouts_away": null
                                             }
                                         ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "third_place",
+                                "label": "Tercer puesto",
+                                "order": 5,
+                                "brackets": [
+                                    {
+                                        "id": 195,
+                                        "format": "single_elimination",
+                                        "matchup_number": 1,
+                                        "series_wins_required": 1,
+                                        "team_1_id": 24,
+                                        "team_1_seed": 3,
+                                        "team_2_id": null,
+                                        "team_2_seed": null,
+                                        "team_1_wins": 0,
+                                        "team_2_wins": 0,
+                                        "winner_id": null,
+                                        "is_completed": false,
+                                        "matches": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "extra_final",
+                                "label": "Final extra",
+                                "order": 6,
+                                "brackets": [
+                                    {
+                                        "id": 194,
+                                        "format": "single_elimination",
+                                        "matchup_number": 1,
+                                        "series_wins_required": 1,
+                                        "team_1_id": 19,
+                                        "team_1_seed": 1,
+                                        "team_2_id": null,
+                                        "team_2_seed": null,
+                                        "team_1_wins": 0,
+                                        "team_2_wins": 0,
+                                        "winner_id": null,
+                                        "is_completed": false,
+                                        "matches": []
                                     }
                                 ]
                             },
@@ -1529,9 +1610,9 @@
                                                 "home_team_id": 10,
                                                 "away_team_id": 3,
                                                 "pitch": "Pacífico",
-                                                "played": false,
-                                                "goals_home": null,
-                                                "goals_away": null,
+                                                "played": true,
+                                                "goals_home": 0,
+                                                "goals_away": 4,
                                                 "has_shootouts": false,
                                                 "shootouts_home": null,
                                                 "shootouts_away": null
@@ -1572,19 +1653,19 @@
                                         "group_standings": [
                                             {
                                                 "position": 1,
-                                                "team_id": 10,
-                                                "played": 0,
-                                                "won": 0,
+                                                "team_id": 3,
+                                                "played": 1,
+                                                "won": 1,
                                                 "drawn": 0,
                                                 "lost": 0,
-                                                "goals_for": 0,
+                                                "goals_for": 4,
                                                 "goals_against": 0,
-                                                "goal_difference": 0,
-                                                "points": 0
+                                                "goal_difference": 4,
+                                                "points": 3
                                             },
                                             {
                                                 "position": 2,
-                                                "team_id": 3,
+                                                "team_id": 7,
                                                 "played": 0,
                                                 "won": 0,
                                                 "drawn": 0,
@@ -1596,14 +1677,14 @@
                                             },
                                             {
                                                 "position": 3,
-                                                "team_id": 7,
-                                                "played": 0,
+                                                "team_id": 10,
+                                                "played": 1,
                                                 "won": 0,
                                                 "drawn": 0,
-                                                "lost": 0,
+                                                "lost": 1,
                                                 "goals_for": 0,
-                                                "goals_against": 0,
-                                                "goal_difference": 0,
+                                                "goals_against": 4,
+                                                "goal_difference": -4,
                                                 "points": 0
                                             }
                                         ]
@@ -2158,11 +2239,11 @@
                                         "matches": [
                                             {
                                                 "game": 1,
-                                                "date": null,
-                                                "time": "",
+                                                "date": "2026-11-14",
+                                                "time": "10:00",
                                                 "home_team_id": 8,
                                                 "away_team_id": 19,
-                                                "pitch": null,
+                                                "pitch": "Monte Hermoso",
                                                 "played": false,
                                                 "goals_home": null,
                                                 "goals_away": null,
@@ -2195,11 +2276,11 @@
                                         "matches": [
                                             {
                                                 "game": 1,
-                                                "date": null,
-                                                "time": "",
+                                                "date": "2026-11-14",
+                                                "time": "10:00",
                                                 "home_team_id": 7,
                                                 "away_team_id": 1,
-                                                "pitch": null,
+                                                "pitch": "Independiente",
                                                 "played": false,
                                                 "goals_home": null,
                                                 "goals_away": null,
@@ -2792,10 +2873,10 @@
                                         "team_1_seed": 1,
                                         "team_2_id": 24,
                                         "team_2_seed": 4,
-                                        "team_1_wins": 0,
+                                        "team_1_wins": 1,
                                         "team_2_wins": 0,
-                                        "winner_id": null,
-                                        "is_completed": false,
+                                        "winner_id": 1,
+                                        "is_completed": true,
                                         "matches": [
                                             {
                                                 "game": 1,
@@ -2804,9 +2885,9 @@
                                                 "home_team_id": 1,
                                                 "away_team_id": 24,
                                                 "pitch": "Argentino",
-                                                "played": false,
-                                                "goals_home": null,
-                                                "goals_away": null,
+                                                "played": true,
+                                                "goals_home": 2,
+                                                "goals_away": 1,
                                                 "has_shootouts": false,
                                                 "shootouts_home": null,
                                                 "shootouts_away": null
@@ -2822,10 +2903,10 @@
                                         "team_1_seed": 2,
                                         "team_2_id": 8,
                                         "team_2_seed": 3,
-                                        "team_1_wins": 0,
+                                        "team_1_wins": 1,
                                         "team_2_wins": 0,
-                                        "winner_id": null,
-                                        "is_completed": false,
+                                        "winner_id": 19,
+                                        "is_completed": true,
                                         "matches": [
                                             {
                                                 "game": 1,
@@ -2834,6 +2915,80 @@
                                                 "home_team_id": 19,
                                                 "away_team_id": 8,
                                                 "pitch": "S. Sportiva",
+                                                "played": true,
+                                                "goals_home": 4,
+                                                "goals_away": 0,
+                                                "has_shootouts": false,
+                                                "shootouts_home": null,
+                                                "shootouts_away": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "final",
+                                "label": "Final",
+                                "order": 4,
+                                "brackets": [
+                                    {
+                                        "id": 187,
+                                        "format": "single_elimination",
+                                        "matchup_number": 1,
+                                        "series_wins_required": 1,
+                                        "team_1_id": 1,
+                                        "team_1_seed": 1,
+                                        "team_2_id": 19,
+                                        "team_2_seed": 2,
+                                        "team_1_wins": 0,
+                                        "team_2_wins": 0,
+                                        "winner_id": null,
+                                        "is_completed": false,
+                                        "matches": [
+                                            {
+                                                "game": 1,
+                                                "date": "2026-11-15",
+                                                "time": "10:00",
+                                                "home_team_id": 1,
+                                                "away_team_id": 19,
+                                                "pitch": "Argentino",
+                                                "played": false,
+                                                "goals_home": null,
+                                                "goals_away": null,
+                                                "has_shootouts": false,
+                                                "shootouts_home": null,
+                                                "shootouts_away": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "third_place",
+                                "label": "Tercer puesto",
+                                "order": 5,
+                                "brackets": [
+                                    {
+                                        "id": 188,
+                                        "format": "single_elimination",
+                                        "matchup_number": 1,
+                                        "series_wins_required": 1,
+                                        "team_1_id": 8,
+                                        "team_1_seed": 3,
+                                        "team_2_id": 24,
+                                        "team_2_seed": 4,
+                                        "team_1_wins": 0,
+                                        "team_2_wins": 0,
+                                        "winner_id": null,
+                                        "is_completed": false,
+                                        "matches": [
+                                            {
+                                                "game": 1,
+                                                "date": "2026-11-15",
+                                                "time": "10:00",
+                                                "home_team_id": 8,
+                                                "away_team_id": 24,
+                                                "pitch": "Monte Hermoso",
                                                 "played": false,
                                                 "goals_home": null,
                                                 "goals_away": null,
@@ -2871,9 +3026,9 @@
                                                 "home_team_id": 7,
                                                 "away_team_id": 3,
                                                 "pitch": "Independiente",
-                                                "played": false,
-                                                "goals_home": null,
-                                                "goals_away": null,
+                                                "played": true,
+                                                "goals_home": 0,
+                                                "goals_away": 2,
                                                 "has_shootouts": false,
                                                 "shootouts_home": null,
                                                 "shootouts_away": null
@@ -2914,19 +3069,19 @@
                                         "group_standings": [
                                             {
                                                 "position": 1,
-                                                "team_id": 7,
-                                                "played": 0,
-                                                "won": 0,
+                                                "team_id": 3,
+                                                "played": 1,
+                                                "won": 1,
                                                 "drawn": 0,
                                                 "lost": 0,
-                                                "goals_for": 0,
+                                                "goals_for": 2,
                                                 "goals_against": 0,
-                                                "goal_difference": 0,
-                                                "points": 0
+                                                "goal_difference": 2,
+                                                "points": 3
                                             },
                                             {
                                                 "position": 2,
-                                                "team_id": 3,
+                                                "team_id": 10,
                                                 "played": 0,
                                                 "won": 0,
                                                 "drawn": 0,
@@ -2938,14 +3093,14 @@
                                             },
                                             {
                                                 "position": 3,
-                                                "team_id": 10,
-                                                "played": 0,
+                                                "team_id": 7,
+                                                "played": 1,
                                                 "won": 0,
                                                 "drawn": 0,
-                                                "lost": 0,
+                                                "lost": 1,
                                                 "goals_for": 0,
-                                                "goals_against": 0,
-                                                "goal_difference": 0,
+                                                "goals_against": 2,
+                                                "goal_difference": -2,
                                                 "points": 0
                                             }
                                         ]
@@ -3526,11 +3681,11 @@
                                         "matches": [
                                             {
                                                 "game": 1,
-                                                "date": null,
-                                                "time": "",
+                                                "date": "2026-11-21",
+                                                "time": "16:00",
                                                 "home_team_id": 25,
                                                 "away_team_id": 11,
-                                                "pitch": null,
+                                                "pitch": "Universitario (Agua)",
                                                 "played": false,
                                                 "goals_home": null,
                                                 "goals_away": null,
@@ -3563,11 +3718,11 @@
                                         "matches": [
                                             {
                                                 "game": 1,
-                                                "date": null,
-                                                "time": "",
+                                                "date": "2026-11-14",
+                                                "time": "16:00",
                                                 "home_team_id": 23,
                                                 "away_team_id": 4,
-                                                "pitch": null,
+                                                "pitch": "ABH",
                                                 "played": false,
                                                 "goals_home": null,
                                                 "goals_away": null,
@@ -4195,10 +4350,10 @@
                                         "team_1_seed": 1,
                                         "team_2_id": 29,
                                         "team_2_seed": 4,
-                                        "team_1_wins": 0,
+                                        "team_1_wins": 1,
                                         "team_2_wins": 0,
-                                        "winner_id": null,
-                                        "is_completed": false,
+                                        "winner_id": 23,
+                                        "is_completed": true,
                                         "matches": [
                                             {
                                                 "game": 1,
@@ -4207,9 +4362,9 @@
                                                 "home_team_id": 23,
                                                 "away_team_id": 29,
                                                 "pitch": "ABH",
-                                                "played": false,
-                                                "goals_home": null,
-                                                "goals_away": null,
+                                                "played": true,
+                                                "goals_home": 4,
+                                                "goals_away": 3,
                                                 "has_shootouts": false,
                                                 "shootouts_home": null,
                                                 "shootouts_away": null
@@ -4225,10 +4380,10 @@
                                         "team_1_seed": 2,
                                         "team_2_id": 20,
                                         "team_2_seed": 3,
-                                        "team_1_wins": 0,
+                                        "team_1_wins": 1,
                                         "team_2_wins": 0,
-                                        "winner_id": null,
-                                        "is_completed": false,
+                                        "winner_id": 25,
+                                        "is_completed": true,
                                         "matches": [
                                             {
                                                 "game": 1,
@@ -4237,6 +4392,80 @@
                                                 "home_team_id": 25,
                                                 "away_team_id": 20,
                                                 "pitch": "Universitario (Agua)",
+                                                "played": true,
+                                                "goals_home": 3,
+                                                "goals_away": 0,
+                                                "has_shootouts": false,
+                                                "shootouts_home": null,
+                                                "shootouts_away": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "final",
+                                "label": "Final",
+                                "order": 4,
+                                "brackets": [
+                                    {
+                                        "id": 196,
+                                        "format": "single_elimination",
+                                        "matchup_number": 1,
+                                        "series_wins_required": 1,
+                                        "team_1_id": 23,
+                                        "team_1_seed": 1,
+                                        "team_2_id": 25,
+                                        "team_2_seed": 2,
+                                        "team_1_wins": 0,
+                                        "team_2_wins": 0,
+                                        "winner_id": null,
+                                        "is_completed": false,
+                                        "matches": [
+                                            {
+                                                "game": 1,
+                                                "date": "2026-11-15",
+                                                "time": "16:00",
+                                                "home_team_id": 23,
+                                                "away_team_id": 25,
+                                                "pitch": "ABH",
+                                                "played": false,
+                                                "goals_home": null,
+                                                "goals_away": null,
+                                                "has_shootouts": false,
+                                                "shootouts_home": null,
+                                                "shootouts_away": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "third_place",
+                                "label": "Tercer puesto",
+                                "order": 5,
+                                "brackets": [
+                                    {
+                                        "id": 197,
+                                        "format": "single_elimination",
+                                        "matchup_number": 1,
+                                        "series_wins_required": 1,
+                                        "team_1_id": 20,
+                                        "team_1_seed": 3,
+                                        "team_2_id": 29,
+                                        "team_2_seed": 4,
+                                        "team_1_wins": 0,
+                                        "team_2_wins": 0,
+                                        "winner_id": null,
+                                        "is_completed": false,
+                                        "matches": [
+                                            {
+                                                "game": 1,
+                                                "date": "2026-11-15",
+                                                "time": "16:00",
+                                                "home_team_id": 20,
+                                                "away_team_id": 29,
+                                                "pitch": "S. Sportiva",
                                                 "played": false,
                                                 "goals_home": null,
                                                 "goals_away": null,
@@ -4274,9 +4503,9 @@
                                                 "home_team_id": 14,
                                                 "away_team_id": 4,
                                                 "pitch": "Palihue",
-                                                "played": false,
-                                                "goals_home": null,
-                                                "goals_away": null,
+                                                "played": true,
+                                                "goals_home": 3,
+                                                "goals_away": 2,
                                                 "has_shootouts": false,
                                                 "shootouts_home": null,
                                                 "shootouts_away": null
@@ -4318,18 +4547,18 @@
                                             {
                                                 "position": 1,
                                                 "team_id": 14,
-                                                "played": 0,
-                                                "won": 0,
+                                                "played": 1,
+                                                "won": 1,
                                                 "drawn": 0,
                                                 "lost": 0,
-                                                "goals_for": 0,
-                                                "goals_against": 0,
-                                                "goal_difference": 0,
-                                                "points": 0
+                                                "goals_for": 3,
+                                                "goals_against": 2,
+                                                "goal_difference": 1,
+                                                "points": 3
                                             },
                                             {
                                                 "position": 2,
-                                                "team_id": 4,
+                                                "team_id": 11,
                                                 "played": 0,
                                                 "won": 0,
                                                 "drawn": 0,
@@ -4341,14 +4570,14 @@
                                             },
                                             {
                                                 "position": 3,
-                                                "team_id": 11,
-                                                "played": 0,
+                                                "team_id": 4,
+                                                "played": 1,
                                                 "won": 0,
                                                 "drawn": 0,
-                                                "lost": 0,
-                                                "goals_for": 0,
-                                                "goals_against": 0,
-                                                "goal_difference": 0,
+                                                "lost": 1,
+                                                "goals_for": 2,
+                                                "goals_against": 3,
+                                                "goal_difference": -1,
                                                 "points": 0
                                             }
                                         ]
@@ -4903,11 +5132,11 @@
                                         "matches": [
                                             {
                                                 "game": 1,
-                                                "date": null,
-                                                "time": "",
+                                                "date": "2026-11-14",
+                                                "time": "10:00",
                                                 "home_team_id": 23,
                                                 "away_team_id": 20,
-                                                "pitch": null,
+                                                "pitch": "ABH",
                                                 "played": false,
                                                 "goals_home": null,
                                                 "goals_away": null,
@@ -4940,11 +5169,11 @@
                                         "matches": [
                                             {
                                                 "game": 1,
-                                                "date": null,
-                                                "time": "",
+                                                "date": "2026-11-14",
+                                                "time": "10:00",
                                                 "home_team_id": 29,
                                                 "away_team_id": 14,
-                                                "pitch": null,
+                                                "pitch": "Villa Mitre",
                                                 "played": false,
                                                 "goals_home": null,
                                                 "goals_away": null,
@@ -5537,10 +5766,10 @@
                                         "team_1_seed": 1,
                                         "team_2_id": 25,
                                         "team_2_seed": 4,
-                                        "team_1_wins": 0,
+                                        "team_1_wins": 1,
                                         "team_2_wins": 0,
-                                        "winner_id": null,
-                                        "is_completed": false,
+                                        "winner_id": 23,
+                                        "is_completed": true,
                                         "matches": [
                                             {
                                                 "game": 1,
@@ -5549,9 +5778,9 @@
                                                 "home_team_id": 23,
                                                 "away_team_id": 25,
                                                 "pitch": "ABH",
-                                                "played": false,
-                                                "goals_home": null,
-                                                "goals_away": null,
+                                                "played": true,
+                                                "goals_home": 5,
+                                                "goals_away": 0,
                                                 "has_shootouts": false,
                                                 "shootouts_home": null,
                                                 "shootouts_away": null
@@ -5568,9 +5797,9 @@
                                         "team_2_id": 14,
                                         "team_2_seed": 3,
                                         "team_1_wins": 0,
-                                        "team_2_wins": 0,
-                                        "winner_id": null,
-                                        "is_completed": false,
+                                        "team_2_wins": 1,
+                                        "winner_id": 14,
+                                        "is_completed": true,
                                         "matches": [
                                             {
                                                 "game": 1,
@@ -5578,6 +5807,80 @@
                                                 "time": "10:00",
                                                 "home_team_id": 29,
                                                 "away_team_id": 14,
+                                                "pitch": "Villa Mitre",
+                                                "played": true,
+                                                "goals_home": 1,
+                                                "goals_away": 2,
+                                                "has_shootouts": false,
+                                                "shootouts_home": null,
+                                                "shootouts_away": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "final",
+                                "label": "Final",
+                                "order": 4,
+                                "brackets": [
+                                    {
+                                        "id": 191,
+                                        "format": "single_elimination",
+                                        "matchup_number": 1,
+                                        "series_wins_required": 1,
+                                        "team_1_id": 23,
+                                        "team_1_seed": 1,
+                                        "team_2_id": 14,
+                                        "team_2_seed": 3,
+                                        "team_1_wins": 0,
+                                        "team_2_wins": 0,
+                                        "winner_id": null,
+                                        "is_completed": false,
+                                        "matches": [
+                                            {
+                                                "game": 1,
+                                                "date": "2026-11-15",
+                                                "time": "10:00",
+                                                "home_team_id": 23,
+                                                "away_team_id": 14,
+                                                "pitch": "ABH",
+                                                "played": false,
+                                                "goals_home": null,
+                                                "goals_away": null,
+                                                "has_shootouts": false,
+                                                "shootouts_home": null,
+                                                "shootouts_away": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "third_place",
+                                "label": "Tercer puesto",
+                                "order": 5,
+                                "brackets": [
+                                    {
+                                        "id": 192,
+                                        "format": "single_elimination",
+                                        "matchup_number": 1,
+                                        "series_wins_required": 1,
+                                        "team_1_id": 29,
+                                        "team_1_seed": 2,
+                                        "team_2_id": 25,
+                                        "team_2_seed": 4,
+                                        "team_1_wins": 0,
+                                        "team_2_wins": 0,
+                                        "winner_id": null,
+                                        "is_completed": false,
+                                        "matches": [
+                                            {
+                                                "game": 1,
+                                                "date": "2026-11-15",
+                                                "time": "10:00",
+                                                "home_team_id": 29,
+                                                "away_team_id": 25,
                                                 "pitch": "Villa Mitre",
                                                 "played": false,
                                                 "goals_home": null,
@@ -5616,12 +5919,12 @@
                                                 "home_team_id": 11,
                                                 "away_team_id": 4,
                                                 "pitch": "Pacífico",
-                                                "played": false,
-                                                "goals_home": null,
-                                                "goals_away": null,
-                                                "has_shootouts": false,
-                                                "shootouts_home": null,
-                                                "shootouts_away": null
+                                                "played": true,
+                                                "goals_home": 1,
+                                                "goals_away": 1,
+                                                "has_shootouts": true,
+                                                "shootouts_home": 3,
+                                                "shootouts_away": 1
                                             },
                                             {
                                                 "game": 2,
@@ -5660,26 +5963,26 @@
                                             {
                                                 "position": 1,
                                                 "team_id": 11,
-                                                "played": 0,
+                                                "played": 1,
                                                 "won": 0,
-                                                "drawn": 0,
+                                                "drawn": 1,
                                                 "lost": 0,
-                                                "goals_for": 0,
-                                                "goals_against": 0,
+                                                "goals_for": 1,
+                                                "goals_against": 1,
                                                 "goal_difference": 0,
-                                                "points": 0
+                                                "points": 2
                                             },
                                             {
                                                 "position": 2,
                                                 "team_id": 4,
-                                                "played": 0,
+                                                "played": 1,
                                                 "won": 0,
-                                                "drawn": 0,
+                                                "drawn": 1,
                                                 "lost": 0,
-                                                "goals_for": 0,
-                                                "goals_against": 0,
+                                                "goals_for": 1,
+                                                "goals_against": 1,
                                                 "goal_difference": 0,
-                                                "points": 0
+                                                "points": 1
                                             },
                                             {
                                                 "position": 3,
@@ -6197,11 +6500,11 @@
                                         "matches": [
                                             {
                                                 "game": 1,
-                                                "date": null,
-                                                "time": "",
+                                                "date": "2026-11-21",
+                                                "time": "16:00",
                                                 "home_team_id": 16,
                                                 "away_team_id": 26,
-                                                "pitch": null,
+                                                "pitch": "Puerto Belgrano",
                                                 "played": false,
                                                 "goals_home": null,
                                                 "goals_away": null,
@@ -6234,11 +6537,11 @@
                                         "matches": [
                                             {
                                                 "game": 1,
-                                                "date": null,
-                                                "time": "",
+                                                "date": "2026-11-14",
+                                                "time": "16:00",
                                                 "home_team_id": 2,
                                                 "away_team_id": 22,
-                                                "pitch": null,
+                                                "pitch": "Argentino",
                                                 "played": false,
                                                 "goals_home": null,
                                                 "goals_away": null,
@@ -6711,10 +7014,10 @@
                                         "team_1_seed": 1,
                                         "team_2_id": 2,
                                         "team_2_seed": 4,
-                                        "team_1_wins": 0,
+                                        "team_1_wins": 1,
                                         "team_2_wins": 0,
-                                        "winner_id": null,
-                                        "is_completed": false,
+                                        "winner_id": 16,
+                                        "is_completed": true,
                                         "matches": [
                                             {
                                                 "game": 1,
@@ -6723,9 +7026,9 @@
                                                 "home_team_id": 16,
                                                 "away_team_id": 2,
                                                 "pitch": "Puerto Belgrano",
-                                                "played": false,
-                                                "goals_home": null,
-                                                "goals_away": null,
+                                                "played": true,
+                                                "goals_home": 6,
+                                                "goals_away": 0,
                                                 "has_shootouts": false,
                                                 "shootouts_home": null,
                                                 "shootouts_away": null
@@ -6741,10 +7044,10 @@
                                         "team_1_seed": 2,
                                         "team_2_id": 17,
                                         "team_2_seed": 3,
-                                        "team_1_wins": 0,
+                                        "team_1_wins": 1,
                                         "team_2_wins": 0,
-                                        "winner_id": null,
-                                        "is_completed": false,
+                                        "winner_id": 22,
+                                        "is_completed": true,
                                         "matches": [
                                             {
                                                 "game": 1,
@@ -6753,6 +7056,80 @@
                                                 "home_team_id": 22,
                                                 "away_team_id": 17,
                                                 "pitch": "Sporting",
+                                                "played": true,
+                                                "goals_home": 4,
+                                                "goals_away": 2,
+                                                "has_shootouts": false,
+                                                "shootouts_home": null,
+                                                "shootouts_away": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "final",
+                                "label": "Final",
+                                "order": 4,
+                                "brackets": [
+                                    {
+                                        "id": 198,
+                                        "format": "single_elimination",
+                                        "matchup_number": 1,
+                                        "series_wins_required": 1,
+                                        "team_1_id": 16,
+                                        "team_1_seed": 1,
+                                        "team_2_id": 22,
+                                        "team_2_seed": 2,
+                                        "team_1_wins": 0,
+                                        "team_2_wins": 0,
+                                        "winner_id": null,
+                                        "is_completed": false,
+                                        "matches": [
+                                            {
+                                                "game": 1,
+                                                "date": "2026-11-15",
+                                                "time": "16:00",
+                                                "home_team_id": 16,
+                                                "away_team_id": 22,
+                                                "pitch": "Puerto Belgrano",
+                                                "played": false,
+                                                "goals_home": null,
+                                                "goals_away": null,
+                                                "has_shootouts": false,
+                                                "shootouts_home": null,
+                                                "shootouts_away": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "third_place",
+                                "label": "Tercer puesto",
+                                "order": 5,
+                                "brackets": [
+                                    {
+                                        "id": 199,
+                                        "format": "single_elimination",
+                                        "matchup_number": 1,
+                                        "series_wins_required": 1,
+                                        "team_1_id": 17,
+                                        "team_1_seed": 3,
+                                        "team_2_id": 2,
+                                        "team_2_seed": 4,
+                                        "team_1_wins": 0,
+                                        "team_2_wins": 0,
+                                        "winner_id": null,
+                                        "is_completed": false,
+                                        "matches": [
+                                            {
+                                                "game": 1,
+                                                "date": "2026-11-15",
+                                                "time": "18:00",
+                                                "home_team_id": 17,
+                                                "away_team_id": 2,
+                                                "pitch": "Puerto Belgrano",
                                                 "played": false,
                                                 "goals_home": null,
                                                 "goals_away": null,
@@ -6790,6 +7167,20 @@
                                                 "home_team_id": 5,
                                                 "away_team_id": 26,
                                                 "pitch": "El Nacional",
+                                                "played": true,
+                                                "goals_home": 0,
+                                                "goals_away": 3,
+                                                "has_shootouts": false,
+                                                "shootouts_home": null,
+                                                "shootouts_away": null
+                                            },
+                                            {
+                                                "game": 2,
+                                                "date": "2026-11-15",
+                                                "time": "16:00",
+                                                "home_team_id": 26,
+                                                "away_team_id": 5,
+                                                "pitch": "Universitario (Agua)",
                                                 "played": false,
                                                 "goals_home": null,
                                                 "goals_away": null,
@@ -7285,11 +7676,11 @@
                                         "matches": [
                                             {
                                                 "game": 1,
-                                                "date": null,
-                                                "time": "",
+                                                "date": "2026-11-14",
+                                                "time": "10:00",
                                                 "home_team_id": 16,
                                                 "away_team_id": 22,
-                                                "pitch": null,
+                                                "pitch": "Puerto Belgrano",
                                                 "played": false,
                                                 "goals_home": null,
                                                 "goals_away": null,
@@ -7322,11 +7713,11 @@
                                         "matches": [
                                             {
                                                 "game": 1,
-                                                "date": null,
-                                                "time": "",
+                                                "date": "2026-11-14",
+                                                "time": "12:00",
                                                 "home_team_id": 17,
                                                 "away_team_id": 2,
-                                                "pitch": null,
+                                                "pitch": "Puerto Belgrano",
                                                 "played": false,
                                                 "goals_home": null,
                                                 "goals_away": null,
@@ -7799,10 +8190,10 @@
                                         "team_1_seed": 1,
                                         "team_2_id": 2,
                                         "team_2_seed": 4,
-                                        "team_1_wins": 0,
+                                        "team_1_wins": 1,
                                         "team_2_wins": 0,
-                                        "winner_id": null,
-                                        "is_completed": false,
+                                        "winner_id": 16,
+                                        "is_completed": true,
                                         "matches": [
                                             {
                                                 "game": 1,
@@ -7811,9 +8202,9 @@
                                                 "home_team_id": 16,
                                                 "away_team_id": 2,
                                                 "pitch": "Puerto Belgrano",
-                                                "played": false,
-                                                "goals_home": null,
-                                                "goals_away": null,
+                                                "played": true,
+                                                "goals_home": 7,
+                                                "goals_away": 0,
                                                 "has_shootouts": false,
                                                 "shootouts_home": null,
                                                 "shootouts_away": null
@@ -7829,10 +8220,10 @@
                                         "team_1_seed": 2,
                                         "team_2_id": 17,
                                         "team_2_seed": 3,
-                                        "team_1_wins": 0,
+                                        "team_1_wins": 1,
                                         "team_2_wins": 0,
-                                        "winner_id": null,
-                                        "is_completed": false,
+                                        "winner_id": 22,
+                                        "is_completed": true,
                                         "matches": [
                                             {
                                                 "game": 1,
@@ -7841,6 +8232,80 @@
                                                 "home_team_id": 22,
                                                 "away_team_id": 17,
                                                 "pitch": "Sporting",
+                                                "played": true,
+                                                "goals_home": 5,
+                                                "goals_away": 0,
+                                                "has_shootouts": false,
+                                                "shootouts_home": null,
+                                                "shootouts_away": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "final",
+                                "label": "Final",
+                                "order": 4,
+                                "brackets": [
+                                    {
+                                        "id": 189,
+                                        "format": "single_elimination",
+                                        "matchup_number": 1,
+                                        "series_wins_required": 1,
+                                        "team_1_id": 16,
+                                        "team_1_seed": 1,
+                                        "team_2_id": 22,
+                                        "team_2_seed": 2,
+                                        "team_1_wins": 0,
+                                        "team_2_wins": 0,
+                                        "winner_id": null,
+                                        "is_completed": false,
+                                        "matches": [
+                                            {
+                                                "game": 1,
+                                                "date": "2026-11-15",
+                                                "time": "10:00",
+                                                "home_team_id": 16,
+                                                "away_team_id": 22,
+                                                "pitch": "Puerto Belgrano",
+                                                "played": false,
+                                                "goals_home": null,
+                                                "goals_away": null,
+                                                "has_shootouts": false,
+                                                "shootouts_home": null,
+                                                "shootouts_away": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "third_place",
+                                "label": "Tercer puesto",
+                                "order": 5,
+                                "brackets": [
+                                    {
+                                        "id": 190,
+                                        "format": "single_elimination",
+                                        "matchup_number": 1,
+                                        "series_wins_required": 1,
+                                        "team_1_id": 17,
+                                        "team_1_seed": 3,
+                                        "team_2_id": 2,
+                                        "team_2_seed": 4,
+                                        "team_1_wins": 0,
+                                        "team_2_wins": 0,
+                                        "winner_id": null,
+                                        "is_completed": false,
+                                        "matches": [
+                                            {
+                                                "game": 1,
+                                                "date": "2026-11-15",
+                                                "time": "12:00",
+                                                "home_team_id": 17,
+                                                "away_team_id": 2,
+                                                "pitch": "Puerto Belgrano",
                                                 "played": false,
                                                 "goals_home": null,
                                                 "goals_away": null,
@@ -7878,6 +8343,20 @@
                                                 "home_team_id": 26,
                                                 "away_team_id": 5,
                                                 "pitch": "Universitario (Agua)",
+                                                "played": true,
+                                                "goals_home": 1,
+                                                "goals_away": 5,
+                                                "has_shootouts": false,
+                                                "shootouts_home": null,
+                                                "shootouts_away": null
+                                            },
+                                            {
+                                                "game": 2,
+                                                "date": "2026-11-15",
+                                                "time": "10:00",
+                                                "home_team_id": 5,
+                                                "away_team_id": 26,
+                                                "pitch": "El Nacional",
                                                 "played": false,
                                                 "goals_home": null,
                                                 "goals_away": null,
@@ -8389,10 +8868,10 @@
                                         "team_1_seed": 1,
                                         "team_2_id": 29,
                                         "team_2_seed": 4,
-                                        "team_1_wins": 0,
+                                        "team_1_wins": 1,
                                         "team_2_wins": 0,
-                                        "winner_id": null,
-                                        "is_completed": false,
+                                        "winner_id": 8,
+                                        "is_completed": true,
                                         "matches": [
                                             {
                                                 "game": 1,
@@ -8401,9 +8880,9 @@
                                                 "home_team_id": 8,
                                                 "away_team_id": 29,
                                                 "pitch": "Monte Hermoso",
-                                                "played": false,
-                                                "goals_home": null,
-                                                "goals_away": null,
+                                                "played": true,
+                                                "goals_home": 11,
+                                                "goals_away": 0,
                                                 "has_shootouts": false,
                                                 "shootouts_home": null,
                                                 "shootouts_away": null
@@ -8452,15 +8931,30 @@
                                         "format": "single_elimination",
                                         "matchup_number": 1,
                                         "series_wins_required": 1,
-                                        "team_1_id": null,
-                                        "team_1_seed": null,
+                                        "team_1_id": 8,
+                                        "team_1_seed": 1,
                                         "team_2_id": 27,
                                         "team_2_seed": 2,
                                         "team_1_wins": 0,
                                         "team_2_wins": 0,
                                         "winner_id": null,
                                         "is_completed": false,
-                                        "matches": []
+                                        "matches": [
+                                            {
+                                                "game": 1,
+                                                "date": "2026-11-07",
+                                                "time": "18:00",
+                                                "home_team_id": 8,
+                                                "away_team_id": 27,
+                                                "pitch": "Monte Hermoso",
+                                                "played": false,
+                                                "goals_home": null,
+                                                "goals_away": null,
+                                                "has_shootouts": false,
+                                                "shootouts_home": null,
+                                                "shootouts_away": null
+                                            }
+                                        ]
                                     }
                                 ]
                             },
@@ -8476,13 +8970,28 @@
                                         "series_wins_required": 1,
                                         "team_1_id": 21,
                                         "team_1_seed": 3,
-                                        "team_2_id": null,
-                                        "team_2_seed": null,
+                                        "team_2_id": 29,
+                                        "team_2_seed": 4,
                                         "team_1_wins": 0,
                                         "team_2_wins": 0,
                                         "winner_id": null,
                                         "is_completed": false,
-                                        "matches": []
+                                        "matches": [
+                                            {
+                                                "game": 1,
+                                                "date": "2026-11-07",
+                                                "time": "19:00",
+                                                "home_team_id": 21,
+                                                "away_team_id": 29,
+                                                "pitch": "S. Sportiva",
+                                                "played": false,
+                                                "goals_home": null,
+                                                "goals_away": null,
+                                                "has_shootouts": false,
+                                                "shootouts_home": null,
+                                                "shootouts_away": null
+                                            }
+                                        ]
                                     }
                                 ]
                             },
@@ -8967,9 +9476,9 @@
                                                 "home_team_id": 28,
                                                 "away_team_id": 6,
                                                 "pitch": "Universitario (Agua)",
-                                                "played": false,
-                                                "goals_home": null,
-                                                "goals_away": null,
+                                                "played": true,
+                                                "goals_home": 3,
+                                                "goals_away": 0,
                                                 "has_shootouts": false,
                                                 "shootouts_home": null,
                                                 "shootouts_away": null
@@ -9011,18 +9520,18 @@
                                             {
                                                 "position": 1,
                                                 "team_id": 28,
-                                                "played": 0,
-                                                "won": 0,
+                                                "played": 1,
+                                                "won": 1,
                                                 "drawn": 0,
                                                 "lost": 0,
-                                                "goals_for": 0,
+                                                "goals_for": 3,
                                                 "goals_against": 0,
-                                                "goal_difference": 0,
-                                                "points": 0
+                                                "goal_difference": 3,
+                                                "points": 3
                                             },
                                             {
                                                 "position": 2,
-                                                "team_id": 6,
+                                                "team_id": 18,
                                                 "played": 0,
                                                 "won": 0,
                                                 "drawn": 0,
@@ -9034,14 +9543,14 @@
                                             },
                                             {
                                                 "position": 3,
-                                                "team_id": 18,
-                                                "played": 0,
+                                                "team_id": 6,
+                                                "played": 1,
                                                 "won": 0,
                                                 "drawn": 0,
-                                                "lost": 0,
+                                                "lost": 1,
                                                 "goals_for": 0,
-                                                "goals_against": 0,
-                                                "goal_difference": 0,
+                                                "goals_against": 3,
+                                                "goal_difference": -3,
                                                 "points": 0
                                             }
                                         ]
@@ -9074,6 +9583,20 @@
                                                 "home_team_id": 15,
                                                 "away_team_id": 12,
                                                 "pitch": "Palihue",
+                                                "played": true,
+                                                "goals_home": 1,
+                                                "goals_away": 2,
+                                                "has_shootouts": false,
+                                                "shootouts_home": null,
+                                                "shootouts_away": null
+                                            },
+                                            {
+                                                "game": 2,
+                                                "date": "2026-11-15",
+                                                "time": "18:00",
+                                                "home_team_id": 12,
+                                                "away_team_id": 15,
+                                                "pitch": "Pacífico",
                                                 "played": false,
                                                 "goals_home": null,
                                                 "goals_away": null,
@@ -9505,11 +10028,11 @@
                                         "matches": [
                                             {
                                                 "game": 1,
-                                                "date": null,
-                                                "time": "",
+                                                "date": "2026-11-14",
+                                                "time": "12:00",
                                                 "home_team_id": 12,
                                                 "away_team_id": 18,
-                                                "pitch": null,
+                                                "pitch": "Pacífico",
                                                 "played": false,
                                                 "goals_home": null,
                                                 "goals_away": null,
@@ -9542,11 +10065,11 @@
                                         "matches": [
                                             {
                                                 "game": 1,
-                                                "date": null,
-                                                "time": "",
+                                                "date": "2026-11-14",
+                                                "time": "12:00",
                                                 "home_team_id": 28,
                                                 "away_team_id": 6,
-                                                "pitch": null,
+                                                "pitch": "Universitario (Agua)",
                                                 "played": false,
                                                 "goals_home": null,
                                                 "goals_away": null,
