@@ -1,6 +1,6 @@
 {
     "championship_id": 3,
-    "generated_at": "2026-11-09T09:46:27-03:00",
+    "generated_at": "2026-11-09T10:04:25-03:00",
     "rounds": [
         {
             "id": 155,
@@ -11290,9 +11290,9 @@
                     "home_team_id": 33,
                     "away_team_id": 43,
                     "pitch": "Villa Mitre",
-                    "played": false,
-                    "goals_home": null,
-                    "goals_away": null,
+                    "played": true,
+                    "goals_home": 2,
+                    "goals_away": 1,
                     "has_shootouts": false,
                     "shootouts_home": null,
                     "shootouts_away": null
@@ -12259,9 +12259,9 @@
                     "home_team_id": 14,
                     "away_team_id": 30,
                     "pitch": "Palihue",
-                    "played": false,
-                    "goals_home": null,
-                    "goals_away": null,
+                    "played": true,
+                    "goals_home": 2,
+                    "goals_away": 0,
                     "has_shootouts": false,
                     "shootouts_home": null,
                     "shootouts_away": null
@@ -12275,9 +12275,9 @@
                     "home_team_id": 13,
                     "away_team_id": 30,
                     "pitch": "Pacífico",
-                    "played": false,
-                    "goals_home": null,
-                    "goals_away": null,
+                    "played": true,
+                    "goals_home": 2,
+                    "goals_away": 0,
                     "has_shootouts": false,
                     "shootouts_home": null,
                     "shootouts_away": null

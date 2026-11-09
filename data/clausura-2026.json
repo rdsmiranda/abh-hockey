@@ -7,7 +7,7 @@
         "start_date": "2026-06-13",
         "end_date": "2026-12-06"
     },
-    "generated_at": "2026-11-09T09:46:26-03:00",
+    "generated_at": "2026-11-09T10:04:25-03:00",
     "fixture_file": "clausura-2026-fixture.json",
     "teams": {
         "1": {
@@ -9035,9 +9035,9 @@
                                                 "home_team_id": 14,
                                                 "away_team_id": 30,
                                                 "pitch": "Palihue",
-                                                "played": false,
-                                                "goals_home": null,
-                                                "goals_away": null,
+                                                "played": true,
+                                                "goals_home": 2,
+                                                "goals_away": 0,
                                                 "has_shootouts": false,
                                                 "shootouts_home": null,
                                                 "shootouts_away": null
@@ -9049,9 +9049,9 @@
                                                 "home_team_id": 13,
                                                 "away_team_id": 30,
                                                 "pitch": "Pacífico",
-                                                "played": false,
-                                                "goals_home": null,
-                                                "goals_away": null,
+                                                "played": true,
+                                                "goals_home": 2,
+                                                "goals_away": 0,
                                                 "has_shootouts": false,
                                                 "shootouts_home": null,
                                                 "shootouts_away": null
@@ -9065,37 +9065,37 @@
                                             {
                                                 "position": 1,
                                                 "team_id": 14,
-                                                "played": 0,
-                                                "won": 0,
+                                                "played": 1,
+                                                "won": 1,
                                                 "drawn": 0,
                                                 "lost": 0,
-                                                "goals_for": 0,
+                                                "goals_for": 2,
                                                 "goals_against": 0,
-                                                "goal_difference": 0,
-                                                "points": 0
+                                                "goal_difference": 2,
+                                                "points": 3
                                             },
                                             {
                                                 "position": 2,
                                                 "team_id": 13,
-                                                "played": 0,
-                                                "won": 0,
+                                                "played": 1,
+                                                "won": 1,
                                                 "drawn": 0,
                                                 "lost": 0,
-                                                "goals_for": 0,
+                                                "goals_for": 2,
                                                 "goals_against": 0,
-                                                "goal_difference": 0,
-                                                "points": 0
+                                                "goal_difference": 2,
+                                                "points": 3
                                             },
                                             {
                                                 "position": 3,
                                                 "team_id": 30,
-                                                "played": 0,
+                                                "played": 2,
                                                 "won": 0,
                                                 "drawn": 0,
-                                                "lost": 0,
+                                                "lost": 2,
                                                 "goals_for": 0,
-                                                "goals_against": 0,
-                                                "goal_difference": 0,
+                                                "goals_against": 4,
+                                                "goal_difference": -4,
                                                 "points": 0
                                             }
                                         ]
@@ -10496,10 +10496,10 @@
                                         "team_1_seed": 2,
                                         "team_2_id": 43,
                                         "team_2_seed": 3,
-                                        "team_1_wins": 0,
+                                        "team_1_wins": 1,
                                         "team_2_wins": 0,
-                                        "winner_id": null,
-                                        "is_completed": false,
+                                        "winner_id": 33,
+                                        "is_completed": true,
                                         "matches": [
                                             {
                                                 "game": 1,
@@ -10508,14 +10508,58 @@
                                                 "home_team_id": 33,
                                                 "away_team_id": 43,
                                                 "pitch": "Villa Mitre",
-                                                "played": false,
-                                                "goals_home": null,
-                                                "goals_away": null,
+                                                "played": true,
+                                                "goals_home": 2,
+                                                "goals_away": 1,
                                                 "has_shootouts": false,
                                                 "shootouts_home": null,
                                                 "shootouts_away": null
                                             }
                                         ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "final",
+                                "label": "Final",
+                                "order": 4,
+                                "brackets": [
+                                    {
+                                        "id": 200,
+                                        "format": "single_elimination",
+                                        "matchup_number": 1,
+                                        "series_wins_required": 1,
+                                        "team_1_id": null,
+                                        "team_1_seed": null,
+                                        "team_2_id": 33,
+                                        "team_2_seed": 2,
+                                        "team_1_wins": 0,
+                                        "team_2_wins": 0,
+                                        "winner_id": null,
+                                        "is_completed": false,
+                                        "matches": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "third_place",
+                                "label": "Tercer puesto",
+                                "order": 5,
+                                "brackets": [
+                                    {
+                                        "id": 201,
+                                        "format": "single_elimination",
+                                        "matchup_number": 1,
+                                        "series_wins_required": 1,
+                                        "team_1_id": 43,
+                                        "team_1_seed": 3,
+                                        "team_2_id": null,
+                                        "team_2_seed": null,
+                                        "team_1_wins": 0,
+                                        "team_2_wins": 0,
+                                        "winner_id": null,
+                                        "is_completed": false,
+                                        "matches": []
                                     }
                                 ]
                             }
