@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-11T16:43:45-03:00",
+    "generated_at": "2026-11-11T16:51:15-03:00",
     "from": "2026-11-14",
     "to": "2026-11-15",
     "umpires": {
@@ -482,6 +482,10 @@
         "85": {
             "id": 85,
             "name": "Sofía Currulef"
+        },
+        "195": {
+            "id": 195,
+            "name": "Sofía Olmos"
         },
         "171": {
             "id": 171,
@@ -1175,7 +1179,7 @@
                     "home_team_id": 5,
                     "away_team_id": 26,
                     "pitch": "El Nacional",
-                    "umpire_1_id": 132,
+                    "umpire_1_id": 195,
                     "umpire_2_id": 94,
                     "fee": 44000,
                     "supervisor": null
@@ -1310,7 +1314,7 @@
                     "home_team_id": 43,
                     "away_team_id": 36,
                     "pitch": "S. Sportiva",
-                    "umpire_1_id": null,
+                    "umpire_1_id": 179,
                     "umpire_2_id": null,
                     "fee": null,
                     "supervisor": null
