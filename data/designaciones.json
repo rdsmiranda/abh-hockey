@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-11T14:50:46-03:00",
+    "generated_at": "2026-11-11T16:43:45-03:00",
     "from": "2026-11-14",
     "to": "2026-11-15",
     "umpires": {
@@ -841,7 +841,7 @@
                     "away_team_id": 11,
                     "pitch": "El Nacional",
                     "umpire_1_id": 132,
-                    "umpire_2_id": 72,
+                    "umpire_2_id": 113,
                     "fee": 48000,
                     "supervisor": null
                 },
@@ -1026,7 +1026,7 @@
                     "away_team_id": 10,
                     "pitch": "Independiente",
                     "umpire_1_id": null,
-                    "umpire_2_id": null,
+                    "umpire_2_id": 72,
                     "fee": null,
                     "supervisor": null
                 },
@@ -1100,7 +1100,7 @@
                     "home_team_id": 11,
                     "away_team_id": 20,
                     "pitch": "Pacífico",
-                    "umpire_1_id": 72,
+                    "umpire_1_id": 113,
                     "umpire_2_id": 85,
                     "fee": 44000,
                     "supervisor": null
