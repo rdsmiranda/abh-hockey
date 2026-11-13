@@ -7,7 +7,7 @@
         "start_date": "2026-06-13",
         "end_date": "2026-12-06"
     },
-    "generated_at": "2026-11-11T14:50:33-03:00",
+    "generated_at": "2026-11-13T11:58:46-03:00",
     "fixture_file": "clausura-2026-fixture.json",
     "teams": {
         "1": {
@@ -10540,7 +10540,7 @@
                                         "matches": [
                                             {
                                                 "game": 1,
-                                                "date": "2026-11-15",
+                                                "date": "2026-11-14",
                                                 "time": "12:00",
                                                 "home_team_id": 32,
                                                 "away_team_id": 33,
