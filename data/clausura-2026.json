@@ -7,7 +7,7 @@
         "start_date": "2026-06-13",
         "end_date": "2026-12-06"
     },
-    "generated_at": "2026-11-14T18:30:59-03:00",
+    "generated_at": "2026-11-15T09:03:52-03:00",
     "fixture_file": "clausura-2026-fixture.json",
     "teams": {
         "1": {
@@ -913,7 +913,7 @@
                                             },
                                             {
                                                 "game": 3,
-                                                "date": "2026-11-21",
+                                                "date": "2026-11-22",
                                                 "time": "16:00",
                                                 "home_team_id": 19,
                                                 "away_team_id": 7,
@@ -3783,7 +3783,7 @@
                                             },
                                             {
                                                 "game": 3,
-                                                "date": "2026-11-21",
+                                                "date": "2026-11-22",
                                                 "time": "16:00",
                                                 "home_team_id": 20,
                                                 "away_team_id": 14,
@@ -9002,10 +9002,10 @@
                                         "team_1_seed": 1,
                                         "team_2_id": 27,
                                         "team_2_seed": 2,
-                                        "team_1_wins": 0,
+                                        "team_1_wins": 1,
                                         "team_2_wins": 0,
-                                        "winner_id": null,
-                                        "is_completed": false,
+                                        "winner_id": 8,
+                                        "is_completed": true,
                                         "matches": [
                                             {
                                                 "game": 1,
@@ -9014,12 +9014,12 @@
                                                 "home_team_id": 8,
                                                 "away_team_id": 27,
                                                 "pitch": "Monte Hermoso",
-                                                "played": false,
-                                                "goals_home": null,
-                                                "goals_away": null,
-                                                "has_shootouts": false,
-                                                "shootouts_home": null,
-                                                "shootouts_away": null
+                                                "played": true,
+                                                "goals_home": 1,
+                                                "goals_away": 1,
+                                                "has_shootouts": true,
+                                                "shootouts_home": 3,
+                                                "shootouts_away": 1
                                             }
                                         ]
                                     }
@@ -9039,10 +9039,10 @@
                                         "team_1_seed": 3,
                                         "team_2_id": 29,
                                         "team_2_seed": 4,
-                                        "team_1_wins": 0,
+                                        "team_1_wins": 1,
                                         "team_2_wins": 0,
-                                        "winner_id": null,
-                                        "is_completed": false,
+                                        "winner_id": 21,
+                                        "is_completed": true,
                                         "matches": [
                                             {
                                                 "game": 1,
@@ -9051,9 +9051,9 @@
                                                 "home_team_id": 21,
                                                 "away_team_id": 29,
                                                 "pitch": "S. Sportiva",
-                                                "played": false,
-                                                "goals_home": null,
-                                                "goals_away": null,
+                                                "played": true,
+                                                "goals_home": 3,
+                                                "goals_away": 1,
                                                 "has_shootouts": false,
                                                 "shootouts_home": null,
                                                 "shootouts_away": null
@@ -9171,7 +9171,85 @@
                             }
                         ]
                     },
-                    "final_standings": null
+                    "final_standings": [
+                        {
+                            "position": 1,
+                            "team_id": 8,
+                            "note": null,
+                            "team_obj": {
+                                "id": 8,
+                                "name": "Monte Hermoso",
+                                "short_name": "CAMH",
+                                "logo": "assets\/logos\/camh.png"
+                            }
+                        },
+                        {
+                            "position": 2,
+                            "team_id": 27,
+                            "note": null,
+                            "team_obj": {
+                                "id": 27,
+                                "name": "Universitario",
+                                "short_name": "UNI",
+                                "logo": "assets\/logos\/uni.png"
+                            }
+                        },
+                        {
+                            "position": 3,
+                            "team_id": 21,
+                            "note": null,
+                            "team_obj": {
+                                "id": 21,
+                                "name": "S. Sportiva",
+                                "short_name": "SS",
+                                "logo": "assets\/logos\/ss.png"
+                            }
+                        },
+                        {
+                            "position": 4,
+                            "team_id": 29,
+                            "note": null,
+                            "team_obj": {
+                                "id": 29,
+                                "name": "Villa Mitre",
+                                "short_name": "VM",
+                                "logo": "assets\/logos\/vm.png"
+                            }
+                        },
+                        {
+                            "position": 5,
+                            "team_id": 14,
+                            "note": null,
+                            "team_obj": {
+                                "id": 14,
+                                "name": "Palihue",
+                                "short_name": "PAL",
+                                "logo": "assets\/logos\/pal.png"
+                            }
+                        },
+                        {
+                            "position": 6,
+                            "team_id": 13,
+                            "note": null,
+                            "team_obj": {
+                                "id": 13,
+                                "name": "Pacífico",
+                                "short_name": "CAP",
+                                "logo": "assets\/logos\/cap.png"
+                            }
+                        },
+                        {
+                            "position": 7,
+                            "team_id": 30,
+                            "note": null,
+                            "team_obj": {
+                                "id": 30,
+                                "name": "Porteño",
+                                "short_name": "POR",
+                                "logo": "assets\/logos\/por.png"
+                            }
+                        }
+                    ]
                 }
             ]
         },
@@ -10726,8 +10804,8 @@
                                         "matches": [
                                             {
                                                 "game": 1,
-                                                "date": null,
-                                                "time": "",
+                                                "date": "2026-11-22",
+                                                "time": "10:00",
                                                 "home_team_id": 32,
                                                 "away_team_id": 33,
                                                 "pitch": null,
