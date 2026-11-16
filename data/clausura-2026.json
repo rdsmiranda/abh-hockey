@@ -7,7 +7,7 @@
         "start_date": "2026-06-13",
         "end_date": "2026-12-06"
     },
-    "generated_at": "2026-11-16T09:28:04-03:00",
+    "generated_at": "2026-11-16T10:17:52-03:00",
     "fixture_file": "clausura-2026-fixture.json",
     "teams": {
         "1": {
@@ -805,7 +805,7 @@
                                             {
                                                 "game": 1,
                                                 "date": "2026-11-21",
-                                                "time": "16:00",
+                                                "time": "17:30",
                                                 "home_team_id": 8,
                                                 "away_team_id": 10,
                                                 "pitch": "Monte Hermoso",
@@ -1561,8 +1561,8 @@
                                         "matches": [
                                             {
                                                 "game": 1,
-                                                "date": "2026-12-05",
-                                                "time": "16:00",
+                                                "date": "2026-11-22",
+                                                "time": "12:00",
                                                 "home_team_id": 24,
                                                 "away_team_id": 1,
                                                 "pitch": "Universitario (Agua)",
@@ -1663,8 +1663,8 @@
                                             },
                                             {
                                                 "game": 3,
-                                                "date": "2026-11-22",
-                                                "time": "16:00",
+                                                "date": "2026-11-18",
+                                                "time": "20:30",
                                                 "home_team_id": 3,
                                                 "away_team_id": 7,
                                                 "pitch": "El Nacional",
@@ -3116,8 +3116,8 @@
                                             },
                                             {
                                                 "game": 3,
-                                                "date": "2026-11-22",
-                                                "time": "10:00",
+                                                "date": "2026-11-20",
+                                                "time": "19:00",
                                                 "home_team_id": 3,
                                                 "away_team_id": 10,
                                                 "pitch": "El Nacional",
@@ -3749,7 +3749,7 @@
                                             {
                                                 "game": 1,
                                                 "date": "2026-11-21",
-                                                "time": "16:00",
+                                                "time": "14:00",
                                                 "home_team_id": 25,
                                                 "away_team_id": 11,
                                                 "pitch": "Universitario (Agua)",
@@ -3851,7 +3851,7 @@
                                             {
                                                 "game": 3,
                                                 "date": "2026-11-22",
-                                                "time": "16:00",
+                                                "time": "18:00",
                                                 "home_team_id": 20,
                                                 "away_team_id": 14,
                                                 "pitch": "S. Sportiva",
@@ -6605,7 +6605,7 @@
                                             {
                                                 "game": 1,
                                                 "date": "2026-11-21",
-                                                "time": "16:00",
+                                                "time": "11:00",
                                                 "home_team_id": 16,
                                                 "away_team_id": 26,
                                                 "pitch": "Puerto Belgrano",
@@ -9882,8 +9882,8 @@
                                             },
                                             {
                                                 "game": 3,
-                                                "date": "2026-11-22",
-                                                "time": "18:00",
+                                                "date": "2026-11-21",
+                                                "time": "20:30",
                                                 "home_team_id": 6,
                                                 "away_team_id": 18,
                                                 "pitch": "El Nacional",
