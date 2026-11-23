@@ -1,6 +1,6 @@
 {
     "championship_id": 3,
-    "generated_at": "2026-11-22T22:22:49-03:00",
+    "generated_at": "2026-11-23T19:55:38-03:00",
     "rounds": [
         {
             "id": 93,
@@ -10101,22 +10101,6 @@
                     "shootouts_away": null
                 },
                 {
-                    "id": 695,
-                    "zone_id": 10,
-                    "category_id": 3,
-                    "date": "2026-10-24",
-                    "time": "14:00",
-                    "home_team_id": 10,
-                    "away_team_id": 8,
-                    "pitch": "Pacífico",
-                    "played": true,
-                    "goals_home": 1,
-                    "goals_away": 3,
-                    "has_shootouts": false,
-                    "shootouts_home": null,
-                    "shootouts_away": null
-                },
-                {
                     "id": 696,
                     "zone_id": 10,
                     "category_id": 3,
@@ -10149,17 +10133,33 @@
                     "shootouts_away": null
                 },
                 {
-                    "id": 694,
+                    "id": 695,
+                    "zone_id": 10,
+                    "category_id": 3,
+                    "date": "2026-10-24",
+                    "time": "14:00",
+                    "home_team_id": 10,
+                    "away_team_id": 8,
+                    "pitch": "Pacífico",
+                    "played": true,
+                    "goals_home": 1,
+                    "goals_away": 3,
+                    "has_shootouts": false,
+                    "shootouts_home": null,
+                    "shootouts_away": null
+                },
+                {
+                    "id": 692,
                     "zone_id": 10,
                     "category_id": 4,
                     "date": "2026-10-24",
                     "time": "16:00",
-                    "home_team_id": 3,
-                    "away_team_id": 7,
-                    "pitch": "El Nacional",
+                    "home_team_id": 10,
+                    "away_team_id": 8,
+                    "pitch": "Pacífico",
                     "played": true,
-                    "goals_home": 2,
-                    "goals_away": 0,
+                    "goals_home": 0,
+                    "goals_away": 3,
                     "has_shootouts": false,
                     "shootouts_home": null,
                     "shootouts_away": null
@@ -10181,17 +10181,17 @@
                     "shootouts_away": null
                 },
                 {
-                    "id": 692,
+                    "id": 694,
                     "zone_id": 10,
                     "category_id": 4,
                     "date": "2026-10-24",
                     "time": "16:00",
-                    "home_team_id": 10,
-                    "away_team_id": 8,
-                    "pitch": "Pacífico",
+                    "home_team_id": 3,
+                    "away_team_id": 7,
+                    "pitch": "El Nacional",
                     "played": true,
-                    "goals_home": 0,
-                    "goals_away": 3,
+                    "goals_home": 2,
+                    "goals_away": 0,
                     "has_shootouts": false,
                     "shootouts_home": null,
                     "shootouts_away": null
@@ -10403,22 +10403,6 @@
             "label": "Fecha 14",
             "matches": [
                 {
-                    "id": 1067,
-                    "zone_id": 13,
-                    "category_id": 5,
-                    "date": "2026-10-24",
-                    "time": "18:00",
-                    "home_team_id": 13,
-                    "away_team_id": 8,
-                    "pitch": "Pacífico",
-                    "played": true,
-                    "goals_home": 2,
-                    "goals_away": 6,
-                    "has_shootouts": false,
-                    "shootouts_home": null,
-                    "shootouts_away": null
-                },
-                {
                     "id": 1066,
                     "zone_id": 13,
                     "category_id": 5,
@@ -10433,6 +10417,22 @@
                     "has_shootouts": true,
                     "shootouts_home": 3,
                     "shootouts_away": 2
+                },
+                {
+                    "id": 1067,
+                    "zone_id": 13,
+                    "category_id": 5,
+                    "date": "2026-10-24",
+                    "time": "18:00",
+                    "home_team_id": 13,
+                    "away_team_id": 8,
+                    "pitch": "Pacífico",
+                    "played": true,
+                    "goals_home": 2,
+                    "goals_away": 6,
+                    "has_shootouts": false,
+                    "shootouts_home": null,
+                    "shootouts_away": null
                 },
                 {
                     "id": 1065,
@@ -10625,6 +10625,22 @@
                     "shootouts_away": null
                 },
                 {
+                    "id": 1021,
+                    "zone_id": 12,
+                    "category_id": 3,
+                    "date": "2026-10-24",
+                    "time": "14:00",
+                    "home_team_id": 17,
+                    "away_team_id": 22,
+                    "pitch": "Sporting",
+                    "played": true,
+                    "goals_home": 1,
+                    "goals_away": 2,
+                    "has_shootouts": false,
+                    "shootouts_home": null,
+                    "shootouts_away": null
+                },
+                {
                     "id": 1019,
                     "zone_id": 12,
                     "category_id": 3,
@@ -10657,17 +10673,17 @@
                     "shootouts_away": null
                 },
                 {
-                    "id": 1021,
+                    "id": 1018,
                     "zone_id": 12,
-                    "category_id": 3,
+                    "category_id": 4,
                     "date": "2026-10-24",
-                    "time": "14:00",
+                    "time": "16:00",
                     "home_team_id": 17,
                     "away_team_id": 22,
                     "pitch": "Sporting",
                     "played": true,
                     "goals_home": 1,
-                    "goals_away": 2,
+                    "goals_away": 4,
                     "has_shootouts": false,
                     "shootouts_home": null,
                     "shootouts_away": null
@@ -10684,22 +10700,6 @@
                     "played": true,
                     "goals_home": 7,
                     "goals_away": 2,
-                    "has_shootouts": false,
-                    "shootouts_home": null,
-                    "shootouts_away": null
-                },
-                {
-                    "id": 1018,
-                    "zone_id": 12,
-                    "category_id": 4,
-                    "date": "2026-10-24",
-                    "time": "16:00",
-                    "home_team_id": 17,
-                    "away_team_id": 22,
-                    "pitch": "Sporting",
-                    "played": true,
-                    "goals_home": 1,
-                    "goals_away": 4,
                     "has_shootouts": false,
                     "shootouts_home": null,
                     "shootouts_away": null
@@ -10831,22 +10831,6 @@
                     "shootouts_away": null
                 },
                 {
-                    "id": 1129,
-                    "zone_id": 10,
-                    "category_id": 4,
-                    "date": "2026-11-07",
-                    "time": "16:00",
-                    "home_team_id": 8,
-                    "away_team_id": 1,
-                    "pitch": "Monte Hermoso",
-                    "played": true,
-                    "goals_home": 3,
-                    "goals_away": 2,
-                    "has_shootouts": false,
-                    "shootouts_home": null,
-                    "shootouts_away": null
-                },
-                {
                     "id": 1128,
                     "zone_id": 10,
                     "category_id": 4,
@@ -10861,6 +10845,22 @@
                     "has_shootouts": true,
                     "shootouts_home": 2,
                     "shootouts_away": 4
+                },
+                {
+                    "id": 1129,
+                    "zone_id": 10,
+                    "category_id": 4,
+                    "date": "2026-11-07",
+                    "time": "16:00",
+                    "home_team_id": 8,
+                    "away_team_id": 1,
+                    "pitch": "Monte Hermoso",
+                    "played": true,
+                    "goals_home": 3,
+                    "goals_away": 2,
+                    "has_shootouts": false,
+                    "shootouts_home": null,
+                    "shootouts_away": null
                 },
                 {
                     "id": 1114,
@@ -10895,22 +10895,6 @@
                     "shootouts_away": null
                 },
                 {
-                    "id": 1124,
-                    "zone_id": 10,
-                    "category_id": 3,
-                    "date": "2026-11-08",
-                    "time": "16:00",
-                    "home_team_id": 8,
-                    "away_team_id": 24,
-                    "pitch": "Monte Hermoso",
-                    "played": true,
-                    "goals_home": 3,
-                    "goals_away": 0,
-                    "has_shootouts": false,
-                    "shootouts_home": null,
-                    "shootouts_away": null
-                },
-                {
                     "id": 1123,
                     "zone_id": 10,
                     "category_id": 3,
@@ -10925,6 +10909,22 @@
                     "has_shootouts": true,
                     "shootouts_home": 1,
                     "shootouts_away": 3
+                },
+                {
+                    "id": 1124,
+                    "zone_id": 10,
+                    "category_id": 3,
+                    "date": "2026-11-08",
+                    "time": "16:00",
+                    "home_team_id": 8,
+                    "away_team_id": 24,
+                    "pitch": "Monte Hermoso",
+                    "played": true,
+                    "goals_home": 3,
+                    "goals_away": 0,
+                    "has_shootouts": false,
+                    "shootouts_home": null,
+                    "shootouts_away": null
                 }
             ]
         },
@@ -11108,22 +11108,6 @@
                     "shootouts_away": null
                 },
                 {
-                    "id": 1174,
-                    "zone_id": 12,
-                    "category_id": 3,
-                    "date": "2026-11-08",
-                    "time": "16:00",
-                    "home_team_id": 16,
-                    "away_team_id": 2,
-                    "pitch": "Puerto Belgrano",
-                    "played": true,
-                    "goals_home": 6,
-                    "goals_away": 0,
-                    "has_shootouts": false,
-                    "shootouts_home": null,
-                    "shootouts_away": null
-                },
-                {
                     "id": 1175,
                     "zone_id": 12,
                     "category_id": 3,
@@ -11138,6 +11122,22 @@
                     "has_shootouts": false,
                     "shootouts_home": null,
                     "shootouts_away": null
+                },
+                {
+                    "id": 1174,
+                    "zone_id": 12,
+                    "category_id": 3,
+                    "date": "2026-11-08",
+                    "time": "16:00",
+                    "home_team_id": 16,
+                    "away_team_id": 2,
+                    "pitch": "Puerto Belgrano",
+                    "played": true,
+                    "goals_home": 6,
+                    "goals_away": 0,
+                    "has_shootouts": false,
+                    "shootouts_home": null,
+                    "shootouts_away": null
                 }
             ]
         },
@@ -11146,22 +11146,6 @@
             "number": 103,
             "label": "Semifinales",
             "matches": [
-                {
-                    "id": 1139,
-                    "zone_id": 11,
-                    "category_id": 2,
-                    "date": "2026-11-07",
-                    "time": "10:00",
-                    "home_team_id": 29,
-                    "away_team_id": 20,
-                    "pitch": "Villa Mitre",
-                    "played": true,
-                    "goals_home": 2,
-                    "goals_away": 2,
-                    "has_shootouts": true,
-                    "shootouts_home": 0,
-                    "shootouts_away": 3
-                },
                 {
                     "id": 1138,
                     "zone_id": 11,
@@ -11177,6 +11161,22 @@
                     "has_shootouts": false,
                     "shootouts_home": null,
                     "shootouts_away": null
+                },
+                {
+                    "id": 1139,
+                    "zone_id": 11,
+                    "category_id": 2,
+                    "date": "2026-11-07",
+                    "time": "10:00",
+                    "home_team_id": 29,
+                    "away_team_id": 20,
+                    "pitch": "Villa Mitre",
+                    "played": true,
+                    "goals_home": 2,
+                    "goals_away": 2,
+                    "has_shootouts": true,
+                    "shootouts_home": 0,
+                    "shootouts_away": 3
                 },
                 {
                     "id": 1144,
@@ -12415,9 +12415,9 @@
                     "home_team_id": 10,
                     "away_team_id": 24,
                     "pitch": "Pacífico",
-                    "played": false,
-                    "goals_home": null,
-                    "goals_away": null,
+                    "played": true,
+                    "goals_home": 2,
+                    "goals_away": 0,
                     "has_shootouts": false,
                     "shootouts_home": null,
                     "shootouts_away": null
@@ -12614,9 +12614,9 @@
                     "home_team_id": 25,
                     "away_team_id": 11,
                     "pitch": "Universitario (Agua)",
-                    "played": false,
-                    "goals_home": null,
-                    "goals_away": null,
+                    "played": true,
+                    "goals_home": 2,
+                    "goals_away": 4,
                     "has_shootouts": false,
                     "shootouts_home": null,
                     "shootouts_away": null

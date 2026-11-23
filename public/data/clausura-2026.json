@@ -7,7 +7,7 @@
         "start_date": "2026-06-13",
         "end_date": "2026-12-06"
     },
-    "generated_at": "2026-11-22T22:22:49-03:00",
+    "generated_at": "2026-11-23T19:55:38-03:00",
     "fixture_file": "clausura-2026-fixture.json",
     "teams": {
         "1": {
@@ -2368,8 +2368,8 @@
                                         "team_2_seed": 2,
                                         "team_1_wins": 0,
                                         "team_2_wins": 0,
-                                        "winner_id": null,
-                                        "is_completed": false,
+                                        "winner_id": 10,
+                                        "is_completed": true,
                                         "matches": [
                                             {
                                                 "game": 1,
@@ -2406,9 +2406,9 @@
                                                 "home_team_id": 10,
                                                 "away_team_id": 24,
                                                 "pitch": "Pacífico",
-                                                "played": false,
-                                                "goals_home": null,
-                                                "goals_away": null,
+                                                "played": true,
+                                                "goals_home": 2,
+                                                "goals_away": 0,
                                                 "has_shootouts": false,
                                                 "shootouts_home": null,
                                                 "shootouts_away": null
@@ -2421,6 +2421,18 @@
                                         "group_standings": [
                                             {
                                                 "position": 1,
+                                                "team_id": 10,
+                                                "played": 2,
+                                                "won": 2,
+                                                "drawn": 0,
+                                                "lost": 0,
+                                                "goals_for": 4,
+                                                "goals_against": 1,
+                                                "goal_difference": 3,
+                                                "points": 6
+                                            },
+                                            {
+                                                "position": 2,
                                                 "team_id": 3,
                                                 "played": 2,
                                                 "won": 1,
@@ -2432,27 +2444,15 @@
                                                 "points": 3
                                             },
                                             {
-                                                "position": 2,
-                                                "team_id": 10,
-                                                "played": 1,
-                                                "won": 1,
-                                                "drawn": 0,
-                                                "lost": 0,
-                                                "goals_for": 2,
-                                                "goals_against": 1,
-                                                "goal_difference": 1,
-                                                "points": 3
-                                            },
-                                            {
                                                 "position": 3,
                                                 "team_id": 24,
-                                                "played": 1,
+                                                "played": 2,
                                                 "won": 0,
                                                 "drawn": 0,
-                                                "lost": 1,
+                                                "lost": 2,
                                                 "goals_for": 0,
-                                                "goals_against": 2,
-                                                "goal_difference": -2,
+                                                "goals_against": 4,
+                                                "goal_difference": -4,
                                                 "points": 0
                                             }
                                         ]
@@ -2461,7 +2461,85 @@
                             }
                         ]
                     },
-                    "final_standings": null
+                    "final_standings": [
+                        {
+                            "position": 1,
+                            "team_id": 8,
+                            "note": null,
+                            "team_obj": {
+                                "id": 8,
+                                "name": "Monte Hermoso",
+                                "short_name": "CAMH",
+                                "logo": "assets\/logos\/camh.png"
+                            }
+                        },
+                        {
+                            "position": 2,
+                            "team_id": 19,
+                            "note": null,
+                            "team_obj": {
+                                "id": 19,
+                                "name": "S. Sportiva A",
+                                "short_name": "SS A",
+                                "logo": "assets\/logos\/ss.png"
+                            }
+                        },
+                        {
+                            "position": 3,
+                            "team_id": 7,
+                            "note": null,
+                            "team_obj": {
+                                "id": 7,
+                                "name": "Independiente",
+                                "short_name": "CAI",
+                                "logo": "assets\/logos\/cai.png"
+                            }
+                        },
+                        {
+                            "position": 4,
+                            "team_id": 1,
+                            "note": null,
+                            "team_obj": {
+                                "id": 1,
+                                "name": "Argentino A",
+                                "short_name": "ARG A",
+                                "logo": "assets\/logos\/arg.png"
+                            }
+                        },
+                        {
+                            "position": 5,
+                            "team_id": 10,
+                            "note": null,
+                            "team_obj": {
+                                "id": 10,
+                                "name": "Pacífico A",
+                                "short_name": "CAP A",
+                                "logo": "assets\/logos\/cap.png"
+                            }
+                        },
+                        {
+                            "position": 6,
+                            "team_id": 3,
+                            "note": null,
+                            "team_obj": {
+                                "id": 3,
+                                "name": "El Nacional A",
+                                "short_name": "CEN A",
+                                "logo": "assets\/logos\/cen.png"
+                            }
+                        },
+                        {
+                            "position": 7,
+                            "team_id": 24,
+                            "note": null,
+                            "team_obj": {
+                                "id": 24,
+                                "name": "Universitario A",
+                                "short_name": "UNI A",
+                                "logo": "assets\/logos\/uni.png"
+                            }
+                        }
+                    ]
                 },
                 {
                     "id": 1,
@@ -5413,8 +5491,8 @@
                                         "team_2_seed": 2,
                                         "team_1_wins": 0,
                                         "team_2_wins": 0,
-                                        "winner_id": null,
-                                        "is_completed": false,
+                                        "winner_id": 4,
+                                        "is_completed": true,
                                         "matches": [
                                             {
                                                 "game": 1,
@@ -5451,9 +5529,9 @@
                                                 "home_team_id": 25,
                                                 "away_team_id": 11,
                                                 "pitch": "Universitario (Agua)",
-                                                "played": false,
-                                                "goals_home": null,
-                                                "goals_away": null,
+                                                "played": true,
+                                                "goals_home": 2,
+                                                "goals_away": 4,
                                                 "has_shootouts": false,
                                                 "shootouts_home": null,
                                                 "shootouts_away": null
@@ -5466,18 +5544,6 @@
                                         "group_standings": [
                                             {
                                                 "position": 1,
-                                                "team_id": 25,
-                                                "played": 1,
-                                                "won": 1,
-                                                "drawn": 0,
-                                                "lost": 0,
-                                                "goals_for": 3,
-                                                "goals_against": 1,
-                                                "goal_difference": 2,
-                                                "points": 3
-                                            },
-                                            {
-                                                "position": 2,
                                                 "team_id": 4,
                                                 "played": 2,
                                                 "won": 1,
@@ -5489,16 +5555,28 @@
                                                 "points": 3
                                             },
                                             {
-                                                "position": 3,
-                                                "team_id": 11,
-                                                "played": 1,
-                                                "won": 0,
+                                                "position": 2,
+                                                "team_id": 25,
+                                                "played": 2,
+                                                "won": 1,
                                                 "drawn": 0,
                                                 "lost": 1,
-                                                "goals_for": 2,
+                                                "goals_for": 5,
                                                 "goals_against": 5,
-                                                "goal_difference": -3,
-                                                "points": 0
+                                                "goal_difference": 0,
+                                                "points": 3
+                                            },
+                                            {
+                                                "position": 3,
+                                                "team_id": 11,
+                                                "played": 2,
+                                                "won": 1,
+                                                "drawn": 0,
+                                                "lost": 1,
+                                                "goals_for": 6,
+                                                "goals_against": 7,
+                                                "goal_difference": -1,
+                                                "points": 3
                                             }
                                         ]
                                     }
@@ -5506,7 +5584,85 @@
                             }
                         ]
                     },
-                    "final_standings": null
+                    "final_standings": [
+                        {
+                            "position": 1,
+                            "team_id": 23,
+                            "note": null,
+                            "team_obj": {
+                                "id": 23,
+                                "name": "Tiro Federal",
+                                "short_name": "TIRO",
+                                "logo": "assets\/logos\/tiro.png"
+                            }
+                        },
+                        {
+                            "position": 2,
+                            "team_id": 20,
+                            "note": null,
+                            "team_obj": {
+                                "id": 20,
+                                "name": "S. Sportiva B",
+                                "short_name": "SS B",
+                                "logo": "assets\/logos\/ss.png"
+                            }
+                        },
+                        {
+                            "position": 3,
+                            "team_id": 29,
+                            "note": null,
+                            "team_obj": {
+                                "id": 29,
+                                "name": "Villa Mitre",
+                                "short_name": "VM",
+                                "logo": "assets\/logos\/vm.png"
+                            }
+                        },
+                        {
+                            "position": 4,
+                            "team_id": 14,
+                            "note": null,
+                            "team_obj": {
+                                "id": 14,
+                                "name": "Palihue",
+                                "short_name": "PAL",
+                                "logo": "assets\/logos\/pal.png"
+                            }
+                        },
+                        {
+                            "position": 5,
+                            "team_id": 4,
+                            "note": null,
+                            "team_obj": {
+                                "id": 4,
+                                "name": "El Nacional B",
+                                "short_name": "CEN B",
+                                "logo": "assets\/logos\/cen.png"
+                            }
+                        },
+                        {
+                            "position": 6,
+                            "team_id": 25,
+                            "note": null,
+                            "team_obj": {
+                                "id": 25,
+                                "name": "Universitario B",
+                                "short_name": "UNI B",
+                                "logo": "assets\/logos\/uni.png"
+                            }
+                        },
+                        {
+                            "position": 7,
+                            "team_id": 11,
+                            "note": null,
+                            "team_obj": {
+                                "id": 11,
+                                "name": "Pacífico B",
+                                "short_name": "CAP B",
+                                "logo": "assets\/logos\/cap.png"
+                            }
+                        }
+                    ]
                 },
                 {
                     "id": 1,
