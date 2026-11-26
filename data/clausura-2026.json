@@ -7,7 +7,7 @@
         "start_date": "2026-06-13",
         "end_date": "2026-12-06"
     },
-    "generated_at": "2026-11-23T19:55:38-03:00",
+    "generated_at": "2026-11-26T13:12:50-03:00",
     "fixture_file": "clausura-2026-fixture.json",
     "teams": {
         "1": {
@@ -841,11 +841,11 @@
                                         "matches": [
                                             {
                                                 "game": 1,
-                                                "date": "2026-12-05",
-                                                "time": "",
+                                                "date": "2026-12-01",
+                                                "time": "20:30",
                                                 "home_team_id": 1,
                                                 "away_team_id": 10,
-                                                "pitch": null,
+                                                "pitch": "Argentino",
                                                 "played": false,
                                                 "goals_home": null,
                                                 "goals_away": null,
@@ -879,10 +879,10 @@
                                             {
                                                 "game": 1,
                                                 "date": "2026-12-05",
-                                                "time": "",
+                                                "time": "18:00",
                                                 "home_team_id": 24,
                                                 "away_team_id": 8,
-                                                "pitch": null,
+                                                "pitch": "Monte Hermoso",
                                                 "played": false,
                                                 "goals_home": null,
                                                 "goals_away": null,
@@ -1629,10 +1629,10 @@
                                             {
                                                 "game": 1,
                                                 "date": "2026-12-05",
-                                                "time": "",
+                                                "time": "12:00",
                                                 "home_team_id": 19,
                                                 "away_team_id": 8,
-                                                "pitch": null,
+                                                "pitch": "Universitario (Agua)",
                                                 "played": false,
                                                 "goals_home": null,
                                                 "goals_away": null,
@@ -3160,10 +3160,10 @@
                                             {
                                                 "game": 1,
                                                 "date": "2026-12-05",
-                                                "time": "",
+                                                "time": "10:00",
                                                 "home_team_id": 1,
                                                 "away_team_id": 19,
-                                                "pitch": null,
+                                                "pitch": "Universitario (Agua)",
                                                 "played": false,
                                                 "goals_home": null,
                                                 "goals_away": null,
@@ -4752,10 +4752,10 @@
                                             {
                                                 "game": 1,
                                                 "date": "2026-12-05",
-                                                "time": "",
+                                                "time": "16:00",
                                                 "home_team_id": 23,
                                                 "away_team_id": 25,
-                                                "pitch": null,
+                                                "pitch": "Monte Hermoso",
                                                 "played": false,
                                                 "goals_home": null,
                                                 "goals_away": null,
