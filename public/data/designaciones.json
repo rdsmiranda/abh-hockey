@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-26T13:13:15-03:00",
+    "generated_at": "2026-11-26T13:36:54-03:00",
     "from": "2026-11-26",
     "to": "2026-12-06",
     "umpires": {
@@ -680,23 +680,8 @@
             "date": "2026-12-05",
             "matches": [
                 {
-                    "id": 1213,
-                    "time": "10:00",
-                    "date": "2026-12-05",
-                    "zone": "Oro",
-                    "category": "Sub14",
-                    "round": "Final Extra",
-                    "home_team_id": 1,
-                    "away_team_id": 19,
-                    "pitch": "Universitario (Agua)",
-                    "umpire_1_id": 127,
-                    "umpire_2_id": 78,
-                    "fee": 44000,
-                    "supervisor": null
-                },
-                {
                     "id": 1214,
-                    "time": "12:00",
+                    "time": "10:00",
                     "date": "2026-12-05",
                     "zone": "Oro",
                     "category": "Sub19",
@@ -710,8 +695,23 @@
                     "supervisor": null
                 },
                 {
+                    "id": 1213,
+                    "time": "12:00",
+                    "date": "2026-12-05",
+                    "zone": "Oro",
+                    "category": "Sub14",
+                    "round": "Final Extra",
+                    "home_team_id": 1,
+                    "away_team_id": 19,
+                    "pitch": "Universitario (Agua)",
+                    "umpire_1_id": 127,
+                    "umpire_2_id": 78,
+                    "fee": 44000,
+                    "supervisor": null
+                },
+                {
                     "id": 1217,
-                    "time": "18:00",
+                    "time": "18:30",
                     "date": "2026-12-05",
                     "zone": "Oro",
                     "category": "Primera",
