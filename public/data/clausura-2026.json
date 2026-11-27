@@ -7,7 +7,7 @@
         "start_date": "2026-06-13",
         "end_date": "2026-12-06"
     },
-    "generated_at": "2026-11-26T13:12:50-03:00",
+    "generated_at": "2026-11-26T21:51:49-03:00",
     "fixture_file": "clausura-2026-fixture.json",
     "teams": {
         "1": {
@@ -879,7 +879,7 @@
                                             {
                                                 "game": 1,
                                                 "date": "2026-12-05",
-                                                "time": "18:00",
+                                                "time": "18:30",
                                                 "home_team_id": 24,
                                                 "away_team_id": 8,
                                                 "pitch": "Monte Hermoso",
@@ -1629,7 +1629,7 @@
                                             {
                                                 "game": 1,
                                                 "date": "2026-12-05",
-                                                "time": "12:00",
+                                                "time": "10:00",
                                                 "home_team_id": 19,
                                                 "away_team_id": 8,
                                                 "pitch": "Universitario (Agua)",
@@ -3160,7 +3160,7 @@
                                             {
                                                 "game": 1,
                                                 "date": "2026-12-05",
-                                                "time": "10:00",
+                                                "time": "12:00",
                                                 "home_team_id": 1,
                                                 "away_team_id": 19,
                                                 "pitch": "Universitario (Agua)",
@@ -6238,10 +6238,10 @@
                                         "team_1_seed": 2,
                                         "team_2_id": 25,
                                         "team_2_seed": 4,
-                                        "team_1_wins": 0,
+                                        "team_1_wins": 1,
                                         "team_2_wins": 0,
-                                        "winner_id": null,
-                                        "is_completed": false,
+                                        "winner_id": 29,
+                                        "is_completed": true,
                                         "matches": [
                                             {
                                                 "game": 1,
@@ -6250,9 +6250,9 @@
                                                 "home_team_id": 29,
                                                 "away_team_id": 25,
                                                 "pitch": "Villa Mitre",
-                                                "played": false,
-                                                "goals_home": null,
-                                                "goals_away": null,
+                                                "played": true,
+                                                "goals_home": 4,
+                                                "goals_away": 0,
                                                 "has_shootouts": false,
                                                 "shootouts_home": null,
                                                 "shootouts_away": null
@@ -6370,7 +6370,85 @@
                             }
                         ]
                     },
-                    "final_standings": null
+                    "final_standings": [
+                        {
+                            "position": 1,
+                            "team_id": 23,
+                            "note": null,
+                            "team_obj": {
+                                "id": 23,
+                                "name": "Tiro Federal",
+                                "short_name": "TIRO",
+                                "logo": "assets\/logos\/tiro.png"
+                            }
+                        },
+                        {
+                            "position": 2,
+                            "team_id": 14,
+                            "note": null,
+                            "team_obj": {
+                                "id": 14,
+                                "name": "Palihue",
+                                "short_name": "PAL",
+                                "logo": "assets\/logos\/pal.png"
+                            }
+                        },
+                        {
+                            "position": 3,
+                            "team_id": 29,
+                            "note": null,
+                            "team_obj": {
+                                "id": 29,
+                                "name": "Villa Mitre",
+                                "short_name": "VM",
+                                "logo": "assets\/logos\/vm.png"
+                            }
+                        },
+                        {
+                            "position": 4,
+                            "team_id": 25,
+                            "note": null,
+                            "team_obj": {
+                                "id": 25,
+                                "name": "Universitario B",
+                                "short_name": "UNI B",
+                                "logo": "assets\/logos\/uni.png"
+                            }
+                        },
+                        {
+                            "position": 5,
+                            "team_id": 20,
+                            "note": null,
+                            "team_obj": {
+                                "id": 20,
+                                "name": "S. Sportiva B",
+                                "short_name": "SS B",
+                                "logo": "assets\/logos\/ss.png"
+                            }
+                        },
+                        {
+                            "position": 6,
+                            "team_id": 4,
+                            "note": null,
+                            "team_obj": {
+                                "id": 4,
+                                "name": "El Nacional B",
+                                "short_name": "CEN B",
+                                "logo": "assets\/logos\/cen.png"
+                            }
+                        },
+                        {
+                            "position": 7,
+                            "team_id": 11,
+                            "note": null,
+                            "team_obj": {
+                                "id": 11,
+                                "name": "Pacífico B",
+                                "short_name": "CAP B",
+                                "logo": "assets\/logos\/cap.png"
+                            }
+                        }
+                    ]
                 }
             ]
         },
