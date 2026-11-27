@@ -7,7 +7,7 @@
         "start_date": "2026-06-13",
         "end_date": "2026-12-06"
     },
-    "generated_at": "2026-11-26T21:51:49-03:00",
+    "generated_at": "2026-11-26T22:45:50-03:00",
     "fixture_file": "clausura-2026-fixture.json",
     "teams": {
         "1": {
@@ -11508,7 +11508,7 @@
                                             {
                                                 "game": 1,
                                                 "date": "2026-11-28",
-                                                "time": "12:00",
+                                                "time": "18:00",
                                                 "home_team_id": 32,
                                                 "away_team_id": 33,
                                                 "pitch": "S. Sportiva",

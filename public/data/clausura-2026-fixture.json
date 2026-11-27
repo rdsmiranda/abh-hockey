@@ -1,6 +1,6 @@
 {
     "championship_id": 3,
-    "generated_at": "2026-11-26T21:51:49-03:00",
+    "generated_at": "2026-11-26T22:45:50-03:00",
     "rounds": [
         {
             "id": 93,
@@ -11889,7 +11889,7 @@
                     "zone_id": 15,
                     "category_id": 1,
                     "date": "2026-11-28",
-                    "time": "12:00",
+                    "time": "18:00",
                     "home_team_id": 32,
                     "away_team_id": 33,
                     "pitch": "S. Sportiva",

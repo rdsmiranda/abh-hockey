@@ -1,6 +1,6 @@
 {
-    "generated_at": "2026-11-26T13:36:54-03:00",
-    "from": "2026-11-26",
+    "generated_at": "2026-11-26T22:46:02-03:00",
+    "from": "2026-11-28",
     "to": "2026-12-06",
     "umpires": {
         "56": {
@@ -549,18 +549,6 @@
         }
     },
     "teams": {
-        "29": {
-            "id": 29,
-            "name": "Villa Mitre",
-            "short_name": "VM",
-            "logo": "assets\/logos\/vm.png"
-        },
-        "25": {
-            "id": 25,
-            "name": "Universitario B",
-            "short_name": "UNI B",
-            "logo": "assets\/logos\/uni.png"
-        },
         "32": {
             "id": 32,
             "name": "Tiro Federal",
@@ -608,40 +596,26 @@
             "name": "Tiro Federal",
             "short_name": "TIRO",
             "logo": "assets\/logos\/tiro.png"
+        },
+        "25": {
+            "id": 25,
+            "name": "Universitario B",
+            "short_name": "UNI B",
+            "logo": "assets\/logos\/uni.png"
         }
     },
     "zones": [
-        "Plata",
         "Promocional",
-        "Oro"
+        "Oro",
+        "Plata"
     ],
     "days": [
-        {
-            "date": "2026-11-26",
-            "matches": [
-                {
-                    "id": 1200,
-                    "time": "18:00",
-                    "date": "2026-11-26",
-                    "zone": "Plata",
-                    "category": "Sub14",
-                    "round": "Tercer Puesto",
-                    "home_team_id": 29,
-                    "away_team_id": 25,
-                    "pitch": "Villa Mitre",
-                    "umpire_1_id": 118,
-                    "umpire_2_id": 94,
-                    "fee": 44000,
-                    "supervisor": null
-                }
-            ]
-        },
         {
             "date": "2026-11-28",
             "matches": [
                 {
                     "id": 1212,
-                    "time": "12:00",
+                    "time": "18:00",
                     "date": "2026-11-28",
                     "zone": "Promocional",
                     "category": "Sub14",
